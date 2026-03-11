@@ -507,7 +507,7 @@ export default function Home() {
                 convert, and scale.
               </p>
               <Link href="/about" className="quote-button about__button">
-                Learn More
+                Learn More About Kealey Design
                 <ArrowRight className="quote-button__icon" aria-hidden />
               </Link>
             </div>
