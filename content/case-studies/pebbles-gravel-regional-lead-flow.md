@@ -1,34 +1,48 @@
 ---
-title: "Pebbles Gravel Regional Lead Flow"
-description: "A regional lead-generation web project for Pebbles Gravel focused on service-area clarity and quote conversion."
-excerpt: "From scattered traffic to structured demand, this project improved local discoverability and quote requests."
-date: "2026-03-04"
+title: "Pebbles Gravel Website & SEO Rebuild"
+description: "A website and SEO-focused rebuild for Pebbles Gravel aimed at restoring broken backlinks, improving structure, and increasing quote conversions."
+excerpt: "A conversion-first rebuild that repaired technical issues and improved how customers explore gravel and stone products."
+date: "2024-09-10"
 image: "/pebblesgravel.png"
 keywords:
   - "local lead generation"
-  - "service area pages"
   - "contractor marketing"
+  - "website redesign"
+  - "local SEO"
 client: "Pebbles Gravel"
 services:
+  - "Website Rebuild"
   - "Local SEO"
-  - "Service Area Architecture"
-  - "Quote Funnel Optimization"
+  - "Conversion UX"
 results:
-  - "+44% quote form starts"
-  - "+36% growth in service-area page traffic"
-  - "Higher conversion from mobile visitors"
+  - "Restored broken backlink pathways"
+  - "Improved service and product page clarity"
+  - "Added product modal system for gravel and stone options"
 ---
+
 ## Project Overview
-Pebbles Gravel wanted to generate more consistent leads across multiple service areas without adding friction to the quote process.
-This project was delivered in collaboration with Exordia Creative.
+
+Pebbles Gravel had an older website that had accumulated SEO value over time, but many of its backlinks and internal pathways were no longer functioning correctly. This created issues for both search performance and user navigation.
+
+Working alongside the Exordia Creative team, the goal of the project was to rebuild the website with an SEO-first structure while improving how visitors explored products and requested quotes.
 
 ## What We Changed
-- Created clearer location-based page structure.
-- Improved CTA hierarchy and trust sections.
-- Tuned metadata and internal links for local intent.
+
+The project focused on restoring the site’s technical structure while improving conversion and usability.
+
+- Repaired broken backlink pathways and improved internal linking.
+- Reorganized page structure to better support search visibility.
+- Implemented a clearer conversion flow for quote inquiries.
+- Preserved the original visual style to maintain brand consistency.
+- Added a modal system allowing visitors to easily browse different stone and gravel products.
 
 ## SEO Snapshot
 ![Pebbles Gravel keyword ranking snapshot](/website-mockup.png)
 
 ## Outcome
-The new site structure produced stronger regional visibility and a more predictable flow of quote requests.
+
+The updated site provided a stronger technical foundation while improving the customer browsing experience.
+
+- Improved discoverability through cleaner SEO structure.
+- Made gravel and stone products easier to explore.
+- Created a clearer path for visitors to request quotes.
