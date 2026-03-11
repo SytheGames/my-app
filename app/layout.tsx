@@ -85,7 +85,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const hasGa = Boolean(gaMeasurementId);
+  const hasGa = process.env.NODE_ENV === "production" && Boolean(gaMeasurementId);
 
   return (
     <html lang="en">
@@ -98,13 +98,13 @@ export default function RootLayout({
         <>
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
-            strategy="afterInteractive"
+            strategy="lazyOnload"
           />
-          <Script id="ga4" strategy="afterInteractive">
+          <Script id="ga4" strategy="lazyOnload">
             {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', '${gaMeasurementId}', { page_path: window.location.pathname });`}
+gtag('config', '${gaMeasurementId}');`}
           </Script>
         </>
       ) : null}
