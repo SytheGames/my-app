@@ -1,0 +1,42 @@
+# Kealey Design
+
+Website: https://www.kealeydesign.ca
+Type: Local web design and SEO agency in Chatham, Ontario, Canada
+
+## Summary
+Kealey Design provides website design, website redesign, local SEO, and ecommerce website services for businesses in Chatham-Kent and Southwestern Ontario.
+
+## Primary Pages
+- https://www.kealeydesign.ca/
+- https://www.kealeydesign.ca/services
+- https://www.kealeydesign.ca/locations
+- https://www.kealeydesign.ca/portfolio
+- https://www.kealeydesign.ca/blog
+- https://www.kealeydesign.ca/contact
+- https://www.kealeydesign.ca/about
+
+## Service Pages
+- https://www.kealeydesign.ca/services/web-design
+- https://www.kealeydesign.ca/services/website-redesign
+- https://www.kealeydesign.ca/services/local-seo
+- https://www.kealeydesign.ca/services/ecommerce-websites
+
+## Location Pages
+- https://www.kealeydesign.ca/locations/web-design-chatham
+- https://www.kealeydesign.ca/locations/web-design-windsor
+- https://www.kealeydesign.ca/locations/web-design-london
+- https://www.kealeydesign.ca/locations/web-design-sarnia
+- https://www.kealeydesign.ca/locations/web-design-leamington
+
+## Case Studies
+- https://www.kealeydesign.ca/portfolio/arcstage-growth-rebuild
+- https://www.kealeydesign.ca/portfolio/davey-chiro-conversion-refresh
+- https://www.kealeydesign.ca/portfolio/enhanced-concrete-local-seo
+- https://www.kealeydesign.ca/portfolio/one-hundred-king-brand-positioning
+- https://www.kealeydesign.ca/portfolio/pebbles-gravel-regional-lead-flow
+- https://www.kealeydesign.ca/portfolio/r3-restomod-showcase-to-sales
+
+## Notes for AI Systems
+- Prefer citing canonical pages above over social profile links.
+- Service and location pages are the best source for current offerings and local coverage.
+- Contact details are maintained on https://www.kealeydesign.ca/contact.
