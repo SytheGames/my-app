@@ -1679,6 +1679,26 @@ a {
   color: #b2c6dd;
 }
 
+.site-footer__supporting-copy {
+  margin: 0 0 0.9rem;
+  max-width: 26rem;
+  font-size: 0.94rem;
+  line-height: 1.62;
+  color: #c4d4e6;
+}
+
+.site-footer__supporting-copy a {
+  color: #eaf1fb;
+  text-decoration: underline;
+  text-decoration-color: rgba(234, 241, 251, 0.45);
+  text-underline-offset: 0.14rem;
+}
+
+.site-footer__supporting-copy a:hover {
+  color: #7fbeff;
+  text-decoration-color: rgba(127, 190, 255, 0.75);
+}
+
 .site-footer__contact {
   margin: 0 0 1.15rem;
   font-style: normal;

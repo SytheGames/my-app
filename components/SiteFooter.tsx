@@ -46,6 +46,20 @@ export function SiteFooter() {
               <p className="site-footer__description">
                 We design and build performance-first websites that help brands scale faster.
               </p>
+              <p className="site-footer__supporting-copy">
+                Kealey Design is a Chatham-based web design studio focused on conversion-first websites,
+                local SEO structure, and long-term content systems for service businesses across Southwestern
+                Ontario. Every project is planned around practical outcomes like more qualified inquiries,
+                clearer service messaging, and faster mobile performance.
+              </p>
+              <p className="site-footer__supporting-copy">
+                We regularly support businesses in <Link href="/locations/web-design-chatham">Chatham</Link>,{" "}
+                <Link href="/locations/web-design-windsor">Windsor</Link>,{" "}
+                <Link href="/locations/web-design-london">London</Link>,{" "}
+                <Link href="/locations/web-design-sarnia">Sarnia</Link>, and{" "}
+                <Link href="/locations/web-design-leamington">Leamington</Link> with web design,
+                redesign, ecommerce, and local search visibility strategy.
+              </p>
               <address className="site-footer__contact" aria-label="Business contact details">
                 73 Marion Ave, Chatham, ON N7M 5N7
                 <br />
