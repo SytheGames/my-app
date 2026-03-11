@@ -24,6 +24,7 @@ Copy `.env.example` to `.env.local` and set:
 
 - `NEXT_PUBLIC_SITE_URL` (your canonical production URL)
 - `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY` (from your Web3Forms dashboard)
+- `NEXT_PUBLIC_GA_MEASUREMENT_ID` (your GA4 measurement ID, e.g. `G-XXXXXXXXXX`)
 
 Both contact forms submit directly to Web3Forms using this key.
 
