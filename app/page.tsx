@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import type { LucideIcon } from "lucide-react";
@@ -36,6 +36,7 @@ const services = [
   {
     title: "Website Design & Development",
     image: "/service-placeholder-web.svg",
+    href: "/services/web-design",
     Icon: Globe,
     description:
       "Custom website design in Chatham-Kent with fast performance, mobile-first UX, and conversion-focused page structure.",
@@ -43,6 +44,7 @@ const services = [
   {
     title: "Local SEO & Management",
     image: "/service-placeholder-seo.svg",
+    href: "/services/local-seo",
     Icon: ChartNoAxesCombined,
     description:
       "Local SEO services for Chatham-Kent and Southwestern Ontario, including on-page optimization and Google Business Profile management.",
@@ -50,13 +52,53 @@ const services = [
 ];
 
 const projects = [
-  { title: "Arcstage", image: "/arcstage.png" },
-  { title: "Davey Chiro", image: "/daveychiro.png" },
-  { title: "Enhanced Concrete", image: "/enhancedconcrete.png" },
-  { title: "One Hundred King", image: "/onehundredking.png" },
-  { title: "Pebbles Gravel", image: "/pebblesgravel.png" },
-  { title: "R3 Restomod", image: "/r3restomod.png" },
+  {
+    title: "Arcstage",
+    image: "/arcstage.png",
+    href: "/portfolio/arcstage-growth-rebuild",
+  },
+  {
+    title: "Davey Chiro",
+    image: "/daveychiro.png",
+    href: "/portfolio/davey-chiro-conversion-refresh",
+  },
+  {
+    title: "Enhanced Concrete",
+    image: "/enhancedconcrete.png",
+    href: "/portfolio/enhanced-concrete-local-seo",
+  },
+  {
+    title: "One Hundred King",
+    image: "/onehundredking.png",
+    href: "/portfolio/one-hundred-king-brand-positioning",
+  },
+  {
+    title: "Pebbles Gravel",
+    image: "/pebblesgravel.png",
+    href: "/portfolio/pebbles-gravel-regional-lead-flow",
+  },
+  {
+    title: "R3 Restomod",
+    image: "/r3restomod.png",
+    href: "/portfolio/r3-restomod-showcase-to-sales",
+  },
 ];
+
+const initialFeaturedBlogPosts = [
+  {
+    slug: "why-local-seo-matters-small-businesses-ontario",
+    title: "Why Local SEO Matters for Small Businesses in Ontario",
+    image: "/daveychiro.png",
+    date: "2025-01-01",
+  },
+];
+
+type FeaturedBlogPost = {
+  slug: string;
+  title: string;
+  image: string;
+  date: string;
+};
 
 type Industry = {
   id: string;
@@ -308,6 +350,11 @@ const faqs = [
     towns: ["Wallaceburg", "Tilbury", "Blenheim", "Ridgetown", "Dresden"],
   },
   {
+    question: "Do you optimize for both Chatham and Chatham-Kent searches?",
+    answer:
+      "Yes. We naturally use both Chatham and Chatham-Kent throughout core pages, service content, and location messaging so your site can match how real people search in this area.",
+  },
+  {
     question: "What happens after launch?",
     answer:
       "We offer post-launch support, maintenance, performance checks, and optional growth plans for ongoing improvements.",
@@ -326,10 +373,38 @@ const faqs = [
 
 const leftColumnFaqs = faqs.slice(0, 5);
 const rightColumnFaqs = faqs.slice(5);
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
+const web3formsEndpoint = "https://api.web3forms.com/submit";
+const web3formsAccessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "";
+const thankYouUrl = `${siteUrl}/thank-you`;
 
 export default function Home() {
   const [activeIndustryId, setActiveIndustryId] = useState(industries[0].id);
+  const [featuredBlogPosts, setFeaturedBlogPosts] = useState<FeaturedBlogPost[]>(
+    initialFeaturedBlogPosts,
+  );
+
+  useEffect(() => {
+    let isMounted = true;
+
+    fetch("/api/blog?limit=3")
+      .then((response) => (response.ok ? response.json() : null))
+      .then((data: { posts?: FeaturedBlogPost[] } | null) => {
+        if (!isMounted || !data?.posts || data.posts.length === 0) {
+          return;
+        }
+
+        setFeaturedBlogPosts(data.posts);
+      })
+      .catch(() => {
+        // Keep fallback posts if the request fails.
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
   const activeIndustry = useMemo(
     () => industries.find((item) => item.id === activeIndustryId) ?? industries[0],
     [activeIndustryId],
@@ -395,16 +470,14 @@ export default function Home() {
       <main>
         <section className="hero" aria-label="Digital growth hero">
           <div className="hero__media" aria-hidden>
-            <video
-              className="hero__video"
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-            >
-              <source src="/web-design-agency-banner-video%20(1).webm" type="video/webm" />
-            </video>
+            <Image
+              src="/mockup.webp"
+              alt=""
+              className="hero__image"
+              fill
+              priority
+              sizes="100vw"
+            />
           </div>
           <div className="hero__overlay" aria-hidden />
           <div className="hero__left-fade" aria-hidden />
@@ -416,14 +489,14 @@ export default function Home() {
               Kealey Design helps businesses across Chatham-Kent and Southwestern Ontario grow
               with custom website design, web development, and local SEO services.
             </p>
-            <Link href="#" className="quote-button quote-button--hero">
+            <Link href="/contact" className="quote-button quote-button--hero">
               Get a Quote
               <ArrowRight className="quote-button__icon" aria-hidden />
             </Link>
           </div>
         </section>
 
-        <section className="about" aria-label="About Kealey Design">
+        <section id="about" className="about" aria-label="About Kealey Design">
           <div className="about__inner">
             <div className="about__content">
               <p className="about__eyebrow">ABOUT KEALEY DESIGN</p>
@@ -433,7 +506,7 @@ export default function Home() {
                 Chatham-Kent and Southwestern Ontario to build high-performing websites that rank,
                 convert, and scale.
               </p>
-              <Link href="#" className="quote-button about__button">
+              <Link href="/about" className="quote-button about__button">
                 Learn More
                 <ArrowRight className="quote-button__icon" aria-hidden />
               </Link>
@@ -450,18 +523,18 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="services" aria-label="Services provided">
+        <section id="services" className="services" aria-label="Services provided">
           <div className="services__inner">
             <p className="services__eyebrow">SERVICES</p>
             <h2 className="services__title">Website design and local SEO services in Southwestern Ontario</h2>
 
             <div className="services__grid" aria-label="Service cards">
               {services.map((service) => (
-                <article key={service.title} className="services__card">
+                <Link key={service.title} href={service.href} className="services__card" aria-label={service.title}>
                   <div className="services__image-wrap">
                     <Image
                       src={service.image}
-                      alt={`${service.title} placeholder image`}
+                      alt={`${service.title} illustration`}
                       className="services__image"
                       width={1200}
                       height={700}
@@ -472,13 +545,13 @@ export default function Home() {
                   </div>
                   <h3 className="services__card-title">{service.title}</h3>
                   <p className="services__card-description">{service.description}</p>
-                </article>
+                </Link>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="projects" aria-label="Featured projects">
+        <section id="portfolio" className="projects" aria-label="Featured projects">
           <div className="projects__inner">
             <p className="projects__eyebrow">PROJECTS</p>
             <h2 className="projects__title">Recent web design projects across Chatham-Kent</h2>
@@ -496,11 +569,11 @@ export default function Home() {
                   <div className="projects__gradient" aria-hidden />
                   <div className="projects__content">
                     <h3 className="projects__card-title">{project.title}</h3>
-                    <Link href="#" className="projects__pill">
+                    <Link href={project.href} className="projects__pill">
                       <FileText className="projects__pill-icon" aria-hidden />
                       Case Study
                     </Link>
-                    <Link href="#" aria-label={`${project.title} case study`} className="projects__arrow">
+                    <Link href={project.href} aria-label={`${project.title} case study`} className="projects__arrow">
                       <ArrowRight className="projects__arrow-icon" aria-hidden />
                     </Link>
                   </div>
@@ -510,7 +583,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="industries" aria-label="Industries we serve">
+        <section id="locations" className="industries" aria-label="Industries we serve">
           <div className="industries__inner">
             <h2 className="industries__heading">Industries We Serve</h2>
             <p className="industries__lead">
@@ -605,6 +678,36 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="blog" aria-label="Latest blog posts">
+          <div className="blog__inner">
+            <p className="blog__eyebrow">BLOG</p>
+            <h2 className="blog__title">Latest Insights</h2>
+
+            <div className="blog__grid">
+              {featuredBlogPosts.map((post) => (
+                <article key={post.slug} className="blog__card">
+                  <Link href={`/blog/${post.slug}`} className="blog__card-link" aria-label={post.title}>
+                    <div className="blog__image-wrap">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        className="blog__image"
+                        width={1200}
+                        height={700}
+                      />
+                    </div>
+                    <h3 className="blog__post-title">{post.title}</h3>
+                  </Link>
+                </article>
+              ))}
+            </div>
+
+            <Link href="/blog" className="blog__view-all">
+              View all posts
+            </Link>
+          </div>
+        </section>
+
         <section className="contact-cta" aria-label="CTA and contact form">
           <div className="contact-cta__inner">
             <div className="contact-cta__left">
@@ -616,10 +719,23 @@ export default function Home() {
               </p>
             </div>
 
-            <form className="contact-cta__form" aria-label="Contact us form">
+            <form className="contact-cta__form" aria-label="Contact us form" action={web3formsEndpoint} method="POST">
+              <input type="hidden" name="access_key" value={web3formsAccessKey} />
+              <input type="hidden" name="subject" value="New Homepage Inquiry - Kealey Design" />
+              <input type="hidden" name="from_name" value="Kealey Design Website" />
+              <input type="hidden" name="redirect" value={thankYouUrl} />
+              <input
+                type="checkbox"
+                name="botcheck"
+                aria-hidden="true"
+                tabIndex={-1}
+                autoComplete="off"
+                style={{ display: "none" }}
+              />
+
               <div className="contact-cta__field">
                 <label htmlFor="contact-name">Name</label>
-                <input id="contact-name" name="name" type="text" placeholder="Your name" />
+                <input id="contact-name" name="name" type="text" placeholder="Your name" required />
               </div>
 
               <div className="contact-cta__field">
@@ -629,7 +745,7 @@ export default function Home() {
 
               <div className="contact-cta__field">
                 <label htmlFor="contact-email">Email</label>
-                <input id="contact-email" name="email" type="email" placeholder="you@company.com" />
+                <input id="contact-email" name="email" type="email" placeholder="you@company.com" required />
               </div>
 
               <div className="contact-cta__field">
@@ -644,6 +760,7 @@ export default function Home() {
                   name="projectBrief"
                   rows={5}
                   placeholder="Tell us about your project goals, timeline, and priorities"
+                  required
                 />
               </div>
 

@@ -1,38 +1,56 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Menu, X } from "lucide-react";
 
 const navItems = [
-  "Our Work",
-  "Website Design",
-  "Ecommerce",
-  "Adobe Commerce",
-  "Digital Marketing",
+  { label: "Services", href: "/services" },
+  { label: "Locations", href: "/locations" },
+  { label: "Portfolio", href: "/portfolio" },
+  { label: "Blog", href: "/blog" },
+  { label: "About", href: "/about" },
 ];
 
 export function SiteHeader() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header className="site-header">
       <div className="site-header__inner">
-        <Link href="#" className="brand" aria-label="Kinex home">
-          <span className="brand__mark" aria-hidden>
-            K
-          </span>
-          <span className="brand__text">KINEX</span>
-          <span className="brand__menu" aria-hidden>
-            <span />
-            <span />
-          </span>
+        <Link href="/" className="brand" aria-label="Kealey Design home">
+          <span className="brand__text">kealeydesign.</span>
         </Link>
 
-        <nav className="site-nav" aria-label="Primary navigation">
+        <button
+          type="button"
+          className="site-header__menu-toggle"
+          aria-expanded={isMenuOpen}
+          aria-controls="primary-navigation"
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          onClick={() => setIsMenuOpen((open) => !open)}
+        >
+          {isMenuOpen ? <X aria-hidden /> : <Menu aria-hidden />}
+        </button>
+
+        <nav id="primary-navigation" className={`site-nav ${isMenuOpen ? "is-open" : ""}`} aria-label="Primary navigation">
           {navItems.map((item) => (
-            <Link key={item} href="#" className="site-nav__link">
-              {item}
+            <Link
+              key={item.label}
+              href={item.href}
+              className="site-nav__link"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {item.label}
             </Link>
           ))}
+          <Link href="/contact" className="quote-button site-nav__cta" onClick={() => setIsMenuOpen(false)}>
+            Get a Quote
+            <ArrowRight className="quote-button__icon" aria-hidden />
+          </Link>
         </nav>
 
-        <Link href="#" className="quote-button quote-button--header">
+        <Link href="/contact" className="quote-button quote-button--header">
           Get a Quote
           <ArrowRight className="quote-button__icon" aria-hidden />
         </Link>

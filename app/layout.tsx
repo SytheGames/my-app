@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
+const defaultSocialImage = "/mockup.png";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -41,12 +42,21 @@ export const metadata: Metadata = {
       "Custom website design, development, and local SEO services for businesses in Chatham and Southwestern Ontario.",
     siteName: "Kealey Design",
     locale: "en_CA",
+    images: [
+      {
+        url: defaultSocialImage,
+        width: 1200,
+        height: 630,
+        alt: "Kealey Design web design preview",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Kealey Design | Web Design Chatham, Ontario",
     description:
       "Local web design and SEO services for Chatham and Southwestern Ontario businesses.",
+    images: [defaultSocialImage],
   },
   robots: {
     index: true,
