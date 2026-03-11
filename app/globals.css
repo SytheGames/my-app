@@ -1911,6 +1911,31 @@ a {
   transform: translateY(-0.08rem);
 }
 
+.split-hero__related {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.split-hero__related-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.25rem;
+  padding: 0.42rem 0.72rem;
+  border: 0.0625rem solid rgba(158, 196, 242, 0.38);
+  border-radius: 999rem;
+  color: #d6e7fb;
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: border-color 160ms ease, color 160ms ease;
+}
+
+.split-hero__related-link:hover {
+  border-color: rgba(158, 196, 242, 0.72);
+  color: #ffffff;
+}
+
 .split-hero__right {
   position: relative;
   background: #c8ced5;

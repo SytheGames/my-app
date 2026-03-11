@@ -47,6 +47,9 @@ export default function AboutPage() {
                 Kealey Design works with businesses across Chatham-Kent and Southwestern Ontario to build
                 websites that are easier to manage, easier to trust, and easier to convert from.
               </p>
+              <p className="about-page__center-copy">
+                Review recent <Link href="/portfolio">case studies</Link> to see how strategy and design decisions impact lead quality.
+              </p>
               <Link href="/services" className="about-page__center-button">
                 See our services
               </Link>

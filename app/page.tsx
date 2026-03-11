@@ -420,7 +420,8 @@ export default function Home() {
       {
         "@type": "LocalBusiness",
         "@id": `${siteUrl}/#localbusiness`,
-        name: "Kealey Design",
+        name: "Kealey Design - Chatham Website Design",
+        alternateName: "Kealey Design",
         image: `${siteUrl}/favicon.ico`,
         url: siteUrl,
         description:
@@ -436,11 +437,51 @@ export default function Home() {
         ],
         address: {
           "@type": "PostalAddress",
+          streetAddress: "73 Marion Ave",
           addressLocality: "Chatham",
           addressRegion: "ON",
+          postalCode: "N7M 5N7",
           addressCountry: "CA",
         },
-        serviceType: ["Web Design", "Website Development", "Local SEO"],
+        telephone: "+1-519-401-1469",
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Web Services",
+          itemListElement: [
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Web Design",
+                url: `${siteUrl}/services/web-design`,
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Website Redesign",
+                url: `${siteUrl}/services/website-redesign`,
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Local SEO",
+                url: `${siteUrl}/services/local-seo`,
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Ecommerce Websites",
+                url: `${siteUrl}/services/ecommerce-websites`,
+              },
+            },
+          ],
+        },
       },
       {
         "@type": "FAQPage",

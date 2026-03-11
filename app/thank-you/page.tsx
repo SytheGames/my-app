@@ -36,6 +36,9 @@ export default function ThankYouPage() {
               We usually reply within one business day. If you want to move faster, book a short intro call below.
             </p>
             <Link href="/" className="thank-you-page__link">Return to homepage</Link>
+            <p className="thank-you-page__lead">
+              In the meantime, explore our <Link href="/services">services</Link> or browse recent <Link href="/portfolio">case studies</Link>.
+            </p>
           </div>
         </section>
 

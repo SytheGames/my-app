@@ -80,6 +80,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <Link href="/blog" className="blog-post__back-link" aria-label="Back to blog posts">
             Back to Blog
           </Link>
+          <Link href="/services" className="blog-post__back-link" aria-label="View services">
+            View Services
+          </Link>
           <p className="blog-post__eyebrow">BLOG POST</p>
           <h1 className="blog-post__title">{post.title}</h1>
           <p className="blog-post__date">{new Date(post.date).toLocaleDateString("en-CA")}</p>

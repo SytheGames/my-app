@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
@@ -67,7 +68,8 @@ export default function PrivacyPage() {
 
               <h2>Contact</h2>
               <p>
-                For privacy-related questions, contact Kealey Design through the contact page on this website.
+                For privacy-related questions, contact Kealey Design through our <Link href="/contact">contact page</Link>.
+                You can also review our <Link href="/terms">Terms of Use</Link> for additional policy details.
               </p>
             </div>
           </div>

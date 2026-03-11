@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
@@ -53,6 +54,9 @@ export default function ContactPage() {
                 <br />
                 <a href="tel:+15194011469">+1 519 401-1469</a>
               </address>
+              <p className="contact-page__contact">
+                <Link href="/services">View services</Link> | <Link href="/portfolio">See portfolio</Link>
+              </p>
             </div>
 
             <form className="contact-page__form" aria-label="Contact form" action={web3formsEndpoint} method="POST">

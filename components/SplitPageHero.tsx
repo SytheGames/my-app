@@ -9,6 +9,10 @@ type SplitPageHeroProps = {
   imageAlt: string;
   ctaLabel?: string;
   ctaHref?: string;
+  relatedLinks?: Array<{
+    label: string;
+    href: string;
+  }>;
 };
 
 export function SplitPageHero({
@@ -19,7 +23,15 @@ export function SplitPageHero({
   imageAlt,
   ctaLabel,
   ctaHref,
+  relatedLinks,
 }: SplitPageHeroProps) {
+  const links =
+    relatedLinks ??
+    [
+      { label: "View services", href: "/services" },
+      { label: "See portfolio", href: "/portfolio" },
+    ];
+
   return (
     <section className="split-hero" aria-label={title}>
       <div className="split-hero__left">
@@ -32,6 +44,13 @@ export function SplitPageHero({
               {ctaLabel}
             </Link>
           ) : null}
+          <nav className="split-hero__related" aria-label="Related pages">
+            {links.map((link) => (
+              <Link key={link.href} href={link.href} className="split-hero__related-link">
+                {link.label}
+              </Link>
+            ))}
+          </nav>
         </div>
       </div>
       <div className="split-hero__right">

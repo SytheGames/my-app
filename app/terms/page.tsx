@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
@@ -72,7 +73,8 @@ export default function TermsPage() {
 
               <h2>Contact</h2>
               <p>
-                For terms-related questions, contact Kealey Design through the contact page.
+                For terms-related questions, use our <Link href="/contact">contact page</Link>.
+                For data handling details, review our <Link href="/privacy">Privacy Policy</Link>.
               </p>
             </div>
           </div>

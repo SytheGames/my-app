@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -76,6 +77,12 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
       <SiteHeader />
       <main className="blog-post" aria-label="Case study detail">
         <article className="blog-post__inner">
+          <Link href="/portfolio" className="blog-post__back-link" aria-label="Back to case studies">
+            Back to Portfolio
+          </Link>
+          <Link href="/services" className="blog-post__back-link" aria-label="View services">
+            View Services
+          </Link>
           <p className="blog-post__eyebrow">CASE STUDY</p>
           <h1 className="blog-post__title">{study.title}</h1>
           <p className="blog-post__date">{new Date(study.date).toLocaleDateString("en-CA")}</p>
