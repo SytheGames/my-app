@@ -10,6 +10,7 @@ const footerLinks = {
   ],
   company: [
     { label: "About", href: "/about" },
+    { label: "Pricing", href: "/pricing" },
     { label: "Projects", href: "/portfolio" },
     { label: "Reviews", href: "/reviews" },
     { label: "Industries", href: "/#locations" },
@@ -65,6 +66,8 @@ export function SiteFooter() {
                 73 Marion Ave, Chatham, ON N7M 5N7
                 <br />
                 <a href="tel:+15194011469">+1 519 401-1469</a>
+                <br />
+                <a href="mailto:matt@kealeydesign.ca">matt@kealeydesign.ca</a>
               </address>
               <Link href="/contact" className="site-footer__cta">
                 Start your project

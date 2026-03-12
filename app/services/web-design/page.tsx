@@ -7,14 +7,14 @@ import { PageContactSection } from "@/components/PageContactSection";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
 
 export const metadata: Metadata = {
-  title: "Web Design",
+  title: "Web Design in Chatham-Kent",
   description:
     "Custom web design services in Chatham and Southwestern Ontario focused on conversions, speed, and mobile usability.",
   alternates: {
     canonical: "/services/web-design",
   },
   openGraph: {
-    title: "Web Design",
+    title: "Web Design in Chatham-Kent",
     description:
       "Custom web design services in Chatham and Southwestern Ontario focused on conversions, speed, and mobile usability.",
     url: "/services/web-design",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Design",
+    title: "Web Design in Chatham-Kent",
     description:
       "Custom web design services in Chatham and Southwestern Ontario focused on conversions, speed, and mobile usability.",
     images: ["/arcstage.png"],

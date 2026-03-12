@@ -6,11 +6,15 @@ import { ArrowRight, Menu, X } from "lucide-react";
 
 const navItems = [
   { label: "Services", href: "/services" },
+  { label: "Pricing", href: "/pricing" },
   { label: "Locations", href: "/locations" },
   { label: "Portfolio", href: "/portfolio" },
+  { label: "About", href: "/about" },
+];
+
+const utilityItems = [
   { label: "Reviews", href: "/reviews" },
   { label: "Blog", href: "/blog" },
-  { label: "About", href: "/about" },
 ];
 
 export function SiteHeader() {
@@ -18,6 +22,22 @@ export function SiteHeader() {
 
   return (
     <header className="site-header">
+      <div className="site-header__topbar" aria-label="Secondary navigation">
+        <div className="site-header__topbar-inner">
+          <div className="site-header__topbar-links">
+            {utilityItems.map((item) => (
+              <Link
+                key={item.label}
+                href={item.href}
+                className="site-header__utility-link"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
       <div className="site-header__inner">
         <Link href="/" className="brand" aria-label="Kealey Design home">
           <span className="brand__text">kealeydesign.</span>

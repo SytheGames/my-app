@@ -7,14 +7,14 @@ import { PageContactSection } from "@/components/PageContactSection";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
 
 export const metadata: Metadata = {
-  title: "Local SEO",
+  title: "Local SEO in Chatham-Kent",
   description:
     "Local SEO services for Chatham and Southwestern Ontario businesses, including maps optimization, local content, and citation strategy.",
   alternates: {
     canonical: "/services/local-seo",
   },
   openGraph: {
-    title: "Local SEO",
+    title: "Local SEO in Chatham-Kent",
     description:
       "Local SEO services for Chatham and Southwestern Ontario businesses, including maps optimization, local content, and citation strategy.",
     url: "/services/local-seo",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Local SEO",
+    title: "Local SEO in Chatham-Kent",
     description:
       "Local SEO services for Chatham and Southwestern Ontario businesses, including maps optimization, local content, and citation strategy.",
     images: ["/daveychiro.png"],

@@ -7,14 +7,14 @@ import { PageContactSection } from "@/components/PageContactSection";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
 
 export const metadata: Metadata = {
-  title: "Website Redesign",
+  title: "Website Redesign in Chatham-Kent",
   description:
     "Website redesign services for Ontario businesses needing stronger branding, faster performance, and improved user journeys.",
   alternates: {
     canonical: "/services/website-redesign",
   },
   openGraph: {
-    title: "Website Redesign",
+    title: "Website Redesign in Chatham-Kent",
     description:
       "Website redesign services for Ontario businesses needing stronger branding, faster performance, and improved user journeys.",
     url: "/services/website-redesign",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Website Redesign",
+    title: "Website Redesign in Chatham-Kent",
     description:
       "Website redesign services for Ontario businesses needing stronger branding, faster performance, and improved user journeys.",
     images: ["/onehundredking.png"],

@@ -9,14 +9,14 @@ import { PageContactSection } from "@/components/PageContactSection";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Services in Chatham-Kent",
   description:
     "Explore Kealey Design services including web design, website redesign, local SEO, and ecommerce website development.",
   alternates: {
     canonical: "/services",
   },
   openGraph: {
-    title: "Services",
+    title: "Services in Chatham-Kent",
     description:
       "Explore Kealey Design services including web design, website redesign, local SEO, and ecommerce website development.",
     url: "/services",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Services",
+    title: "Services in Chatham-Kent",
     description:
       "Explore Kealey Design services including web design, website redesign, local SEO, and ecommerce website development.",
     images: ["/arcstage.png"],

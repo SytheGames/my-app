@@ -53,6 +53,8 @@ export default function ContactPage() {
                 73 Marion Ave, Chatham, ON N7M 5N7
                 <br />
                 <a href="tel:+15194011469">+1 519 401-1469</a>
+                <br />
+                <a href="mailto:matt@kealeydesign.ca">matt@kealeydesign.ca</a>
               </address>
               <p className="contact-page__contact">
                 <Link href="/services">View services</Link> | <Link href="/portfolio">See portfolio</Link>

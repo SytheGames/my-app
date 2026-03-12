@@ -7,14 +7,14 @@ import { PageContactSection } from "@/components/PageContactSection";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
 
 export const metadata: Metadata = {
-  title: "Ecommerce Websites",
+  title: "Ecommerce Websites in Chatham-Kent",
   description:
     "Ecommerce website development for Ontario businesses focused on product discovery, checkout UX, and conversion performance.",
   alternates: {
     canonical: "/services/ecommerce-websites",
   },
   openGraph: {
-    title: "Ecommerce Websites",
+    title: "Ecommerce Websites in Chatham-Kent",
     description:
       "Ecommerce website development for Ontario businesses focused on product discovery, checkout UX, and conversion performance.",
     url: "/services/ecommerce-websites",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ecommerce Websites",
+    title: "Ecommerce Websites in Chatham-Kent",
     description:
       "Ecommerce website development for Ontario businesses focused on product discovery, checkout UX, and conversion performance.",
     images: ["/enhancedconcrete.png"],

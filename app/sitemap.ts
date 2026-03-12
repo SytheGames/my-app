@@ -17,6 +17,7 @@ const staticRoutes: StaticRouteConfig[] = [
   { urlPath: "/", sourceFile: "app/page.tsx", changeFrequency: "weekly", priority: 1 },
   { urlPath: "/blog", sourceFile: "app/blog/page.tsx", changeFrequency: "weekly", priority: 0.8 },
   { urlPath: "/services", sourceFile: "app/services/page.tsx", changeFrequency: "monthly", priority: 0.8 },
+  { urlPath: "/pricing", sourceFile: "app/pricing/page.tsx", changeFrequency: "monthly", priority: 0.8 },
   {
     urlPath: "/services/web-design",
     sourceFile: "app/services/web-design/page.tsx",
