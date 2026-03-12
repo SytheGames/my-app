@@ -1312,7 +1312,7 @@ a {
 .testimonials__logo {
   width: auto;
   max-width: min(15rem, 100%);
-  height: 3rem;
+  height: 4rem;
   object-fit: contain;
   display: block;
 }
