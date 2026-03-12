@@ -108,6 +108,11 @@ gtag('config', '${gaMeasurementId}');`}
           </Script>
         </>
       ) : null}
+      <Script
+        src="https://analytics.ahrefs.com/analytics.js"
+        data-key="zY0lW59pLFIfWHcsJ4Z7Cg"
+        strategy="afterInteractive"
+      />
     </html>
   );
 }
