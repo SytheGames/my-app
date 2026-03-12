@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowUpRight, ChartNoAxesCombined, Globe, RefreshCw, ShoppingCart } from "lucide-react";
+import { ArrowUpRight, ChartNoAxesCombined, Globe, Megaphone, RefreshCw, ShoppingCart } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SplitPageHero } from "@/components/SplitPageHero";
@@ -11,14 +11,14 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca
 export const metadata: Metadata = {
   title: "Services in Chatham-Kent",
   description:
-    "Explore Kealey Design services including web design, website redesign, local SEO, and ecommerce website development.",
+    "Explore Kealey Design services including web design, website redesign, local SEO, social media management, and ecommerce website development.",
   alternates: {
     canonical: "/services",
   },
   openGraph: {
     title: "Services in Chatham-Kent",
     description:
-      "Explore Kealey Design services including web design, website redesign, local SEO, and ecommerce website development.",
+      "Explore Kealey Design services including web design, website redesign, local SEO, social media management, and ecommerce website development.",
     url: "/services",
     type: "website",
     images: [{ url: "/arcstage.png" }],
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Services in Chatham-Kent",
     description:
-      "Explore Kealey Design services including web design, website redesign, local SEO, and ecommerce website development.",
+      "Explore Kealey Design services including web design, website redesign, local SEO, social media management, and ecommerce website development.",
     images: ["/arcstage.png"],
   },
 };
@@ -55,6 +55,13 @@ const services = [
     href: "/services/local-seo",
   },
   {
+    title: "Social Media Management",
+    description:
+      "Monthly social media support with 5 custom posts, graphic design, account management, and profile optimization.",
+    Icon: Megaphone,
+    href: "/services/social-media-management",
+  },
+  {
     title: "Ecommerce Websites",
     description:
       "Conversion-focused ecommerce experiences designed for product discovery, trust, and smooth checkout flows.",
@@ -69,7 +76,7 @@ export default function ServicesPage() {
     "@type": "WebPage",
     name: "Services",
     description:
-      "Explore Kealey Design services including web design, website redesign, local SEO, and ecommerce website development.",
+      "Explore Kealey Design services including web design, website redesign, local SEO, social media management, and ecommerce website development.",
     url: `${siteUrl}/services`,
   };
 

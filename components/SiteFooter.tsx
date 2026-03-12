@@ -6,6 +6,7 @@ const footerLinks = {
     { label: "Web Design", href: "/services/web-design" },
     { label: "Website Redesign", href: "/services/website-redesign" },
     { label: "Local SEO", href: "/services/local-seo" },
+    { label: "Social Media Management", href: "/services/social-media-management" },
     { label: "Ecommerce", href: "/services/ecommerce-websites" },
   ],
   company: [
@@ -60,7 +61,7 @@ export function SiteFooter() {
                 <Link href="/locations/web-design-london">London</Link>,{" "}
                 <Link href="/locations/web-design-sarnia">Sarnia</Link>, and{" "}
                 <Link href="/locations/web-design-leamington">Leamington</Link> with web design,
-                redesign, ecommerce, and local search visibility strategy.
+                redesign, social media management, ecommerce, and local search visibility strategy.
               </p>
               <address className="site-footer__contact" aria-label="Business contact details">
                 73 Marion Ave, Chatham, ON N7M 5N7

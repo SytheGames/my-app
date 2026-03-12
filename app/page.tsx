@@ -16,6 +16,7 @@ import {
   Globe,
   GraduationCap,
   HeartPulse,
+  Megaphone,
   Plane,
   Scale,
   RefreshCw,
@@ -61,6 +62,14 @@ const services = [
     Icon: RefreshCw,
     description:
       "Website redesign services that modernize outdated pages, improve site speed, and create clearer conversion paths for local businesses.",
+  },
+  {
+    title: "Social Media Management",
+    image: "/onehundredking.png",
+    href: "/services/social-media-management",
+    Icon: Megaphone,
+    description:
+      "Monthly social media management with 5 custom posts, graphic design support, account management, and profile optimization.",
   },
   {
     title: "Ecommerce Websites",
@@ -493,6 +502,14 @@ export default function Home() {
                 "@type": "Service",
                 name: "Local SEO",
                 url: `${siteUrl}/services/local-seo`,
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Social Media Management",
+                url: `${siteUrl}/services/social-media-management`,
               },
             },
             {

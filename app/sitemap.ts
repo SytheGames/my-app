@@ -37,6 +37,12 @@ const staticRoutes: StaticRouteConfig[] = [
     priority: 0.7,
   },
   {
+    urlPath: "/services/social-media-management",
+    sourceFile: "app/services/social-media-management/page.tsx",
+    changeFrequency: "monthly",
+    priority: 0.7,
+  },
+  {
     urlPath: "/services/ecommerce-websites",
     sourceFile: "app/services/ecommerce-websites/page.tsx",
     changeFrequency: "monthly",
@@ -46,6 +52,12 @@ const staticRoutes: StaticRouteConfig[] = [
   {
     urlPath: "/locations/web-design-chatham",
     sourceFile: "app/locations/web-design-chatham/page.tsx",
+    changeFrequency: "monthly",
+    priority: 0.7,
+  },
+  {
+    urlPath: "/locations/social-media-management-chatham",
+    sourceFile: "app/locations/social-media-management-chatham/page.tsx",
     changeFrequency: "monthly",
     priority: 0.7,
   },

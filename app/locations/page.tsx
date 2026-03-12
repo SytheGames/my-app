@@ -10,11 +10,11 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca
 
 export const metadata: Metadata = {
   title: "Locations",
-  description: "Web design services across Chatham, Windsor, London, Sarnia, and Leamington.",
+  description: "Web design and social media services across Chatham, Windsor, London, Sarnia, and Leamington.",
   alternates: { canonical: "/locations" },
   openGraph: {
     title: "Locations",
-    description: "Web design services across Chatham, Windsor, London, Sarnia, and Leamington.",
+    description: "Web design and social media services across Chatham, Windsor, London, Sarnia, and Leamington.",
     url: "/locations",
     type: "website",
     images: [{ url: "/images/locations-images/Chatham_ON_1.JPG" }],
@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Locations",
-    description: "Web design services across Chatham, Windsor, London, Sarnia, and Leamington.",
+    description: "Web design and social media services across Chatham, Windsor, London, Sarnia, and Leamington.",
     images: ["/images/locations-images/Chatham_ON_1.JPG"],
   },
 };
 
-const locations = [
+const webDesignLocations = [
   {
     label: "Web Design Chatham",
     href: "/locations/web-design-chatham",
@@ -60,12 +60,21 @@ const locations = [
   },
 ];
 
+const socialMediaLocations = [
+  {
+    label: "Social Media Management Chatham",
+    href: "/locations/social-media-management-chatham",
+    image: "/images/locations-images/Chatham_ON_1.JPG",
+    copy: "Monthly social media management for Chatham businesses with custom graphics, posting support, and profile optimization.",
+  },
+];
+
 export default function LocationsPage() {
   const locationsPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: "Locations",
-    description: "Web design services across Chatham, Windsor, London, Sarnia, and Leamington.",
+    description: "Web design and social media services across Chatham, Windsor, London, Sarnia, and Leamington.",
     url: `${siteUrl}/locations`,
   };
 
@@ -84,25 +93,49 @@ export default function LocationsPage() {
         />
 
         <section className="split-page__section locations-page">
-        <div className="locations-page__inner">
-          <div className="locations-page__grid">
-            {locations.map((location) => (
-              <Link key={location.href} href={location.href} className="locations-page__link-card">
-                <span className="locations-page__card-image-wrap">
-                  <Image
-                    src={location.image}
-                    alt={location.label}
-                    className="locations-page__card-image"
-                    width={1200}
-                    height={760}
-                  />
-                </span>
-                <span className="locations-page__card-label">{location.label}</span>
-                <span className="locations-page__card-subcopy">{location.copy}</span>
-              </Link>
-            ))}
+          <div className="locations-page__inner">
+            <div className="locations-page__group">
+              <h2 className="locations-page__group-title">Web Design Locations</h2>
+              <div className="locations-page__grid">
+                {webDesignLocations.map((location) => (
+                  <Link key={location.href} href={location.href} className="locations-page__link-card">
+                    <span className="locations-page__card-image-wrap">
+                      <Image
+                        src={location.image}
+                        alt={location.label}
+                        className="locations-page__card-image"
+                        width={1200}
+                        height={760}
+                      />
+                    </span>
+                    <span className="locations-page__card-label">{location.label}</span>
+                    <span className="locations-page__card-subcopy">{location.copy}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div className="locations-page__group">
+              <h2 className="locations-page__group-title">Social Media Management Locations</h2>
+              <div className="locations-page__grid">
+                {socialMediaLocations.map((location) => (
+                  <Link key={location.href} href={location.href} className="locations-page__link-card">
+                    <span className="locations-page__card-image-wrap">
+                      <Image
+                        src={location.image}
+                        alt={location.label}
+                        className="locations-page__card-image"
+                        width={1200}
+                        height={760}
+                      />
+                    </span>
+                    <span className="locations-page__card-label">{location.label}</span>
+                    <span className="locations-page__card-subcopy">{location.copy}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
         </section>
 
         <section className="split-page__section split-page__text" aria-label="Location image credits">

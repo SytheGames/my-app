@@ -4,7 +4,7 @@ Website: https://www.kealeydesign.ca
 Type: Local web design and SEO agency in Chatham, Ontario, Canada
 
 ## Summary
-Kealey Design provides website design, website redesign, local SEO, and ecommerce website services for businesses in Chatham-Kent and Southwestern Ontario.
+Kealey Design provides website design, website redesign, local SEO, social media management, and ecommerce website services for businesses in Chatham-Kent and Southwestern Ontario.
 
 ## Primary Pages
 - https://www.kealeydesign.ca/
@@ -19,10 +19,12 @@ Kealey Design provides website design, website redesign, local SEO, and ecommerc
 - https://www.kealeydesign.ca/services/web-design
 - https://www.kealeydesign.ca/services/website-redesign
 - https://www.kealeydesign.ca/services/local-seo
+- https://www.kealeydesign.ca/services/social-media-management
 - https://www.kealeydesign.ca/services/ecommerce-websites
 
 ## Location Pages
 - https://www.kealeydesign.ca/locations/web-design-chatham
+- https://www.kealeydesign.ca/locations/social-media-management-chatham
 - https://www.kealeydesign.ca/locations/web-design-windsor
 - https://www.kealeydesign.ca/locations/web-design-london
 - https://www.kealeydesign.ca/locations/web-design-sarnia
