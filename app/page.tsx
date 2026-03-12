@@ -25,6 +25,9 @@ import {
 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import {
+  getHomepageShowcaseTestimonials,
+} from "@/lib/testimonials";
 
 const aboutStats = [
   { value: "25+", label: "Websites launched" },
@@ -92,6 +95,8 @@ const initialFeaturedBlogPosts = [
     date: "2025-01-01",
   },
 ];
+
+const homepageTestimonials = getHomepageShowcaseTestimonials();
 
 type FeaturedBlogPost = {
   slug: string;
@@ -618,6 +623,48 @@ export default function Home() {
                       <ArrowRight className="projects__arrow-icon" aria-hidden />
                     </Link>
                   </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="testimonials" aria-label="Client reviews and testimonials">
+          <div className="testimonials__inner">
+            <div className="testimonials__header">
+              <div>
+                <p className="testimonials__eyebrow">REVIEWS</p>
+                <h2 className="testimonials__title">Trusted by local businesses</h2>
+              </div>
+              <div className="testimonials__actions">
+                <a
+                  href="https://maps.app.goo.gl/pqGkSzTHJkWj9Z67A"
+                  className="testimonials__view-all"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  See Google reviews
+                </a>
+                <Link href="/reviews" className="testimonials__view-all">
+                  Read all reviews
+                </Link>
+              </div>
+            </div>
+
+            <div className="testimonials__grid">
+              {homepageTestimonials.map((testimonial) => (
+                <article key={testimonial.id} className="testimonials__card">
+                  {testimonial.logo ? (
+                    <Image
+                      src={testimonial.logo}
+                      alt={`${testimonial.name} logo`}
+                      className={`testimonials__logo ${testimonial.isLightLogo ? "testimonials__logo--light" : ""}`}
+                      width={260}
+                      height={84}
+                    />
+                  ) : null}
+                  <p className="testimonials__quote">&ldquo;{testimonial.quote}&rdquo;</p>
+                  <p className="testimonials__name">{testimonial.name}</p>
                 </article>
               ))}
             </div>

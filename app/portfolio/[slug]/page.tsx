@@ -7,6 +7,7 @@ import remarkGfm from "remark-gfm";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { getAllCaseStudySlugs, getCaseStudyBySlug } from "@/lib/caseStudies";
+import { getTestimonialsForClient } from "@/lib/testimonials";
 
 type CaseStudyPageProps = {
   params: Promise<{ slug: string }>;
@@ -58,6 +59,8 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
   if (!study) {
     notFound();
   }
+
+  const matchingTestimonials = getTestimonialsForClient(study.client);
 
   const caseStudySchema = {
     "@context": "https://schema.org",
@@ -113,6 +116,16 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
               </ul>
             </div>
           </section>
+
+          {matchingTestimonials.length > 0 ? (
+            <section className="case-study-review" aria-label="Client testimonial">
+              <p className="case-study-review__eyebrow">CLIENT REVIEW</p>
+              <blockquote className="case-study-review__quote">
+                &ldquo;{matchingTestimonials[0].quote}&rdquo;
+              </blockquote>
+              <p className="case-study-review__author">{matchingTestimonials[0].name}</p>
+            </section>
+          ) : null}
 
           <div className="blog-post__content">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{study.content}</ReactMarkdown>
