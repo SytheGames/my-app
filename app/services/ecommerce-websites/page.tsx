@@ -13,6 +13,21 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/services/ecommerce-websites",
   },
+  openGraph: {
+    title: "Ecommerce Websites",
+    description:
+      "Ecommerce website development for Ontario businesses focused on product discovery, checkout UX, and conversion performance.",
+    url: "/services/ecommerce-websites",
+    type: "website",
+    images: [{ url: "/enhancedconcrete.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ecommerce Websites",
+    description:
+      "Ecommerce website development for Ontario businesses focused on product discovery, checkout UX, and conversion performance.",
+    images: ["/enhancedconcrete.png"],
+  },
 };
 
 export default function EcommerceWebsitesServicePage() {

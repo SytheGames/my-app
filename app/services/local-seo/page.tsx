@@ -13,6 +13,21 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/services/local-seo",
   },
+  openGraph: {
+    title: "Local SEO",
+    description:
+      "Local SEO services for Chatham and Southwestern Ontario businesses, including maps optimization, local content, and citation strategy.",
+    url: "/services/local-seo",
+    type: "website",
+    images: [{ url: "/daveychiro.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Local SEO",
+    description:
+      "Local SEO services for Chatham and Southwestern Ontario businesses, including maps optimization, local content, and citation strategy.",
+    images: ["/daveychiro.png"],
+  },
 };
 
 export default function LocalSeoServicePage() {

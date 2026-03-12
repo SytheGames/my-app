@@ -10,6 +10,19 @@ export const metadata: Metadata = {
   title: "Web Design London",
   description: "Strategic web design services for London, Ontario businesses focused on quality leads and scalable growth.",
   alternates: { canonical: "/locations/web-design-london" },
+  openGraph: {
+    title: "Web Design London",
+    description: "Strategic web design services for London, Ontario businesses focused on quality leads and scalable growth.",
+    url: "/locations/web-design-london",
+    type: "website",
+    images: [{ url: "/images/locations-images/London_Ontario_Skyline_2017_(cropped).jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Web Design London",
+    description: "Strategic web design services for London, Ontario businesses focused on quality leads and scalable growth.",
+    images: ["/images/locations-images/London_Ontario_Skyline_2017_(cropped).jpg"],
+  },
 };
 
 export default function WebDesignLondonPage() {

@@ -10,6 +10,19 @@ export const metadata: Metadata = {
   title: "Web Design Leamington",
   description: "Web design services in Leamington for businesses that want a stronger online brand and predictable lead flow.",
   alternates: { canonical: "/locations/web-design-leamington" },
+  openGraph: {
+    title: "Web Design Leamington",
+    description: "Web design services in Leamington for businesses that want a stronger online brand and predictable lead flow.",
+    url: "/locations/web-design-leamington",
+    type: "website",
+    images: [{ url: "/images/locations-images/Lake_Erie_Leamington.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Web Design Leamington",
+    description: "Web design services in Leamington for businesses that want a stronger online brand and predictable lead flow.",
+    images: ["/images/locations-images/Lake_Erie_Leamington.jpg"],
+  },
 };
 
 export default function WebDesignLeamingtonPage() {

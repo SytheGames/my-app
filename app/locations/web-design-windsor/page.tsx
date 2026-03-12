@@ -10,6 +10,19 @@ export const metadata: Metadata = {
   title: "Web Design Windsor",
   description: "Web design services in Windsor built for competitive local markets and measurable lead growth.",
   alternates: { canonical: "/locations/web-design-windsor" },
+  openGraph: {
+    title: "Web Design Windsor",
+    description: "Web design services in Windsor built for competitive local markets and measurable lead growth.",
+    url: "/locations/web-design-windsor",
+    type: "website",
+    images: [{ url: "/images/locations-images/Windsor,_Ontario_(aerial_view).jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Web Design Windsor",
+    description: "Web design services in Windsor built for competitive local markets and measurable lead growth.",
+    images: ["/images/locations-images/Windsor,_Ontario_(aerial_view).jpg"],
+  },
 };
 
 export default function WebDesignWindsorPage() {

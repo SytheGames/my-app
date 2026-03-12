@@ -10,6 +10,19 @@ export const metadata: Metadata = {
   title: "Web Design Sarnia",
   description: "Local web design services in Sarnia for businesses looking to increase calls, leads, and regional visibility.",
   alternates: { canonical: "/locations/web-design-sarnia" },
+  openGraph: {
+    title: "Web Design Sarnia",
+    description: "Local web design services in Sarnia for businesses looking to increase calls, leads, and regional visibility.",
+    url: "/locations/web-design-sarnia",
+    type: "website",
+    images: [{ url: "/images/locations-images/Sarnia_skyline.JPG" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Web Design Sarnia",
+    description: "Local web design services in Sarnia for businesses looking to increase calls, leads, and regional visibility.",
+    images: ["/images/locations-images/Sarnia_skyline.JPG"],
+  },
 };
 
 export default function WebDesignSarniaPage() {

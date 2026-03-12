@@ -13,6 +13,21 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/services/web-design",
   },
+  openGraph: {
+    title: "Web Design",
+    description:
+      "Custom web design services in Chatham and Southwestern Ontario focused on conversions, speed, and mobile usability.",
+    url: "/services/web-design",
+    type: "website",
+    images: [{ url: "/arcstage.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Web Design",
+    description:
+      "Custom web design services in Chatham and Southwestern Ontario focused on conversions, speed, and mobile usability.",
+    images: ["/arcstage.png"],
+  },
 };
 
 export default function WebDesignServicePage() {

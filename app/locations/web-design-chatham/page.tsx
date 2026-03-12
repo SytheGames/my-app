@@ -10,6 +10,19 @@ export const metadata: Metadata = {
   title: "Web Design Chatham",
   description: "Web design services in Chatham focused on local SEO, conversion, and long-term business growth.",
   alternates: { canonical: "/locations/web-design-chatham" },
+  openGraph: {
+    title: "Web Design Chatham",
+    description: "Web design services in Chatham focused on local SEO, conversion, and long-term business growth.",
+    url: "/locations/web-design-chatham",
+    type: "website",
+    images: [{ url: "/images/locations-images/Chatham_ON_1.JPG" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Web Design Chatham",
+    description: "Web design services in Chatham focused on local SEO, conversion, and long-term business growth.",
+    images: ["/images/locations-images/Chatham_ON_1.JPG"],
+  },
 };
 
 export default function WebDesignChathamPage() {

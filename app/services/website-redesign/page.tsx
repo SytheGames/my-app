@@ -13,6 +13,21 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/services/website-redesign",
   },
+  openGraph: {
+    title: "Website Redesign",
+    description:
+      "Website redesign services for Ontario businesses needing stronger branding, faster performance, and improved user journeys.",
+    url: "/services/website-redesign",
+    type: "website",
+    images: [{ url: "/onehundredking.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Website Redesign",
+    description:
+      "Website redesign services for Ontario businesses needing stronger branding, faster performance, and improved user journeys.",
+    images: ["/onehundredking.png"],
+  },
 };
 
 export default function WebsiteRedesignServicePage() {
