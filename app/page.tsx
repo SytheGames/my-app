@@ -553,10 +553,15 @@ export default function Home() {
               Kealey Design helps businesses across Chatham-Kent and Southwestern Ontario grow
               with custom website design, web development, and local SEO services.
             </p>
-            <Link href="/contact" className="quote-button quote-button--hero">
-              Get a Quote
-              <ArrowRight className="quote-button__icon" aria-hidden />
-            </Link>
+            <div className="hero__actions">
+              <Link href="/contact" className="quote-button quote-button--hero">
+                Book a Free Consultation
+                <ArrowRight className="quote-button__icon" aria-hidden />
+              </Link>
+              <a href="tel:+15194011469" className="hero__call-link" aria-label="Call now at +1 (519) 401-1469">
+                Call Now: +1 (519) 401-1469
+              </a>
+            </div>
           </div>
         </section>
 

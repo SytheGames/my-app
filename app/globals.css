@@ -279,9 +279,35 @@ a {
   font-weight: 500;
 }
 
-.quote-button--hero {
+.hero__actions {
   margin-top: 3.375rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.quote-button--hero {
+  margin-top: 0;
   padding: 1rem 1.875rem;
+}
+
+.hero__call-link {
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.25rem;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.45);
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.25);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.hero__call-link:hover {
+  background: rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.65);
 }
 
 .about {
@@ -771,7 +797,18 @@ a {
   }
 
   .quote-button--hero {
+    margin-top: 0;
+  }
+
+  .hero__actions {
     margin-top: 2.125rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero__call-link {
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .about {
