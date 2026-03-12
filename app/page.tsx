@@ -18,6 +18,8 @@ import {
   HeartPulse,
   Plane,
   Scale,
+  RefreshCw,
+  ShoppingCart,
   Shirt,
   ShoppingBag,
   Store,
@@ -51,6 +53,22 @@ const services = [
     Icon: ChartNoAxesCombined,
     description:
       "Local SEO services for Chatham-Kent and Southwestern Ontario, including on-page optimization and Google Business Profile management.",
+  },
+  {
+    title: "Website Redesign",
+    image: "/service-placeholder-redesign.svg",
+    href: "/services/website-redesign",
+    Icon: RefreshCw,
+    description:
+      "Website redesign services that modernize outdated pages, improve site speed, and create clearer conversion paths for local businesses.",
+  },
+  {
+    title: "Ecommerce Websites",
+    image: "/service-placeholder-ecommerce.svg",
+    href: "/services/ecommerce-websites",
+    Icon: ShoppingCart,
+    description:
+      "Ecommerce website development focused on product discovery, checkout UX, and better conversion performance across desktop and mobile.",
   },
 ];
 

@@ -1,0 +1,47 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="100" y1="80" x2="1080" y2="620" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#132113"/>
+      <stop offset="1" stop-color="#0B5B44"/>
+    </linearGradient>
+    <linearGradient id="card" x1="220" y1="140" x2="980" y2="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F9FFF9"/>
+      <stop offset="1" stop-color="#E8FAF0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg)"/>
+
+  <g opacity="0.2">
+    <circle cx="180" cy="560" r="180" fill="#38A06E"/>
+    <circle cx="1040" cy="120" r="160" fill="#2B8F63"/>
+  </g>
+
+  <rect x="210" y="120" width="780" height="460" rx="24" fill="url(#card)"/>
+  <rect x="250" y="168" width="700" height="48" rx="14" fill="#D8F0E2"/>
+  <rect x="282" y="184" width="150" height="16" rx="8" fill="#2A7F58"/>
+
+  <rect x="250" y="246" width="220" height="294" rx="16" fill="#FFFFFF"/>
+  <rect x="490" y="246" width="220" height="294" rx="16" fill="#FFFFFF"/>
+  <rect x="730" y="246" width="220" height="294" rx="16" fill="#FFFFFF"/>
+
+  <rect x="276" y="272" width="168" height="128" rx="12" fill="#E5F7EC"/>
+  <rect x="516" y="272" width="168" height="128" rx="12" fill="#E5F7EC"/>
+  <rect x="756" y="272" width="168" height="128" rx="12" fill="#E5F7EC"/>
+
+  <rect x="276" y="420" width="130" height="16" rx="8" fill="#2A7F58"/>
+  <rect x="276" y="448" width="98" height="14" rx="7" fill="#67B08A"/>
+  <rect x="276" y="488" width="100" height="28" rx="8" fill="#0C9D5A"/>
+
+  <rect x="516" y="420" width="130" height="16" rx="8" fill="#2A7F58"/>
+  <rect x="516" y="448" width="98" height="14" rx="7" fill="#67B08A"/>
+  <rect x="516" y="488" width="100" height="28" rx="8" fill="#0C9D5A"/>
+
+  <rect x="756" y="420" width="130" height="16" rx="8" fill="#2A7F58"/>
+  <rect x="756" y="448" width="98" height="14" rx="7" fill="#67B08A"/>
+  <rect x="756" y="488" width="100" height="28" rx="8" fill="#0C9D5A"/>
+
+  <path d="M106 176H162L182 268H286" stroke="#9CD5B6" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="214" cy="300" r="16" fill="#9CD5B6"/>
+  <circle cx="274" cy="300" r="16" fill="#9CD5B6"/>
+</svg>

@@ -399,12 +399,12 @@ a {
 }
 
 .services__grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 
 .services__card {
-  flex: 1 1 0;
   min-width: 0;
   padding: 1.1rem;
   border: 0.0625rem solid #d1d5db;
@@ -801,7 +801,7 @@ a {
   }
 
   .services__grid {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .projects {
