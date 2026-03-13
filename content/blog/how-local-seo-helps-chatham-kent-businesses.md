@@ -47,6 +47,21 @@ If you’re wondering how to start, here are a few ideas straight from local suc
 
 It’s amazing how these simple steps, when done consistently, make a big difference over time.
 
+## Local SEO Pricing in Chatham-Kent
+
+If you are planning your marketing budget, here are the current local SEO support ranges:
+
+- **Local SEO Foundation:** $650 - $950/month
+- **Growth Retainer:** $1,200 - $2,400/month
+
+These ranges are a practical starting point. Final pricing depends on your goals, competition, current website condition, and how much monthly content and optimization work is needed.
+
+You can see full website and SEO ranges on the [pricing page](/pricing).
+
+### Referral Bonuses
+
+Referral bonus details are not publicly listed on this site right now. If you are referring another business, reach out through the [contact page](/contact) and we can confirm whether any current referral incentive applies.
+
 ## Wrapping It Up
 
 Local SEO isn’t just tech jargon; it’s a powerful connection tool that helps Chatham-Kent businesses get found by the people who matter most—their neighbours and community members. If you haven’t yet dipped your toes into local SEO, there’s no better time than now to start building those bridges between your business and your local customers.
@@ -68,6 +83,12 @@ Until then, keep shining in the heart of Chatham-Kent!
 
 - **How long does it take to see results from local SEO?**
   Some improvements can appear within a few weeks, but stronger rankings typically develop over a few months. Consistent updates, reviews, and local content help build long-term search visibility.
+
+- **What does local SEO cost in Chatham-Kent?**
+  Most ongoing local SEO plans typically range from $650 to $2,400 per month depending on scope, competition, and deliverables. For exact numbers, review the pricing page and request a tailored quote.
+
+- **Do you offer referral bonuses?**
+  A referral bonus program is not publicly listed here. If you plan to refer someone, contact us to confirm whether a referral incentive is currently available.
 
 ## Explore Insightful Pages
 

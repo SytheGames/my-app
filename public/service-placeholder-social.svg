@@ -1,0 +1,40 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Social media management illustration</title>
+  <desc id="desc">Stylized dashboard and megaphone shapes representing social media management.</desc>
+  <defs>
+    <linearGradient id="bg" x1="86" y1="66" x2="1114" y2="634" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF5FF"/>
+      <stop offset="1" stop-color="#D5E9FF"/>
+    </linearGradient>
+    <linearGradient id="card" x1="220" y1="170" x2="980" y2="530" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F5FAFF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="312" y1="284" x2="648" y2="284" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F6CCF"/>
+      <stop offset="1" stop-color="#2F8EF2"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="700" fill="url(#bg)"/>
+  <circle cx="1080" cy="114" r="120" fill="#C6E0FF" fill-opacity="0.55"/>
+  <circle cx="154" cy="598" r="164" fill="#CFE5FF" fill-opacity="0.65"/>
+
+  <rect x="170" y="130" width="860" height="440" rx="30" fill="url(#card)" stroke="#B9D4F5" stroke-width="4"/>
+  <rect x="220" y="190" width="410" height="290" rx="22" fill="#FFFFFF" stroke="#D0E2F8" stroke-width="3"/>
+  <rect x="680" y="190" width="300" height="88" rx="16" fill="#FFFFFF" stroke="#D0E2F8" stroke-width="3"/>
+  <rect x="680" y="298" width="300" height="88" rx="16" fill="#FFFFFF" stroke="#D0E2F8" stroke-width="3"/>
+  <rect x="680" y="406" width="300" height="88" rx="16" fill="#FFFFFF" stroke="#D0E2F8" stroke-width="3"/>
+
+  <path d="M312 276C312 266.059 320.059 258 330 258H392L510 220C520.601 216.586 532 224.494 532 235.631V332.369C532 343.506 520.601 351.414 510 348L392 310H330C320.059 310 312 301.941 312 292V276Z" fill="url(#accent)"/>
+  <path d="M396 310L422 372C426.755 383.333 421.314 396.405 409.838 401.441C398.362 406.478 385.116 401.546 379.671 390.529L346 322" stroke="#0B57A8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M554 236C590.451 254.14 590.451 313.86 554 332" stroke="#2F8EF2" stroke-width="14" stroke-linecap="round"/>
+  <path d="M578 210C629.196 235.492 629.196 332.508 578 358" stroke="#7AB3F6" stroke-width="10" stroke-linecap="round"/>
+
+  <rect x="716" y="220" width="118" height="14" rx="7" fill="#A7C9F4"/>
+  <rect x="716" y="244" width="212" height="10" rx="5" fill="#D7E8FA"/>
+  <rect x="716" y="328" width="118" height="14" rx="7" fill="#A7C9F4"/>
+  <rect x="716" y="352" width="212" height="10" rx="5" fill="#D7E8FA"/>
+  <rect x="716" y="436" width="118" height="14" rx="7" fill="#A7C9F4"/>
+  <rect x="716" y="460" width="212" height="10" rx="5" fill="#D7E8FA"/>
+</svg>

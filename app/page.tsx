@@ -65,7 +65,7 @@ const services = [
   },
   {
     title: "Social Media Management",
-    image: "/onehundredking.png",
+    image: "/service-placeholder-social.svg",
     href: "/services/social-media-management",
     Icon: Megaphone,
     description:
