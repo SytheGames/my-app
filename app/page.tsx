@@ -121,6 +121,18 @@ const initialFeaturedBlogPosts = [
     image: "/daveychiro.png",
     date: "2025-01-01",
   },
+  {
+    slug: "website-design-trends-chatham-kent-2024",
+    title: "Website Design Trends in Chatham-Kent for 2024",
+    image: "/arcstage.png",
+    date: "2024-06-15",
+  },
+  {
+    slug: "how-to-choose-web-design-agency-chatham",
+    title: "How to Choose a Web Design Agency in Chatham",
+    image: "/enhancedconcrete.png",
+    date: "2024-05-20",
+  },
 ];
 
 const homepageTestimonials = getHomepageShowcaseTestimonials();

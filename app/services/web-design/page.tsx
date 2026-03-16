@@ -7,9 +7,9 @@ import { PageContactSection } from "@/components/PageContactSection";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
 
 export const metadata: Metadata = {
-  title: "Web Design in Chatham-Kent",
+  title: "Chatham Web Design | Get Your Free Website Quote Today",
   description:
-    "Custom web design services in Chatham and Southwestern Ontario focused on conversions, speed, and mobile usability.",
+    "Ready to grow your business? Get a free website quote from Kealey Design. Custom web design in Chatham-Kent focused on conversions, speed, and mobile usability. See our portfolio and client reviews.",
   alternates: {
     canonical: "/services/web-design",
   },
