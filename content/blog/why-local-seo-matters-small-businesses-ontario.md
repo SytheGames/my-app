@@ -1,9 +1,22 @@
 ---
 title: "Why Local SEO Matters for Small Businesses in Ontario"
+slug: "why-local-seo-matters-small-businesses-ontario"
+author: "Matt Kealey"
+date: "2026-03-10"
+dateModified: "2026-04-16"
+format: "guide"
+category: "Local SEO"
+tags: ["local SEO Ontario", "small business SEO", "Google Business Profile optimization", "web design Chatham Ontario", "SEO Southwestern Ontario"]
+image: "/images/blog/local-seo-chatham-kent.jpg"
+seo:
+  metaTitle: "Why Local SEO Matters for Small Businesses in Ontario"
+  metaDescription: "Learn why local SEO is essential for Ontario small businesses and how Google Business Profile, reviews, local content, and backlinks improve visibility."
+  primaryKeyword: "local SEO Ontario"
+  secondaryKeywords: ["small business SEO", "Google Business Profile optimization", "web design Chatham Ontario", "SEO Southwestern Ontario"]
+  searchIntent: "informational"
+  searchVolume: "unknown"
 description: "Learn why local SEO is essential for Ontario small businesses and how Google Business Profile, reviews, local content, and backlinks improve visibility."
 excerpt: "A practical guide to improving local visibility in Ontario through Google Business Profile optimization, location pages, reviews, and local backlinks."
-date: "2026-03-10"
-image: "/images/stephen-phillips-hostreviews-co-uk-shr_Xn8S8QU-unsplash.jpg"
 keywords:
   - "local SEO Ontario"
   - "small business SEO"
@@ -142,3 +155,31 @@ See how we position web design and local visibility by city:
 - [Web Design London](/locations/web-design-london)
 - [Web Design Sarnia](/locations/web-design-sarnia)
 - [Web Design Leamington](/locations/web-design-leamington)
+
+<!-- schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Why Local SEO Matters for Small Businesses in Ontario",
+  "description": "Learn why local SEO is essential for Ontario small businesses and how Google Business Profile, reviews, local content, and backlinks improve visibility.",
+  "url": "https://www.kealeydesign.ca/blog/why-local-seo-matters-small-businesses-ontario",
+  "datePublished": "2026-03-10T00:00:00Z",
+  "dateModified": "2026-04-16T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "Matt Kealey",
+    "url": "https://www.kealeydesign.ca/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kealey Design",
+    "url": "https://www.kealeydesign.ca"
+  },
+  "keywords": ["local SEO Ontario", "small business SEO", "Google Business Profile optimization", "web design Chatham Ontario", "SEO Southwestern Ontario"],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.kealeydesign.ca/blog/why-local-seo-matters-small-businesses-ontario"
+  }
+}
+</script>

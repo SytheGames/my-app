@@ -89,6 +89,12 @@ const staticRoutes: StaticRouteConfig[] = [
   { urlPath: "/reviews", sourceFile: "app/reviews/page.tsx", changeFrequency: "monthly", priority: 0.8 },
   { urlPath: "/about", sourceFile: "app/about/page.tsx", changeFrequency: "monthly", priority: 0.8 },
   { urlPath: "/contact", sourceFile: "app/contact/page.tsx", changeFrequency: "monthly", priority: 0.8 },
+  {
+    urlPath: "/chiropractor-web-design",
+    sourceFile: "app/chiropractor-web-design/page.tsx",
+    changeFrequency: "monthly",
+    priority: 0.7,
+  },
   { urlPath: "/privacy", sourceFile: "app/privacy/page.tsx", changeFrequency: "yearly", priority: 0.4 },
   { urlPath: "/terms", sourceFile: "app/terms/page.tsx", changeFrequency: "yearly", priority: 0.4 },
 ];
@@ -98,6 +104,16 @@ function getLastModifiedFromSourceFile(relativeSourceFile: string): Date {
 
   if (!fs.existsSync(fullPath)) {
     return new Date();
+  }
+
+  return fs.statSync(fullPath).mtime;
+}
+
+function getLastModifiedFromMarkdownFile(relativeDirectory: string, slug: string, fallback: Date): Date {
+  const fullPath = path.join(process.cwd(), relativeDirectory, `${slug}.md`);
+
+  if (!fs.existsSync(fullPath)) {
+    return fallback;
   }
 
   return fs.statSync(fullPath).mtime;
@@ -116,13 +132,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...blogPosts.map((post) => ({
       url: `${siteUrl}/blog/${post.slug}`,
-      lastModified: new Date(post.date),
+      lastModified: getLastModifiedFromMarkdownFile(
+        "content/blog",
+        post.slug,
+        new Date(post.dateModified ?? post.date),
+      ),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
     ...caseStudies.map((study) => ({
       url: `${siteUrl}/portfolio/${study.slug}`,
-      lastModified: new Date(study.date),
+      lastModified: getLastModifiedFromMarkdownFile("content/case-studies", study.slug, new Date(study.date)),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),

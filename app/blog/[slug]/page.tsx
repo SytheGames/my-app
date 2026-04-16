@@ -27,16 +27,16 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   }
 
   return {
-    title: post.title,
-    description: post.description,
+    title: post.seo.metaTitle ?? post.title,
+    description: post.seo.metaDescription ?? post.description,
     keywords: post.keywords,
     alternates: {
       canonical: `/blog/${post.slug}`,
     },
     openGraph: {
       type: "article",
-      title: post.title,
-      description: post.description,
+      title: post.seo.metaTitle ?? post.title,
+      description: post.seo.metaDescription ?? post.description,
       url: `/blog/${post.slug}`,
       siteName: "Kealey Design",
       locale: "en_CA",
@@ -44,8 +44,8 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
-      description: post.description,
+      title: post.seo.metaTitle ?? post.title,
+      description: post.seo.metaDescription ?? post.description,
       images: [post.image],
     },
   };
@@ -65,12 +65,46 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    author: { "@type": "Organization", name: "Kealey Design" },
+    dateModified: post.dateModified,
+    author: {
+      "@type": "Person",
+      name: post.author,
+      url: "https://www.kealeydesign.ca/about",
+      sameAs: "https://www.linkedin.com/in/matt-kealey/",
+    },
     publisher: { "@type": "Organization", name: "Kealey Design" },
     image: `${siteUrl}${post.image}`,
     mainEntityOfPage: `${siteUrl}/blog/${post.slug}`,
     keywords: post.keywords.join(", "),
   };
+
+  const markdownSchemas = post.jsonLdScripts
+    .map((jsonLd) => {
+      try {
+        return JSON.parse(jsonLd) as Record<string, unknown>;
+      } catch {
+        return null;
+      }
+    })
+    .filter((schema): schema is Record<string, unknown> => schema !== null);
+
+  const hasPrimaryArticleSchema = markdownSchemas.some((schema) => {
+    const schemaType = schema["@type"];
+
+    if (typeof schemaType === "string") {
+      return schemaType === "Article" || schemaType === "BlogPosting" || schemaType === "NewsArticle";
+    }
+
+    if (Array.isArray(schemaType)) {
+      return schemaType.some(
+        (entry) => entry === "Article" || entry === "BlogPosting" || entry === "NewsArticle",
+      );
+    }
+
+    return false;
+  });
+
+  const schemasToInject = hasPrimaryArticleSchema ? markdownSchemas : [articleSchema, ...markdownSchemas];
 
   return (
     <div className="landing-page">
@@ -92,15 +126,25 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
 
           <div className="blog-post__content">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
+            <ReactMarkdown
+              remarkPlugins={[remarkGfm]}
+              components={{
+                h1: ({ children }) => <h2>{children}</h2>,
+              }}
+            >
+              {post.content}
+            </ReactMarkdown>
           </div>
         </article>
       </main>
       <SiteFooter />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
+      {schemasToInject.map((schema, index) => (
+        <script
+          key={`schema-${index}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
     </div>
   );
 }

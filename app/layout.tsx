@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca/";
 const defaultSocialImage = "/mockup.png";
 const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
@@ -35,11 +35,11 @@ export const metadata: Metadata = {
     "Kealey Design",
   ],
   alternates: {
-    canonical: "/",
+    canonical: "https://www.kealeydesign.ca/",
   },
   openGraph: {
     type: "website",
-    url: "/",
+    url: "https://www.kealeydesign.ca/",
     title: "Kealey Design | Web Design Chatham, Ontario",
     description:
       "Custom website design, development, and local SEO services for businesses in Chatham and Southwestern Ontario.",

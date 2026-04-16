@@ -40,26 +40,26 @@ export default function WebDesignLondonPage() {
         mainEntity: [
           {
             "@type": "Question",
-            name: "Is your process a good fit for growing London businesses?",
+            name: "There are a lot of businesses in London - how does a good website help mine stand out?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. We are usually a strong fit for businesses that need a scalable site structure with clearer messaging and better conversion consistency.",
+              text: "In a larger city like London, customers have more options and tend to compare before deciding. A site that clearly explains your services, shows real results, and makes it easy to get in touch consistently outperforms competitors who rely on a generic or outdated web presence.",
             },
           },
           {
             "@type": "Question",
-            name: "Can you support long-term website growth for London service companies?",
+            name: "Do London consumers research more before contacting a business?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Absolutely. We build with expansion in mind, including future service pages, location content, and iterative improvements.",
+              text: "Generally, yes. The university influence in London tends to produce a more research-heavy buyer. Your website needs clear proof, specific service detail, and transparent pricing signals to hold up to that level of scrutiny.",
             },
           },
           {
             "@type": "Question",
-            name: "Do you work with in-house marketing teams?",
+            name: "Can you build a London website that also targets nearby areas like Strathroy or St. Thomas?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. We can collaborate with internal teams on content direction, campaign landing pages, and performance priorities.",
+              text: "Yes. We can structure location pages or service area content to capture regional searches without creating thin duplicate pages that hurt your London ranking.",
             },
           },
         ],
@@ -93,26 +93,36 @@ export default function WebDesignLondonPage() {
           <div className="split-page__inner">
             <div className="split-page__prose">
               <p>
-                London businesses often need websites that can support broader growth goals while staying clear and conversion-focused.
-                We design systems that balance brand quality with practical lead generation.
+                London is one of the larger cities in southwestern Ontario, with a busy mix of healthcare,
+                trades, legal and financial services, and a steady student population from Western University
+                and Fanshawe College. Customers here tend to shop around before committing - they&apos;ll look
+                at a few options, check reviews, and browse your website before ever picking up the phone.
+                A clear, professional site makes sure that research process ends with them calling you.
               </p>
 
-              <h2>Positioning and Message Clarity</h2>
+              <h2>Getting Found When London Customers Search for Your Service</h2>
               <p>
-                We refine page messaging so your offer is easier to understand, compare, and trust for users
-                researching multiple providers in a competitive market.
+                When someone in London searches for a plumber, physiotherapist, accountant, or contractor,
+                the businesses that show up and get called are the ones with specific, credible pages - not
+                vague placeholders. A site that clearly explains what you do, where you serve, and why
+                customers choose you gives both Google and potential customers a reason to pick you over
+                whoever is listed next.
               </p>
 
-              <h2>Conversion Flow Across Key Pages</h2>
+              <h2>London&apos;s University Influence on Buyer Expectations</h2>
               <p>
-                Service pages, trust sections, and call-to-action blocks are aligned to reduce friction and
-                guide visitors toward direct inquiry actions.
+                Western University and Fanshawe shape London&apos;s consumer culture in a practical way: people
+                here are used to doing research before making decisions. Your website needs to hold up to that
+                scrutiny. Clear about-us content, visible credentials, real client results, and specific
+                service descriptions all contribute to the kind of site that earns trust from a London audience
+                rather than just generating a quick click.
               </p>
 
-              <h2>Long-Term Site Structure for Growth</h2>
+              <h2>Service Businesses With Regional Reach</h2>
               <p>
-                Your website is structured to support future content expansion, new service pages, and ongoing
-                optimization based on performance data.
+                Many London businesses serve clients across Middlesex County and surrounding areas — from
+                Strathroy to St. Thomas. A well-structured website can reflect that reach clearly, with service
+                pages that speak to the right communities without spreading your message too thin.
               </p>
             </div>
           </div>
@@ -125,34 +135,36 @@ export default function WebDesignLondonPage() {
               <div className="faq__column">
                 <details className="faq__item">
                   <summary className="faq__summary">
-                    <h3 className="faq__question">Is your process a good fit for growing London businesses?</h3>
+                    <h3 className="faq__question">There are a lot of businesses in London — how does a good website help mine stand out?</h3>
                     <span className="faq__indicator" aria-hidden>+</span>
                   </summary>
                   <p className="faq__answer">
-                    Yes. We are usually a strong fit for businesses that need a scalable site structure with
-                    clearer messaging and better conversion consistency.
+                    In a larger city like London, customers have more options and tend to compare before deciding.
+                    A site that clearly explains your services, shows real results, and makes it easy to get in
+                    touch consistently outperforms competitors who rely on a generic or outdated web presence.
                   </p>
                 </details>
 
                 <details className="faq__item">
                   <summary className="faq__summary">
-                    <h3 className="faq__question">Can you support long-term website growth for London service companies?</h3>
+                    <h3 className="faq__question">Do London consumers research more before contacting a business?</h3>
                     <span className="faq__indicator" aria-hidden>+</span>
                   </summary>
                   <p className="faq__answer">
-                    Absolutely. We build with expansion in mind, including future service pages, location content,
-                    and iterative improvements.
+                    Generally, yes. The university influence in London tends to produce a more research-heavy
+                    buyer. Your website needs clear proof, specific service detail, and transparent pricing
+                    signals to hold up to that level of scrutiny.
                   </p>
                 </details>
 
                 <details className="faq__item">
                   <summary className="faq__summary">
-                    <h3 className="faq__question">Do you work with in-house marketing teams?</h3>
+                    <h3 className="faq__question">Can you build a London website that also targets nearby areas like Strathroy or St. Thomas?</h3>
                     <span className="faq__indicator" aria-hidden>+</span>
                   </summary>
                   <p className="faq__answer">
-                    Yes. We can collaborate with internal teams on content direction, campaign landing pages,
-                    and performance priorities.
+                    Yes. We can structure location pages or service area content to capture regional searches
+                    without creating thin duplicate pages that hurt your London ranking.
                   </p>
                 </details>
               </div>

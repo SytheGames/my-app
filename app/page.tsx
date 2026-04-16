@@ -466,10 +466,27 @@ export default function Home() {
         "@id": `${siteUrl}/#localbusiness`,
         name: "Kealey Design - Chatham Website Design",
         alternateName: "Kealey Design",
-        image: `${siteUrl}/favicon.ico`,
+        image: `${siteUrl}/mockup.png`,
         url: siteUrl,
         description:
           "Kealey Design is a local web design agency in Chatham, Ontario serving businesses across Southwestern Ontario.",
+        priceRange: "$$",
+        openingHours: ["Mo-Fr 09:00-17:00"],
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 42.4048,
+          longitude: -82.191,
+        },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "5",
+          reviewCount: "2",
+        },
+        sameAs: [
+          "https://www.linkedin.com/company/kealey-design",
+          "https://www.facebook.com/mattkealeydesign",
+          "https://maps.app.goo.gl/pqGkSzTHJkWj9Z67A",
+        ],
         areaServed: [
           "Chatham",
           "Wallaceburg",
@@ -576,8 +593,8 @@ export default function Home() {
           <div className="hero__left-fade" aria-hidden />
 
           <div className="hero__content">
-            <h1 className="hero__eyebrow">WEB DESIGN CHATHAM-KENT</h1>
-            <h2 className="hero__title">Local Web Design For Small Businesses</h2>
+            <p className="hero__eyebrow">WEB DESIGN CHATHAM-KENT</p>
+            <h1 className="hero__title">Local Web Design For Small Businesses in Chatham-Kent</h1>
             <p className="hero__description">
               Kealey Design helps businesses across Chatham-Kent and Southwestern Ontario grow
               with custom website design, web development, and local SEO services.

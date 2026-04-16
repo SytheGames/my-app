@@ -40,18 +40,18 @@ export default function WebDesignLeamingtonPage() {
         mainEntity: [
           {
             "@type": "Question",
-            name: "Can you help a Leamington business improve online trust quickly?",
+            name: "Is it worth investing in a website for a small market like Leamington?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. We prioritize clear service messaging, proof sections, and stronger call-to-action placement so visitors can make decisions faster.",
+              text: "Often more so than in larger cities. There are fewer well-optimized local competitors, which means a properly built site can rank faster and hold its position longer. The return on investment per lead tends to be stronger in smaller markets.",
             },
           },
           {
             "@type": "Question",
-            name: "Do you support regional SEO beyond Leamington?",
+            name: "Can you help an agricultural or greenhouse-related business in Leamington get better online visibility?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. We can structure your site for Leamington while supporting nearby community and regional visibility through scalable location architecture.",
+              text: "Yes. Agriculture-adjacent businesses in Leamington are often searchable but poorly represented online. A clear service page, mobile-friendly layout, and accurate local SEO signals can make a significant difference in how often you appear and convert.",
             },
           },
           {
@@ -93,26 +93,39 @@ export default function WebDesignLeamingtonPage() {
           <div className="split-page__inner">
             <div className="split-page__prose">
               <p>
-                Leamington businesses benefit from websites that combine local visibility with strong brand trust.
-                We build digital experiences that support both discovery and conversion.
+                Leamington is known across Ontario as the tomato capital of Canada, and its economy reflects that
+                agricultural foundation: a strong greenhouse and produce industry, food processing, and a
+                manufacturing base that supports it all. The town also draws seasonal tourism through Point Pelee
+                National Park and Lake Erie, which means some local businesses serve a mix of year-round residents
+                and visitors. For Leamington businesses, a website needs to handle both audiences well — and do it
+                without looking like an afterthought.
               </p>
 
-              <h2>Service Messaging That Builds Confidence</h2>
+              <h2>Agriculture-Adjacent Businesses and Online Credibility</h2>
               <p>
-                We shape page content around customer decision questions so visitors can quickly understand
-                your offer, credibility, and next best action.
+                Leamington&apos;s business community includes nurseries, equipment suppliers, food processors,
+                trades supporting greenhouse operations, and agricultural services that are often invisible online
+                despite doing serious volume. These businesses frequently rely on referrals and relationships, but
+                when a new customer searches for them — or compares them to a competitor — the website is the
+                deciding factor. A clear, professional site that lists services accurately and loads quickly on
+                mobile converts that search into a call.
               </p>
 
-              <h2>SEO-Ready Structure for Regional Growth</h2>
+              <h2>Point Pelee Tourism and Seasonal Visibility</h2>
               <p>
-                Website architecture is planned to support Leamington visibility while scaling into nearby
-                towns and broader regional service coverage.
+                Leamington sees real seasonal traffic because of Point Pelee National Park and the broader Lake
+                Erie shoreline. If you run a restaurant, accommodation, recreational service, or retail business
+                that benefits from tourist volume, your website should be structured to capture those visitors
+                before they find a competitor. That means appearing in local search results, loading fast on
+                mobile data, and communicating your offer clearly to someone who&apos;s never heard of you.
               </p>
 
-              <h2>Built for Ongoing Optimization</h2>
+              <h2>Getting Found in a Smaller Market</h2>
               <p>
-                Your site is delivered with a clean foundation that supports regular updates, content expansion,
-                and measurable improvements over time.
+                Leamington is a tighter market, which works in your favour. There are fewer businesses in most
+                categories actively investing in their websites, so a properly built site tends to stand out
+                more quickly. If your site is clearer, faster, and more specific than the alternatives, customers
+                searching locally are much more likely to land on your page and reach out.
               </p>
             </div>
           </div>
@@ -125,23 +138,25 @@ export default function WebDesignLeamingtonPage() {
               <div className="faq__column">
                 <details className="faq__item">
                   <summary className="faq__summary">
-                    <h3 className="faq__question">Can you help a Leamington business improve online trust quickly?</h3>
+                    <h3 className="faq__question">Is it worth investing in a website for a small market like Leamington?</h3>
                     <span className="faq__indicator" aria-hidden>+</span>
                   </summary>
                   <p className="faq__answer">
-                    Yes. We prioritize clear service messaging, proof sections, and stronger call-to-action
-                    placement so visitors can make decisions faster.
+                    Often more so than in larger cities. There are fewer well-optimized local competitors, which
+                    means a properly built site can rank faster and hold its position longer. The return on
+                    investment per lead tends to be stronger in smaller markets.
                   </p>
                 </details>
 
                 <details className="faq__item">
                   <summary className="faq__summary">
-                    <h3 className="faq__question">Do you support regional SEO beyond Leamington?</h3>
+                    <h3 className="faq__question">Can you help an agricultural or greenhouse-related business in Leamington get better online visibility?</h3>
                     <span className="faq__indicator" aria-hidden>+</span>
                   </summary>
                   <p className="faq__answer">
-                    Yes. We can structure your site for Leamington while supporting nearby community and regional
-                    visibility through scalable location architecture.
+                    Yes. Agriculture-adjacent businesses in Leamington are often searchable but poorly represented
+                    online. A clear service page, mobile-friendly layout, and accurate local SEO signals can
+                    make a significant difference in how often you appear and convert.
                   </p>
                 </details>
 

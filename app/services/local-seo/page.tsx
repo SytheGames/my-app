@@ -48,7 +48,7 @@ export default function LocalSeoServicePage() {
       <main className="split-page" aria-label="Local SEO service">
         <SplitPageHero
           eyebrow="SERVICE"
-          title="Local SEO"
+          title="Local SEO in Chatham, Ontario"
           description="We help small businesses rank for local searches by improving website relevance, Google Business Profile quality, and location-specific authority signals."
           imageSrc="/daveychiro.png"
           imageAlt="Local SEO map rankings interface"

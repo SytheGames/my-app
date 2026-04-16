@@ -1,9 +1,22 @@
 ---
 title: "5 Website Features Every Small Business in Ontario Needs"
+slug: "website-features-small-business-ontario"
+author: "Matt Kealey"
+date: "2026-03-10"
+dateModified: "2026-04-16"
+format: "listicle"
+category: "Web Design"
+tags: ["small business website features", "website design Ontario", "small business marketing Ontario", "business website tips", "website optimization"]
+image: "/images/blog/stephen-phillips-hostreviews-co-uk-2kH-6T6x_0I-unsplash.jpg"
+seo:
+  metaTitle: "5 Website Features Every Small Business in Ontario Needs"
+  metaDescription: "Essential website features that help Ontario small businesses attract customers and generate leads online."
+  primaryKeyword: "small business website features"
+  secondaryKeywords: ["website design Ontario", "small business marketing Ontario", "business website tips", "website optimization"]
+  searchIntent: "informational"
+  searchVolume: "unknown"
 description: "Essential website features that help Ontario small businesses attract customers and generate leads online."
 excerpt: "Discover the five most important features every modern small business website should include to improve credibility and performance."
-date: "2026-03-10"
-image: "/images/blog/small-business-website-features.jpg"
 keywords:
   - "small business website features"
   - "website design Ontario"
@@ -134,3 +147,31 @@ Need market-specific examples? Review our local pages:
 - [Web Design London](/locations/web-design-london)
 - [Web Design Sarnia](/locations/web-design-sarnia)
 - [Web Design Leamington](/locations/web-design-leamington)
+
+<!-- schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "5 Website Features Every Small Business in Ontario Needs",
+  "description": "Essential website features that help Ontario small businesses attract customers and generate leads online.",
+  "url": "https://www.kealeydesign.ca/blog/website-features-small-business-ontario",
+  "datePublished": "2026-03-10T00:00:00Z",
+  "dateModified": "2026-04-16T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "Matt Kealey",
+    "url": "https://www.kealeydesign.ca/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kealey Design",
+    "url": "https://www.kealeydesign.ca"
+  },
+  "keywords": ["small business website features", "website design Ontario", "small business marketing Ontario", "business website tips", "website optimization"],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.kealeydesign.ca/blog/website-features-small-business-ontario"
+  }
+}
+</script>

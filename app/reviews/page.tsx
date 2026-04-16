@@ -9,14 +9,14 @@ import {
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
 
 export const metadata: Metadata = {
-  title: "Reviews",
+  title: "Client Reviews | Web Design Chatham | Kealey Design",
   description:
     "Read client reviews and testimonials for Kealey Design, including Google reviews and direct client feedback.",
   alternates: {
     canonical: "/reviews",
   },
   openGraph: {
-    title: "Reviews",
+    title: "Client Reviews | Web Design Chatham | Kealey Design",
     description:
       "Read client reviews and testimonials for Kealey Design, including Google reviews and direct client feedback.",
     url: "/reviews",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Reviews",
+    title: "Client Reviews | Web Design Chatham | Kealey Design",
     description:
       "Read client reviews and testimonials for Kealey Design, including Google reviews and direct client feedback.",
     images: ["/arcstage.png"],
@@ -43,6 +43,16 @@ export default function ReviewsPage() {
         name: "Client Reviews",
         description: "Client reviews and testimonials for Kealey Design.",
         url: `${siteUrl}/reviews`,
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": `${siteUrl}/#localbusiness`,
+        name: "Kealey Design",
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "5",
+          reviewCount: "2",
+        },
       },
     ],
   };

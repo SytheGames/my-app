@@ -8,14 +8,14 @@ import { getAllBlogPosts } from "@/lib/blog";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "Web Design & SEO Blog | Kealey Design",
   description:
     "Read website design, local SEO, and digital growth insights from Kealey Design in Chatham, Ontario.",
   alternates: {
     canonical: "/blog",
   },
   openGraph: {
-    title: "Blog",
+    title: "Web Design & SEO Blog | Kealey Design",
     description:
       "Read website design, local SEO, and digital growth insights from Kealey Design in Chatham, Ontario.",
     url: "/blog",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog",
+    title: "Web Design & SEO Blog | Kealey Design",
     description:
       "Read website design, local SEO, and digital growth insights from Kealey Design in Chatham, Ontario.",
     images: ["/mockup.png"],

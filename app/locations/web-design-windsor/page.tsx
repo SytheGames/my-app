@@ -40,26 +40,26 @@ export default function WebDesignWindsorPage() {
         mainEntity: [
           {
             "@type": "Question",
-            name: "Can you help a Windsor business compete in a crowded market?",
+            name: "Why do Windsor businesses need a more competitive website than businesses in smaller cities?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Yes. We focus on clearer positioning, stronger service-page messaging, and cleaner conversion paths so your value is obvious faster.",
+              text: "Windsor has more businesses competing for the same local customers, which means a basic website often is not enough to stand out. Clear service pages, consistent reviews, and a well-maintained Google Business Profile are the main things that separate businesses that get found from those that do not.",
             },
           },
           {
             "@type": "Question",
-            name: "Do you build websites for Windsor companies serving both local and cross-border audiences?",
+            name: "Do you build websites for Windsor companies that serve both local and cross-border customers?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "We can. We structure content and calls-to-action around your primary audience mix so the site supports your real sales conversations.",
+              text: "Yes. Where relevant, we can structure content and service language to speak to both a Windsor audience and US-based visitors without diluting your local SEO signal.",
             },
           },
           {
             "@type": "Question",
-            name: "How do you measure website performance after launch?",
+            name: "My Windsor business already has a website - is a rebuild worth it?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "We track inquiry behavior, page engagement, and lead quality so improvements are based on business outcomes, not vanity metrics.",
+              text: "Often yes, but it depends on what is holding you back. We look at conversion rate, page speed, mobile usability, and content clarity before recommending a full rebuild. Sometimes targeted improvements on key pages deliver the fastest return.",
             },
           },
         ],
@@ -93,26 +93,37 @@ export default function WebDesignWindsorPage() {
           <div className="split-page__inner">
             <div className="split-page__prose">
               <p>
-                Windsor is a competitive market where website clarity and positioning make a direct impact on lead quality.
-                We create websites that help service businesses stand out and convert faster.
+                Windsor is one of the larger cities in southwestern Ontario, with a business community that spans
+                automotive and manufacturing supply chains, trades, healthcare, hospitality, and professional services.
+                Customers here tend to do more research before picking a provider — they&apos;ll check your website,
+                read your reviews, and compare you to a few others before reaching out. A clear, well-built website
+                makes that comparison easy to win.
               </p>
 
-              <h2>Clear Messaging for Competitive Markets</h2>
+              <h2>Getting Found by Windsor Customers</h2>
               <p>
-                We shape content around user intent so prospects can quickly understand your value and move toward
-                quote or consultation actions without confusion.
+                When someone in Windsor searches for your service, the businesses that show up and get clicked are
+                the ones with specific, credible pages — not generic placeholders. A site that clearly lists what
+                you do, where you serve, and why customers choose you gives Google the right signals and gives
+                potential customers a reason to call you instead of the next result.
               </p>
 
-              <h2>Conversion-Ready User Experience</h2>
+              <h2>Dual Audiences: Local and Cross-Border Visibility</h2>
               <p>
-                Navigation, page hierarchy, and CTA placement are designed to support stronger conversion behavior
-                across both desktop and mobile devices.
+                Windsor&apos;s proximity to Detroit means some businesses serve customers from both sides of the
+                border. Whether your primary audience is local Windsor residents, Essex County businesses, or visitors
+                and clients from Michigan, your site needs content and structure that speaks to the right people at the
+                right moment. We can help shape page copy and service language around your actual audience mix rather
+                than generic regional boilerplate.
               </p>
 
-              <h2>Scalable SEO and Service Expansion</h2>
+              <h2>A Stronger Online Presence for Windsor&apos;s Service Economy</h2>
               <p>
-                Website structure is planned to support new pages, additional service areas, and long-term local
-                search visibility as your Windsor presence grows.
+                Windsor&apos;s service sector — trades, health clinics, legal offices, accounting firms, restaurants,
+                and retail — often has the most to gain from a well-structured website. These businesses rely on
+                local trust and local search visibility more than any paid advertising budget. A properly built website
+                with accurate service pages, real reviews, and a sensible Google Business Profile creates a compound
+                return over time that one-off ads simply cannot. We focus on that kind of durable online presence.
               </p>
             </div>
           </div>
@@ -125,34 +136,37 @@ export default function WebDesignWindsorPage() {
               <div className="faq__column">
                 <details className="faq__item">
                   <summary className="faq__summary">
-                    <h3 className="faq__question">Can you help a Windsor business compete in a crowded market?</h3>
+                    <h3 className="faq__question">Why do Windsor businesses need a more competitive website than businesses in smaller cities?</h3>
                     <span className="faq__indicator" aria-hidden>+</span>
                   </summary>
                   <p className="faq__answer">
-                    Yes. We focus on clearer positioning, stronger service-page messaging, and cleaner conversion
-                    paths so your value is obvious faster.
+                    Windsor has more businesses competing for the same local customers, which means a basic website
+                    often isn&apos;t enough to stand out. Clear service pages, consistent reviews, and a
+                    well-maintained Google Business Profile are the main things that separate businesses that
+                    get found from those that don&apos;t.
                   </p>
                 </details>
 
                 <details className="faq__item">
                   <summary className="faq__summary">
-                    <h3 className="faq__question">Do you build websites for Windsor companies serving both local and cross-border audiences?</h3>
+                    <h3 className="faq__question">Do you build websites for Windsor companies that serve both local and cross-border customers?</h3>
                     <span className="faq__indicator" aria-hidden>+</span>
                   </summary>
                   <p className="faq__answer">
-                    We can. We structure content and calls-to-action around your primary audience mix so the site
-                    supports your real sales conversations.
+                    Yes. Where relevant, we can structure content and service language to speak to both a Windsor
+                    audience and US-based visitors without diluting your local SEO signal.
                   </p>
                 </details>
 
                 <details className="faq__item">
                   <summary className="faq__summary">
-                    <h3 className="faq__question">How do you measure website performance after launch?</h3>
+                    <h3 className="faq__question">My Windsor business already has a website — is a rebuild worth it?</h3>
                     <span className="faq__indicator" aria-hidden>+</span>
                   </summary>
                   <p className="faq__answer">
-                    We track inquiry behavior, page engagement, and lead quality so improvements are based on
-                    business outcomes, not vanity metrics.
+                    Often yes, but it depends on what&apos;s holding you back. We look at conversion rate, page
+                    speed, mobile usability, and content clarity before recommending a full rebuild. Sometimes
+                    targeted improvements on key pages deliver the fastest return.
                   </p>
                 </details>
               </div>

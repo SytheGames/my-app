@@ -6,21 +6,25 @@ import { PageContactSection } from "@/components/PageContactSection";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
 
+const title = "Matt Kealey | Chatham Web Designer | Kealey Design";
+const description =
+  "Matt Kealey is a Chatham-based web designer and local SEO specialist with 7 years of experience building conversion-focused websites for Ontario small businesses.";
+
 export const metadata: Metadata = {
-  title: "About",
-  description: "Learn about Matt, his background, and why businesses choose Kealey Design.",
+  title,
+  description,
   alternates: { canonical: "/about" },
   openGraph: {
-    title: "About",
-    description: "Learn about Matt, his background, and why businesses choose Kealey Design.",
+    title,
+    description,
     url: "/about",
     type: "website",
     images: [{ url: "/pebblesgravel.png" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "About",
-    description: "Learn about Matt, his background, and why businesses choose Kealey Design.",
+    title,
+    description,
     images: ["/pebblesgravel.png"],
   },
 };
@@ -28,10 +32,28 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   const aboutPageSchema = {
     "@context": "https://schema.org",
-    "@type": "AboutPage",
-    name: "About Kealey Design",
-    description: "Learn about Matt, his background, and why businesses choose Kealey Design.",
-    url: `${siteUrl}/about`,
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        name: "About Kealey Design",
+        description: "Learn about Matt, his background, and why businesses choose Kealey Design.",
+        url: `${siteUrl}/about`,
+      },
+      {
+        "@type": "Person",
+        name: "Matt Kealey",
+        jobTitle: "Web Designer & Developer",
+        url: `${siteUrl}/about`,
+        sameAs: [
+          "https://www.linkedin.com/in/matt-kealey/",
+        ],
+        worksFor: {
+          "@type": "Organization",
+          name: "Kealey Design",
+          url: siteUrl,
+        },
+      },
+    ],
   };
 
   return (

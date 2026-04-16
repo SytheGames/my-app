@@ -1,9 +1,22 @@
 ---
 title: "How Much Does Web Design Cost in Southwestern Ontario? (2026 Guide)"
+slug: "web-design-cost-southwestern-ontario"
+author: "Matt Kealey"
+date: "2026-03-10"
+dateModified: "2026-04-16"
+format: "guide"
+category: "Web Design"
+tags: ["web design cost Ontario", "website design pricing Ontario", "web design Southwestern Ontario", "web design Windsor Ontario", "small business website cost"]
+image: "/images/blog/jakub-zerdzicki-heiYgqp0Tsk-unsplash.jpg"
+seo:
+  metaTitle: "How Much Does Web Design Cost in Southwestern Ontario? (2026 Guide)"
+  metaDescription: "Learn the realistic cost of web design for small businesses in Southwestern Ontario including Windsor, London, Sarnia, and Chatham-Kent."
+  primaryKeyword: "web design cost Ontario"
+  secondaryKeywords: ["website design pricing Ontario", "web design Southwestern Ontario", "web design Windsor Ontario", "small business website cost"]
+  searchIntent: "informational"
+  searchVolume: "unknown"
 description: "Learn the realistic cost of web design for small businesses in Southwestern Ontario including Windsor, London, Sarnia, and Chatham-Kent."
 excerpt: "A guide explaining how much small businesses in Southwestern Ontario typically pay for website design and what affects the final price."
-date: "2026-03-10"
-image: "/images/blog/web-design-cost-ontario.jpg"
 keywords:
   - "web design cost Ontario"
   - "website design pricing Ontario"
@@ -124,3 +137,31 @@ If you are comparing options by city, these pages break down service details by 
 - [Web Design Leamington](/locations/web-design-leamington)
 
 If you want a clearer breakdown of current package ranges, see our [Website Pricing page](/pricing).
+
+<!-- schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How Much Does Web Design Cost in Southwestern Ontario? (2026 Guide)",
+  "description": "Learn the realistic cost of web design for small businesses in Southwestern Ontario including Windsor, London, Sarnia, and Chatham-Kent.",
+  "url": "https://www.kealeydesign.ca/blog/web-design-cost-southwestern-ontario",
+  "datePublished": "2026-03-10T00:00:00Z",
+  "dateModified": "2026-04-16T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "Matt Kealey",
+    "url": "https://www.kealeydesign.ca/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kealey Design",
+    "url": "https://www.kealeydesign.ca"
+  },
+  "keywords": ["web design cost Ontario", "website design pricing Ontario", "web design Southwestern Ontario", "web design Windsor Ontario", "small business website cost"],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.kealeydesign.ca/blog/web-design-cost-southwestern-ontario"
+  }
+}
+</script>

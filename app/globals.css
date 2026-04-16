@@ -1617,50 +1617,175 @@ a {
 }
 
 .blog-post__content {
-  margin-top: 1.15rem;
-  display: grid;
-  gap: 0.9rem;
+  --blog-copy: #334155;
+  --blog-heading: #0f172a;
+  --blog-border: #d4dee8;
+  --blog-table-head: #eef3f8;
+  margin-top: 1.4rem;
+  color: var(--blog-copy);
+  font-size: 1.06rem;
+  line-height: 1.72;
 }
 
-.blog-post__content p {
-  font-size: 1rem;
-  color: #334155;
+.blog-post__content > *:first-child {
+  margin-top: 0;
+}
+
+.blog-post__content > *:last-child {
+  margin-bottom: 0;
 }
 
 .blog-post__content h2,
-.blog-post__content h3 {
-  margin: 0;
-  color: #0f172a;
-  font-weight: 750;
+.blog-post__content h3,
+.blog-post__content h4 {
+  margin: 2rem 0 0.75rem;
+  color: var(--blog-heading);
+  line-height: 1.25;
+  font-weight: 800;
 }
 
 .blog-post__content h2 {
-  font-size: 1.5rem;
+  font-size: clamp(1.45rem, 2.4vw, 1.9rem);
 }
 
 .blog-post__content h3 {
-  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
 }
 
-.blog-post__list {
-  margin: 0;
-  padding-left: 1.2rem;
-  color: #334155;
+.blog-post__content h4 {
+  font-size: 1.06rem;
+  letter-spacing: 0.01em;
+}
+
+.blog-post__content p,
+.blog-post__content blockquote,
+.blog-post__content ul,
+.blog-post__content ol,
+.blog-post__content table,
+.blog-post__content pre {
+  margin: 0 0 1rem;
+}
+
+.blog-post__content p {
+  color: var(--blog-copy);
+}
+
+.blog-post__content a {
+  color: #0b3a6c;
+  text-decoration: underline;
+  text-decoration-color: #8cb3da;
+  text-underline-offset: 0.14em;
+  font-weight: 600;
+}
+
+.blog-post__content a:hover {
+  color: #072d54;
+  text-decoration-color: #0b3a6c;
+}
+
+.blog-post__content strong {
+  color: #10253d;
+  font-weight: 780;
 }
 
 .blog-post__content ul,
 .blog-post__content ol {
-  margin: 0;
-  padding-left: 1.2rem;
-  color: #334155;
+  padding-left: 1.45rem;
+  color: var(--blog-copy);
 }
 
-.blog-post__list li {
-  margin: 0.3rem 0;
+.blog-post__content ul {
+  list-style-type: disc;
+}
+
+.blog-post__content ul ul {
+  list-style-type: circle;
+}
+
+.blog-post__content ol {
+  list-style-type: decimal;
 }
 
 .blog-post__content li {
-  margin: 0.3rem 0;
+  display: list-item;
+  margin: 0.35rem 0;
+  padding-left: 0.2rem;
+}
+
+.blog-post__content li::marker {
+  color: #294a70;
+  font-weight: 700;
+}
+
+.blog-post__content blockquote {
+  border-left: 0.25rem solid #8eb2d7;
+  padding: 0.5rem 0 0.5rem 1rem;
+  color: #1f3650;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.blog-post__content table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0.0625rem solid var(--blog-border);
+  background: #ffffff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: block;
+  overflow-x: auto;
+}
+
+.blog-post__content thead {
+  background: var(--blog-table-head);
+}
+
+.blog-post__content th,
+.blog-post__content td {
+  min-width: 10rem;
+  border: 0.0625rem solid var(--blog-border);
+  padding: 0.65rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.98rem;
+  color: #223347;
+}
+
+.blog-post__content th {
+  font-weight: 760;
+  color: #0f2238;
+}
+
+.blog-post__content tr:nth-child(even) td {
+  background: #f8fbff;
+}
+
+.blog-post__content code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.9em;
+  background: #eaf1f8;
+  color: #17314d;
+  border-radius: 0.3rem;
+  padding: 0.15rem 0.35rem;
+}
+
+.blog-post__content pre {
+  overflow-x: auto;
+  padding: 0.9rem;
+  border-radius: 0.45rem;
+  border: 0.0625rem solid #d0dbe7;
+  background: #f5f8fc;
+}
+
+.blog-post__content pre code {
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+.blog-post__content hr {
+  border: 0;
+  border-top: 0.0625rem solid var(--blog-border);
+  margin: 1.65rem 0;
 }
 
 .blog-post__figure {
@@ -1746,6 +1871,24 @@ a {
 
   .blog-page__grid {
     grid-template-columns: 1fr;
+  }
+
+  .blog-post__content {
+    font-size: 1rem;
+    line-height: 1.66;
+  }
+
+  .blog-post__content h2,
+  .blog-post__content h3,
+  .blog-post__content h4 {
+    margin-top: 1.55rem;
+  }
+
+  .blog-post__content th,
+  .blog-post__content td {
+    min-width: 8.5rem;
+    padding: 0.55rem 0.6rem;
+    font-size: 0.92rem;
   }
 }
 

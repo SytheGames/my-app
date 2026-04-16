@@ -7,9 +7,9 @@ import { PageContactSection } from "@/components/PageContactSection";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
 
 export const metadata: Metadata = {
-  title: "Chatham Web Design | Get Your Free Website Quote Today",
+  title: "Chatham Web Design | Free Website Quote",
   description:
-    "Ready to grow your business? Get a free website quote from Kealey Design. Custom web design in Chatham-Kent focused on conversions, speed, and mobile usability. See our portfolio and client reviews.",
+    "Custom web design in Chatham-Kent focused on conversions, speed, and mobile usability. Get a free quote from Kealey Design and see real client results.",
   alternates: {
     canonical: "/services/web-design",
   },
@@ -48,7 +48,7 @@ export default function WebDesignServicePage() {
       <main className="split-page" aria-label="Web design service">
         <SplitPageHero
           eyebrow="SERVICE"
-          title="Web Design"
+          title="Custom Web Design Services in Chatham-Kent"
           description="We design custom websites that balance visual quality with practical performance. Every build is optimized for mobile devices, clear navigation, and lead-focused user flows."
           imageSrc="/arcstage.png"
           imageAlt="Web design showcase"
