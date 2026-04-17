@@ -20,14 +20,14 @@ export const metadata: Metadata = {
       "Website redesign services for Ontario businesses needing stronger branding, faster performance, and improved user journeys.",
     url: "/services/website-redesign",
     type: "website",
-    images: [{ url: "/onehundredking.png" }],
+    images: [{ url: "https://www.kealeydesign.ca/daveychiro.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Website Redesign in Ontario",
     description:
       "Website redesign services for Ontario businesses needing stronger branding, faster performance, and improved user journeys.",
-    images: ["/onehundredking.png"],
+    images: ["https://www.kealeydesign.ca/daveychiro.png"],
   },
 };
 
@@ -135,7 +135,7 @@ export default function WebsiteRedesignServicePage() {
           eyebrow="SERVICE"
           title="Website Redesign for Outdated Sites"
           description="If your current site is outdated, slow, or hard to manage, we redesign it with modern structure that improves trust, readability, performance, and conversion quality."
-          imageSrc="/onehundredking.png"
+          imageSrc="/website-redesign-service.svg"
           imageAlt="Website redesign before and after concept"
           ctaLabel="Book a consultation"
           ctaHref="/contact"

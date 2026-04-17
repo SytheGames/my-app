@@ -20,14 +20,14 @@ export const metadata: Metadata = {
       "Ecommerce website development for Ontario businesses focused on product discovery, checkout UX, and conversion performance.",
     url: "/services/ecommerce-websites",
     type: "website",
-    images: [{ url: "/enhancedconcrete.png" }],
+    images: [{ url: "https://www.kealeydesign.ca/website-mockup.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Ecommerce Websites in Ontario",
     description:
       "Ecommerce website development for Ontario businesses focused on product discovery, checkout UX, and conversion performance.",
-    images: ["/enhancedconcrete.png"],
+    images: ["https://www.kealeydesign.ca/website-mockup.png"],
   },
 };
 
@@ -135,7 +135,7 @@ export default function EcommerceWebsitesServicePage() {
           eyebrow="SERVICE"
           title="Ecommerce Website Development for Ontario"
           description="We build ecommerce storefronts that make buying easy, from category browsing to checkout. Focus on smoother UX, stronger product pages, and measurable conversion outcomes."
-          imageSrc="/enhancedconcrete.png"
+          imageSrc="/ecommerce-service.svg"
           imageAlt="Ecommerce storefront concept"
           ctaLabel="Discuss your store"
           ctaHref="/contact"

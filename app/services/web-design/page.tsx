@@ -20,14 +20,14 @@ export const metadata: Metadata = {
       "Custom web design services in Chatham and Southwestern Ontario focused on conversions, speed, and mobile usability.",
     url: "/services/web-design",
     type: "website",
-    images: [{ url: "/arcstage.png" }],
+    images: [{ url: "https://www.kealeydesign.ca/arcstage.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Web Design in Chatham-Kent",
     description:
       "Custom web design services in Chatham and Southwestern Ontario focused on conversions, speed, and mobile usability.",
-    images: ["/arcstage.png"],
+    images: ["https://www.kealeydesign.ca/arcstage.png"],
   },
 };
 
@@ -147,7 +147,7 @@ export default function WebDesignServicePage() {
           eyebrow="SERVICE"
           title="Custom Web Design in Chatham-Kent, Ontario"
           description="We design custom websites that balance visual quality with practical performance. Every build is optimized for mobile devices, clear navigation, and lead-focused user flows."
-          imageSrc="/arcstage.png"
+          imageSrc="/web-design-service.svg"
           imageAlt="Web design showcase"
           ctaLabel="Start your project"
           ctaHref="/contact"

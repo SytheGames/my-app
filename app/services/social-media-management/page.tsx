@@ -20,14 +20,14 @@ export const metadata: Metadata = {
       "Monthly social media management with custom graphics, posting support, and account optimization.",
     url: "/services/social-media-management",
     type: "website",
-    images: [{ url: "/onehundredking.png" }],
+    images: [{ url: "https://www.kealeydesign.ca/images/blog/stephen-phillips-hostreviews-co-uk-2kH-6T6x_0I-unsplash.jpg" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Social Media Management in Chatham-Kent",
     description:
       "Monthly social media management with custom graphics, posting support, and account optimization.",
-    images: ["/onehundredking.png"],
+    images: ["https://www.kealeydesign.ca/images/blog/stephen-phillips-hostreviews-co-uk-2kH-6T6x_0I-unsplash.jpg"],
   },
 };
 
@@ -121,7 +121,7 @@ export default function SocialMediaManagementServicePage() {
           eyebrow="SERVICE"
           title="Social Media Management for Chatham-Kent Businesses"
           description="We manage your social channels with consistent posting, custom graphic design, and optimization that improves profile quality and audience engagement."
-          imageSrc="/onehundredking.png"
+          imageSrc="/social-media-service.svg"
           imageAlt="Social media management graphic design showcase"
           ctaLabel="Plan your monthly content"
           ctaHref="/contact"
