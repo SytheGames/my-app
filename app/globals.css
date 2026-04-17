@@ -2662,6 +2662,70 @@ a {
   margin-top: 0;
 }
 
+.web-design-service .split-page__prose,
+.ecommerce-service .split-page__prose,
+.social-media-service .split-page__prose,
+.website-redesign-service .split-page__prose {
+  max-width: 68rem;
+}
+
+.web-design-service .web-design-service__meta,
+.ecommerce-service .ecommerce-service__meta,
+.social-media-service .social-media-service__meta,
+.website-redesign-service .website-redesign-service__meta {
+  margin: 0 0 0.35rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #4a607a;
+}
+
+.web-design-service .split-page__prose > h2,
+.ecommerce-service .split-page__prose > h2,
+.social-media-service .split-page__prose > h2,
+.website-redesign-service .split-page__prose > h2 {
+  margin-top: 1.3rem;
+}
+
+.web-design-service .split-page__prose > p,
+.web-design-service .split-page__prose > ul,
+.ecommerce-service .split-page__prose > p,
+.ecommerce-service .split-page__prose > ul,
+.social-media-service .split-page__prose > p,
+.social-media-service .split-page__prose > ul,
+.website-redesign-service .split-page__prose > p,
+.website-redesign-service .split-page__prose > ul {
+  margin: 0.7rem 0 0;
+  color: #2f4359;
+  font-size: 1rem;
+  line-height: 1.68;
+}
+
+.web-design-service .split-page__prose > ul,
+.ecommerce-service .split-page__prose > ul,
+.social-media-service .split-page__prose > ul,
+.website-redesign-service .split-page__prose > ul {
+  padding-left: 1.2rem;
+}
+
+.web-design-service .split-page__prose a,
+.ecommerce-service .split-page__prose a,
+.social-media-service .split-page__prose a,
+.website-redesign-service .split-page__prose a {
+  color: #0f4f8e;
+  text-decoration: underline;
+  text-decoration-color: #95b7d9;
+  text-underline-offset: 0.15em;
+  font-weight: 600;
+}
+
+.web-design-service .split-page__prose a:hover,
+.ecommerce-service .split-page__prose a:hover,
+.social-media-service .split-page__prose a:hover,
+.website-redesign-service .split-page__prose a:hover {
+  color: #0a3f72;
+  text-decoration-color: #0f4f8e;
+}
+
 .legal-page__title {
   margin: 0 0 0.8rem;
   font-size: 2.6rem;
