@@ -2533,6 +2533,135 @@ a {
   color: #0f172a;
 }
 
+.local-seo-service .split-page__inner {
+  max-width: 68rem;
+}
+
+.local-seo-service .split-page__text {
+  padding-top: 3rem;
+  padding-bottom: 3.2rem;
+  background: #f3f7fb;
+}
+
+.local-seo-service .local-seo-service__prose {
+  max-width: 68rem;
+}
+
+.local-seo-service .local-seo-service__meta {
+  margin: 0 0 0.35rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #4a607a;
+}
+
+.local-seo-service .split-page__prose > h2 {
+  margin-top: 1.3rem;
+}
+
+.local-seo-service .split-page__prose > p,
+.local-seo-service .split-page__prose > ul {
+  margin: 0.7rem 0 0;
+  color: #2f4359;
+  font-size: 1rem;
+  line-height: 1.68;
+}
+
+.local-seo-service .split-page__prose > ul {
+  padding-left: 1.2rem;
+}
+
+.local-seo-service .split-page__prose a {
+  color: #0f4f8e;
+  text-decoration: underline;
+  text-decoration-color: #95b7d9;
+  text-underline-offset: 0.15em;
+  font-weight: 600;
+}
+
+.local-seo-service .split-page__prose a:hover {
+  color: #0a3f72;
+  text-decoration-color: #0f4f8e;
+}
+
+.local-seo-service .local-seo-service__sources {
+  margin: 0.2rem 0 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.local-seo-service .local-seo-service__sources li {
+  margin: 0;
+  font-size: 0.96rem;
+}
+
+.local-seo-service .pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0.0625rem solid #dfe8f2;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  display: block;
+  overflow-x: auto;
+}
+
+.local-seo-service .pricing-table thead {
+  background: #eef3f8;
+}
+
+.local-seo-service .pricing-table th,
+.local-seo-service .pricing-table td {
+  border: 0.0625rem solid #dfe8f2;
+  padding: 0.75rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #2f4359;
+}
+
+.local-seo-service .pricing-table th {
+  font-weight: 720;
+  color: #0f172a;
+  font-size: 0.96rem;
+}
+
+.local-seo-service .pricing-table td:nth-child(1) {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.local-seo-service .pricing-table td:nth-child(2) {
+  text-align: center;
+  color: #0c3f74;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.local-seo-service .pricing-table tr:nth-child(even) td {
+  background: #f8fbff;
+}
+
+.local-seo-service .pricing-table tbody tr:hover td {
+  background: #f0f6ff;
+}
+
+.local-seo-service .local-seo-service__aside {
+  margin-top: 0.35rem;
+  border: 0.0625rem solid #d7e1eb;
+  border-radius: var(--radius-card);
+  background: #f8fbff;
+  padding: 1rem;
+  box-shadow: 0 0.45rem 1.1rem rgba(19, 38, 61, 0.05);
+}
+
+.local-seo-service .local-seo-service__aside > h2 {
+  margin-top: 0;
+}
+
 .legal-page__title {
   margin: 0 0 0.8rem;
   font-size: 2.6rem;
@@ -2735,6 +2864,17 @@ a {
 
   .split-page__prose > h2 {
     font-size: 1.55rem;
+  }
+
+  .local-seo-service .split-page__text {
+    padding-top: 2.2rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .local-seo-service .split-page__prose > p,
+  .local-seo-service .split-page__prose > ul {
+    font-size: 0.98rem;
+    line-height: 1.62;
   }
 }
 
