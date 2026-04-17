@@ -10,11 +10,12 @@ const thankYouUrl = `${siteUrl}/thank-you`;
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Kealey Design to discuss your website, SEO, or ecommerce project.",
+  description: "Get a free website audit with a 24-hour turnaround from Kealey Design. We will send 3 quick wins to improve conversion, speed, and local visibility.",
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact",
-    description: "Contact Kealey Design to discuss your website, SEO, or ecommerce project.",
+    description:
+      "Get a free website audit with a 24-hour turnaround from Kealey Design. We will send 3 quick wins to improve conversion, speed, and local visibility.",
     url: "/contact",
     type: "website",
     images: [{ url: "/mockup.png" }],
@@ -22,7 +23,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Contact",
-    description: "Contact Kealey Design to discuss your website, SEO, or ecommerce project.",
+    description:
+      "Get a free website audit with a 24-hour turnaround from Kealey Design. We will send 3 quick wins to improve conversion, speed, and local visibility.",
     images: ["/mockup.png"],
   },
 };
@@ -32,7 +34,8 @@ export default function ContactPage() {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     name: "Contact Kealey Design",
-    description: "Contact Kealey Design to discuss your website, SEO, or ecommerce project.",
+    description:
+      "Get a free website audit with a 24-hour turnaround from Kealey Design. We will send 3 quick wins to improve conversion, speed, and local visibility.",
     url: `${siteUrl}/contact`,
   };
 
@@ -44,26 +47,43 @@ export default function ContactPage() {
           <div className="contact-page__layout">
             <div className="contact-page__visual">
               <p className="contact-page__eyebrow">CONTACT</p>
-              <h1 className="contact-page__title">Let&apos;s talk about your project</h1>
+              <h1 className="contact-page__title">Get a free website audit in 24 hours</h1>
               <p className="contact-page__lead">
-                Share your goals and we will map out the best direction for web design, SEO, or
-                ecommerce growth.
+                Send your website URL and we will reply with 3 quick wins you can apply right away
+                to improve performance, clarity, and lead quality.
               </p>
-              <address className="contact-page__contact" aria-label="Business contact details">
-                73 Marion Ave, Chatham, ON N7M 5N7
-                <br />
-                <a href="tel:+15194011469">+1 519 401-1469</a>
-                <br />
-                <a href="mailto:matt@kealeydesign.ca">matt@kealeydesign.ca</a>
-              </address>
-              <p className="contact-page__contact">
-                <Link href="/services">View services</Link> | <Link href="/portfolio">See portfolio</Link>
-              </p>
+
+              <ul className="contact-page__stats" aria-label="Trust highlights">
+                <li className="contact-page__stat-item">25+ websites launched</li>
+                <li className="contact-page__stat-item">98% client satisfaction</li>
+                <li className="contact-page__stat-item">Serving Chatham, Windsor, London + nearby</li>
+              </ul>
+
+              <div className="contact-page__cta-row" aria-label="Contact page actions">
+                <Link className="contact-page__cta-secondary" href="/portfolio">
+                  View portfolio
+                </Link>
+              </div>
+
+              <blockquote className="contact-page__testimonial" aria-label="Client testimonial">
+                <p className="contact-page__testimonial-quote">
+                  &quot;Matt built my website and manages it. Very knowledgeable and great to work with.&quot;
+                </p>
+                <p className="contact-page__testimonial-meta">
+                  Enhanced Concrete · Verified Google Review
+                </p>
+              </blockquote>
             </div>
 
-            <form className="contact-page__form" aria-label="Contact form" action={web3formsEndpoint} method="POST">
+            <form
+              id="contact-form"
+              className="contact-page__form"
+              aria-label="Contact form"
+              action={web3formsEndpoint}
+              method="POST"
+            >
               <input type="hidden" name="access_key" value={web3formsAccessKey} />
-              <input type="hidden" name="subject" value="New Contact Page Inquiry - Kealey Design" />
+              <input type="hidden" name="subject" value="Free Audit Request - Kealey Design" />
               <input type="hidden" name="from_name" value="Kealey Design Website" />
               <input type="hidden" name="redirect" value={thankYouUrl} />
               <input
@@ -82,9 +102,15 @@ export default function ContactPage() {
               <input id="contact-email-page" type="email" name="email" placeholder="you@company.com" required />
 
               <label htmlFor="contact-message">Project Details</label>
-              <textarea id="contact-message" name="message" rows={6} placeholder="Tell us what you need" required />
+              <textarea
+                id="contact-message"
+                name="message"
+                rows={6}
+                placeholder="Website URL + what you want to improve"
+                required
+              />
 
-              <button type="submit">Send Message</button>
+              <button type="submit">Get My Free Audit</button>
             </form>
           </div>
 

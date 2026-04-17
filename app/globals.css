@@ -3451,6 +3451,95 @@ a {
   font-weight: 600;
 }
 
+.contact-page__stats {
+  margin: 0.95rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.contact-page__stat-item {
+  margin: 0;
+  color: #27415f;
+  font-size: 0.88rem;
+  font-weight: 650;
+  padding: 0.3rem 0.55rem;
+  border: 0.0625rem solid #d3deea;
+  border-radius: 9999px;
+  background: #f7faff;
+}
+
+.contact-page__stat-item::before {
+  content: "";
+}
+
+.contact-page__cta-row {
+  margin-top: 0.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.contact-page__cta-row .contact-page__cta-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.75rem 1.15rem;
+  border-radius: var(--radius-card);
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 760;
+  border: 0;
+}
+
+.contact-page__cta-row .contact-page__cta-primary:hover {
+  background: var(--accent-hover);
+}
+
+.contact-page__cta-row .contact-page__cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #274f7a;
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+}
+
+.contact-page__cta-row .contact-page__cta-secondary:hover {
+  color: #0b3a6c;
+}
+
+.contact-page__testimonial {
+  margin: 0.85rem 0 0;
+  padding: 0.7rem 0.8rem;
+  border: 0.0625rem solid #d7e1eb;
+  border-left: 0.2rem solid #9db8d4;
+  border-radius: var(--radius-card);
+  background: #fbfdff;
+}
+
+.contact-page__testimonial-quote {
+  margin: 0;
+  color: #31475f;
+  line-height: 1.5;
+}
+
+.contact-page__testimonial-meta {
+  margin: 0.45rem 0 0;
+  color: #3e5873;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
 .contact-page__form {
   margin-top: 0;
   display: grid;
@@ -3459,6 +3548,13 @@ a {
   border-radius: var(--radius-card);
   background: #ffffff;
   padding: 1rem;
+}
+
+.contact-page__form-hook {
+  margin: 0 0 0.3rem;
+  color: #1d4d8a;
+  font-size: 0.92rem;
+  font-weight: 650;
 }
 
 .contact-page__form input,
@@ -3678,6 +3774,19 @@ a {
 
   .contact-page__layout {
     grid-template-columns: 1fr;
+  }
+
+  .contact-page__cta-row {
+    gap: 0.45rem;
+  }
+
+  .contact-page__cta-primary {
+    width: 100%;
+  }
+
+  .contact-page__cta-row .contact-page__cta-secondary {
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .contact-page__scheduler-embed {
