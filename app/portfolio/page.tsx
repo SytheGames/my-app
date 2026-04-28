@@ -8,11 +8,11 @@ import { getAllCaseStudies } from "@/lib/caseStudies";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Web Design Portfolio | Kealey Design Case Studies",
   description: "Case studies and growth-focused project breakdowns from Kealey Design.",
   alternates: { canonical: "/portfolio" },
   openGraph: {
-    title: "Portfolio",
+    title: "Web Design Portfolio | Kealey Design Case Studies",
     description: "Case studies and growth-focused project breakdowns from Kealey Design.",
     url: "/portfolio",
     type: "website",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio",
+    title: "Web Design Portfolio | Kealey Design Case Studies",
     description: "Case studies and growth-focused project breakdowns from Kealey Design.",
     images: ["/arcstage.png"],
   },

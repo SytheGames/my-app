@@ -9,11 +9,11 @@ import { PageContactSection } from "@/components/PageContactSection";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
 
 export const metadata: Metadata = {
-  title: "Locations",
+  title: "Service Locations | Web Design in Southwestern Ontario",
   description: "Web design and social media services across Chatham, Windsor, London, Sarnia, and Leamington.",
   alternates: { canonical: "/locations" },
   openGraph: {
-    title: "Locations",
+    title: "Service Locations | Web Design in Southwestern Ontario",
     description: "Web design and social media services across Chatham, Windsor, London, Sarnia, and Leamington.",
     url: "/locations",
     type: "website",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Locations",
+    title: "Service Locations | Web Design in Southwestern Ontario",
     description: "Web design and social media services across Chatham, Windsor, London, Sarnia, and Leamington.",
     images: ["/images/locations-images/Chatham_ON_1.JPG"],
   },

@@ -9,11 +9,11 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca
 const thankYouUrl = `${siteUrl}/thank-you`;
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact Kealey Design | Free Website Audit",
   description: "Get a free website audit with a 24-hour turnaround from Kealey Design. We will send 3 quick wins to improve conversion, speed, and local visibility.",
   alternates: { canonical: "/contact" },
   openGraph: {
-    title: "Contact",
+    title: "Contact Kealey Design | Free Website Audit",
     description:
       "Get a free website audit with a 24-hour turnaround from Kealey Design. We will send 3 quick wins to improve conversion, speed, and local visibility.",
     url: "/contact",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact",
+    title: "Contact Kealey Design | Free Website Audit",
     description:
       "Get a free website audit with a 24-hour turnaround from Kealey Design. We will send 3 quick wins to improve conversion, speed, and local visibility.",
     images: ["/mockup.png"],

@@ -94,8 +94,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <SpeedInsights/>
-      </body>
+        <SpeedInsights />
         <Script id="apollo-tracker" strategy="afterInteractive">
           {`
             function initApollo(){
@@ -128,6 +127,7 @@ gtag('config', '${gaMeasurementId}');`}
         data-key="zY0lW59pLFIfWHcsJ4Z7Cg"
         strategy="afterInteractive"
       />
+      </body>
     </html>
   );
 }
