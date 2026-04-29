@@ -578,7 +578,7 @@ export default function Home() {
       />
       <SiteHeader />
       <main>
-        <section className="hero" aria-label="Digital growth hero">
+        <section className="hero hero--home" aria-label="Digital growth hero">
           <div className="hero__media" aria-hidden>
             <Image
               src="/mockup.webp"
