@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { ExitIntentPopup } from "@/components/ExitIntentPopup";
 import { SplitPageHero } from "@/components/SplitPageHero";
 import { PageContactSection } from "@/components/PageContactSection";
 
@@ -166,6 +167,7 @@ export default function WebDesignChathamPage() {
           subject="New Chatham Location Inquiry - Kealey Design"
         />
       </main>
+      <ExitIntentPopup />
       <SiteFooter />
       <script
         type="application/ld+json"

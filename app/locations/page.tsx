@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { ExitIntentPopup } from "@/components/ExitIntentPopup";
 import { SplitPageHero } from "@/components/SplitPageHero";
 import { PageContactSection } from "@/components/PageContactSection";
 
@@ -160,6 +161,7 @@ export default function LocationsPage() {
           subject="New Locations Page Inquiry - Kealey Design"
         />
       </main>
+      <ExitIntentPopup />
       <SiteFooter />
       <script
         type="application/ld+json"
