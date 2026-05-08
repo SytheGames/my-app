@@ -130,6 +130,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               remarkPlugins={[remarkGfm]}
               components={{
                 h1: ({ children }) => <h2>{children}</h2>,
+                table: ({ children }) => (
+                  <div className="blog-post__table-wrap">
+                    <table>{children}</table>
+                  </div>
+                ),
               }}
             >
               {post.content}

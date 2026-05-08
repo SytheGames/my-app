@@ -27,6 +27,7 @@ import {
   UtensilsCrossed,
 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
+import { ExitIntentPopup } from "@/components/ExitIntentPopup";
 import { SiteFooter } from "@/components/SiteFooter";
 import {
   getHomepageShowcaseTestimonials,
@@ -930,6 +931,7 @@ export default function Home() {
 
         <SiteFooter />
       </main>
+      <ExitIntentPopup />
     </div>
   );
 }

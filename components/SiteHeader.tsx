@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Menu, X } from "lucide-react";
 
@@ -19,9 +19,48 @@ const utilityItems = [
 
 export function SiteHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isAlertDismissed, setIsAlertDismissed] = useState(false);
+
+  const ALERT_KEY = "site-header-alert-dismissed";
+  const SEVEN_DAYS = 7 * 24 * 60 * 60 * 1000;
+
+  useEffect(() => {
+    const stored = window.localStorage.getItem(ALERT_KEY);
+    if (stored && Date.now() - Number(stored) < SEVEN_DAYS) {
+      setIsAlertDismissed(true);
+    } else if (stored) {
+      window.localStorage.removeItem(ALERT_KEY);
+    }
+  }, []);
+
+  const dismissAlert = () => {
+    window.localStorage.setItem(ALERT_KEY, String(Date.now()));
+    setIsAlertDismissed(true);
+  };
 
   return (
     <header className="site-header">
+      {!isAlertDismissed ? (
+        <div className="site-header__alert" role="status" aria-label="Booking availability">
+          <Link href="/contact" className="site-header__alert-link" onClick={() => setIsMenuOpen(false)}>
+            <div className="site-header__alert-inner">
+              <span className="site-header__alert-text">Now booking web design projects.</span>
+              <span className="site-header__alert-cta">
+                Get your free consultation
+                <ArrowRight className="site-header__alert-icon" aria-hidden />
+              </span>
+            </div>
+          </Link>
+          <button
+            type="button"
+            className="site-header__alert-dismiss"
+            aria-label="Dismiss booking availability banner"
+            onClick={dismissAlert}
+          >
+            <X aria-hidden />
+          </button>
+        </div>
+      ) : null}
       <div className="site-header__topbar" aria-label="Secondary navigation">
         <div className="site-header__topbar-inner">
           <div className="site-header__topbar-links">

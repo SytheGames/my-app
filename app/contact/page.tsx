@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { ExitIntentPopup } from "@/components/ExitIntentPopup";
 
 const web3formsEndpoint = "https://api.web3forms.com/submit";
 const web3formsAccessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "";
@@ -128,6 +129,7 @@ export default function ContactPage() {
         </div>
       </main>
       <SiteFooter />
+      <ExitIntentPopup />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }}
