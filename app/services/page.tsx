@@ -112,6 +112,13 @@ export default function ServicesPage() {
                 </article>
               ))}
             </div>
+            <p className="services-page__comparison-link" style={{ marginTop: "1.25rem" }}>
+              Comparing platforms before a redesign? See our
+              {" "}
+              <Link href="/wordpress-vs-webflow">WordPress vs Webflow guide</Link>
+              {" "}
+              for a practical breakdown.
+            </p>
           </div>
         </section>
 

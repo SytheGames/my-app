@@ -14,6 +14,7 @@ const footerLinks = {
     { label: "Pricing", href: "/pricing" },
     { label: "Projects", href: "/portfolio" },
     { label: "Reviews", href: "/reviews" },
+    { label: "WordPress vs Webflow", href: "/wordpress-vs-webflow" },
     { label: "Industries", href: "/#locations" },
     { label: "Chiropractor Web Design", href: "/chiropractor-web-design" },
     { label: "Contractor Web Design", href: "/contractor-web-design" },

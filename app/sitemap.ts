@@ -101,6 +101,12 @@ const staticRoutes: StaticRouteConfig[] = [
     changeFrequency: "monthly",
     priority: 0.7,
   },
+  {
+    urlPath: "/wordpress-vs-webflow",
+    sourceFile: "app/wordpress-vs-webflow/page.tsx",
+    changeFrequency: "monthly",
+    priority: 0.7,
+  },
   { urlPath: "/privacy", sourceFile: "app/privacy/page.tsx", changeFrequency: "yearly", priority: 0.4 },
   { urlPath: "/terms", sourceFile: "app/terms/page.tsx", changeFrequency: "yearly", priority: 0.4 },
 ];

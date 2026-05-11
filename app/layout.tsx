@@ -127,6 +127,11 @@ gtag('config', '${gaMeasurementId}');`}
         data-key="zY0lW59pLFIfWHcsJ4Z7Cg"
         strategy="afterInteractive"
       />
+      <Script
+        id="hs-script-loader"
+        src="https://js-na3.hs-scripts.com/343258132.js"
+        strategy="afterInteractive"
+      />
       </body>
     </html>
   );
