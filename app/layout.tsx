@@ -90,6 +90,15 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <script
+          type="text/javascript"
+          id="hs-script-loader"
+          async
+          defer
+          src="https://js-na3.hs-scripts.com/343258132.js"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -125,11 +134,6 @@ gtag('config', '${gaMeasurementId}');`}
       <Script
         src="https://analytics.ahrefs.com/analytics.js"
         data-key="zY0lW59pLFIfWHcsJ4Z7Cg"
-        strategy="afterInteractive"
-      />
-      <Script
-        id="hs-script-loader"
-        src="https://js-na3.hs-scripts.com/343258132.js"
         strategy="afterInteractive"
       />
       </body>
