@@ -218,6 +218,10 @@ a {
   letter-spacing: 0.08em;
 }
 
+.brand__dot {
+  color: var(--accent);
+}
+
 .site-header__menu-toggle {
   display: none;
   align-items: center;
@@ -4034,6 +4038,23 @@ a {
   flex: 0 0 auto;
   margin-top: 0.18rem;
   color: var(--accent-ink);
+}
+
+.pricing-page__card-button {
+  width: 100%;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.pricing-page__card-button--outline {
+  background: transparent;
+  color: var(--accent-ink);
+  border: 0.125rem solid var(--accent);
+}
+
+.pricing-page__card-button--outline:hover {
+  background: rgba(9, 86, 162, 0.08);
+  color: var(--accent-hover);
 }
 
 .pricing-page__mini-grid {

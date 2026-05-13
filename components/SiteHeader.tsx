@@ -79,7 +79,9 @@ export function SiteHeader() {
       </div>
       <div className="site-header__inner">
         <Link href="/" className="brand" aria-label="Kealey Design home">
-          <span className="brand__text">kealeydesign.</span>
+          <span className="brand__text">
+            kealeydesign<span className="brand__dot">.</span>
+          </span>
         </Link>
 
         <button

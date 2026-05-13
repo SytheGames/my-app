@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Check } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { SplitPageHero } from "@/components/SplitPageHero";
 import { PageContactSection } from "@/components/PageContactSection";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
@@ -11,7 +10,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca
 const projectPackages = [
   {
     name: "Starter Website",
-    range: "$2,200 - $3,500",
+    range: "$1,430 - $2,275",
     bestFor: "New businesses or simple brochure sites that need a strong first impression.",
     featured: false,
     includes: [
@@ -24,7 +23,7 @@ const projectPackages = [
   },
   {
     name: "Growth Website",
-    range: "$3,800 - $6,500",
+    range: "$2,470 - $4,225",
     bestFor: "Established service businesses that want more leads and stronger conversion performance.",
     includes: [
       "6 to 15 custom pages",
@@ -37,7 +36,7 @@ const projectPackages = [
   },
   {
     name: "Ecommerce Build",
-    range: "$5,500 - $12,000+",
+    range: "$3,575 - $7,800+",
     bestFor: "Product-based brands needing catalog structure, checkout UX, and scalable storefront setup.",
     featured: false,
     includes: [
@@ -53,7 +52,7 @@ const projectPackages = [
 const monthlyPlans = [
   {
     name: "Local SEO Foundation",
-    range: "$650 - $950/mo",
+    range: "$422 - $618/mo",
     points: [
       "Google Business Profile optimization",
       "Citation and local listing consistency",
@@ -62,7 +61,7 @@ const monthlyPlans = [
   },
   {
     name: "Growth Retainer",
-    range: "$1,200 - $2,400/mo",
+    range: "$780 - $1,560/mo",
     points: [
       "SEO + CRO split testing support",
       "Landing page and service page expansion",
@@ -118,19 +117,14 @@ export default function PricingPage() {
     <div className="landing-page">
       <SiteHeader />
       <main className="split-page" aria-label="Pricing page">
-        <SplitPageHero
-          eyebrow="PRICING"
-          title="Transparent Website Pricing Ranges"
-          description="Use these ranges to budget your project. Final pricing depends on scope, timeline, and complexity, but this gives you a practical starting point."
-          imageSrc="/arcstage.png"
-          imageAlt="Pricing and planning overview"
-          ctaLabel="Book a pricing call"
-          ctaHref="/contact#book-call"
-          relatedLinks={[
-            { label: "View services", href: "/services" },
-            { label: "See portfolio", href: "/portfolio" },
-          ]}
-        />
+        <section className="split-page__section pricing-page__section" aria-label="Basic hero">
+          <div className="pricing-page__inner">
+            <h1 className="pricing-page__title">Website Pricing</h1>
+            <p className="pricing-page__lead">
+              Transparent pricing ranges for web design, ecommerce, and local SEO services.
+            </p>
+          </div>
+        </section>
 
         <section className="split-page__section pricing-page__section" aria-label="Project package pricing">
           <div className="pricing-page__inner">
@@ -159,8 +153,21 @@ export default function PricingPage() {
                       </li>
                     ))}
                   </ul>
+                  <Link
+                    href={`/contact?plan=${encodeURIComponent(pkg.name)}`}
+                    className={`quote-button pricing-page__card-button ${
+                      pkg.name === "Growth Website" ? "pricing-page__card-button--outline" : ""
+                    }`}
+                  >
+                    Get Started with {pkg.name}
+                  </Link>
                 </article>
               ))}
+            </div>
+            <div style={{ marginTop: "3rem", textAlign: "center" }}>
+              <Link href="/contact" className="contact-page__cta">
+                View All Plans
+              </Link>
             </div>
           </div>
         </section>
@@ -185,8 +192,19 @@ export default function PricingPage() {
                       </li>
                     ))}
                   </ul>
+                  <Link
+                    href={`/contact?plan=${encodeURIComponent(plan.name)}`}
+                    className="quote-button pricing-page__card-button"
+                  >
+                    Start {plan.name}
+                  </Link>
                 </article>
               ))}
+            </div>
+            <div style={{ marginTop: "2rem", textAlign: "center" }}>
+              <Link href="/contact" className="contact-page__cta">
+                Learn More
+              </Link>
             </div>
           </div>
         </section>
