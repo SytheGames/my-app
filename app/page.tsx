@@ -18,14 +18,19 @@ import {
   HeartPulse,
   Megaphone,
   Plane,
+  Phone,
+  Rocket,
   Scale,
   RefreshCw,
+  Shield,
+  Star,
   ShoppingCart,
   Shirt,
   ShoppingBag,
   Store,
   UtensilsCrossed,
 } from "lucide-react";
+import { FcGoogle } from "react-icons/fc";
 import { SiteHeader } from "@/components/SiteHeader";
 import { ExitIntentPopup } from "@/components/ExitIntentPopup";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -594,8 +599,12 @@ export default function Home() {
           <div className="hero__left-fade" aria-hidden />
 
           <div className="hero__content">
-            <p className="hero__eyebrow">WEB DESIGN CHATHAM-KENT</p>
-            <h1 className="hero__title">Local Web Design For Small Businesses in Chatham-Kent</h1>
+            <p className="hero__eyebrow">
+              <span className="hero__eyebrow-accent">WEB DESIGN</span> CHATHAM-KENT
+            </p>
+            <h1 className="hero__title">
+              Local Web Design For Small Businesses in <span className="hero__title-accent">Chatham-Kent</span>
+            </h1>
             <p className="hero__description">
               Kealey Design helps businesses across Chatham-Kent and Southwestern Ontario grow
               with custom website design, web development, and local SEO services.
@@ -606,8 +615,49 @@ export default function Home() {
                 <ArrowRight className="quote-button__icon" aria-hidden />
               </Link>
               <a href="tel:+15194011469" className="hero__call-link" aria-label="Call now at +1 (519) 401-1469">
+                <Phone className="hero__call-icon" aria-hidden />
                 Call Now: +1 (519) 401-1469
               </a>
+            </div>
+            <div className="hero__trust" aria-label="Trust signals">
+              <div className="hero__trust-item">
+                <FcGoogle className="hero__trust-google" aria-hidden />
+                <div className="hero__trust-copy">
+                  <a
+                    href="https://maps.app.goo.gl/Y6iTNYtgXFp7xZd66"
+                    className="hero__trust-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Kealey Design Google Business profile"
+                  >
+                    <p className="hero__trust-title">
+                      5.0
+                      <span className="hero__trust-stars" aria-label="5 out of 5 stars">
+                        <Star className="hero__trust-star" aria-hidden />
+                        <Star className="hero__trust-star" aria-hidden />
+                        <Star className="hero__trust-star" aria-hidden />
+                        <Star className="hero__trust-star" aria-hidden />
+                        <Star className="hero__trust-star" aria-hidden />
+                      </span>
+                    </p>
+                    <p className="hero__trust-subtitle">on Google</p>
+                  </a>
+                </div>
+              </div>
+              <div className="hero__trust-item">
+                <Shield className="hero__trust-icon" aria-hidden />
+                <div className="hero__trust-copy">
+                  <p className="hero__trust-title">Local Business</p>
+                  <p className="hero__trust-subtitle">Trusted in Chatham-Kent</p>
+                </div>
+              </div>
+              <div className="hero__trust-item">
+                <Rocket className="hero__trust-icon" aria-hidden />
+                <div className="hero__trust-copy">
+                  <p className="hero__trust-title">Results Focused</p>
+                  <p className="hero__trust-subtitle">Websites that convert</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -626,6 +676,32 @@ export default function Home() {
                 Learn More About Kealey Design
                 <ArrowRight className="quote-button__icon" aria-hidden />
               </Link>
+              <p className="hero__service-area" aria-label="Service areas across Chatham-Kent">
+                <span className="hero__service-area-label">Proudly Serving Businesses In</span>
+                <Link href="/locations/web-design-chatham" className="hero__service-area-link">
+                  Chatham
+                </Link>
+                <span aria-hidden="true">&middot;</span>
+                <Link href="/locations" className="hero__service-area-link">
+                  Wallaceburg
+                </Link>
+                <span aria-hidden="true">&middot;</span>
+                <Link href="/locations/web-design-leamington" className="hero__service-area-link">
+                  Leamington
+                </Link>
+                <span aria-hidden="true">&middot;</span>
+                <Link href="/locations" className="hero__service-area-link">
+                  Tilbury
+                </Link>
+                <span aria-hidden="true">&middot;</span>
+                <Link href="/locations/web-design-windsor" className="hero__service-area-link">
+                  Windsor
+                </Link>
+                <span aria-hidden="true">&middot;</span>
+                <Link href="/locations" className="hero__service-area-link">
+                  &amp; Surrounding Areas
+                </Link>
+              </p>
             </div>
 
             <div className="about__panel" aria-label="Company highlights">
