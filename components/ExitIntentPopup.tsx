@@ -174,6 +174,19 @@ export function ExitIntentPopup() {
                 disabled={submitting}
               />
 
+              <label htmlFor="exit-popup-budget">Budget</label>
+              <select id="exit-popup-budget" name="budget" defaultValue="" required disabled={submitting}>
+                <option value="" disabled>
+                  Select your budget
+                </option>
+                <option value="$500 - $1,500">$500 - $1,500</option>
+                <option value="$1,500 - $3,500">$1,500 - $3,500</option>
+                <option value="$3,500 - $7,500">$3,500 - $7,500</option>
+                <option value="$7,500 - $12,500">$7,500 - $12,500</option>
+                <option value="$12,500+">$12,500+</option>
+                <option value="Not sure">Not sure</option>
+              </select>
+
               <label htmlFor="exit-popup-message">Tell us about your project</label>
               <textarea
                 id="exit-popup-message"

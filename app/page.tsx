@@ -987,6 +987,21 @@ export default function Home() {
                 <input id="contact-phone" name="phone" type="tel" placeholder="(123) 456-7890" />
               </div>
 
+              <div className="contact-cta__field">
+                <label htmlFor="contact-budget">Budget</label>
+                <select id="contact-budget" name="budget" defaultValue="" required>
+                  <option value="" disabled>
+                    Select your budget
+                  </option>
+                  <option value="$500 - $1,500">$500 - $1,500</option>
+                  <option value="$1,500 - $3,500">$1,500 - $3,500</option>
+                  <option value="$3,500 - $7,500">$3,500 - $7,500</option>
+                  <option value="$7,500 - $12,500">$7,500 - $12,500</option>
+                  <option value="$12,500+">$12,500+</option>
+                  <option value="Not sure">Not sure</option>
+                </select>
+              </div>
+
               <div className="contact-cta__field contact-cta__field--full">
                 <label htmlFor="contact-brief">Project Brief</label>
                 <textarea

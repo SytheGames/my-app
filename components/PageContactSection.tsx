@@ -38,6 +38,19 @@ export function PageContactSection({ heading, copy, subject }: PageContactSectio
           <label htmlFor="page-contact-phone">Phone</label>
           <input id="page-contact-phone" type="tel" name="phone" placeholder="(123) 456-7890" />
 
+          <label htmlFor="page-contact-budget">Budget</label>
+          <select id="page-contact-budget" name="budget" defaultValue="" required>
+            <option value="" disabled>
+              Select your budget
+            </option>
+            <option value="$500 - $1,500">$500 - $1,500</option>
+            <option value="$1,500 - $3,500">$1,500 - $3,500</option>
+            <option value="$3,500 - $7,500">$3,500 - $7,500</option>
+            <option value="$7,500 - $12,500">$7,500 - $12,500</option>
+            <option value="$12,500+">$12,500+</option>
+            <option value="Not sure">Not sure</option>
+          </select>
+
           <label htmlFor="page-contact-message">Project Details</label>
           <textarea id="page-contact-message" name="message" rows={5} placeholder="Tell us about your project goals" required />
 
