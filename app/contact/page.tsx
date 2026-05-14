@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -74,7 +75,9 @@ export default function ContactPage() {
               </blockquote>
             </div>
 
-            <ContactForm />
+            <Suspense fallback={<div>Loading form...</div>}>
+              <ContactForm />
+            </Suspense>
           </div>
 
           <section id="book-call" className="contact-page__scheduler" aria-label="Book an intro call">
