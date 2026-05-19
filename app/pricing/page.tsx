@@ -9,63 +9,81 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca
 
 const projectPackages = [
   {
-    name: "Starter Website",
-    range: "$1,430 - $2,275",
-    bestFor: "New businesses or simple brochure sites that need a strong first impression.",
+    step: "01",
+    name: "Launch Package",
+    range: "CA$2,500-$4,000",
+    rangeLabel: "Starting investment",
+    bestFor: "Semi-custom website built on a proven framework for businesses that need a polished, practical launch.",
+    outcome: "Launch in about two weeks with the core pages, structure, and SEO basics in place.",
     featured: false,
     includes: [
-      "Up to 5 core pages",
-      "Mobile-first responsive design",
-      "Basic on-page SEO setup",
-      "Contact form and conversion tracking",
-      "Training for edits and updates",
+      "Up to 5 pages",
+      "Semi-custom design and development",
+      "Basic on-page SEO",
+      "Mobile-friendly framework",
+      "Two-week delivery window",
     ],
   },
   {
-    name: "Growth Website",
-    range: "$2,470 - $4,225",
-    bestFor: "Established service businesses that want more leads and stronger conversion performance.",
+    step: "02",
+    name: "Growth Package",
+    range: "CA$600-$1,200/month",
+    rangeLabel: "Monthly subscription",
+    bestFor: "Ongoing local SEO and CRO management for service businesses that want steady improvement after launch.",
+    outcome: "Keep visibility, content, profile quality, and conversion performance moving every month.",
     includes: [
-      "6 to 15 custom pages",
-      "Conversion-focused page structure",
-      "Service + location SEO content planning",
-      "Speed and technical performance tuning",
-      "CRM, booking, or form integrations",
+      "Citation building",
+      "Google Business Profile management",
+      "Content creation",
+      "Conversion-rate optimization support",
+      "Monthly analytics report",
     ],
     featured: true,
   },
   {
-    name: "Ecommerce Build",
-    range: "$3,575 - $7,800+",
-    bestFor: "Product-based brands needing catalog structure, checkout UX, and scalable storefront setup.",
+    step: "03",
+    name: "Elite Package",
+    range: "Custom proposal",
+    rangeLabel: "Full-service engagement",
+    bestFor: "Full-service digital growth for businesses ready to invest in a deeper web, SEO, and lead-generation system.",
+    outcome: "Initial builds commonly sit in the CA$8,000-$12,000 range, with monthly retainers after launch.",
     featured: false,
     includes: [
-      "Store architecture and collection planning",
-      "Product template and filter UX",
-      "Checkout and cart conversion tuning",
-      "Payment, shipping, and tax setup",
-      "Analytics and event tracking",
+      "Custom web design",
+      "SEO strategy and implementation",
+      "Conversion-rate optimization",
+      "Lead-generation funnels",
+      "Advanced analytics with monthly retainers afterward",
     ],
   },
 ] as const;
 
 const monthlyPlans = [
   {
-    name: "Local SEO Foundation",
-    range: "$422 - $618/mo",
+    name: "Website-Care Plans",
+    range: "Care",
     points: [
-      "Google Business Profile optimization",
-      "Citation and local listing consistency",
-      "Monthly content and ranking improvements",
+      "Hosting, updates, backups, and security",
+      "Clear scope for predictable monthly delivery",
+      "Automated billing for stable ongoing support",
     ],
   },
   {
-    name: "Growth Retainer",
-    range: "$780 - $1,560/mo",
+    name: "SEO/CRO Subscriptions",
+    range: "Growth",
     points: [
-      "SEO + CRO split testing support",
-      "Landing page and service page expansion",
-      "Performance, analytics, and iteration roadmap",
+      "Local SEO execution and reporting",
+      "Conversion improvements informed by analytics",
+      "Ongoing content and landing page refinement",
+    ],
+  },
+  {
+    name: "Add-On Bundles",
+    range: "Add-ons",
+    points: [
+      "Monthly blog post bundles",
+      "Social media update bundles",
+      "Conversion audits for targeted improvements",
     ],
   },
 ] as const;
@@ -73,14 +91,14 @@ const monthlyPlans = [
 export const metadata: Metadata = {
   title: "Website Pricing in Chatham-Kent",
   description:
-    "Explore website design, redesign, ecommerce, and local SEO pricing ranges for Chatham-Kent businesses.",
+    "Explore Launch, Growth, and Elite website and digital growth packages for Chatham-Kent businesses.",
   alternates: {
     canonical: "/pricing",
   },
   openGraph: {
     title: "Website Pricing in Chatham-Kent",
     description:
-      "Transparent pricing ranges for web design, redesign, ecommerce websites, and local SEO services.",
+      "Transparent Launch, Growth, and Elite package ranges for web design, SEO, CRO, and digital growth.",
     url: "/pricing",
     type: "website",
     images: [{ url: "/arcstage.png" }],
@@ -89,7 +107,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Website Pricing in Chatham-Kent",
     description:
-      "Transparent pricing ranges for web design, redesign, ecommerce websites, and local SEO services.",
+      "Transparent Launch, Growth, and Elite package ranges for web design, SEO, CRO, and digital growth.",
     images: ["/arcstage.png"],
   },
 };
@@ -100,7 +118,7 @@ export default function PricingPage() {
     "@type": "WebPage",
     name: "Kealey Design Pricing",
     description:
-      "Transparent pricing ranges for web design, redesign, ecommerce websites, and local SEO services.",
+      "Transparent package ranges for web design, SEO, CRO, and digital growth services.",
     url: `${siteUrl}/pricing`,
     mainEntity: {
       "@type": "OfferCatalog",
@@ -108,7 +126,10 @@ export default function PricingPage() {
       itemListElement: projectPackages.map((pkg) => ({
         "@type": "Offer",
         name: pkg.name,
-        description: `${pkg.bestFor} Typical range ${pkg.range}.`,
+        description:
+          pkg.name === "Elite Package"
+            ? `${pkg.bestFor} ${pkg.outcome}`
+            : `${pkg.bestFor} Investment ${pkg.range}.`,
       })),
     },
   };
@@ -121,69 +142,91 @@ export default function PricingPage() {
           <div className="pricing-page__inner">
             <h1 className="pricing-page__title">Website Pricing</h1>
             <p className="pricing-page__lead">
-              Transparent pricing ranges for web design, ecommerce, and local SEO services.
+              Clear package options for website launches, local SEO, CRO, and full-service digital growth.
             </p>
           </div>
         </section>
 
         <section className="split-page__section pricing-page__section" aria-label="Project package pricing">
           <div className="pricing-page__inner">
-            <p className="pricing-page__eyebrow">PROJECT RANGES</p>
-            <h2 className="pricing-page__title">Typical Build Investment</h2>
+            <p className="pricing-page__eyebrow">PACKAGE RANGES</p>
+            <h2 className="pricing-page__title">Choose the Right Growth Path</h2>
             <p className="pricing-page__lead">
-              Most projects in Chatham-Kent land inside these ranges. If your timeline is tight or your
-              scope includes custom integrations, we will map that clearly during discovery.
+              Start with a focused website launch, build consistent monthly momentum, or invest in a
+              full-service growth system with custom strategy, analytics, and lead generation.
             </p>
             <p className="pricing-page__note">
-              Financing is available for qualifying projects above a minimum investment threshold.
+              Final scope depends on page count, content needs, competition, integrations, and timeline.
             </p>
 
-            <div className="pricing-page__grid">
+            <div className="pricing-page__summary" aria-label="Pricing summary">
+              <div>
+                <span>Fastest Start</span>
+                <strong>Launch</strong>
+              </div>
+              <div>
+                <span>Best for Momentum</span>
+                <strong>Growth</strong>
+              </div>
+              <div>
+                <span>Deepest Support</span>
+                <strong>Elite</strong>
+              </div>
+            </div>
+
+            <div className="pricing-page__offer-board">
               {projectPackages.map((pkg) => (
-                <article key={pkg.name} className={`pricing-page__card ${pkg.featured ? "is-featured" : ""}`}>
-                  {pkg.featured ? <p className="pricing-page__badge">Most Popular</p> : null}
-                  <h3 className="pricing-page__card-title">{pkg.name}</h3>
-                  <p className="pricing-page__price">{pkg.range}</p>
-                  <p className="pricing-page__best-for">{pkg.bestFor}</p>
-                  <ul className="pricing-page__list">
-                    {pkg.includes.map((item) => (
-                      <li key={item}>
-                        <Check aria-hidden="true" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Link
-                    href={`/contact?plan=${encodeURIComponent(pkg.name)}`}
-                    className={`quote-button pricing-page__card-button ${
-                      pkg.name === "Growth Website" ? "pricing-page__card-button--outline" : ""
-                    }`}
-                  >
-                    Get Started with {pkg.name}
-                  </Link>
+                <article key={pkg.name} className={`pricing-page__offer ${pkg.featured ? "is-featured" : ""}`}>
+                  <div className="pricing-page__offer-main">
+                    <div className="pricing-page__offer-kicker">
+                      <span>{pkg.step}</span>
+                      {pkg.featured ? <p className="pricing-page__badge">Most Popular</p> : null}
+                    </div>
+                    <h3 className="pricing-page__card-title">{pkg.name}</h3>
+                    <p className="pricing-page__best-for">{pkg.bestFor}</p>
+                    <p className="pricing-page__outcome">{pkg.outcome}</p>
+                  </div>
+                  <div className="pricing-page__offer-details">
+                    <p className="pricing-page__range-label">{pkg.rangeLabel}</p>
+                    <p className="pricing-page__price">{pkg.range}</p>
+                    <ul className="pricing-page__list">
+                      {pkg.includes.map((item) => (
+                        <li key={item}>
+                          <Check aria-hidden="true" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <Link
+                      href={`/contact?plan=${encodeURIComponent(pkg.name)}`}
+                      className="quote-button pricing-page__card-button"
+                    >
+                      Discuss {pkg.name}
+                    </Link>
+                  </div>
                 </article>
               ))}
             </div>
-            <div style={{ marginTop: "3rem", textAlign: "center" }}>
+            <div className="pricing-page__center-cta">
               <Link href="/contact" className="contact-page__cta">
-                View All Plans
+                Talk Through the Right Package
               </Link>
             </div>
           </div>
         </section>
 
-        <section className="split-page__section pricing-page__section" aria-label="Monthly SEO and growth plans">
+        <section className="split-page__section pricing-page__section" aria-label="Website care and growth subscriptions">
           <div className="pricing-page__inner">
-            <h2 className="pricing-page__title">Monthly SEO and Growth Support</h2>
+            <h2 className="pricing-page__title">Recurring Revenue and Add-Ons</h2>
             <p className="pricing-page__lead">
-              For businesses that want ongoing momentum after launch, retainers combine SEO execution,
-              site improvements, and conversion tuning.
+              Website-care plans, SEO/CRO subscriptions, content bundles, and conversion audits create
+              clear ongoing value with stable monthly billing.
             </p>
             <div className="pricing-page__mini-grid">
               {monthlyPlans.map((plan) => (
                 <article key={plan.name} className="pricing-page__mini-card">
+                  <p className="pricing-page__mini-label">{plan.range}</p>
                   <h3>{plan.name}</h3>
-                  <p className="pricing-page__price">{plan.range}</p>
                   <ul className="pricing-page__list">
                     {plan.points.map((point) => (
                       <li key={point}>
@@ -201,7 +244,7 @@ export default function PricingPage() {
                 </article>
               ))}
             </div>
-            <div style={{ marginTop: "2rem", textAlign: "center" }}>
+            <div className="pricing-page__center-cta pricing-page__center-cta--compact">
               <Link href="/contact" className="contact-page__cta">
                 Learn More
               </Link>

@@ -44,9 +44,9 @@ export function SiteHeader() {
         <div className="site-header__alert" role="status" aria-label="Booking availability">
           <Link href="/contact" className="site-header__alert-link" onClick={() => setIsMenuOpen(false)}>
             <div className="site-header__alert-inner">
-              <span className="site-header__alert-text">Now booking web design projects.</span>
+              <span className="site-header__alert-text">Now booking growth-focused website projects.</span>
               <span className="site-header__alert-cta">
-                Get your free consultation
+                Get a custom growth plan
                 <ArrowRight className="site-header__alert-icon" aria-hidden />
               </span>
             </div>
@@ -107,13 +107,13 @@ export function SiteHeader() {
             </Link>
           ))}
           <Link href="/contact" className="quote-button site-nav__cta" onClick={() => setIsMenuOpen(false)}>
-            Get a Quote
+            Get Growth Plan
             <ArrowRight className="quote-button__icon" aria-hidden />
           </Link>
         </nav>
 
         <Link href="/contact" className="quote-button quote-button--header">
-          Get a Quote
+          Get Growth Plan
           <ArrowRight className="quote-button__icon" aria-hidden />
         </Link>
       </div>

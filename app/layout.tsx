@@ -21,11 +21,11 @@ const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Kealey Design | Web Design Chatham, Ontario",
+    default: "Chatham Small Business Website Design | Kealey Design",
     template: "%s | Kealey Design",
   },
   description:
-    "Kealey Design is a local web design agency in Chatham, Ontario serving Southwestern Ontario with custom websites, local SEO, and conversion-focused development.",
+    "Kealey Design builds conversion-focused websites and local SEO systems for Chatham-Kent small businesses, service companies, and Southwestern Ontario brands.",
   keywords: [
     "web design Chatham",
     "web design Chatham Ontario",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.kealeydesign.ca/",
-    title: "Kealey Design | Web Design Chatham, Ontario",
+    title: "Chatham Small Business Website Design | Kealey Design",
     description:
-      "Custom website design, development, and local SEO services for businesses in Chatham and Southwestern Ontario.",
+      "Conversion-focused website design, development, and local SEO services for businesses in Chatham-Kent and Southwestern Ontario.",
     siteName: "Kealey Design",
     locale: "en_CA",
     images: [
@@ -56,9 +56,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kealey Design | Web Design Chatham, Ontario",
+    title: "Chatham Small Business Website Design | Kealey Design",
     description:
-      "Local web design and SEO services for Chatham and Southwestern Ontario businesses.",
+      "Local web design and SEO services for Chatham-Kent and Southwestern Ontario small businesses.",
     images: [defaultSocialImage],
   },
   robots: {

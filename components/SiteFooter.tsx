@@ -125,7 +125,8 @@ export function SiteFooter() {
           <div className="site-footer__bottom">
             <p className="site-footer__copyright">© {new Date().getFullYear()} Kealey Design. All rights reserved.</p>
             <p className="site-footer__legal">
-              <Link href="/privacy">Privacy Policy</Link> · <Link href="/terms">Terms</Link>
+              <Link href="/privacy">Privacy Policy</Link> · <Link href="/terms">Terms</Link> ·{" "}
+              <Link href="/accessibility">Accessibility</Link>
             </p>
           </div>
         </div>

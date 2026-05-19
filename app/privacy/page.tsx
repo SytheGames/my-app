@@ -69,7 +69,8 @@ export default function PrivacyPage() {
               <h2>Contact</h2>
               <p>
                 For privacy-related questions, contact Kealey Design through our <Link href="/contact">contact page</Link>.
-                You can also review our <Link href="/terms">Terms of Use</Link> for additional policy details.
+                You can also review our <Link href="/terms">Terms of Use</Link> and{" "}
+                <Link href="/accessibility">Accessibility Statement</Link> for additional policy details.
               </p>
             </div>
           </div>

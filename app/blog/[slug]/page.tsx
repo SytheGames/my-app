@@ -120,6 +120,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <p className="blog-post__eyebrow">BLOG POST</p>
           <h1 className="blog-post__title">{post.title}</h1>
           <p className="blog-post__date">{new Date(post.date).toLocaleDateString("en-CA")}</p>
+          <div className="blog-post__author" aria-label="Article author">
+            <p>
+              Written by <Link href="/about">{post.author}</Link>, founder of Kealey Design and a Chatham-based
+              web designer focused on local SEO, conversion strategy, and small-business websites.
+            </p>
+          </div>
 
           <div className="blog-post__image-wrap">
             <Image src={post.image} alt={post.title} width={1400} height={820} className="blog-post__image" />
@@ -140,6 +146,19 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               {post.content}
             </ReactMarkdown>
           </div>
+          <aside className="blog-post__cta" aria-label="Conversion audit call to action">
+            <div>
+              <p className="blog-post__cta-eyebrow">Next Step</p>
+              <h2>Want a conversion audit for your website?</h2>
+              <p>
+                Send your current site and we will identify practical improvements for local visibility,
+                trust signals, page structure, and lead conversion.
+              </p>
+            </div>
+            <Link href="/contact" className="quote-button blog-post__cta-button">
+              Get a Conversion Audit
+            </Link>
+          </aside>
         </article>
       </main>
       <SiteFooter />

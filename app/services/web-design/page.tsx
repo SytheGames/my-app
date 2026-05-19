@@ -9,14 +9,14 @@ import { PageContactSection } from "@/components/PageContactSection";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
 
 export const metadata: Metadata = {
-  title: "Custom Web Design in Chatham-Kent",
+  title: "Chatham Small Business Website Design",
   description:
-    "Custom web design services in Chatham-Kent focused on conversions, speed, mobile usability, and long-term growth. See real results from 25+ local client projects.",
+    "Chatham small-business website design for service companies that need clearer messaging, stronger local SEO foundations, and better lead conversion.",
   alternates: {
     canonical: "/services/web-design",
   },
   openGraph: {
-    title: "Web Design in Chatham-Kent",
+    title: "Chatham Small Business Website Design",
     description:
       "Custom web design services in Chatham and Southwestern Ontario focused on conversions, speed, and mobile usability.",
     url: "/services/web-design",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Design in Chatham-Kent",
+    title: "Chatham Small Business Website Design",
     description:
       "Custom web design services in Chatham and Southwestern Ontario focused on conversions, speed, and mobile usability.",
     images: ["https://www.kealeydesign.ca/arcstage.png"],
@@ -42,7 +42,7 @@ export default function WebDesignServicePage() {
     {
       question: "How long does a custom web design project take?",
       answer:
-        "Most custom websites take 6–12 weeks from project start to launch, depending on the number of pages, content complexity, and integration requirements. We provide a detailed timeline during the discovery phase.",
+        "Most custom websites take 6-12 weeks from project start to launch, depending on the number of pages, content complexity, and integration requirements. Launch Package projects can move faster when content and approvals are ready.",
     },
     {
       question: "Can you redesign my existing website?",
@@ -62,7 +62,7 @@ export default function WebDesignServicePage() {
     {
       question: "What does web design cost in Chatham-Kent?",
       answer:
-        "Website projects typically range from $2,200–$6,500+ depending on page count, features, and integrations. Starter Website packages begin at $2,200; Growth Websites range $3,800–$6,500. See our pricing page for details.",
+        "Launch Package websites typically start around CA$2,500-$4,000. Larger custom growth builds are scoped by proposal, especially when SEO, CRO, lead-generation funnels, and analytics are included. See our pricing page for the current package structure.",
     },
   ];
 
@@ -97,27 +97,22 @@ export default function WebDesignServicePage() {
     offers: [
       {
         "@type": "Offer",
-        name: "Starter Website",
+        name: "Launch Package",
         priceCurrency: "CAD",
         priceSpecification: {
           "@type": "PriceSpecification",
-          minPrice: 2200,
-          maxPrice: 3500,
+          minPrice: 2500,
+          maxPrice: 4000,
           priceCurrency: "CAD",
           unitText: "PROJECT",
         },
       },
       {
         "@type": "Offer",
-        name: "Growth Website",
+        name: "Elite Package",
         priceCurrency: "CAD",
-        priceSpecification: {
-          "@type": "PriceSpecification",
-          minPrice: 3800,
-          maxPrice: 6500,
-          priceCurrency: "CAD",
-          unitText: "PROJECT",
-        },
+        description:
+          "Custom proposal for full-service digital growth, including custom web design, SEO, CRO, lead-generation funnels, and advanced analytics.",
       },
     ],
   };
@@ -147,7 +142,7 @@ export default function WebDesignServicePage() {
         <SplitPageHero
           eyebrow="SERVICE"
           title="Custom Web Design in Chatham-Kent, Ontario"
-          description="We design custom websites that balance visual quality with practical performance. Every build is optimized for mobile devices, clear navigation, and lead-focused user flows."
+          description="Chatham small-business website design that balances visual quality with practical performance. Every build is optimized for mobile devices, clear navigation, and lead-focused user flows."
           imageSrc="/web-design-service.svg"
           imageAlt="Web design showcase"
           ctaLabel="Start your project"
@@ -185,7 +180,7 @@ export default function WebDesignServicePage() {
               <p>
                 Every page is designed and tested to perform smoothly across all devices. We build responsive systems that keep
                 your content readable, navigation clear, and calls-to-action easy to use whether someone visits from a phone,
-                tablet, or desktop. Mobile devices now account for 60–70% of web traffic; ignoring mobile is equivalent to
+                tablet, or desktop. Mobile devices now account for 60-70% of web traffic; ignoring mobile is equivalent to
                 abandoning most of your audience.
               </p>
               <p>
@@ -240,8 +235,9 @@ export default function WebDesignServicePage() {
 
               <h2>Website Design Pricing in Chatham-Kent</h2>
               <p>
-                Our pricing reflects the complexity and scope of your project. Most custom website projects land in these ranges
-                depending on page count, integrations, and content depth.
+                Our pricing reflects the complexity and scope of your project. The current package structure is designed around
+                a focused launch option, ongoing growth support, and deeper custom engagements for businesses ready to invest in
+                web, SEO, CRO, and lead-generation systems together.
               </p>
 
               <div style={{ overflowX: 'auto', marginTop: '0.8rem', marginBottom: '0.8rem' }}>
@@ -255,14 +251,14 @@ export default function WebDesignServicePage() {
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Starter Website</td>
-                      <td>$2,200 – $3,500</td>
-                      <td>New businesses or simple brochure sites needing a strong first impression with 5 core pages</td>
+                      <td>Launch Package</td>
+                      <td>CA$2,500-$4,000</td>
+                      <td>Semi-custom website on a proven framework with up to 5 pages, basic on-page SEO, and a two-week delivery window</td>
                     </tr>
                     <tr>
-                      <td>Growth Website</td>
-                      <td>$3,800 – $6,500</td>
-                      <td>Established businesses wanting 6–15 custom pages with conversion focus, service/location SEO content, and integrations</td>
+                      <td>Elite Package</td>
+                      <td>Custom proposal</td>
+                      <td>Full-service digital growth with custom web design, SEO, CRO, lead-generation funnels, analytics, and monthly retainers after launch</td>
                     </tr>
                   </tbody>
                 </table>
@@ -271,7 +267,7 @@ export default function WebDesignServicePage() {
               <p>
                 For full pricing details,{' '}
                 <Link href="/pricing">see our pricing page</Link> or{' '}
-                <Link href="/contact">book a free consultation</Link> to discuss your specific project.
+                <Link href="/contact">request a conversion audit</Link> to discuss your specific project.
               </p>
 
               <h2>Frequently Asked Questions</h2>

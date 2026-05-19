@@ -74,7 +74,8 @@ export default function TermsPage() {
               <h2>Contact</h2>
               <p>
                 For terms-related questions, use our <Link href="/contact">contact page</Link>.
-                For data handling details, review our <Link href="/privacy">Privacy Policy</Link>.
+                For data handling details, review our <Link href="/privacy">Privacy Policy</Link>. For usability
+                details, review our <Link href="/accessibility">Accessibility Statement</Link>.
               </p>
             </div>
           </div>

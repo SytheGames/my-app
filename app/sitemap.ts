@@ -109,6 +109,7 @@ const staticRoutes: StaticRouteConfig[] = [
   },
   { urlPath: "/privacy", sourceFile: "app/privacy/page.tsx", changeFrequency: "yearly", priority: 0.4 },
   { urlPath: "/terms", sourceFile: "app/terms/page.tsx", changeFrequency: "yearly", priority: 0.4 },
+  { urlPath: "/accessibility", sourceFile: "app/accessibility/page.tsx", changeFrequency: "yearly", priority: 0.4 },
 ];
 
 function getLastModifiedFromSourceFile(relativeSourceFile: string): Date {

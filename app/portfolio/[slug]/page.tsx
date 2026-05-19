@@ -15,6 +15,29 @@ type CaseStudyPageProps = {
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
 
+const clientLogos: Record<string, { src: string; alt: string; isLight?: boolean }> = {
+  "arcstage-growth-rebuild": {
+    src: "/images/logos/arcstage-logo.webp",
+    alt: "ARCstage logo",
+    isLight: true,
+  },
+  "enhanced-concrete-local-seo": {
+    src: "/images/logos/enhanced-concrete-logo.svg",
+    alt: "Enhanced Concrete logo",
+  },
+};
+
+const serviceLinks = [
+  { match: "seo", href: "/services/local-seo" },
+  { match: "redesign", href: "/services/website-redesign" },
+  { match: "ecommerce", href: "/services/ecommerce-websites" },
+  { match: "social", href: "/services/social-media-management" },
+  { match: "website", href: "/services/web-design" },
+  { match: "landing", href: "/services/web-design" },
+  { match: "conversion", href: "/services/web-design" },
+  { match: "brand", href: "/services/web-design" },
+];
+
 export function generateStaticParams() {
   return getAllCaseStudySlugs().map((slug) => ({ slug }));
 }
@@ -61,6 +84,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
   }
 
   const matchingTestimonials = getTestimonialsForClient(study.client);
+  const clientLogo = clientLogos[study.slug];
 
   const caseStudySchema = {
     "@context": "https://schema.org",
@@ -68,7 +92,12 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
     headline: study.title,
     description: study.description,
     datePublished: study.date,
-    author: { "@type": "Organization", name: "Kealey Design" },
+    author: {
+      "@type": "Person",
+      name: "Matt Kealey",
+      url: `${siteUrl}/about`,
+      worksFor: { "@type": "Organization", name: "Kealey Design" },
+    },
     publisher: { "@type": "Organization", name: "Kealey Design" },
     image: `${siteUrl}${study.image}`,
     mainEntityOfPage: `${siteUrl}/portfolio/${study.slug}`,
@@ -97,14 +126,29 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
           <section className="portfolio-page__meta-grid" aria-label="Case study highlights">
             <div className="portfolio-page__meta-card">
               <h2>Client</h2>
+              {clientLogo ? (
+                <Image
+                  src={clientLogo.src}
+                  alt={clientLogo.alt}
+                  width={220}
+                  height={80}
+                  className={`case-study-logo ${clientLogo.isLight ? "case-study-logo--light" : ""}`}
+                />
+              ) : null}
               <p>{study.client}</p>
             </div>
             <div className="portfolio-page__meta-card">
               <h2>Services</h2>
               <ul className="portfolio-page__meta-list">
-                {study.services.map((service) => (
-                  <li key={service}>{service}</li>
-                ))}
+                {study.services.map((service) => {
+                  const serviceHref = getServiceHref(service);
+
+                  return (
+                    <li key={service}>
+                      <Link href={serviceHref}>{service}</Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
             <div className="portfolio-page__meta-card">
@@ -115,6 +159,31 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
                 ))}
               </ul>
             </div>
+          </section>
+
+          <section className="case-study-eeat" aria-label="Case study evidence and author credibility">
+            <article>
+              <h2>Evidence Used</h2>
+              <p>
+                Each case study is written from project delivery notes, client context, launch outcomes,
+                and measurable result points available from the engagement.
+              </p>
+            </article>
+            <article>
+              <h2>Results Snapshot</h2>
+              <ul>
+                {study.results.map((result) => (
+                  <li key={result}>{result}</li>
+                ))}
+              </ul>
+            </article>
+            <article>
+              <h2>Written by Matt Kealey</h2>
+              <p>
+                Matt is a Chatham-based web designer focused on local SEO, conversion strategy,
+                and practical website systems for small businesses. <Link href="/about">Read Matt&apos;s bio</Link>.
+              </p>
+            </article>
           </section>
 
           {matchingTestimonials.length > 0 ? (
@@ -130,6 +199,20 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
           <div className="blog-post__content">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{study.content}</ReactMarkdown>
           </div>
+
+          <aside className="case-study-cta" aria-label="Start a similar project">
+            <div>
+              <p className="case-study-cta__eyebrow">Start Your Project</p>
+              <h2>Want a site built around clearer leads and stronger trust?</h2>
+              <p>
+                Share your goals and we will map the practical next steps, package fit, and growth
+                opportunities for your website.
+              </p>
+            </div>
+            <Link href="/contact" className="quote-button case-study-cta__button">
+              Get a Custom Growth Plan
+            </Link>
+          </aside>
         </article>
       </main>
       <SiteFooter />
@@ -139,4 +222,11 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
       />
     </div>
   );
+}
+
+function getServiceHref(service: string): string {
+  const normalizedService = service.toLowerCase();
+  const matchedService = serviceLinks.find((item) => normalizedService.includes(item.match));
+
+  return matchedService?.href ?? "/services";
 }

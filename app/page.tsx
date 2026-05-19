@@ -52,6 +52,8 @@ const services = [
     Icon: Globe,
     description:
       "Custom website design in Chatham-Kent with fast performance, mobile-first UX, and conversion-focused page structure.",
+    scope: "Launch Package: up to 5 pages",
+    timeline: "Typical start: 2 weeks",
   },
   {
     title: "Local SEO & Management",
@@ -60,6 +62,8 @@ const services = [
     Icon: ChartNoAxesCombined,
     description:
       "Local SEO services for Chatham-Kent and Southwestern Ontario, including on-page optimization and Google Business Profile management.",
+    scope: "GBP, citations, content, reporting",
+    timeline: "Monthly growth support",
   },
   {
     title: "Website Redesign",
@@ -68,6 +72,8 @@ const services = [
     Icon: RefreshCw,
     description:
       "Website redesign services that modernize outdated pages, improve site speed, and create clearer conversion paths for local businesses.",
+    scope: "UX, SEO preservation, conversion flow",
+    timeline: "Scoped after audit",
   },
   {
     title: "Social Media Management",
@@ -76,6 +82,8 @@ const services = [
     Icon: Megaphone,
     description:
       "Monthly social media management with 5 custom posts, graphic design support, account management, and profile optimization.",
+    scope: "5 custom posts + profile support",
+    timeline: "Monthly content rhythm",
   },
   {
     title: "Ecommerce Websites",
@@ -84,6 +92,8 @@ const services = [
     Icon: ShoppingCart,
     description:
       "Ecommerce website development focused on product discovery, checkout UX, and better conversion performance across desktop and mobile.",
+    scope: "Product pages, checkout, analytics",
+    timeline: "Custom project timeline",
   },
 ];
 
@@ -607,11 +617,12 @@ export default function Home() {
             </h1>
             <p className="hero__description">
               Kealey Design helps businesses across Chatham-Kent and Southwestern Ontario grow
-              with custom website design, web development, and local SEO services.
+              with custom website design, web development, and local SEO services built to increase
+              qualified leads.
             </p>
             <div className="hero__actions">
               <Link href="/contact" className="quote-button quote-button--hero">
-                Book a Free Consultation
+                Get a Custom Growth Plan
                 <ArrowRight className="quote-button__icon" aria-hidden />
               </Link>
               <a href="tel:+15194011469" className="hero__call-link" aria-label="Call now at +1 (519) 401-1469">
@@ -652,10 +663,17 @@ export default function Home() {
                 </div>
               </div>
               <div className="hero__trust-item">
+                <Shield className="hero__trust-icon" aria-hidden />
+                <div className="hero__trust-copy">
+                  <p className="hero__trust-title">Privacy + Terms</p>
+                  <p className="hero__trust-subtitle">Clear policies published</p>
+                </div>
+              </div>
+              <div className="hero__trust-item">
                 <Rocket className="hero__trust-icon" aria-hidden />
                 <div className="hero__trust-copy">
-                  <p className="hero__trust-title">Results Focused</p>
-                  <p className="hero__trust-subtitle">Websites that convert</p>
+                  <p className="hero__trust-title">Lead Focused</p>
+                  <p className="hero__trust-subtitle">Built for inquiries</p>
                 </div>
               </div>
             </div>
@@ -737,6 +755,14 @@ export default function Home() {
                   </div>
                   <h3 className="services__card-title">{service.title}</h3>
                   <p className="services__card-description">{service.description}</p>
+                  <div className="services__details" aria-label={`${service.title} scope and timeline`}>
+                    <span>{service.scope}</span>
+                    <span>{service.timeline}</span>
+                  </div>
+                  <span className="services__deep-link">
+                    View service details
+                    <ArrowRight className="services__deep-link-icon" aria-hidden />
+                  </span>
                 </Link>
               ))}
             </div>

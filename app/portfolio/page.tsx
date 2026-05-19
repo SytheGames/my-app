@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import Image from "next/image";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { PortfolioFilterGrid } from "@/components/PortfolioFilterGrid";
 import { getAllCaseStudies } from "@/lib/caseStudies";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
@@ -28,6 +27,16 @@ export const metadata: Metadata = {
 
 export default function PortfolioPage() {
   const caseStudies = getAllCaseStudies();
+  const portfolioCards = caseStudies.map((study) => ({
+    slug: study.slug,
+    title: study.title,
+    excerpt: study.excerpt,
+    date: study.date,
+    image: study.image,
+    services: study.services,
+    industry: getCaseStudyIndustry(study.keywords),
+    results: study.results,
+  }));
 
   return (
     <div className="landing-page">
@@ -37,25 +46,11 @@ export default function PortfolioPage() {
           <p className="portfolio-page__eyebrow">PORTFOLIO</p>
           <h1 className="portfolio-page__title">Case Studies</h1>
           <p className="portfolio-page__lead">
-            Real project breakdowns focused on conversion, performance, and business growth.
+            Filter by service or industry to see project goals, challenges, screenshots, and measurable
+            results from recent website and SEO work.
           </p>
 
-          <div className="portfolio-page__grid">
-            {caseStudies.map((study) => (
-              <article key={study.slug} className="portfolio-page__card">
-                <Link href={`/portfolio/${study.slug}`} className="portfolio-page__image-link" aria-label={study.title}>
-                  <Image src={study.image} alt={study.title} width={1200} height={700} className="portfolio-page__image" />
-                </Link>
-                <div className="portfolio-page__card-content">
-                  <p className="portfolio-page__date">{new Date(study.date).toLocaleDateString("en-CA")}</p>
-                  <h2 className="portfolio-page__card-title">
-                    <Link href={`/portfolio/${study.slug}`}>{study.title}</Link>
-                  </h2>
-                  <p className="portfolio-page__excerpt">{study.excerpt}</p>
-                </div>
-              </article>
-            ))}
-          </div>
+          <PortfolioFilterGrid caseStudies={portfolioCards} />
         </div>
       </main>
       <SiteFooter />
@@ -72,4 +67,16 @@ export default function PortfolioPage() {
       />
     </div>
   );
+}
+
+function getCaseStudyIndustry(keywords: string[]): string {
+  const normalizedKeywords = keywords.join(" ").toLowerCase();
+
+  if (normalizedKeywords.includes("healthcare")) return "Healthcare";
+  if (normalizedKeywords.includes("contractor")) return "Contractors";
+  if (normalizedKeywords.includes("arcade")) return "Entertainment";
+  if (normalizedKeywords.includes("real estate")) return "Real Estate";
+  if (normalizedKeywords.includes("automotive") || normalizedKeywords.includes("car")) return "Automotive";
+
+  return "Small Business";
 }
