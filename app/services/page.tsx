@@ -22,14 +22,14 @@ export const metadata: Metadata = {
       "Explore Kealey Design services including web design, website redesign, local SEO, social media management, and ecommerce website development.",
     url: "/services",
     type: "website",
-    images: [{ url: "/arcstage.png" }],
+    images: [{ url: "/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Services in Chatham-Kent",
     description:
       "Explore Kealey Design services including web design, website redesign, local SEO, social media management, and ecommerce website development.",
-    images: ["/arcstage.png"],
+    images: ["/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg"],
   },
 };
 
@@ -89,7 +89,7 @@ export default function ServicesPage() {
           eyebrow="SERVICES"
           title="Web Design & SEO Services"
           description="A deeper look at the services Kealey Design offers to businesses across Chatham and Southwestern Ontario."
-          imageSrc="/arcstage.png"
+          imageSrc="/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg"
           imageAlt="Kealey Design services showcase"
           ctaLabel="Book a consultation"
           ctaHref="/contact"

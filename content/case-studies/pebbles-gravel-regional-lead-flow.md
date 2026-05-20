@@ -3,7 +3,7 @@ title: "Pebbles Gravel Website & SEO Rebuild"
 description: "A website and SEO-focused rebuild for Pebbles Gravel aimed at restoring broken backlinks, improving structure, and increasing quote conversions."
 excerpt: "A conversion-first rebuild that repaired technical issues and improved how customers explore gravel and stone products."
 date: "2024-09-10"
-image: "/pebblesgravel.png"
+image: "/case-studies/Screenshot_20-5-2026_161715_www.pebblesgravel.com.jpeg"
 keywords:
   - "local lead generation"
   - "contractor marketing"

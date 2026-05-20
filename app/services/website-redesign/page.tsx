@@ -21,14 +21,14 @@ export const metadata: Metadata = {
       "Website redesign services for Ontario businesses needing stronger branding, faster performance, and improved user journeys.",
     url: "/services/website-redesign",
     type: "website",
-    images: [{ url: "https://www.kealeydesign.ca/daveychiro.png" }],
+    images: [{ url: "https://www.kealeydesign.ca/case-studies/Screenshot_20-5-2026_16178_www.daveychiropractic.com.jpeg" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Website Redesign in Ontario",
     description:
       "Website redesign services for Ontario businesses needing stronger branding, faster performance, and improved user journeys.",
-    images: ["https://www.kealeydesign.ca/daveychiro.png"],
+    images: ["https://www.kealeydesign.ca/case-studies/Screenshot_20-5-2026_16178_www.daveychiropractic.com.jpeg"],
   },
 };
 

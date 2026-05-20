@@ -23,7 +23,7 @@ function normalizeValue(value: string): string {
 const testimonials: Testimonial[] = [
   {
     id: "google-1",
-    name: "ARC stage",
+    name: "ARCstage",
     quote: "Designed our website flawlessly and quickly, with great technical support!",
     logo: "/images/logos/arcstage-logo.webp",
     source: "google",

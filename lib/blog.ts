@@ -115,7 +115,7 @@ function readMarkdownFile(slug: string): BlogPost {
     format: frontmatter.format ?? "guide",
     category: frontmatter.category ?? "Web Design",
     tags,
-    image: frontmatter.image ?? "/arcstage.png",
+    image: frontmatter.image ?? "/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg",
     keywords,
     seo,
     content: sanitizedContent,

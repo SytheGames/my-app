@@ -30,13 +30,13 @@ const projectPackages = [
     range: "CA$600-$1,200/month",
     rangeLabel: "Monthly subscription",
     bestFor: "Ongoing local SEO and CRO management for service businesses that want steady improvement after launch.",
-    outcome: "Keep visibility, content, profile quality, and conversion performance moving every month.",
+    outcome: "Keep visibility, content, profile quality, and conversion performance moving every month with reporting tied to calls, forms, and lead source.",
     includes: [
       "Citation building",
       "Google Business Profile management",
       "Content creation",
       "Conversion-rate optimization support",
-      "Monthly analytics report",
+      "Monthly SEO, conversion, and ROI report",
     ],
     featured: true,
   },
@@ -53,7 +53,7 @@ const projectPackages = [
       "SEO strategy and implementation",
       "Conversion-rate optimization",
       "Lead-generation funnels",
-      "Advanced analytics with monthly retainers afterward",
+      "Advanced analytics dashboard with monthly retainers afterward",
     ],
   },
 ] as const;
@@ -72,9 +72,9 @@ const monthlyPlans = [
     name: "SEO/CRO Subscriptions",
     range: "Growth",
     points: [
-      "Local SEO execution and reporting",
-      "Conversion improvements informed by analytics",
-      "Ongoing content and landing page refinement",
+      "Local SEO execution with rank, map, and inquiry reporting",
+      "Conversion improvements informed by GA4 and Search Console data",
+      "Ongoing content and landing page refinement tied to lead quality",
     ],
   },
   {
@@ -85,6 +85,25 @@ const monthlyPlans = [
       "Social media update bundles",
       "Conversion audits for targeted improvements",
     ],
+  },
+] as const;
+
+const reportingMetrics = [
+  {
+    label: "SEO Visibility",
+    points: ["Search Console clicks", "Ranking movement", "Google Business Profile views"],
+  },
+  {
+    label: "Conversions",
+    points: ["Form submissions", "Phone-click tracking", "Booking or quote requests"],
+  },
+  {
+    label: "Lead Quality",
+    points: ["Inquiry source", "Service or location intent", "Qualified vs. low-fit leads"],
+  },
+  {
+    label: "ROI Signals",
+    points: ["Cost per lead trends", "Best-performing pages", "Next-month priorities"],
   },
 ] as const;
 
@@ -101,14 +120,14 @@ export const metadata: Metadata = {
       "Transparent Launch, Growth, and Elite package ranges for web design, SEO, CRO, and digital growth.",
     url: "/pricing",
     type: "website",
-    images: [{ url: "/arcstage.png" }],
+    images: [{ url: "/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Website Pricing in Chatham-Kent",
     description:
       "Transparent Launch, Growth, and Elite package ranges for web design, SEO, CRO, and digital growth.",
-    images: ["/arcstage.png"],
+    images: ["/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg"],
   },
 };
 
@@ -220,7 +239,7 @@ export default function PricingPage() {
             <h2 className="pricing-page__title">Recurring Revenue and Add-Ons</h2>
             <p className="pricing-page__lead">
               Website-care plans, SEO/CRO subscriptions, content bundles, and conversion audits create
-              clear ongoing value with stable monthly billing.
+              clear ongoing value when clients can see what changed, what converted, and what to do next.
             </p>
             <div className="pricing-page__mini-grid">
               {monthlyPlans.map((plan) => (
@@ -248,6 +267,33 @@ export default function PricingPage() {
               <Link href="/contact" className="contact-page__cta">
                 Learn More
               </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="split-page__section pricing-page__section" aria-label="Reporting and dashboard metrics">
+          <div className="pricing-page__inner">
+            <p className="pricing-page__eyebrow">REPORTING</p>
+            <h2 className="pricing-page__title">Dashboards That Show What Is Working</h2>
+            <p className="pricing-page__lead">
+              Monthly growth plans include practical reporting across SEO performance, conversion tracking,
+              lead quality, and ROI signals so recurring work is tied to business outcomes instead of activity alone.
+            </p>
+            <div className="pricing-page__mini-grid">
+              {reportingMetrics.map((metric) => (
+                <article key={metric.label} className="pricing-page__mini-card">
+                  <p className="pricing-page__mini-label">Dashboard</p>
+                  <h3>{metric.label}</h3>
+                  <ul className="pricing-page__list">
+                    {metric.points.map((point) => (
+                      <li key={point}>
+                        <Check aria-hidden="true" />
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
             </div>
           </div>
         </section>

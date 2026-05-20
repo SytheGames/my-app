@@ -9,6 +9,25 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/services/web-design",
+        destination: "/web-design",
+        permanent: true,
+      },
+      {
+        source: "/services/local-seo",
+        destination: "/local-seo",
+        permanent: true,
+      },
+      {
+        source: "/hvac-web-design",
+        destination: "/industries/hvac",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

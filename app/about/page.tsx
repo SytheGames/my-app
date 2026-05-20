@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     description,
     url: "/about",
     type: "website",
-    images: [{ url: "/pebblesgravel.png" }],
+    images: [{ url: "/case-studies/Screenshot_20-5-2026_161715_www.pebblesgravel.com.jpeg" }],
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
-    images: ["/pebblesgravel.png"],
+    images: ["/case-studies/Screenshot_20-5-2026_161715_www.pebblesgravel.com.jpeg"],
   },
 };
 

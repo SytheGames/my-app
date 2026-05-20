@@ -21,14 +21,14 @@ export const metadata: Metadata = {
       "Read client reviews and testimonials for Kealey Design, including Google reviews and direct client feedback.",
     url: "/reviews",
     type: "website",
-    images: [{ url: "/arcstage.png" }],
+    images: [{ url: "/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Client Reviews | Web Design Chatham | Kealey Design",
     description:
       "Read client reviews and testimonials for Kealey Design, including Google reviews and direct client feedback.",
-    images: ["/arcstage.png"],
+    images: ["/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg"],
   },
 };
 

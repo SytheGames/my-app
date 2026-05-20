@@ -21,14 +21,14 @@ export const metadata: Metadata = {
       "A practical breakdown of WordPress vs Webflow for performance, maintenance, SEO, and long-term ownership.",
     url: "/wordpress-vs-webflow",
     type: "article",
-    images: [{ url: "/arcstage.png" }],
+    images: [{ url: "/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "WordPress vs Webflow for Small Businesses",
     description:
       "A practical breakdown of WordPress vs Webflow for performance, maintenance, SEO, and long-term ownership.",
-    images: ["/arcstage.png"],
+    images: ["/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg"],
   },
 };
 

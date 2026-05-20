@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 type SplitPageHeroProps = {
@@ -19,8 +18,6 @@ export function SplitPageHero({
   eyebrow,
   title,
   description,
-  imageSrc,
-  imageAlt,
   ctaLabel,
   ctaHref,
   relatedLinks,
@@ -52,9 +49,6 @@ export function SplitPageHero({
             ))}
           </nav>
         </div>
-      </div>
-      <div className="split-hero__right">
-        <Image src={imageSrc} alt={imageAlt} fill sizes="(max-width: 760px) 100vw, 50vw" className="split-hero__image" />
       </div>
     </section>
   );

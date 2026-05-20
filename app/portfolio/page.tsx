@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     description: "Case studies and growth-focused project breakdowns from Kealey Design.",
     url: "/portfolio",
     type: "website",
-    images: [{ url: "/arcstage.png" }],
+    images: [{ url: "/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Web Design Portfolio | Kealey Design Case Studies",
     description: "Case studies and growth-focused project breakdowns from Kealey Design.",
-    images: ["/arcstage.png"],
+    images: ["/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg"],
   },
 };
 

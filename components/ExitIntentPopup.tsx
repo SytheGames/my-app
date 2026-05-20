@@ -109,29 +109,30 @@ export function ExitIntentPopup() {
         {/* Left column — visual */}
         <div className="exit-popup__visual">
           <Image
-            src="/daveychiro.png"
-            alt="Davey Chiropractic website built by Kealey Design"
+            src="/case-studies/Screenshot_20-5-2026_161715_www.pebblesgravel.com.jpeg"
+            alt="Pebbles Gravel website built by Kealey Design"
             width={900}
             height={700}
             className="exit-popup__mockup-img"
             priority
           />
           <div className="exit-popup__visual-copy">
-            <div className="exit-popup__badge">Limited-Time Offer</div>
+            <div className="exit-popup__badge">2 Spots Left This Month</div>
             <p className="exit-popup__visual-headline">
-              Save <span className="exit-popup__highlight">$500</span> on a new website
+              Get your free audit and save <span className="exit-popup__highlight">$500</span>
             </p>
-            <p className="exit-popup__visual-sub">Offer ends June&nbsp;20th</p>
+            <p className="exit-popup__visual-sub">Request yours this week.</p>
           </div>
         </div>
 
         {/* Right column — form */}
         <div className="exit-popup__panel">
           <h2 className="exit-popup__heading">
-            Let&apos;s build something great together
+            Turn more visitors into leads
           </h2>
           <p className="exit-popup__subhead">
-            Fill out the form and we&apos;ll apply your <strong>$500 discount</strong> automatically to your quote.
+            Send your URL and we&apos;ll reply with 3 conversion quick wins. If we&apos;re a fit, your
+            <strong> $500 project credit</strong> is applied automatically to your quote.
           </p>
 
           {submitted ? (
@@ -142,7 +143,7 @@ export function ExitIntentPopup() {
               <input
                 type="hidden"
                 name="subject"
-                value="$500 Off Offer — Exit Popup Inquiry"
+                value="Free Audit + $500 Project Credit - Exit Popup Inquiry"
               />
               <input type="hidden" name="from_name" value="Kealey Design Website" />
               <input
@@ -197,12 +198,12 @@ export function ExitIntentPopup() {
               />
 
               <button type="submit" disabled={submitting}>
-                {submitting ? "Sending…" : "Claim My $500 Discount"}
+                {submitting ? "Sending…" : "Get My Free Audit + $500 Credit"}
               </button>
             </form>
           )}
 
-          <p className="exit-popup__fine">Offer valid on new web design projects only. Ends June 20th.</p>
+          <p className="exit-popup__fine">Project credit valid on new web design projects only. Limited onboarding capacity each month.</p>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ title: "One Hundred King Coming Soon Launch"
 description: "A high-impact launch page created to introduce the One Hundred King redevelopment project and attract retail tenant interest."
 excerpt: "A fast turnaround landing page designed to support the public reveal of Chatham’s One Hundred King redevelopment."
 date: "2024-07-10"
-image: "/onehundredking.png"
+image: "/case-studies/Screenshot_20-5-2026_162332_www.onehundredking.com.jpeg"
 keywords:
   - "landing page design"
   - "real estate development"

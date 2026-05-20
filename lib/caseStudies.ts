@@ -34,7 +34,7 @@ function readMarkdownFile(slug: string): CaseStudy {
     description: frontmatter.description ?? "",
     excerpt: frontmatter.excerpt ?? "",
     date: frontmatter.date ?? "1970-01-01",
-    image: frontmatter.image ?? "/arcstage.png",
+    image: frontmatter.image ?? "/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg",
     keywords: Array.isArray(frontmatter.keywords) ? frontmatter.keywords : [],
     client: frontmatter.client ?? "Kealey Design Client",
     services: Array.isArray(frontmatter.services) ? frontmatter.services : [],

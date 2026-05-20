@@ -3,21 +3,25 @@ import { ArrowUpRight, Facebook, Instagram, Linkedin } from "lucide-react";
 
 const footerLinks = {
   services: [
-    { label: "Web Design", href: "/services/web-design" },
-    { label: "Website Redesign", href: "/services/website-redesign" },
-    { label: "Local SEO", href: "/services/local-seo" },
-    { label: "Social Media Management", href: "/services/social-media-management" },
-    { label: "Ecommerce", href: "/services/ecommerce-websites" },
+    { label: "Web Design", href: "/web-design" },
+    { label: "Local SEO", href: "/local-seo" },
+    { label: "SEO Services", href: "/seo-services" },
+    { label: "Website Maintenance", href: "/website-maintenance" },
+    { label: "GBP Management", href: "/google-business-profile-management" },
+  ],
+  industries: [
+    { label: "Industries", href: "/industries" },
+    { label: "HVAC Web Design", href: "/industries/hvac" },
+    { label: "Contractor Web Design", href: "/contractor-web-design" },
+    { label: "Roofing Web Design", href: "/roofing-company-web-design-southwestern-ontario" },
+    { label: "Chiropractor Web Design", href: "/chiropractor-web-design" },
   ],
   company: [
     { label: "About", href: "/about" },
-    { label: "Pricing", href: "/pricing" },
-    { label: "Projects", href: "/portfolio" },
+    { label: "Portfolio", href: "/portfolio" },
     { label: "Reviews", href: "/reviews" },
-    { label: "WordPress vs Webflow", href: "/wordpress-vs-webflow" },
-    { label: "Industries", href: "/#locations" },
-    { label: "Chiropractor Web Design", href: "/chiropractor-web-design" },
-    { label: "Contractor Web Design", href: "/contractor-web-design" },
+    { label: "Locations", href: "/locations" },
+    { label: "Pricing", href: "/pricing" },
     { label: "Contact", href: "/contact" },
   ],
 };
@@ -95,6 +99,17 @@ export function SiteFooter() {
                 <p className="site-footer__heading">Company</p>
                 <ul className="site-footer__list">
                   {footerLinks.company.map((item) => (
+                    <li key={item.label}>
+                      <Link href={item.href}>{item.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="site-footer__column">
+                <p className="site-footer__heading">Industries</p>
+                <ul className="site-footer__list">
+                  {footerLinks.industries.map((item) => (
                     <li key={item.label}>
                       <Link href={item.href}>{item.label}</Link>
                     </li>

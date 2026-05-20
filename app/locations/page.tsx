@@ -87,7 +87,7 @@ export default function LocationsPage() {
           eyebrow="LOCATIONS"
           title="Cities We Serve"
           description="Localized web design and SEO services tailored to each market across Southwestern Ontario."
-          imageSrc="/daveychiro.png"
+          imageSrc="/case-studies/Screenshot_20-5-2026_16178_www.daveychiropractic.com.jpeg"
           imageAlt="City-focused web design coverage"
           ctaLabel="Talk about your location"
           ctaHref="/contact"

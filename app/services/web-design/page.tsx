@@ -21,14 +21,14 @@ export const metadata: Metadata = {
       "Custom web design services in Chatham and Southwestern Ontario focused on conversions, speed, and mobile usability.",
     url: "/services/web-design",
     type: "website",
-    images: [{ url: "https://www.kealeydesign.ca/arcstage.png" }],
+    images: [{ url: "https://www.kealeydesign.ca/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Chatham Small Business Website Design",
     description:
       "Custom web design services in Chatham and Southwestern Ontario focused on conversions, speed, and mobile usability.",
-    images: ["https://www.kealeydesign.ca/arcstage.png"],
+    images: ["https://www.kealeydesign.ca/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg"],
   },
 };
 
@@ -58,6 +58,11 @@ export default function WebDesignServicePage() {
       question: "Do you provide training and ongoing support?",
       answer:
         "Yes. Every project includes training on content updates and basic management. We also offer optional ongoing support for hosting, performance monitoring, and updates.",
+    },
+    {
+      question: "Do you set up analytics and conversion tracking?",
+      answer:
+        "Yes. Website builds can include GA4, Search Console, form submission tracking, phone-click tracking, and a simple reporting baseline so future SEO and CRO decisions are based on real visitor and lead data.",
     },
     {
       question: "What does web design cost in Chatham-Kent?",
@@ -201,6 +206,18 @@ export default function WebDesignServicePage() {
                 obvious, intuitive, and friction-free.
               </p>
 
+              <h2>Analytics, Conversion Tracking, and Reporting</h2>
+              <p>
+                A new website should launch with the measurement layer already in place. We can configure GA4,
+                Google Search Console, form submission tracking, phone-click tracking, and key conversion events so
+                you can see which pages, channels, and calls-to-action are generating leads after launch.
+              </p>
+              <p>
+                For ongoing growth plans, that data becomes a monthly reporting dashboard covering SEO visibility,
+                conversion rate, lead source, inquiry quality, and practical next steps. This makes recurring SEO and
+                CRO work easier to evaluate because improvements are tied to outcomes, not assumptions.
+              </p>
+
               <h2>Content Management Training</h2>
               <p>
                 Your website should evolve with your business. We deliver manageable, modern content management systems and
@@ -215,7 +232,7 @@ export default function WebDesignServicePage() {
               </p>
               <ul>
                 <li>
-                  <strong><Link href="/portfolio/arcstage-growth-rebuild">Arcstage (London, Ontario):</Link></strong> A production
+                  <strong><Link href="/portfolio/arcstage-growth-rebuild">ARCstage (London, Ontario):</Link></strong> A production
                   company with an outdated site and poor lead flow. We redesigned their website with a portfolio showcase, clearer
                   service structure, and conversion-focused contact paths. Result: 45% increase in qualified inquiries, faster
                   project booking cycle.
@@ -258,7 +275,7 @@ export default function WebDesignServicePage() {
                     <tr>
                       <td>Elite Package</td>
                       <td>Custom proposal</td>
-                      <td>Full-service digital growth with custom web design, SEO, CRO, lead-generation funnels, analytics, and monthly retainers after launch</td>
+                      <td>Full-service digital growth with custom web design, SEO, CRO, lead-generation funnels, analytics dashboards, and monthly retainers after launch</td>
                     </tr>
                   </tbody>
                 </table>
@@ -296,7 +313,7 @@ export default function WebDesignServicePage() {
 
         <PageContactSection
           heading="Ready to plan your web design project?"
-          copy="Share your goals and we will map a practical website strategy built for conversion and long-term growth."
+          copy="Share your goals and we will map a practical website strategy built for conversion, analytics visibility, and long-term growth."
           subject="New Web Design Service Inquiry - Kealey Design"
         />
       </main>

@@ -17,14 +17,14 @@ export const metadata: Metadata = {
       "Custom chiropractor website design that attracts new patients and fills your schedule. Fast, mobile-friendly sites with online booking, local SEO, and trust-building content.",
     url: "/chiropractor-web-design",
     type: "website",
-    images: [{ url: "/daveychiro.png" }],
+    images: [{ url: "/case-studies/Screenshot_20-5-2026_16178_www.daveychiropractic.com.jpeg" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Chiropractor Website Design | Websites Built for Chiro Clinics",
     description:
       "Custom chiropractor website design that attracts new patients and fills your schedule. Fast, mobile-friendly sites with online booking, local SEO, and trust-building content.",
-    images: ["/daveychiro.png"],
+    images: ["/case-studies/Screenshot_20-5-2026_16178_www.daveychiropractic.com.jpeg"],
   },
 };
 
@@ -80,7 +80,7 @@ export default function ChiropractorWebDesignPage() {
           eyebrow="WEB DESIGN"
           title="Chiropractor Website Design That Fills Your Schedule"
           description="We build websites for chiropractic clinics that attract new patients, earn their trust, and make booking an appointment effortless."
-          imageSrc="/daveychiro.png"
+          imageSrc="/case-studies/Screenshot_20-5-2026_16178_www.daveychiropractic.com.jpeg"
           imageAlt="Chiropractor website design preview"
           ctaLabel="Request a Free Consultation"
           ctaHref="/contact"

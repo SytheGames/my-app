@@ -3,7 +3,7 @@ title: "Davey Chiro Website Refresh"
 description: "A modern refresh of a long-standing chiropractic website focused on improving usability while preserving its established SEO performance."
 excerpt: "A UX-focused update that modernized a decade-old site while protecting years of built search traffic."
 date: "2024-03-15"
-image: "/daveychiro.png"
+image: "/case-studies/Screenshot_20-5-2026_16178_www.daveychiropractic.com.jpeg"
 keywords:
   - "healthcare website"
   - "conversion optimization"

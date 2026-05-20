@@ -5,8 +5,9 @@ import Link from "next/link";
 import { ArrowRight, Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: "Services", href: "/services" },
-  { label: "Pricing", href: "/pricing" },
+  { label: "Web Design", href: "/web-design" },
+  { label: "Local SEO", href: "/local-seo" },
+  { label: "Industries", href: "/industries" },
   { label: "Locations", href: "/locations" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "About", href: "/about" },
@@ -17,20 +18,24 @@ const utilityItems = [
   { label: "Blog", href: "/blog" },
 ];
 
+const ALERT_KEY = "site-header-alert-dismissed";
+const SEVEN_DAYS = 7 * 24 * 60 * 60 * 1000;
+
 export function SiteHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAlertDismissed, setIsAlertDismissed] = useState(false);
 
-  const ALERT_KEY = "site-header-alert-dismissed";
-  const SEVEN_DAYS = 7 * 24 * 60 * 60 * 1000;
-
   useEffect(() => {
-    const stored = window.localStorage.getItem(ALERT_KEY);
-    if (stored && Date.now() - Number(stored) < SEVEN_DAYS) {
-      setIsAlertDismissed(true);
-    } else if (stored) {
-      window.localStorage.removeItem(ALERT_KEY);
-    }
+    const timeoutId = window.setTimeout(() => {
+      const stored = window.localStorage.getItem(ALERT_KEY);
+      if (stored && Date.now() - Number(stored) < SEVEN_DAYS) {
+        setIsAlertDismissed(true);
+      } else if (stored) {
+        window.localStorage.removeItem(ALERT_KEY);
+      }
+    }, 0);
+
+    return () => window.clearTimeout(timeoutId);
   }, []);
 
   const dismissAlert = () => {
@@ -44,9 +49,9 @@ export function SiteHeader() {
         <div className="site-header__alert" role="status" aria-label="Booking availability">
           <Link href="/contact" className="site-header__alert-link" onClick={() => setIsMenuOpen(false)}>
             <div className="site-header__alert-inner">
-              <span className="site-header__alert-text">Now booking growth-focused website projects.</span>
+              <span className="site-header__alert-text">2 website project spots open this month.</span>
               <span className="site-header__alert-cta">
-                Get a custom growth plan
+                Request your free audit
                 <ArrowRight className="site-header__alert-icon" aria-hidden />
               </span>
             </div>
@@ -107,13 +112,13 @@ export function SiteHeader() {
             </Link>
           ))}
           <Link href="/contact" className="quote-button site-nav__cta" onClick={() => setIsMenuOpen(false)}>
-            Get Growth Plan
+            Get Free Audit
             <ArrowRight className="quote-button__icon" aria-hidden />
           </Link>
         </nav>
 
         <Link href="/contact" className="quote-button quote-button--header">
-          Get Growth Plan
+          Get Free Audit
           <ArrowRight className="quote-button__icon" aria-hidden />
         </Link>
       </div>

@@ -11,24 +11,24 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca
 export const metadata: Metadata = {
   title: "Local SEO in Chatham-Kent",
   description:
-    "Hire a local SEO agency in Chatham-Kent with transparent pricing ($650-$2,400/mo), Google Business Profile optimization, and conversion-focused local growth.",
+    "Hire a local SEO agency in Chatham-Kent with transparent pricing ($650-$2,400/mo), Google Business Profile optimization, conversion tracking, and ROI reporting.",
   alternates: {
     canonical: "/services/local-seo",
   },
   openGraph: {
     title: "Local SEO in Chatham-Kent",
     description:
-      "Hire a local SEO agency in Chatham-Kent with transparent pricing ($650-$2,400/mo), Google Business Profile optimization, and conversion-focused local growth.",
+      "Hire a local SEO agency in Chatham-Kent with transparent pricing ($650-$2,400/mo), Google Business Profile optimization, conversion tracking, and ROI reporting.",
     url: "/services/local-seo",
     type: "website",
-    images: [{ url: "/daveychiro.png" }],
+    images: [{ url: "/case-studies/Screenshot_20-5-2026_16178_www.daveychiropractic.com.jpeg" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Local SEO in Chatham-Kent",
     description:
-      "Hire a local SEO agency in Chatham-Kent with transparent pricing ($650-$2,400/mo), Google Business Profile optimization, and conversion-focused local growth.",
-    images: ["/daveychiro.png"],
+      "Hire a local SEO agency in Chatham-Kent with transparent pricing ($650-$2,400/mo), Google Business Profile optimization, conversion tracking, and ROI reporting.",
+    images: ["/case-studies/Screenshot_20-5-2026_16178_www.daveychiropractic.com.jpeg"],
   },
 };
 
@@ -52,7 +52,12 @@ export default function LocalSeoServicePage() {
     {
       question: "What is included in Kealey Design's local SEO service?",
       answer:
-        "Deliverables can include profile optimization, category and services alignment, citation audits, local content updates, location/service page expansion, conversion tracking, and monthly action reporting. Scope depends on whether you choose Foundation or Growth and how aggressively you want to expand market coverage.",
+        "Deliverables can include profile optimization, category and services alignment, citation audits, local content updates, location/service page expansion, conversion tracking, and monthly dashboard reporting. Scope depends on whether you choose Foundation or Growth and how aggressively you want to expand market coverage.",
+    },
+    {
+      question: "Do you provide analytics dashboards and ROI reporting?",
+      answer:
+        "Yes. Monthly SEO and CRO plans can include a simple performance dashboard that combines Search Console, Google Business Profile, GA4 events, calls, form submissions, and lead source notes so clients can see which work is producing inquiries and where the next investment should go.",
     },
     {
       question: "How is Kealey Design different from other SEO agencies?",
@@ -90,7 +95,7 @@ export default function LocalSeoServicePage() {
     "@id": `${siteUrl}/services/local-seo#service`,
     name: "Local SEO",
     description:
-      "Local SEO services for Chatham-Kent and Southwestern Ontario businesses, including Google Business Profile optimization, citation consistency, and location-specific growth strategy.",
+      "Local SEO services for Chatham-Kent and Southwestern Ontario businesses, including Google Business Profile optimization, citation consistency, conversion tracking, and ROI reporting.",
     areaServed: ["Chatham-Kent", "Windsor", "London", "Sarnia", "Leamington", "Southwestern Ontario"],
     provider: { "@id": `${siteUrl}/#organization` },
     url: `${siteUrl}/services/local-seo`,
@@ -147,8 +152,8 @@ export default function LocalSeoServicePage() {
         <SplitPageHero
           eyebrow="SERVICE"
           title="Local SEO in Chatham, Ontario"
-          description="We help small businesses rank for local searches by improving website relevance, Google Business Profile quality, and location-specific authority signals."
-          imageSrc="/daveychiro.png"
+          description="We help small businesses rank for local searches and understand which rankings turn into calls, form submissions, and qualified leads."
+          imageSrc="/case-studies/Screenshot_20-5-2026_16178_www.daveychiropractic.com.jpeg"
           imageAlt="Local SEO map rankings interface"
           ctaLabel="Get local SEO help"
           ctaHref="/contact"
@@ -179,6 +184,19 @@ export default function LocalSeoServicePage() {
                 Our approach combines technical SEO with conversion-focused website strategy. We don&apos;t chase vanity
                 rankings. Instead, we focus on the locations and service types where your business profitably converts
                 leads, then optimize aggressively around those high-intent buyer pathways.
+              </p>
+
+              <h2>Analytics Setup and Conversion Tracking</h2>
+              <p>
+                Local SEO only creates value when it connects to real business activity. We set up or audit the tracking
+                foundation behind the campaign, including GA4 events, Google Search Console, Google Business Profile
+                performance, form submission tracking, phone-click tracking, and key landing page engagement. This gives
+                each monthly report a reliable baseline instead of a pile of disconnected screenshots.
+              </p>
+              <p>
+                The goal is simple: know which pages, cities, services, and search terms are creating qualified inquiries.
+                That makes upsells and recurring improvements easier to justify because the next recommendation is tied to
+                observed behavior, not guesswork.
               </p>
 
               <h2>Google Business Profile Optimization</h2>
@@ -229,11 +247,11 @@ export default function LocalSeoServicePage() {
                 demonstrate engagement and collect feedback that informs your service quality.
               </p>
 
-              <h2>Lead-Focused Reporting</h2>
+              <h2>Dashboard Reporting for SEO, Conversions, and ROI</h2>
               <p>
                 Reporting ties ranking movement to actual business outcomes: calls, form submissions, and inquiry quality.
-                Monthly reports show what changed (rankings, map impressions), what happened as a result (inquiries, conversion
-                rate), and what actions come next. You get clear priorities rather than vanity metrics. Most agencies report
+                Monthly dashboards show what changed (rankings, map impressions, clicks), what happened as a result
+                (calls, forms, conversion rate, qualified inquiries), and what actions come next. You get clear priorities rather than vanity metrics. Most agencies report
                 {`"rankings improved"`} or {`"traffic went up"`} without connecting those movements to revenue. We start with revenue
                 and work backward: the only rankings that matter are the ones your customers actually use to find you.
               </p>
@@ -248,6 +266,40 @@ export default function LocalSeoServicePage() {
                 <table className="pricing-table">
                   <thead>
                     <tr>
+                      <th>Reporting Area</th>
+                      <th>What We Track</th>
+                      <th>Why It Matters</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>SEO performance</td>
+                      <td>Search Console clicks, local ranking movement, GBP views and actions</td>
+                      <td>Shows whether visibility is increasing in the markets and services that matter</td>
+                    </tr>
+                    <tr>
+                      <td>Conversions</td>
+                      <td>Forms, phone clicks, booking requests, quote inquiries, conversion rate</td>
+                      <td>Connects traffic to actual lead generation instead of reporting visits alone</td>
+                    </tr>
+                    <tr>
+                      <td>Lead quality</td>
+                      <td>Source, service intent, location intent, qualified vs. low-fit inquiries</td>
+                      <td>Helps prioritize pages and campaigns that attract better-fit customers</td>
+                    </tr>
+                    <tr>
+                      <td>ROI signals</td>
+                      <td>Cost per lead trends, best-performing pages, next-month actions</td>
+                      <td>Makes recurring SEO and CRO work easier to evaluate and improve</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div style={{ overflowX: 'auto', marginTop: '0.8rem', marginBottom: '0.8rem' }}>
+                <table className="pricing-table">
+                  <thead>
+                    <tr>
                       <th>Service Tier</th>
                       <th>Monthly Investment</th>
                       <th>Includes</th>
@@ -257,12 +309,12 @@ export default function LocalSeoServicePage() {
                     <tr>
                       <td>Local SEO Foundation</td>
                       <td>$650–$950 / month</td>
-                      <td>Google Business Profile optimization, citation audits and corrections, monthly content updates, ranking and inquiry reporting</td>
+                      <td>Google Business Profile optimization, citation audits and corrections, monthly content updates, ranking, conversion, and inquiry reporting</td>
                     </tr>
                     <tr>
                       <td>Growth Retainer</td>
                       <td>$1,200–$2,400 / month</td>
-                      <td>Everything in Foundation + location and service page expansion, conversion-rate optimization and split testing, deeper analytics roadmap, lead quality tracking</td>
+                      <td>Everything in Foundation + location and service page expansion, conversion-rate optimization, dashboard reviews, ROI signals, and lead quality tracking</td>
                     </tr>
                   </tbody>
                 </table>
@@ -334,8 +386,8 @@ export default function LocalSeoServicePage() {
         </section>
 
         <PageContactSection
-          heading="Want to improve local search visibility?"
-          copy="Tell us your target cities and services and we will recommend a focused local SEO action plan."
+          heading="Want SEO reporting tied to real leads?"
+          copy="Tell us your target cities and services and we will recommend a local SEO action plan with conversion tracking, dashboard reporting, and clear next-month priorities."
           subject="New Local SEO Service Inquiry - Kealey Design"
         />
       </main>

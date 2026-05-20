@@ -3,7 +3,7 @@ title: "ARCstage Arcade Launch Website"
 description: "A pre-launch landing page and evolving website built to generate hype and support the opening of Edmonton’s premier rhythm game arcade."
 excerpt: "How a strategic launch website helped ARCstage build early momentum and attract hundreds of early fans before opening."
 date: "2025-05-10"
-image: "/arcstage.png"
+image: "/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg"
 keywords:
   - "case study"
   - "web design"

@@ -10,12 +10,12 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca
 
 export const metadata: Metadata = {
   title: "Contact Kealey Design | Free Website Audit",
-  description: "Get a free website audit with a 24-hour turnaround from Kealey Design. We will send 3 quick wins to improve conversion, speed, and local visibility.",
+  description: "Request a free website audit from Kealey Design this week. We will send 3 quick wins to improve conversion, speed, and local visibility.",
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact Kealey Design | Free Website Audit",
     description:
-      "Get a free website audit with a 24-hour turnaround from Kealey Design. We will send 3 quick wins to improve conversion, speed, and local visibility.",
+      "Request a free website audit from Kealey Design this week. We will send 3 quick wins to improve conversion, speed, and local visibility.",
     url: "/contact",
     type: "website",
     images: [{ url: "/mockup.png" }],
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Contact Kealey Design | Free Website Audit",
     description:
-      "Get a free website audit with a 24-hour turnaround from Kealey Design. We will send 3 quick wins to improve conversion, speed, and local visibility.",
+      "Request a free website audit from Kealey Design this week. We will send 3 quick wins to improve conversion, speed, and local visibility.",
     images: ["/mockup.png"],
   },
 };
@@ -35,7 +35,7 @@ export default function ContactPage() {
     "@type": "ContactPage",
     name: "Contact Kealey Design",
     description:
-      "Get a free website audit with a 24-hour turnaround from Kealey Design. We will send 3 quick wins to improve conversion, speed, and local visibility.",
+      "Request a free website audit from Kealey Design this week. We will send 3 quick wins to improve conversion, speed, and local visibility.",
     url: `${siteUrl}/contact`,
   };
 
@@ -47,7 +47,7 @@ export default function ContactPage() {
           <div className="contact-page__layout">
             <div className="contact-page__visual">
               <p className="contact-page__eyebrow">CONTACT</p>
-              <h1 className="contact-page__title">Get a free website audit in 24 hours</h1>
+              <h1 className="contact-page__title">Get your free website audit this week</h1>
               <p className="contact-page__lead">
                 Send your website URL and we will reply with 3 quick wins you can apply right away
                 to improve performance, clarity, and lead quality.
@@ -55,6 +55,7 @@ export default function ContactPage() {
 
               <ul className="contact-page__stats" aria-label="Trust highlights">
                 <li className="contact-page__stat-item">25+ websites launched</li>
+                <li className="contact-page__stat-item">2 new-project spots this month</li>
                 <li className="contact-page__stat-item">98% client satisfaction</li>
                 <li className="contact-page__stat-item">Serving Chatham, Windsor, London + nearby</li>
               </ul>

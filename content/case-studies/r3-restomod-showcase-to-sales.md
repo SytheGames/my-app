@@ -3,7 +3,7 @@ title: "R3 Restomod Website Overhaul"
 description: "A full redesign and structural rebuild for R3 Restomod focused on improving conversions while maintaining the brand’s automotive-focused identity."
 excerpt: "A complete site overhaul that transformed a showcase website into a conversion-ready platform for consultations."
 date: "2025-11-12"
-image: "/r3restomod.png"
+image: "/case-studies/screencapture-r3restomod-2026-05-20-16_23_08.png"
 keywords:
   - "automotive website"
   - "portfolio UX"

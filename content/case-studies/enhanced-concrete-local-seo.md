@@ -3,7 +3,7 @@ title: "Enhanced Concrete Brand & Website Launch"
 description: "A full brand, website, and SEO launch for Enhanced Concrete as the business expanded from landscaping into dedicated concrete services."
 excerpt: "From a new logo to conversion-focused service pages, this project built the foundation for a contractor’s expansion into concrete work."
 date: "2026-02-06"
-image: "/enhancedconcrete.png"
+image: "/case-studies/Screenshot_20-5-2026_161652_enhancedconcrete.ca.jpeg"
 keywords:
   - "local SEO"
   - "contractor website"
