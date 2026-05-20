@@ -162,11 +162,6 @@ const faqs = [
       "Yes. We build and optimize ecommerce experiences including product pages, collections, and conversion flows.",
   },
   {
-    question: "Do you offer web design services in Chatham and nearby towns?",
-    answer:
-      "Yes. We work with businesses in Chatham and nearby communities across Southwestern Ontario, including Wallaceburg, Tilbury, Blenheim, Ridgetown, and Dresden.",
-  },
-  {
     question: "Do you optimize for both Chatham and Chatham-Kent searches?",
     answer:
       "Yes. We naturally use both Chatham and Chatham-Kent throughout core pages, service content, and location messaging so your site can match how real people search in this area.",
@@ -526,35 +521,35 @@ export default function Home() {
         </section>
 
         <section className="faq" aria-label="Frequently asked questions">
-          <div className="faq__inner">
-            <p className="faq__eyebrow">FAQ</p>
-            <h2 className="faq__title">Web Design and SEO FAQs</h2>
-            <div className="faq__columns">
-              <div className="faq__column">
-                {faqs.slice(0, 3).map((item) => (
-                  <details key={item.question} className="faq__item">
-                    <summary className="faq__summary">
-                      <h3 className="faq__question">{item.question}</h3>
-                      <span className="faq__indicator" aria-hidden>+</span>
-                    </summary>
-                    <p className="faq__answer">{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-              <div className="faq__column">
-                {faqs.slice(3).map((item) => (
-                  <details key={item.question} className="faq__item">
-                    <summary className="faq__summary">
-                      <h3 className="faq__question">{item.question}</h3>
-                      <span className="faq__indicator" aria-hidden>+</span>
-                    </summary>
-                    <p className="faq__answer">{item.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </div>
+        <div className="faq__inner">
+          <p className="faq__eyebrow">FAQ</p>
+          <h2 className="faq__title">Web Design and SEO FAQs</h2>
+
+          <div className="faq__columns">
+            {[0, 1].map((columnIndex) => {
+              const midpoint = Math.ceil(faqs.length / 2);
+              const columnFaqs =
+                columnIndex === 0 ? faqs.slice(0, midpoint) : faqs.slice(midpoint);
+
+              return (
+                <div className="faq__column" key={columnIndex}>
+                  {columnFaqs.map((item) => (
+                    <details key={item.question} className="faq__item">
+                      <summary className="faq__summary">
+                        <h3 className="faq__question">{item.question}</h3>
+                        <span className="faq__indicator" aria-hidden="true">
+                          +
+                        </span>
+                      </summary>
+                      <p className="faq__answer">{item.answer}</p>
+                    </details>
+                  ))}
+                </div>
+              );
+            })}
           </div>
-        </section>
+        </div>
+      </section>
 
         <PageContactSection
           heading="Ready to build a stronger local search foundation?"
