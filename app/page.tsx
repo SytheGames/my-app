@@ -126,6 +126,66 @@ const faqs = [
     answer:
       "We are strongest with local service businesses: contractors, HVAC companies, roofers, clinics, trades, professional services, and businesses that need local search visibility to create qualified leads.",
   },
+  {
+    question: "How long does a typical website project take?",
+    answer:
+      "Most projects are delivered in 4 to 8 weeks depending on scope, content readiness, and required integrations.",
+  },
+  {
+    question: "Do you redesign existing websites or only build from scratch?",
+    answer:
+      "Both. We can modernize your current site structure or build a new one from the ground up based on your goals.",
+  },
+  {
+    question: "Will my website be mobile-friendly?",
+    answer:
+      "Yes. Every page is designed and tested for responsive behavior across modern phones, tablets, and desktops.",
+  },
+  {
+    question: "Can you help with copywriting and content planning?",
+    answer:
+      "Yes. We can assist with page messaging, content hierarchy, and conversion-focused copy recommendations.",
+  },
+  {
+    question: "Do you provide local SEO with website builds?",
+    answer:
+      "Yes. Every website includes technical SEO fundamentals, and we offer ongoing local SEO for Chatham-Kent and Southwestern Ontario businesses.",
+  },
+  {
+    question: "Can you integrate booking forms, CRMs, or third-party tools?",
+    answer:
+      "Absolutely. We regularly connect sites with CRMs, analytics platforms, booking systems, and marketing tools.",
+  },
+  {
+    question: "Do you work with ecommerce websites?",
+    answer:
+      "Yes. We build and optimize ecommerce experiences including product pages, collections, and conversion flows.",
+  },
+  {
+    question: "Do you offer web design services in Chatham and nearby towns?",
+    answer:
+      "Yes. We work with businesses in Chatham and nearby communities across Southwestern Ontario, including Wallaceburg, Tilbury, Blenheim, Ridgetown, and Dresden.",
+  },
+  {
+    question: "Do you optimize for both Chatham and Chatham-Kent searches?",
+    answer:
+      "Yes. We naturally use both Chatham and Chatham-Kent throughout core pages, service content, and location messaging so your site can match how real people search in this area.",
+  },
+  {
+    question: "What happens after launch?",
+    answer:
+      "We offer post-launch support, maintenance, performance checks, and optional growth plans for ongoing improvements.",
+  },
+  {
+    question: "Can I update the website myself after delivery?",
+    answer:
+      "Yes. We build with manageable systems and provide guidance so your team can safely update content when needed.",
+  },
+  {
+    question: "How do we get started?",
+    answer:
+      "We start with a discovery call, define scope and priorities, then provide a clear proposal and delivery timeline.",
+  },
 ];
 
 const testimonials = [
