@@ -10,80 +10,83 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca
 const projectPackages = [
   {
     step: "01",
-    name: "Launch Package",
-    range: "CA$2,500-$4,000",
-    rangeLabel: "Starting investment",
-    bestFor: "Semi-custom website built on a proven framework for businesses that need a polished, practical launch.",
-    outcome: "Launch in about two weeks with the core pages, structure, and SEO basics in place.",
+    name: "Tier 1 — Starter",
+    range: "$3k–5k",
+    rangeLabel: "Project investment",
+    bestFor: "Smaller companies and basic rebuilds.",
+    outcome: "A practical website with mobile optimization, a contact funnel, and basic SEO.",
     featured: false,
     includes: [
-      "Up to 5 pages",
-      "Semi-custom design and development",
-      "Basic on-page SEO",
-      "Mobile-friendly framework",
-      "Two-week delivery window",
+      "Website",
+      "Mobile optimization",
+      "Contact funnel",
+      "Basic SEO",
     ],
   },
   {
     step: "02",
-    name: "Growth Package",
-    range: "CA$600-$1,200/month",
-    rangeLabel: "Monthly subscription",
-    bestFor: "Ongoing local SEO and CRO management for service businesses that want steady improvement after launch.",
-    outcome: "Keep visibility, content, profile quality, and conversion performance moving every month with reporting tied to calls, forms, and lead source.",
-    includes: [
-      "Citation building",
-      "Google Business Profile management",
-      "Content creation",
-      "Conversion-rate optimization support",
-      "Monthly SEO, conversion, and ROI report",
-    ],
+    name: "Tier 2 — Growth",
+    range: "$7k–10k",
+    rangeLabel: "Core offer",
+    bestFor: "This becomes your core offer.",
+    outcome: "Custom design with local SEO structure, lead optimization, automation, review systems, and Google Business enhancements.",
     featured: true,
+    includes: [
+      "Custom design",
+      "Local SEO structure",
+      "Lead optimization",
+      "Automation",
+      "Copywriting assistance",
+      "Review systems",
+      "Speed optimization",
+      "Google Business enhancements",
+    ],
   },
   {
     step: "03",
-    name: "Elite Package",
-    range: "Custom proposal",
-    rangeLabel: "Full-service engagement",
-    bestFor: "Full-service digital growth for businesses ready to invest in a deeper web, SEO, and lead-generation system.",
-    outcome: "Initial builds commonly sit in the CA$8,000-$12,000 range, with monthly retainers after launch.",
+    name: "Tier 3 — Authority",
+    range: "$12k–20k+",
+    rangeLabel: "Advanced growth",
+    bestFor: "Larger companies, multi-location brands, and aggressive growth.",
+    outcome: "A deep growth system with advanced SEO architecture, conversion strategy, AI integrations, and recruiting funnels.",
     featured: false,
     includes: [
-      "Custom web design",
-      "SEO strategy and implementation",
-      "Conversion-rate optimization",
-      "Lead-generation funnels",
-      "Advanced analytics dashboard with monthly retainers afterward",
+      "Advanced SEO architecture",
+      "Conversion strategy",
+      "AI integrations",
+      "Advanced automation",
+      "Recruiting funnels",
+      "Long-term optimization",
     ],
   },
 ] as const;
 
 const monthlyPlans = [
   {
-    name: "Website-Care Plans",
-    range: "Care",
+    name: "Maintenance",
+    range: "$99–199/mo",
     points: [
-      "Hosting, updates, backups, and security",
-      "Clear scope for predictable monthly delivery",
-      "Automated billing for stable ongoing support",
+      "Website maintenance, updates, backups, and security",
+      "Predictable support for a stable digital presence",
+      "A simple foundation for long-term growth",
     ],
   },
   {
-    name: "SEO/CRO Subscriptions",
-    range: "Growth",
+    name: "SEO Growth",
+    range: "$500–1500/mo",
     points: [
-      "Local SEO execution with rank, map, and inquiry reporting",
-      "Conversion improvements informed by GA4 and Search Console data",
-      "Ongoing content and landing page refinement tied to lead quality",
+      "Local SEO and ranking momentum",
+      "Lead-focused search optimization",
+      "Monthly updates tied to performance and growth",
     ],
   },
   {
-    name: "Add-On Bundles",
-    range: "Add-ons",
+    name: "Authority Package",
+    range: "$2k+/mo",
     points: [
-      "Monthly blog post bundles",
-      "Social media update bundles",
-      "Conversion audits for targeted improvements",
+      "Advanced growth strategy and optimization",
+      "Automation, AI, and conversion architecture",
+      "Long-term support for high-growth businesses",
     ],
   },
 ] as const;
@@ -110,14 +113,14 @@ const reportingMetrics = [
 export const metadata: Metadata = {
   title: "Website Pricing in Chatham-Kent",
   description:
-    "Explore Launch, Growth, and Elite website and digital growth packages for Chatham-Kent businesses.",
+    "Explore Starter, Growth, and Authority website and digital growth packages for Chatham-Kent businesses.",
   alternates: {
     canonical: "/pricing",
   },
   openGraph: {
     title: "Website Pricing in Chatham-Kent",
     description:
-      "Transparent Launch, Growth, and Elite package ranges for web design, SEO, CRO, and digital growth.",
+      "Transparent Starter, Growth, and Authority package ranges for web design, SEO, CRO, and digital growth.",
     url: "/pricing",
     type: "website",
     images: [{ url: "/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg" }],
@@ -126,7 +129,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Website Pricing in Chatham-Kent",
     description:
-      "Transparent Launch, Growth, and Elite package ranges for web design, SEO, CRO, and digital growth.",
+      "Transparent Starter, Growth, and Authority package ranges for web design, SEO, CRO, and digital growth.",
     images: ["/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg"],
   },
 };
@@ -145,10 +148,7 @@ export default function PricingPage() {
       itemListElement: projectPackages.map((pkg) => ({
         "@type": "Offer",
         name: pkg.name,
-        description:
-          pkg.name === "Elite Package"
-            ? `${pkg.bestFor} ${pkg.outcome}`
-            : `${pkg.bestFor} Investment ${pkg.range}.`,
+        description: `${pkg.bestFor} ${pkg.outcome}`,
       })),
     },
   };
@@ -159,9 +159,9 @@ export default function PricingPage() {
       <main className="split-page" aria-label="Pricing page">
         <section className="split-page__section pricing-page__section" aria-label="Basic hero">
           <div className="pricing-page__inner">
-            <h1 className="pricing-page__title">Website Pricing</h1>
+            <h1 className="pricing-page__title">Your Pricing Structure</h1>
             <p className="pricing-page__lead">
-              Clear package options for website launches, local SEO, CRO, and full-service digital growth.
+              Three practical growth packages designed for Starter, Growth, and Authority clients with clear pricing and deliverables.
             </p>
           </div>
         </section>
@@ -171,8 +171,7 @@ export default function PricingPage() {
             <p className="pricing-page__eyebrow">PACKAGE RANGES</p>
             <h2 className="pricing-page__title">Choose the Right Growth Path</h2>
             <p className="pricing-page__lead">
-              Start with a focused website launch, build consistent monthly momentum, or invest in a
-              full-service growth system with custom strategy, analytics, and lead generation.
+              Start with a smaller Starter rebuild, scale into Growth with optimized lead systems, or invest in Authority-level SEO, automation, and long-term expansion.
             </p>
             <p className="pricing-page__note">
               Final scope depends on page count, content needs, competition, integrations, and timeline.
@@ -180,16 +179,16 @@ export default function PricingPage() {
 
             <div className="pricing-page__summary" aria-label="Pricing summary">
               <div>
-                <span>Fastest Start</span>
-                <strong>Launch</strong>
+                <span>Smaller Companies</span>
+                <strong>Starter</strong>
               </div>
               <div>
-                <span>Best for Momentum</span>
+                <span>Your Core Offer</span>
                 <strong>Growth</strong>
               </div>
               <div>
-                <span>Deepest Support</span>
-                <strong>Elite</strong>
+                <span>Large-Scale Growth</span>
+                <strong>Authority</strong>
               </div>
             </div>
 
