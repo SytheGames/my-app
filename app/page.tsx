@@ -7,68 +7,73 @@ import {
   CheckCircle2,
   MapPin,
   MonitorSmartphone,
-  ShieldCheck,
+  RefreshCcw,
   Wrench,
 } from "lucide-react";
-import { FcGoogle } from "react-icons/fc";
 import { ExitIntentPopup } from "@/components/ExitIntentPopup";
 import { IndustriesWeServe } from "@/components/IndustriesWeServe";
-import { PageContactSection } from "@/components/PageContactSection";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
 
 export const metadata: Metadata = {
-  title: "Web Design & Local SEO in Chatham-Kent",
+  title: "Contractor Website Design in Southwestern Ontario",
   description:
-    "Kealey Design builds conversion-focused websites, local SEO systems, and Google Business Profile strategies for Chatham-Kent and Southwestern Ontario businesses.",
+    "Kealey Design builds modern, conversion-focused websites for contractors and service businesses across Southwestern Ontario, including Chatham-Kent, Windsor, and Sarnia.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Web Design & Local SEO in Chatham-Kent",
+    title: "Contractor Website Design in Southwestern Ontario",
     description:
-      "Custom web design, local SEO, and search strategy for businesses across Chatham-Kent and Southwestern Ontario.",
+      "Modern, conversion-focused websites for contractors and service businesses across Southwestern Ontario, including Chatham-Kent, Windsor, and Sarnia.",
     url: "/",
     type: "website",
     images: [{ url: "/mockup.png" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Design & Local SEO in Chatham-Kent",
+    title: "Contractor Website Design in Southwestern Ontario",
     description:
-      "Conversion-focused web design and local SEO services for Chatham-Kent and Southwestern Ontario businesses.",
+      "Conversion-focused websites for contractors and service businesses across Southwestern Ontario.",
     images: ["/mockup.png"],
   },
 };
 
 const services = [
   {
-    title: "Web Design",
+    title: "Custom Website Design",
     href: "/web-design",
     Icon: MonitorSmartphone,
     copy:
-      "Custom websites for service businesses that need better messaging, faster mobile performance, and clearer quote or consultation paths.",
+      "Modern websites built to reflect the quality of your business and guide visitors toward requesting a quote.",
   },
   {
-    title: "Local SEO",
+    title: "Website Redesigns",
+    href: "/services/website-redesign",
+    Icon: RefreshCcw,
+    copy:
+      "Upgrade outdated websites into fast, professional lead-generation assets without losing existing search value.",
+  },
+  {
+    title: "Local SEO Foundations",
     href: "/local-seo",
     Icon: MapPin,
     copy:
-      "Local search campaigns that improve Google Maps visibility, service-area relevance, citations, reviews, and lead tracking.",
+      "Structured pages and optimization designed to support local search visibility and map pack relevance.",
   },
   {
-    title: "Website Maintenance",
+    title: "Conversion Optimization",
+    href: "/web-design",
+    Icon: BarChart3,
+    copy:
+      "Clear calls-to-action and strategic layouts designed to increase calls, quote requests, and inquiries.",
+  },
+  {
+    title: "Ongoing Support & Maintenance",
     href: "/website-maintenance",
     Icon: Wrench,
     copy:
-      "Ongoing care for updates, performance checks, content changes, analytics, security basics, and small conversion improvements.",
-  },
-  {
-    title: "GBP Management",
-    href: "/google-business-profile-management",
-    Icon: MapPin,
-    copy:
-      "Google Business Profile optimization, posts, service updates, photos, review support, and local performance reporting.",
+      "Reliable updates, edits, and ongoing website support so your site stays current after launch.",
   },
 ];
 
@@ -80,24 +85,17 @@ const projects = [
     result: "Local service website and SEO structure for a Chatham-Kent contractor.",
   },
   {
-    title: "Davey Chiropractic",
-    href: "/portfolio/davey-chiro-conversion-refresh",
-    image: "/case-studies/Screenshot_20-5-2026_16178_www.daveychiropractic.com.jpeg",
-    result: "Patient-focused website refresh with clearer service content and booking paths.",
+    title: "Pebbles Gravel",
+    href: "/portfolio/pebbles-gravel-regional-lead-flow",
+    image: "/case-studies/Screenshot_20-5-2026_161715_www.pebblesgravel.com.jpeg",
+    result: "Website rebuild and SEO foundation that improved product discovery and quote requests.",
   },
   {
-    title: "ARCstage",
-    href: "/portfolio/arcstage-growth-rebuild",
-    image: "/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg",
-    result: "A stronger portfolio and inquiry flow for a Southwestern Ontario production company.",
+    title: "R3 Restomod",
+    href: "/portfolio/r3-restomod-showcase-to-sales",
+    image: "/case-studies/screencapture-r3restomod-2026-05-20-16_23_08.png",
+    result: "A conversion-focused redesign that turned a showcase site into a consultation-ready platform.",
   },
-];
-
-const processSteps = [
-  "Audit the current site, search visibility, tracking, and customer journey.",
-  "Map the service pages, location pages, content gaps, and conversion paths that matter most.",
-  "Design and build the website or SEO system with mobile performance, trust signals, and local relevance.",
-  "Launch with analytics, Search Console, Google Business Profile alignment, and practical next-step reporting.",
 ];
 
 const faqs = [
@@ -183,24 +181,6 @@ const faqs = [
   },
 ];
 
-const testimonials = [
-  {
-    name: "ARCstage",
-    quote: "Designed our website flawlessly and quickly, with great technical support!",
-    logo: "/images/logos/arcstage-logo.webp",
-    thumbnail: "/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg",
-    href: "/portfolio/arcstage-growth-rebuild",
-  },
-  {
-    name: "Enhanced Concrete",
-    quote:
-      "Matt built my website and manages it. He is very knowledgeable and great to work with I would highly recommend for any of your website needs.",
-    logo: "/images/logos/enhanced-concrete-logo.svg",
-    thumbnail: "/case-studies/Screenshot_20-5-2026_161652_enhancedconcrete.ca.jpeg",
-    href: "/portfolio/enhanced-concrete-local-seo",
-  },
-];
-
 export default function Home() {
   const structuredData = {
     "@context": "https://schema.org",
@@ -257,105 +237,117 @@ export default function Home() {
 
           <div className="hero__content">
             <p className="hero__eyebrow">
-              <span className="hero__eyebrow-accent">WEB DESIGN & SEO</span> CHATHAM-KENT
+              <span className="hero__eyebrow-accent">CONTRACTOR WEBSITES</span> SOUTHWESTERN ONTARIO
             </p>
-            <h1 className="hero__title">
-              Web Design and Local SEO for Businesses in{" "}
-              <span className="hero__title-accent">Chatham-Kent</span>
-            </h1>
+            <h1 className="hero__title">Websites Built to Help Contractors &amp; Service Businesses Grow</h1>
             <p className="hero__description">
-              Kealey Design builds custom websites, local SEO systems, and Google Business Profile strategies
-              for service businesses across Chatham-Kent and Southwestern Ontario. The goal is simple: make your
-              business easier to find, easier to trust, and easier to contact.
+              Kealey Design creates modern, conversion-focused websites for businesses across Southwestern Ontario -
+              designed to generate more leads, build trust faster, and improve your online presence.
             </p>
             <div className="hero__actions">
               <Link href="/contact" className="quote-button quote-button--hero">
-                Request a Free Website Audit
+                Book a Free Website Audit
                 <ArrowRight className="quote-button__icon" aria-hidden />
               </Link>
               <Link href="/portfolio" className="hero__call-link">
-                View recent work
+                View Recent Projects
               </Link>
             </div>
-            <div className="hero__trust" aria-label="Trust signals">
-              <div className="hero__trust-item">
-                <FcGoogle className="hero__trust-google" aria-hidden />
-                <div className="hero__trust-copy">
-                  <p className="hero__trust-title">5.0 Google rating</p>
-                  <p className="hero__trust-subtitle">Local client reviews</p>
-                </div>
-              </div>
-              <div className="hero__trust-item">
-                <ShieldCheck className="hero__trust-icon" aria-hidden />
-                <div className="hero__trust-copy">
-                  <p className="hero__trust-title">25+ launches</p>
-                  <p className="hero__trust-subtitle">Service and local brands</p>
-                </div>
-              </div>
-              <div className="hero__trust-item">
-                <BarChart3 className="hero__trust-icon" aria-hidden />
-                <div className="hero__trust-copy">
-                  <p className="hero__trust-title">Lead focused</p>
-                  <p className="hero__trust-subtitle">Tracked after launch</p>
-                </div>
-              </div>
+            <div className="hero__trustbar" aria-label="Trust bar">
+              <p className="hero__trustbar-title">
+                Trusted by businesses across Chatham-Kent, Windsor, Sarnia &amp; Southwestern Ontario
+              </p>
+              <p className="hero__trustbar-sub">
+                Mobile Optimized &#8226; SEO Ready &#8226; Conversion Focused &#8226; Fast Turnaround
+              </p>
             </div>
           </div>
         </section>
 
-        <section className="home-authority" aria-label="Authority introduction">
-          <div className="home-authority__inner">
-            <div className="home-authority__content">
-              <p className="home-authority__eyebrow">LOCAL DIGITAL FOUNDATION</p>
-              <h2>A local website should work harder than a digital brochure</h2>
-              <p>
-                Many Southwestern Ontario businesses have a website, but the site does not explain the offer clearly,
-                does not rank for enough local searches, and does not give visitors enough proof to take action. A
-                stronger <Link href="/web-design">website design</Link> connects design, copywriting, technical performance, <Link href="/local-seo">local SEO</Link>, and conversion tracking
-                into one system. That is the work Kealey Design focuses on.
+        <section className="home-problem" aria-label="Website lead generation problems">
+          <div className="home-problem__inner">
+            <div className="home-problem__intro">
+              <p className="home-problem__eyebrow">PROBLEM</p>
+              <h2 className="home-problem__title">Your Website Might Be Costing You Leads</h2>
+              <p className="home-problem__copy">
+                Many contractor and service business websites are outdated, slow, difficult to use on mobile, or missing
+                the trust elements that help customers feel confident reaching out.
               </p>
-              <p>
-                We help businesses in <Link href="/locations/web-design-chatham">Chatham</Link>,{" "}
-                <Link href="/locations/web-design-windsor">Windsor</Link>,{" "}
-                <Link href="/locations/web-design-london">London</Link>,{" "}
-                <Link href="/locations/web-design-sarnia">Sarnia</Link>,{" "}
-                <Link href="/locations/web-design-leamington">Leamington</Link>, and nearby communities build a practical online foundation. That means service pages that
-                match what customers search, location signals that support map visibility, trust sections that answer
-                buying objections, and calls-to-action that are easy to use from a phone. The design matters, but the
-                strategy behind the design matters more.
+              <p className="home-problem__copy">
+                Your website should help your business win jobs - not just exist online. If someone is comparing two
+                companies from a phone, the site that loads fast, explains services clearly, and makes it easy to request
+                an estimate usually wins the inquiry.
               </p>
             </div>
 
-            <aside className="home-authority__panel" aria-label="Website strategy focus areas">
-              <p className="home-authority__panel-label">Built Around</p>
-              <div className="home-authority__metrics">
-                <div>
-                  <strong>
-                    <Link href="/local-seo">Search</Link>
-                  </strong>
-                  <span>Service pages, local relevance, and visibility.</span>
-                </div>
-                <div>
-                  <strong>
-                    <Link href="/portfolio">Trust</Link>
-                  </strong>
-                  <span>Proof, reviews, and clear positioning.</span>
-                </div>
-                <div>
-                  <strong>
-                    <Link href="/contact">Action</Link>
-                  </strong>
-                  <span>Calls, forms, bookings, and quote requests.</span>
-                </div>
+            <div className="home-problem__grid" aria-label="Common website issues">
+              <article className="home-problem__card">
+                <h3>Weak Mobile Experience</h3>
+                <p>
+                  Most customers visit your website from mobile first. If the experience feels outdated or difficult to
+                  use, you lose trust immediately.
+                </p>
+              </article>
+              <article className="home-problem__card">
+                <h3>Outdated Design</h3>
+                <p>
+                  An outdated website can make even great businesses appear less professional online.
+                </p>
+              </article>
+              <article className="home-problem__card">
+                <h3>Poor Conversion Flow</h3>
+                <p>
+                  If visitors cannot quickly understand your services or contact you easily, you are likely losing
+                  estimate requests.
+                </p>
+              </article>
+              <article className="home-problem__card">
+                <h3>Weak Local Visibility</h3>
+                <p>
+                  Without proper structure and SEO foundations, your website may struggle to appear in local searches.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section className="home-solution" aria-label="Solution section">
+          <div className="home-solution__inner">
+            <div className="home-solution__content">
+              <p className="home-solution__eyebrow">SOLUTION</p>
+              <h2 className="home-solution__title">Built for Growth - Not Just Looks</h2>
+              <p className="home-solution__copy">
+                We create websites designed to help contractors and service businesses improve credibility, generate more
+                inquiries, and compete more effectively online. Every project is built with performance, user experience,
+                mobile optimization, and lead generation in mind.
+              </p>
+              <p className="home-solution__copy">
+                That means clear service pages, proof sections that build confidence, and frictionless contact paths. It
+                also means the technical pieces are handled properly: fast load times, clean structure, and internal
+                links that support local SEO over time.
+              </p>
+              <div className="home-solution__actions" aria-label="Solution section links">
+                <Link href="/web-design" className="home-solution__link">
+                  Explore web design
+                  <ArrowRight className="home-solution__link-icon" aria-hidden />
+                </Link>
+                <Link href="/local-seo" className="home-solution__link">
+                  Explore local SEO foundations
+                  <ArrowRight className="home-solution__link-icon" aria-hidden />
+                </Link>
               </div>
-            </aside>
+            </div>
           </div>
         </section>
 
         <section className="services" aria-label="Services overview">
           <div className="services__inner">
             <p className="services__eyebrow">SERVICES</p>
-            <h2 className="services__title">Core services built around search, trust, and lead generation</h2>
+            <h2 className="services__title">What We Help With</h2>
+            <p className="services__lead">
+              Contractor and service business websites need more than a fresh coat of paint. We build and improve the
+              pages that drive calls, estimate requests, and booked work, with structure that supports local search.
+            </p>
             <div className="services__grid">
               {services.map((service) => (
                 <Link key={service.title} href={service.href} className="services__card">
@@ -376,44 +368,14 @@ export default function Home() {
 
         <IndustriesWeServe />
 
-        <section className="home-why" aria-label="Why choose Kealey Design">
-          <div className="home-why__inner">
-            <div className="home-why__content">
-              <h2>Why choose Kealey Design</h2>
-              <p>
-                You work directly with Matt Kealey, not a layered agency account team. That makes the process clearer:
-                fewer handoffs, faster decisions, and strategy that stays connected from discovery through launch. The
-                work is especially useful for small businesses that need a serious digital presence but do not want a
-                bloated process or vague reporting.
-              </p>
-            </div>
-            <div className="home-why__panel">
-              <ul className="homepage-checklist">
-                <li>
-                  <CheckCircle2 className="homepage-checklist__icon" aria-hidden />
-                  <span>Local search strategy for Chatham-Kent and Southwestern Ontario markets</span>
-                </li>
-                <li>
-                  <CheckCircle2 className="homepage-checklist__icon" aria-hidden />
-                  <span>Conversion-focused page structure for calls, forms, bookings, and quote requests</span>
-                </li>
-                <li>
-                  <CheckCircle2 className="homepage-checklist__icon" aria-hidden />
-                  <span>Fast, mobile-first builds that support SEO and user experience together</span>
-                </li>
-                <li>
-                  <CheckCircle2 className="homepage-checklist__icon" aria-hidden />
-                  <span>Internal linking, schema, content hierarchy, and tracking planned from the start</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section className="projects" aria-label="Portfolio highlights">
+        <section className="projects" aria-label="Recent projects">
           <div className="projects__inner">
-            <p className="projects__eyebrow">PORTFOLIO</p>
-            <h2 className="projects__title">Portfolio highlights</h2>
+            <p className="projects__eyebrow">CASE STUDIES</p>
+            <h2 className="projects__title">Recent Projects</h2>
+            <p className="projects__lead">
+              See how Kealey Design helps local businesses modernize their online presence and improve how they attract
+              customers online.
+            </p>
             <div className="projects__grid">
               {projects.map((project) => (
                 <article key={project.title} className="projects__card">
@@ -438,85 +400,56 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="home-seo" aria-label="Local SEO section">
-          <div className="home-seo__inner">
-            <div className="home-seo__content">
-              <h2>Local SEO is where the website starts compounding</h2>
+        <section className="home-why" aria-label="Why businesses choose Kealey Design">
+          <div className="home-why__inner">
+            <div className="home-why__content">
+              <p className="home-why__eyebrow">WHY KEALEY DESIGN</p>
+              <h2>Why Businesses Choose Kealey Design</h2>
               <p>
-                A good website gives local SEO somewhere to land. Local SEO gives that website more chances to be found.
-                We build both sides together: Google Business Profile alignment, service-area content, city pages, on-page
-                optimization, internal links, review signals, and performance reporting. For service businesses, the most
-                valuable traffic often comes from searches like &quot;web design Chatham&quot;, &quot;HVAC repair near me&quot;, &quot;roofing
-                company Windsor&quot;, or &quot;local SEO Chatham-Kent&quot;. Those searches need pages that are specific enough to rank
-                and useful enough to convert.
-              </p>
-              <p>
-                Visit our <Link href="/local-seo">Local SEO</Link> and <Link href="/seo-services">SEO Services</Link> pages
-                for the deeper breakdown of maps visibility, organic search, technical SEO, content planning, and reporting.
+                You work directly with the person planning and building the website. That keeps decisions fast, the scope
+                clear, and the final result focused on what matters: more qualified inquiries and a better first
+                impression when someone finds you on Google.
               </p>
             </div>
-          </div>
-        </section>
-
-        <section className="testimonials" aria-label="Testimonials">
-          <div className="testimonials__inner">
-            <div className="testimonials__header">
-              <div>
-                <p className="testimonials__eyebrow">REVIEWS</p>
-                <h2 className="testimonials__title">Trusted by local businesses</h2>
-              </div>
-              <Link href="/reviews" className="testimonials__view-all">Read reviews</Link>
-            </div>
-            <div className="testimonials__grid">
-              {testimonials.map((testimonial) => (
-                <article key={testimonial.name} className="testimonials__card">
-                  <div className="testimonials__preview" aria-hidden>
-                    <Image
-                      src={testimonial.thumbnail}
-                      alt=""
-                      className="testimonials__preview-image"
-                      fill
-                      sizes="(max-width: 760px) 100vw, 34rem"
-                    />
-                    <div className="testimonials__preview-overlay" />
-                    <div className="testimonials__logo-wrap">
-                      <Image
-                        src={testimonial.logo}
-                        alt={`${testimonial.name} logo`}
-                        className="testimonials__logo"
-                        width={260}
-                        height={90}
-                      />
-                    </div>
+            <div className="home-why__panel">
+              <ul className="homepage-checklist">
+                <li>
+                  <CheckCircle2 className="homepage-checklist__icon" aria-hidden />
+                  <div className="home-why__item">
+                    <strong>Modern, Professional Design</strong>
+                    <span>Websites designed to build trust and credibility immediately.</span>
                   </div>
-                  <p className="testimonials__quote">&ldquo;{testimonial.quote}&rdquo;</p>
-                  <div className="testimonials__footer">
-                    <p className="testimonials__name">{testimonial.name}</p>
-                    <Link href={testimonial.href} className="testimonials__case-link">
-                      View project
-                    </Link>
+                </li>
+                <li>
+                  <CheckCircle2 className="homepage-checklist__icon" aria-hidden />
+                  <div className="home-why__item">
+                    <strong>Conversion-Focused Strategy</strong>
+                    <span>Built to encourage more calls, quote requests, and customer inquiries.</span>
                   </div>
-                </article>
-              ))}
+                </li>
+                <li>
+                  <CheckCircle2 className="homepage-checklist__icon" aria-hidden />
+                  <div className="home-why__item">
+                    <strong>Mobile-First Experience</strong>
+                    <span>Optimized for the devices your customers actually use.</span>
+                  </div>
+                </li>
+                <li>
+                  <CheckCircle2 className="homepage-checklist__icon" aria-hidden />
+                  <div className="home-why__item">
+                    <strong>Fast, Responsive Communication</strong>
+                    <span>Straightforward process with clear communication from start to finish.</span>
+                  </div>
+                </li>
+                <li>
+                  <CheckCircle2 className="homepage-checklist__icon" aria-hidden />
+                  <div className="home-why__item">
+                    <strong>Local Understanding</strong>
+                    <span>We understand the Southwestern Ontario business landscape and the industries we serve.</span>
+                  </div>
+                </li>
+              </ul>
             </div>
-          </div>
-        </section>
-
-        <section className="home-process" aria-label="Process">
-          <div className="home-process__inner">
-            <div className="home-process__header">
-              <h2>Process</h2>
-              <p>
-                The process is built to remove guesswork. Before design starts, we look at your current visibility,
-                competitors, customer questions, service priorities, and the actions that matter most to your business.
-                Then we build the page structure around revenue opportunities, not just aesthetics.
-              </p>
-            </div>
-            <ol className="home-process__steps">
-                {processSteps.map((step) => (
-                  <li key={step}>{step}</li>
-                ))}
-            </ol>
           </div>
         </section>
 
@@ -551,11 +484,25 @@ export default function Home() {
         </div>
       </section>
 
-        <PageContactSection
-          heading="Ready to build a stronger local search foundation?"
-          copy="Tell us what you sell, where you serve customers, and what you want more of. We will review your website and outline the highest-impact next steps."
-          subject="New Homepage Authority Inquiry - Kealey Design"
-        />
+        <section className="home-final-cta" aria-label="Final call to action">
+          <div className="home-final-cta__inner">
+            <p className="home-final-cta__eyebrow">NEXT STEP</p>
+            <h2 className="home-final-cta__title">Ready to Improve Your Online Presence?</h2>
+            <p className="home-final-cta__copy">
+              Whether you need a complete redesign or want to improve how your website performs, Kealey Design can help
+              create a stronger online experience for your business.
+            </p>
+            <div className="home-final-cta__actions" aria-label="Final call to action buttons">
+              <Link href="/contact" className="quote-button home-final-cta__primary">
+                Book a Free Website Audit
+                <ArrowRight className="quote-button__icon" aria-hidden />
+              </Link>
+              <Link href="/contact#book-call" className="home-final-cta__secondary">
+                Get in Touch
+              </Link>
+            </div>
+          </div>
+        </section>
       </main>
       <SiteFooter />
       <ExitIntentPopup />

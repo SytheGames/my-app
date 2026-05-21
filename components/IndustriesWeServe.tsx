@@ -4,19 +4,14 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { LucideIcon } from "lucide-react";
 import {
-  BriefcaseBusiness,
-  Building2,
-  Bus,
-  Clapperboard,
-  Cpu,
-  GraduationCap,
-  HeartPulse,
-  Plane,
-  Scale,
-  Shirt,
-  ShoppingBag,
-  Store,
-  UtensilsCrossed,
+  AirVent,
+  Construction,
+  Droplet,
+  Hammer,
+  Home,
+  LifeBuoy,
+  TreePine,
+  Zap,
 } from "lucide-react";
 
 type Industry = {
@@ -30,198 +25,123 @@ type Industry = {
 
 const industries: Industry[] = [
   {
-    id: "b2b",
-    label: "B2B",
-    title: "B2B",
+    id: "hvac",
+    label: "HVAC",
+    title: "HVAC",
     description:
-      "B2B website design for manufacturers, service firms, and contractors across Chatham-Kent and Southwestern Ontario.",
-    Icon: BriefcaseBusiness,
+      "HVAC websites need to support both emergency calls and planned replacement work. We structure pages for seasonal demand, mobile-first calls-to-action, and clear service-area messaging.",
+    Icon: AirVent,
     bullets: [
-      "Professional design",
-      "Interactive user experience",
-      "Responsive and SEO-optimized pages",
-      "Research-backed content strategy",
-      "Lead generation focused layouts",
+      "Tap-to-call and short quote forms for mobile searches",
+      "Seasonal service pages for repair, maintenance, and replacement",
+      "Map pack support through clear service areas and trust signals",
+      "Fast load times so urgent visitors do not bounce",
+      "Reviews and proof placed before the first scroll break",
     ],
   },
   {
-    id: "b2c",
-    label: "B2C",
-    title: "B2C",
+    id: "roofing",
+    label: "Roofing",
+    title: "Roofing",
     description:
-      "Consumer-focused web design that helps local businesses generate more leads, calls, and online sales.",
-    Icon: ShoppingBag,
+      "Roofing prospects want answers fast: repair vs replacement, warranty confidence, and a clear next step for estimates. The site needs proof, speed, and simple conversion paths.",
+    Icon: Hammer,
     bullets: [
-      "Brand-forward visuals",
-      "Fast purchase journeys",
-      "Retention-focused UX",
-      "Cross-device consistency",
-      "Performance analytics setup",
+      "Service pages for repair, replacement, storm damage, and inspections",
+      "Before/after galleries and project proof that build trust",
+      "Estimate request flows that reduce friction on mobile",
+      "Local relevance signals for service-area searches",
+      "Clear positioning for the jobs you want more of",
     ],
   },
   {
-    id: "d2c",
-    label: "D2C",
-    title: "D2C",
+    id: "plumbing",
+    label: "Plumbing",
+    title: "Plumbing",
     description:
-      "Direct-to-consumer website strategy built for stronger brand visibility and better ecommerce conversion rates.",
-    Icon: Store,
+      "Plumbing searches are often high urgency. We build websites that make it obvious who you serve, what you fix, and how to call or request service within seconds.",
+    Icon: Droplet,
     bullets: [
-      "Narrative-led homepage strategy",
-      "Conversion-ready product pages",
-      "Subscription and repeat-order flows",
-      "Lifecycle email integration",
-      "Paid media landing page support",
+      "Emergency-first mobile layout and contact visibility",
+      "Service pages for common problems and high-value jobs",
+      "Service area clarity and local intent optimization",
+      "Trust cues like reviews, guarantees, and real photos",
+      "Fast forms that work well on phones",
     ],
   },
   {
-    id: "food-beverage",
-    label: "Food & Beverage",
-    title: "Food & Beverage",
+    id: "electrical",
+    label: "Electrical",
+    title: "Electrical",
     description:
-      "Restaurant and food business websites designed for local search visibility, online ordering, and fast mobile browsing.",
-    Icon: UtensilsCrossed,
+      "Electrical websites need to build confidence quickly: safety, licensing, and clear service descriptions. We design around calls, quote requests, and local search visibility.",
+    Icon: Zap,
     bullets: [
-      "Menu and product UX",
-      "Ordering and booking paths",
-      "Location-first SEO",
-      "Visual brand cohesion",
-      "Promotion campaign pages",
+      "Clear service pages for residential and commercial work",
+      "Trust-first sections for licensing, insurance, and reviews",
+      "Conversion paths that are obvious from the first screen",
+      "Local page structure for service-plus-city searches",
+      "Fast performance and clean mobile UX",
     ],
   },
   {
-    id: "education",
-    label: "Education",
-    title: "Education",
+    id: "concrete",
+    label: "Concrete",
+    title: "Concrete",
     description:
-      "Education websites with clear navigation and enrollment-focused pages for schools and training organizations.",
-    Icon: GraduationCap,
+      "Concrete contractor websites need proof and clarity. We build pages that show real work, explain services, and make quote requests easy for homeowners and builders.",
+    Icon: Construction,
     bullets: [
-      "Program discovery design",
-      "Enrollment funnel optimization",
-      "Accessibility-minded layouts",
-      "Campus or online pathways",
-      "Content hubs for authority",
+      "Project galleries built for fast scanning on mobile",
+      "Service pages for driveways, slabs, pads, and repairs",
+      "Local search structure for service-area demand",
+      "Conversion-focused quote request forms",
+      "Brand and positioning that looks credible online",
     ],
   },
   {
-    id: "transportation",
-    label: "Transportation",
-    title: "Transportation",
+    id: "landscaping",
+    label: "Landscaping",
+    title: "Landscaping",
     description:
-      "Transportation websites that communicate reliability, service areas, and quick quote pathways.",
-    Icon: Bus,
+      "Landscaping websites need visual proof, local relevance, and clear seasonal offers. We structure the site so visitors can browse work and request quotes without friction.",
+    Icon: TreePine,
     bullets: [
-      "Service route clarity",
-      "Quote and booking flows",
-      "Trust and compliance signals",
-      "Fleet or logistics showcases",
-      "Call-first mobile experiences",
+      "Before/after sections that show results quickly",
+      "Seasonal service pages and offer positioning",
+      "Local SEO foundations for city and neighborhood intent",
+      "Fast, mobile-first quote request flows",
+      "Project proof and social credibility placement",
     ],
   },
   {
-    id: "health-care",
-    label: "Health Care",
-    title: "Health Care",
+    id: "restoration",
+    label: "Restoration",
+    title: "Restoration",
     description:
-      "Healthcare web design for clinics and medical practices with trust-first content and appointment-driven UX.",
-    Icon: HeartPulse,
+      "Restoration prospects are stressed and need certainty. We build sites that reduce hesitation with proof, clear service coverage, and fast paths to call or request help.",
+    Icon: LifeBuoy,
     bullets: [
-      "Appointment conversion UX",
-      "Service information architecture",
-      "Privacy-forward page design",
-      "Provider profile pages",
-      "Local search optimization",
+      "Emergency-first messaging and phone visibility",
+      "Trust signals near the top of every core page",
+      "Clear service and coverage structure for local searches",
+      "Fast performance on mobile connections",
+      "Simple forms for immediate quote or inspection requests",
     ],
   },
   {
-    id: "travel",
-    label: "Travel",
-    title: "Travel",
+    id: "home-services",
+    label: "Home Services",
+    title: "Home Services",
     description:
-      "Travel and tourism websites that drive bookings with strong visuals, clear packages, and frictionless planning flows.",
-    Icon: Plane,
+      "For home service companies, the website needs to answer two questions fast: what you do and how to contact you. We build clear paths for calls, quotes, and local search.",
+    Icon: Home,
     bullets: [
-      "Package and itinerary layout",
-      "Booking inquiry optimization",
-      "Visual destination storytelling",
-      "Seasonal campaign pages",
-      "Review-driven trust cues",
-    ],
-  },
-  {
-    id: "fashion",
-    label: "Fashion",
-    title: "Fashion",
-    description:
-      "Fashion ecommerce websites that blend visual storytelling, product discovery, and checkout optimization.",
-    Icon: Shirt,
-    bullets: [
-      "Lookbook and campaign blocks",
-      "Collection-first navigation",
-      "Size and fit UX",
-      "Mobile shopping speed",
-      "Merchandising strategy support",
-    ],
-  },
-  {
-    id: "entertainment",
-    label: "Entertainment",
-    title: "Entertainment",
-    description:
-      "Entertainment websites built for events, ticket sales, and audience engagement campaigns.",
-    Icon: Clapperboard,
-    bullets: [
-      "Event and ticket pathways",
-      "Media-rich content layouts",
-      "Fan engagement sections",
-      "Campaign launch pages",
-      "Social funnel integration",
-    ],
-  },
-  {
-    id: "real-estate",
-    label: "Real Estate",
-    title: "Real Estate",
-    description:
-      "Real estate website design with lead-focused listing layouts, agent profiles, and local SEO strategy.",
-    Icon: Building2,
-    bullets: [
-      "Listing and neighborhood UX",
-      "Lead capture optimization",
-      "Agent and brokerage positioning",
-      "SEO for local intent",
-      "Mobile listing performance",
-    ],
-  },
-  {
-    id: "law",
-    label: "Law",
-    title: "Law",
-    description:
-      "Law firm websites that build trust, showcase expertise, and convert local search traffic into consultations.",
-    Icon: Scale,
-    bullets: [
-      "Practice-area focused UX",
-      "Case evaluation conversion flows",
-      "Trust-oriented content hierarchy",
-      "Attorney profile structure",
-      "Local search visibility setup",
-    ],
-  },
-  {
-    id: "technology",
-    label: "Technology",
-    title: "Technology",
-    description:
-      "Technology websites that simplify complex services and support demo, trial, and inbound lead generation goals.",
-    Icon: Cpu,
-    bullets: [
-      "Product messaging architecture",
-      "Demo/trial conversion design",
-      "Feature storytelling sections",
-      "Scalable content systems",
-      "B2B demand-gen landing pages",
+      "Service clarity and simple navigation for busy visitors",
+      "Conversion paths for calls, quotes, and bookings",
+      "Local SEO structure for service-plus-city searches",
+      "Trust-first sections for reviews and proof",
+      "Fast mobile performance across every page",
     ],
   },
 ];
@@ -230,7 +150,6 @@ const industryPageLinks = [
   { label: "HVAC companies", href: "/industries/hvac" },
   { label: "Roofing companies", href: "/roofing-company-web-design-southwestern-ontario" },
   { label: "Contractors", href: "/contractor-web-design" },
-  { label: "Chiropractors", href: "/chiropractor-web-design" },
   { label: "All industries", href: "/industries" },
 ];
 
@@ -244,10 +163,13 @@ export function IndustriesWeServe() {
   return (
     <section id="industries" className="industries" aria-label="Industries we serve">
       <div className="industries__inner">
-        <h2 className="industries__heading">Industries We Serve</h2>
+        <h2 className="industries__heading">Built for Contractors &amp; Local Service Businesses</h2>
         <p className="industries__lead">
-          Kealey Design supports businesses across Chatham-Kent and Southwestern Ontario with
-          conversion-focused web design, local SEO, and performance-first digital strategy.
+          We work with businesses that rely on trust, reputation, and lead flow to grow. Each page is structured around
+          what customers need to see before they request an estimate or call your team.
+        </p>
+        <p className="industries__stack" aria-label="Industries served">
+          HVAC &#8226; Roofing &#8226; Plumbing &#8226; Electrical &#8226; Concrete &#8226; Landscaping &#8226; Restoration &#8226; Home Services
         </p>
         <nav className="industries__links" aria-label="Featured industry pages">
           {industryPageLinks.map((link) => (
