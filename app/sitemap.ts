@@ -100,6 +100,13 @@ const staticRoutes: StaticRouteConfig[] = [
   { urlPath: "/portfolio", sourceFile: "app/portfolio/page.tsx", changeFrequency: "monthly", priority: 0.8 },
   { urlPath: "/reviews", sourceFile: "app/reviews/page.tsx", changeFrequency: "monthly", priority: 0.8 },
   { urlPath: "/about", sourceFile: "app/about/page.tsx", changeFrequency: "monthly", priority: 0.8 },
+  { urlPath: "/careers", sourceFile: "app/careers/page.tsx", changeFrequency: "monthly", priority: 0.6 },
+  {
+    urlPath: "/careers/remote-appointment-setter",
+    sourceFile: "app/careers/remote-appointment-setter/page.tsx",
+    changeFrequency: "monthly",
+    priority: 0.6,
+  },
   { urlPath: "/contact", sourceFile: "app/contact/page.tsx", changeFrequency: "monthly", priority: 0.8 },
   {
     urlPath: "/chiropractor-web-design",

@@ -3,7 +3,6 @@ import Link from "next/link";
 import { ArrowUpRight, ChartNoAxesCombined, Globe, Megaphone, RefreshCw, ShoppingCart } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { ExitIntentPopup } from "@/components/ExitIntentPopup";
 import { SplitPageHero } from "@/components/SplitPageHero";
 import { PageContactSection } from "@/components/PageContactSection";
 
@@ -128,7 +127,6 @@ export default function ServicesPage() {
           subject="New Services Page Inquiry - Kealey Design"
         />
       </main>
-      <ExitIntentPopup />
       <SiteFooter />
       <script
         type="application/ld+json"

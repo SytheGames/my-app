@@ -26,6 +26,11 @@ const nextConfig: NextConfig = {
         destination: "/industries/hvac",
         permanent: true,
       },
+      {
+        source: "/careers/appointment-setter-sales-representative",
+        destination: "/careers/remote-appointment-setter",
+        permanent: true,
+      },
     ];
   },
 };

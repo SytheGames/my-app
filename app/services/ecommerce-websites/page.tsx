@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { ExitIntentPopup } from "@/components/ExitIntentPopup";
 import { SplitPageHero } from "@/components/SplitPageHero";
 import { PageContactSection } from "@/components/PageContactSection";
 
@@ -254,7 +253,6 @@ export default function EcommerceWebsitesServicePage() {
           subject="New Ecommerce Service Inquiry - Kealey Design"
         />
       </main>
-      <ExitIntentPopup />
       <SiteFooter />
       <script
         type="application/ld+json"

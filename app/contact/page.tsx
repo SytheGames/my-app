@@ -3,7 +3,6 @@ import { Suspense } from "react";
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { ExitIntentPopup } from "@/components/ExitIntentPopup";
 import { ContactForm } from "@/components/ContactForm";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
@@ -64,6 +63,9 @@ export default function ContactPage() {
                 <Link className="contact-page__cta-secondary" href="/portfolio">
                   View portfolio
                 </Link>
+                <Link className="contact-page__cta-secondary" href="/careers/remote-appointment-setter">
+                  We&apos;re hiring
+                </Link>
               </div>
 
               <blockquote className="contact-page__testimonial" aria-label="Client testimonial">
@@ -95,7 +97,6 @@ export default function ContactPage() {
         </div>
       </main>
       <SiteFooter />
-      <ExitIntentPopup />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }}

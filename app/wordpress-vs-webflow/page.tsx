@@ -3,7 +3,6 @@ import Link from "next/link";
 import { CheckCircle2, RefreshCw, Rocket, SearchCheck, ShieldCheck, Smartphone, Wrench } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { ExitIntentPopup } from "@/components/ExitIntentPopup";
 import { PageContactSection } from "@/components/PageContactSection";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
@@ -281,7 +280,6 @@ export default function WordPressVsWebflowPage() {
           subject="WordPress vs Webflow Consultation - Kealey Design"
         />
       </main>
-      <ExitIntentPopup />
       <SiteFooter />
       <script
         type="application/ld+json"

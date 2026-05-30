@@ -1,0 +1,54 @@
+<svg width="1280" height="840" viewBox="0 0 1280 840" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract careers illustration">
+  <defs>
+    <linearGradient id="g1" x1="220" y1="140" x2="1060" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#006DCE" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#006DCE" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="280" y1="160" x2="980" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#0F172A" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect x="70" y="90" width="1140" height="660" rx="34" fill="url(#g1)" stroke="#D7E1EB"/>
+
+  <g filter="url(#soft)">
+    <circle cx="410" cy="280" r="120" fill="#006DCE" fill-opacity="0.18"/>
+    <circle cx="910" cy="540" r="150" fill="#006DCE" fill-opacity="0.12"/>
+  </g>
+
+  <rect x="150" y="170" width="980" height="500" rx="26" fill="white" stroke="#D7E1EB"/>
+  <rect x="150" y="170" width="980" height="92" rx="26" fill="url(#g2)"/>
+
+  <g opacity="0.85">
+    <circle cx="195" cy="216" r="9" fill="#E2E8F0"/>
+    <circle cx="225" cy="216" r="9" fill="#E2E8F0"/>
+    <circle cx="255" cy="216" r="9" fill="#E2E8F0"/>
+  </g>
+
+  <g>
+    <rect x="210" y="312" width="420" height="64" rx="14" fill="#F8FAFC" stroke="#D7E1EB"/>
+    <rect x="210" y="402" width="420" height="64" rx="14" fill="#F8FAFC" stroke="#D7E1EB"/>
+    <rect x="210" y="492" width="420" height="64" rx="14" fill="#F8FAFC" stroke="#D7E1EB"/>
+
+    <rect x="690" y="312" width="380" height="244" rx="18" fill="#F8FAFC" stroke="#D7E1EB"/>
+
+    <rect x="240" y="334" width="210" height="12" rx="6" fill="#0F172A" fill-opacity="0.18"/>
+    <rect x="240" y="422" width="260" height="12" rx="6" fill="#0F172A" fill-opacity="0.18"/>
+    <rect x="240" y="512" width="240" height="12" rx="6" fill="#0F172A" fill-opacity="0.18"/>
+
+    <rect x="720" y="346" width="240" height="16" rx="8" fill="#006DCE" fill-opacity="0.30"/>
+    <rect x="720" y="384" width="310" height="12" rx="6" fill="#0F172A" fill-opacity="0.16"/>
+    <rect x="720" y="412" width="290" height="12" rx="6" fill="#0F172A" fill-opacity="0.12"/>
+    <rect x="720" y="456" width="320" height="44" rx="12" fill="#006DCE" fill-opacity="0.14" stroke="#C8D5E3"/>
+    <rect x="734" y="472" width="180" height="12" rx="6" fill="#006DCE" fill-opacity="0.40"/>
+  </g>
+
+  <g opacity="0.35">
+    <path d="M140 660C250 590 355 610 460 660C565 710 700 710 820 660C940 610 1040 590 1140 640" stroke="#006DCE" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</svg>
+

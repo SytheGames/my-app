@@ -16,6 +16,7 @@ const navItems = [
 const utilityItems = [
   { label: "Reviews", href: "/reviews" },
   { label: "Blog", href: "/blog" },
+  { label: "Careers", href: "/careers" },
 ];
 
 const ALERT_KEY = "site-header-alert-dismissed";
