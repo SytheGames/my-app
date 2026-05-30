@@ -9,6 +9,8 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca
 const jobTitle = "Remote Appointment Setter / Sales Representative (Commission Only)";
 const canonicalPath = "/careers/remote-appointment-setter";
 const applicationUrl = `${siteUrl}${canonicalPath}#apply`;
+const datePosted = "2026-05-30";
+const validThrough = "2026-12-31T23:59:59-05:00";
 
 const metaTitle = "Remote Appointment Setter Job | Commission Only Sales Representative | Kealey Design";
 const metaDescription =
@@ -38,6 +40,8 @@ export default function RemoteAppointmentSetterJobPage() {
     "@context": "https://schema.org",
     "@type": "JobPosting",
     title: jobTitle,
+    datePosted,
+    validThrough,
     description:
       "Kealey Design is hiring a remote appointment setter / sales representative (commission only). We provide weekly lead assignments. Earn 15%–35% commission on closed revenue from appointments you book.",
     hiringOrganization: {
@@ -55,6 +59,21 @@ export default function RemoteAppointmentSetterJobPage() {
     url: `${siteUrl}${canonicalPath}`,
     directApply: true,
     incentiveCompensation: "15%–35% commission on closed revenue (commission-only role).",
+    baseSalary: {
+      "@type": "MonetaryAmount",
+      currency: "CAD",
+      value: {
+        "@type": "QuantitativeValue",
+        value: 0,
+        unitText: "HOUR",
+      },
+    },
+    applicantLocationRequirements: [
+      {
+        "@type": "Country",
+        name: "Canada",
+      },
+    ],
     potentialAction: {
       "@type": "ApplyAction",
       target: applicationUrl,
