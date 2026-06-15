@@ -50,7 +50,7 @@ export function SiteHeader() {
         <div className="site-header__alert" role="status" aria-label="Booking availability">
           <Link href="/contact" className="site-header__alert-link" onClick={() => setIsMenuOpen(false)}>
             <div className="site-header__alert-inner">
-              <span className="site-header__alert-text">2 website project spots open this month.</span>
+              <span className="site-header__alert-text">Only 1 website project spot remaining this month.</span>
               <span className="site-header__alert-cta">
                 Request your free audit
                 <ArrowRight className="site-header__alert-icon" aria-hidden />
