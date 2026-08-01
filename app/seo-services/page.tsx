@@ -150,6 +150,12 @@ export default function SeoServicesPage() {
       ]}
       caseStudies={[
         {
+          title: "J. Amelia Law",
+          image: "/case-studies/Screenshot_1-8-2026_42952_jamelialaw.ca.jpeg",
+          href: "/portfolio/j-amelia-law-rebrand-website-launch",
+          summary: "Full search-equity preservation through a law firm's name and domain rebrand, now on an ongoing SEO retainer.",
+        },
+        {
           title: "Pebbles Gravel",
           image: "/case-studies/Screenshot_20-5-2026_161715_www.pebblesgravel.com.jpeg",
           href: "/portfolio/pebbles-gravel-regional-lead-flow",

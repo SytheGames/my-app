@@ -146,6 +146,10 @@ Over time, this disciplined approach compounds into stronger rankings, better le
 - **Can local SEO work without running ads?**
   Absolutely. Many businesses grow with organic local SEO alone, especially when website structure and profile quality are strong.
 
+## Related Case Study
+
+- [J. Amelia Law Rebrand & Website Launch](/portfolio/j-amelia-law-rebrand-website-launch) — how a four-decade Chatham-Kent law firm rebranded and migrated to a new domain without losing its existing search rankings.
+
 ## Related Local Service Pages
 
 See how we position web design and local visibility by city:

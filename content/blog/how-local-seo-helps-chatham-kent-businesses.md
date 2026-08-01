@@ -60,6 +60,8 @@ If you’re wondering how to start, here are a few ideas straight from local suc
 
 It’s amazing how these simple steps, when done consistently, make a big difference over time.
 
+**Real example — J. Amelia Law, Wallaceburg:** When this four-decade Chatham-Kent law firm rebranded and moved to a new domain, the biggest risk wasn't the redesign — it was losing years of local search rankings in the process. A full redirect map, consistent NAP details across every listing, and an updated Google Business Profile carried that visibility through the migration intact. [See the full case study](/portfolio/j-amelia-law-rebrand-website-launch).
+
 ## Local SEO Pricing in Chatham-Kent
 
 If you are planning your marketing budget, here are the current local SEO support ranges:

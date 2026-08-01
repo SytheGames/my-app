@@ -147,6 +147,11 @@ export default function WebDesignPage() {
       ]}
       caseStudies={[
         {
+          title: "J. Amelia Law",
+          href: "/portfolio/j-amelia-law-rebrand-website-launch",
+          summary: "A four-decade law firm rebrand and website relaunch delivered in one month without losing search rankings.",
+        },
+        {
           title: "Enhanced Concrete",
           href: "/portfolio/enhanced-concrete-local-seo",
           summary: "A local contractor website with stronger service-area messaging and lead-focused structure.",

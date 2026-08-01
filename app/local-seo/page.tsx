@@ -151,6 +151,12 @@ export default function LocalSeoPage() {
       ]}
       caseStudies={[
         {
+          title: "J. Amelia Law",
+          image: "/case-studies/Screenshot_1-8-2026_42952_jamelialaw.ca.jpeg",
+          href: "/portfolio/j-amelia-law-rebrand-website-launch",
+          summary: "A law firm rebrand that preserved existing search rankings through a full domain and name migration.",
+        },
+        {
           title: "Enhanced Concrete",
           image: "/case-studies/Screenshot_20-5-2026_161652_enhancedconcrete.ca.jpeg",
           href: "/portfolio/enhanced-concrete-local-seo",
