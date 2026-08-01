@@ -69,6 +69,12 @@ export default function LocalSeoPage() {
       description="Local SEO services for businesses that want more visibility in Google Maps, stronger service-area relevance, and clearer reporting on calls, forms, and qualified inquiries."
       imageSrc="/case-studies/Screenshot_20-5-2026_16178_www.daveychiropractic.com.jpeg"
       imageAlt="Local SEO website and search visibility example"
+      breadcrumbs={[{ label: "Services", href: "/services" }, { label: "Local SEO" }]}
+      relatedLinks={[
+        { label: "GBP Management", href: "/google-business-profile-management" },
+        { label: "SEO Services", href: "/seo-services" },
+        { label: "Portfolio", href: "/portfolio" },
+      ]}
       ctaLabel="Plan your local SEO campaign"
       ctaSubject="New Local SEO Authority Page Inquiry - Kealey Design"
       ctaHeading="Want more local search visibility?"
@@ -77,6 +83,7 @@ export default function LocalSeoPage() {
         "Local SEO is the work of making your business more visible when nearby customers search for the services you sell. For a Chatham-Kent business, that might mean showing up for searches in Chatham, Wallaceburg, Tilbury, Blenheim, Ridgetown, Dresden, Windsor, London, Sarnia, Leamington, or the broader Southwestern Ontario region. The best local SEO strategy connects Google Business Profile optimization, service pages, location content, reviews, citations, website performance, and conversion tracking.",
         "Kealey Design approaches local SEO as a lead-generation system. Rankings matter, but a ranking that never produces a call or form submission is not enough. We look at what people are searching, whether your website answers that intent, whether your Google Business Profile reinforces the same services and locations, and whether your reporting can show which work is producing real inquiries.",
         "This matters because local search is often high intent. Someone searching for a roofer, HVAC company, chiropractor, contractor, or web designer in a specific city is usually closer to buying than someone casually browsing social media. If your business is missing from the map pack, has weak service pages, or sends visitors to a confusing website, competitors can win those leads even if your company is the better choice.",
+        "This is the full local SEO service, covering the profile, the website, and the reporting together. If you only need ongoing Google Business Profile upkeep on its own, our narrower GBP Management service (linked below) may be the better fit. If your goal is broader technical and content SEO beyond map visibility, see SEO Services instead.",
       ]}
       sections={[
         {
@@ -145,16 +152,19 @@ export default function LocalSeoPage() {
       caseStudies={[
         {
           title: "Enhanced Concrete",
+          image: "/case-studies/Screenshot_20-5-2026_161652_enhancedconcrete.ca.jpeg",
           href: "/portfolio/enhanced-concrete-local-seo",
           summary: "Local SEO and service-area structure for a contractor serving Chatham-Kent communities.",
         },
         {
           title: "Davey Chiropractic",
+          image: "/case-studies/Screenshot_20-5-2026_16178_www.daveychiropractic.com.jpeg",
           href: "/portfolio/davey-chiro-conversion-refresh",
           summary: "A clinic website refresh with clearer content and stronger local trust signals.",
         },
         {
           title: "Pebbles Gravel",
+          image: "/case-studies/Screenshot_20-5-2026_161715_www.pebblesgravel.com.jpeg",
           href: "/portfolio/pebbles-gravel-regional-lead-flow",
           summary: "Regional lead-flow improvements for a business with location-specific demand.",
         },

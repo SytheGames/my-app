@@ -18,24 +18,24 @@ import { SiteHeader } from "@/components/SiteHeader";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
 
 export const metadata: Metadata = {
-  title: "Contractor Website Design in Southwestern Ontario",
+  title: "Contractor & Service Business Web Design | Kealey Design",
   description:
     "Kealey Design builds modern, conversion-focused websites for contractors and service businesses across Southwestern Ontario, including Chatham-Kent, Windsor, and Sarnia.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Contractor Website Design in Southwestern Ontario",
+    title: "Contractor & Service Business Web Design | Kealey Design",
     description:
       "Modern, conversion-focused websites for contractors and service businesses across Southwestern Ontario, including Chatham-Kent, Windsor, and Sarnia.",
     url: "/",
     type: "website",
-    images: [{ url: "/mockup.png" }],
+    images: [{ url: "/og-image.jpg" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contractor Website Design in Southwestern Ontario",
+    title: "Contractor & Service Business Web Design | Kealey Design",
     description:
       "Conversion-focused websites for contractors and service businesses across Southwestern Ontario.",
-    images: ["/mockup.png"],
+    images: ["/og-image.jpg"],
   },
 };
 
@@ -49,7 +49,7 @@ const services = [
   },
   {
     title: "Website Redesigns",
-    href: "/services/website-redesign",
+    href: "/website-redesign",
     Icon: RefreshCcw,
     copy:
       "Upgrade outdated websites into fast, professional lead-generation assets without losing existing search value.",
@@ -191,7 +191,7 @@ export default function Home() {
         name: "Kealey Design",
         url: siteUrl,
         telephone: "+1-519-401-1469",
-        image: `${siteUrl}/mockup.png`,
+        image: `${siteUrl}/og-image.jpg`,
         priceRange: "$$",
         address: {
           "@type": "PostalAddress",

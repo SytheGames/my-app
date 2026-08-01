@@ -1,10 +1,36 @@
 import type { Metadata } from "next";
+import { MapPin, MonitorSmartphone, RefreshCcw, Wrench } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SplitPageHero } from "@/components/SplitPageHero";
 import { PageContactSection } from "@/components/PageContactSection";
+import { IconFeatureGrid } from "@/components/IconFeatureGrid";
+import { ProofImageBand } from "@/components/ProofImageBand";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
+
+const windsorFeatures = [
+  {
+    Icon: MonitorSmartphone,
+    label: "Mobile-First Design",
+    copy: "Built for the phone-first way Windsor customers actually browse and compare local businesses.",
+  },
+  {
+    Icon: MapPin,
+    label: "Local SEO Foundations",
+    copy: "Schema markup, service pages, and Google Business Profile alignment built in from day one.",
+  },
+  {
+    Icon: RefreshCcw,
+    label: "Fast, Modern Performance",
+    copy: "Quick load times and clean layouts that keep visitors on the page instead of bouncing to a competitor.",
+  },
+  {
+    Icon: Wrench,
+    label: "Ongoing Support",
+    copy: "Your site can grow with new service pages, content, and conversion improvements after launch.",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Web Design Windsor",
@@ -79,6 +105,7 @@ export default function WebDesignWindsorPage() {
           imageAlt="Web design in Windsor"
           ctaLabel="Book a consultation"
           ctaHref="/contact"
+          breadcrumbs={[{ label: "Locations", href: "/locations" }, { label: "Web Design Windsor" }]}
         />
 
         <section className="split-page__section split-page__text" aria-label="Image credit">
@@ -125,9 +152,18 @@ export default function WebDesignWindsorPage() {
                 with accurate service pages, real reviews, and a sensible Google Business Profile creates a compound
                 return over time that one-off ads simply cannot. We focus on that kind of durable online presence.
               </p>
+
+              <IconFeatureGrid features={windsorFeatures} />
             </div>
           </div>
         </section>
+
+        <ProofImageBand
+          src="/case-studies/Screenshot_20-5-2026_16178_www.daveychiropractic.com.jpeg"
+          alt="Davey Chiropractic website built by Kealey Design"
+          caption="Davey Chiropractic — a real Chatham-Kent clinic rebuild. The same conversion-focused approach we bring to Windsor businesses."
+          href="/portfolio/davey-chiro-conversion-refresh"
+        />
 
         <section className="faq faq--location" aria-label="Windsor web design FAQs">
           <div className="faq__inner">

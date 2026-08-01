@@ -1,10 +1,36 @@
 import type { Metadata } from "next";
+import { MapPin, MonitorSmartphone, RefreshCcw, Wrench } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SplitPageHero } from "@/components/SplitPageHero";
 import { PageContactSection } from "@/components/PageContactSection";
+import { IconFeatureGrid } from "@/components/IconFeatureGrid";
+import { ProofImageBand } from "@/components/ProofImageBand";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
+
+const chathamFeatures = [
+  {
+    Icon: MonitorSmartphone,
+    label: "Mobile-First Design",
+    copy: "Built for the phone-first way Chatham customers actually browse and compare local businesses.",
+  },
+  {
+    Icon: MapPin,
+    label: "Local SEO Foundations",
+    copy: "Schema markup, service pages, and Google Business Profile alignment built in from day one.",
+  },
+  {
+    Icon: RefreshCcw,
+    label: "Fast, Modern Performance",
+    copy: "Quick load times and clean layouts that keep visitors on the page instead of bouncing to a competitor.",
+  },
+  {
+    Icon: Wrench,
+    label: "Ongoing Support",
+    copy: "Your site can grow with new service pages, content, and conversion improvements after launch.",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Web Design Chatham",
@@ -79,6 +105,7 @@ export default function WebDesignChathamPage() {
           imageAlt="Web design in Chatham"
           ctaLabel="Start your project"
           ctaHref="/contact"
+          breadcrumbs={[{ label: "Locations", href: "/locations" }, { label: "Web Design Chatham" }]}
         />
 
         <section className="split-page__section split-page__text" aria-label="Image credit">
@@ -114,9 +141,18 @@ export default function WebDesignChathamPage() {
                 As your business expands, your site can scale with new service pages, location content,
                 and ongoing conversion improvements based on real customer behavior.
               </p>
+
+              <IconFeatureGrid features={chathamFeatures} />
             </div>
           </div>
         </section>
+
+        <ProofImageBand
+          src="/case-studies/Screenshot_20-5-2026_161652_enhancedconcrete.ca.jpeg"
+          alt="Enhanced Concrete website built by Kealey Design"
+          caption="Enhanced Concrete — a real Chatham-Kent business website built for local search demand and service-area clarity."
+          href="/portfolio/enhanced-concrete-local-seo"
+        />
 
         <section className="faq faq--location" aria-label="Chatham web design FAQs">
           <div className="faq__inner">

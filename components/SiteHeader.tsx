@@ -10,6 +10,7 @@ const navItems = [
   { label: "Industries", href: "/industries" },
   { label: "Locations", href: "/locations" },
   { label: "Portfolio", href: "/portfolio" },
+  { label: "Pricing", href: "/pricing" },
   { label: "About", href: "/about" },
 ];
 
@@ -50,7 +51,7 @@ export function SiteHeader() {
         <div className="site-header__alert" role="status" aria-label="Booking availability">
           <Link href="/contact" className="site-header__alert-link" onClick={() => setIsMenuOpen(false)}>
             <div className="site-header__alert-inner">
-              <span className="site-header__alert-text">Only 1 website project spot remaining this month.</span>
+              <span className="site-header__alert-text">Currently booking new website projects.</span>
               <span className="site-header__alert-cta">
                 Request your free audit
                 <ArrowRight className="site-header__alert-icon" aria-hidden />

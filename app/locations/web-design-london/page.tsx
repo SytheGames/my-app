@@ -1,10 +1,36 @@
 import type { Metadata } from "next";
+import { MapPin, MonitorSmartphone, RefreshCcw, Wrench } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SplitPageHero } from "@/components/SplitPageHero";
 import { PageContactSection } from "@/components/PageContactSection";
+import { IconFeatureGrid } from "@/components/IconFeatureGrid";
+import { ProofImageBand } from "@/components/ProofImageBand";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
+
+const londonFeatures = [
+  {
+    Icon: MonitorSmartphone,
+    label: "Mobile-First Design",
+    copy: "Built for the phone-first way London customers actually browse and compare local businesses.",
+  },
+  {
+    Icon: MapPin,
+    label: "Local SEO Foundations",
+    copy: "Schema markup, service pages, and Google Business Profile alignment built in from day one.",
+  },
+  {
+    Icon: RefreshCcw,
+    label: "Fast, Modern Performance",
+    copy: "Quick load times and clean layouts that keep visitors on the page instead of bouncing to a competitor.",
+  },
+  {
+    Icon: Wrench,
+    label: "Ongoing Support",
+    copy: "Your site can grow with new service pages, content, and conversion improvements after launch.",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Web Design London",
@@ -79,6 +105,7 @@ export default function WebDesignLondonPage() {
           imageAlt="Web design in London"
           ctaLabel="Let&apos;s talk"
           ctaHref="/contact"
+          breadcrumbs={[{ label: "Locations", href: "/locations" }, { label: "Web Design London" }]}
         />
 
         <section className="split-page__section split-page__text" aria-label="Image credit">
@@ -124,9 +151,18 @@ export default function WebDesignLondonPage() {
                 Strathroy to St. Thomas. A well-structured website can reflect that reach clearly, with service
                 pages that speak to the right communities without spreading your message too thin.
               </p>
+
+              <IconFeatureGrid features={londonFeatures} />
             </div>
           </div>
         </section>
+
+        <ProofImageBand
+          src="/case-studies/Screenshot_20-5-2026_161715_www.pebblesgravel.com.jpeg"
+          alt="Pebbles Gravel website built by Kealey Design"
+          caption="Pebbles Gravel — a real Southwestern Ontario regional business site built for local lead flow, the same approach we bring to London."
+          href="/portfolio/pebbles-gravel-regional-lead-flow"
+        />
 
         <section className="faq faq--location" aria-label="London web design FAQs">
           <div className="faq__inner">

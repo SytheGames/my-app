@@ -1,10 +1,36 @@
 import type { Metadata } from "next";
+import { MapPin, MonitorSmartphone, RefreshCcw, Wrench } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SplitPageHero } from "@/components/SplitPageHero";
 import { PageContactSection } from "@/components/PageContactSection";
+import { IconFeatureGrid } from "@/components/IconFeatureGrid";
+import { ProofImageBand } from "@/components/ProofImageBand";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
+
+const sarniaFeatures = [
+  {
+    Icon: MonitorSmartphone,
+    label: "Mobile-First Design",
+    copy: "Built for the phone-first way Sarnia customers actually browse and compare local businesses.",
+  },
+  {
+    Icon: MapPin,
+    label: "Local SEO Foundations",
+    copy: "Schema markup, service pages, and Google Business Profile alignment built in from day one.",
+  },
+  {
+    Icon: RefreshCcw,
+    label: "Fast, Modern Performance",
+    copy: "Quick load times and clean layouts that keep visitors on the page instead of bouncing to a competitor.",
+  },
+  {
+    Icon: Wrench,
+    label: "Ongoing Support",
+    copy: "Your site can grow with new service pages, content, and conversion improvements after launch.",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Web Design Sarnia",
@@ -79,6 +105,7 @@ export default function WebDesignSarniaPage() {
           imageAlt="Web design in Sarnia"
           ctaLabel="Request a proposal"
           ctaHref="/contact"
+          breadcrumbs={[{ label: "Locations", href: "/locations" }, { label: "Web Design Sarnia" }]}
         />
 
         <section className="split-page__section split-page__text" aria-label="Image credit">
@@ -125,9 +152,18 @@ export default function WebDesignSarniaPage() {
                 communities. A well-structured website can reflect that coverage clearly so customers in those
                 areas know you serve them — not just Sarnia proper.
               </p>
+
+              <IconFeatureGrid features={sarniaFeatures} />
             </div>
           </div>
         </section>
+
+        <ProofImageBand
+          src="/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg"
+          alt="ARCstage website built by Kealey Design"
+          caption="ARCstage — a real Kealey Design rebuild focused on clarity and inquiry flow, the same approach we bring to Sarnia businesses."
+          href="/portfolio/arcstage-growth-rebuild"
+        />
 
         <section className="faq faq--location" aria-label="Sarnia web design FAQs">
           <div className="faq__inner">

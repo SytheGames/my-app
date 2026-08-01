@@ -1,8 +1,34 @@
 import type { Metadata } from "next";
+import { CalendarCheck, HeartPulse, MapPin, UserRound } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SplitPageHero } from "@/components/SplitPageHero";
 import { PageContactSection } from "@/components/PageContactSection";
+import { IconFeatureGrid } from "@/components/IconFeatureGrid";
+import { ProofImageBand } from "@/components/ProofImageBand";
+
+const clinicFeatures = [
+  {
+    Icon: UserRound,
+    label: "Clear Service Pages",
+    copy: "One page per treatment type so patients find exactly what they need and Google understands your scope of care.",
+  },
+  {
+    Icon: CalendarCheck,
+    label: "Online Booking Integration",
+    copy: "Direct connection to Jane App, Mindbody, or a custom form so patients can book without calling.",
+  },
+  {
+    Icon: HeartPulse,
+    label: "Patient Trust Signals",
+    copy: "Reviews, testimonials, and doctor bios placed where they build confidence before a visitor even scrolls.",
+  },
+  {
+    Icon: MapPin,
+    label: "Local SEO Structure",
+    copy: "Schema markup, city-specific content, and Google Business Profile alignment built into every page.",
+  },
+];
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
 
@@ -84,6 +110,7 @@ export default function ChiropractorWebDesignPage() {
           imageAlt="Chiropractor website design preview"
           ctaLabel="Request a Free Consultation"
           ctaHref="/contact"
+          breadcrumbs={[{ label: "Industries", href: "/industries" }, { label: "Chiropractor Web Design" }]}
         />
 
         <section className="split-page__section split-page__text">
@@ -106,16 +133,17 @@ export default function ChiropractorWebDesignPage() {
               </ul>
 
               <h2>What a Well-Built Chiropractic Website Includes</h2>
-              <ul>
-                <li><strong>Clear service pages</strong> — One page per treatment type so patients find exactly what they need and Google understands your full scope of care.</li>
-                <li><strong>Online booking integration</strong> — Direct connection to Jane App, Mindbody, or a custom form so patients can book without calling.</li>
-                <li><strong>Patient reviews and testimonials</strong> — Prominently placed trust signals that build confidence before a visitor even scrolls.</li>
-                <li><strong>Doctor and team bios</strong> — Practitioner profiles with credentials and photos that establish a human connection early.</li>
-                <li><strong>Local SEO structure</strong> — Schema markup, city-specific content, and Google Business Profile alignment built into every page.</li>
-              </ul>
+              <IconFeatureGrid features={clinicFeatures} />
             </div>
           </div>
         </section>
+
+        <ProofImageBand
+          src="/case-studies/Screenshot_20-5-2026_16178_www.daveychiropractic.com.jpeg"
+          alt="Davey Chiropractic website built by Kealey Design"
+          caption="Davey Chiropractic — a real Chatham-Kent clinic site refresh built for patient trust and clearer booking paths."
+          href="/portfolio/davey-chiro-conversion-refresh"
+        />
 
         <section className="split-page__section split-page__text">
           <div className="split-page__inner">

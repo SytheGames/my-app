@@ -69,6 +69,7 @@ export default function WebsiteMaintenancePage() {
       description="Ongoing website support for businesses that need updates, performance checks, content changes, SEO improvements, and practical post-launch care."
       imageSrc="/website-redesign-service.svg"
       imageAlt="Website maintenance and redesign illustration"
+      breadcrumbs={[{ label: "Website Maintenance" }]}
       ctaLabel="Discuss maintenance"
       ctaSubject="New Website Maintenance Inquiry - Kealey Design"
       ctaHeading="Need reliable website support?"

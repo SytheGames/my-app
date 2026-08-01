@@ -17,14 +17,14 @@ export const metadata: Metadata = {
       "Specific web design and SEO strategies for local service industries across Chatham-Kent and Southwestern Ontario.",
     url: "/industries",
     type: "website",
-    images: [{ url: "/mockup.png" }],
+    images: [{ url: "/og-image.jpg" }],
   },
 };
 
 const industries = [
   {
     name: "HVAC Companies",
-    href: "/industries/hvac",
+    href: "/hvac-web-design",
     summary:
       "Emergency calls, furnace and AC seasonality, installation pages, maintenance plans, local map pack visibility, and click-to-call conversion.",
   },
@@ -57,7 +57,7 @@ export default function IndustriesPage() {
           eyebrow="INDUSTRIES"
           title="Industry-Specific Web Design and SEO for Southwestern Ontario"
           description="Google rewards specificity. We build pages and strategies around the real buying patterns, objections, seasons, and search intent inside each local service industry."
-          imageSrc="/mockup.png"
+          imageSrc="/og-image.jpg"
           imageAlt="Kealey Design portfolio preview"
           ctaLabel="Plan your industry page"
           ctaHref="/contact"
@@ -65,6 +65,7 @@ export default function IndustriesPage() {
             { label: "Web Design", href: "/web-design" },
             { label: "Local SEO", href: "/local-seo" },
           ]}
+          breadcrumbs={[{ label: "Industries" }]}
         />
 
         <section className="split-page__section split-page__text">
@@ -117,7 +118,7 @@ export default function IndustriesPage() {
                 recognise the business quickly.
               </p>
 
-              <Link href="/industries/hvac" className="split-hero__button">
+              <Link href="/hvac-web-design" className="split-hero__button">
                 View HVAC example
                 <ArrowRight aria-hidden />
               </Link>

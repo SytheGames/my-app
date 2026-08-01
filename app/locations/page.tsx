@@ -60,6 +60,39 @@ const webDesignLocations = [
   },
 ];
 
+const localSeoLocations = [
+  {
+    label: "Local SEO Chatham",
+    href: "/locations/local-seo-chatham",
+    image: "/images/locations-images/Chatham_ON_1.JPG",
+    copy: "Google Maps visibility, Google Business Profile optimization, and local search strategy for Chatham-Kent businesses.",
+  },
+  {
+    label: "Local SEO Windsor",
+    href: "/locations/local-seo-windsor",
+    image: "/images/locations-images/Windsor,_Ontario_(aerial_view).jpg",
+    copy: "Local SEO for Windsor businesses competing for Google Maps visibility in a dense, competitive market.",
+  },
+  {
+    label: "Local SEO London",
+    href: "/locations/local-seo-london",
+    image: "/images/locations-images/London_Ontario_Skyline_2017_(cropped).jpg",
+    copy: "Neighborhood-aware local SEO for London businesses spanning multiple service areas and business districts.",
+  },
+  {
+    label: "Local SEO Sarnia",
+    href: "/locations/local-seo-sarnia",
+    image: "/images/locations-images/Sarnia_skyline.JPG",
+    copy: "Local search visibility for Sarnia and Lambton County trades, industrial, and service businesses.",
+  },
+  {
+    label: "Local SEO Leamington",
+    href: "/locations/local-seo-leamington",
+    image: "/images/locations-images/Lake_Erie_Leamington.jpg",
+    copy: "Google Business Profile and local search strategy for Leamington's agricultural and service business community.",
+  },
+];
+
 const socialMediaLocations = [
   {
     label: "Social Media Management Chatham",
@@ -90,6 +123,7 @@ export default function LocationsPage() {
           imageAlt="City-focused web design coverage"
           ctaLabel="Talk about your location"
           ctaHref="/contact"
+          breadcrumbs={[{ label: "Locations" }]}
         />
 
         <section className="split-page__section locations-page">
@@ -98,6 +132,27 @@ export default function LocationsPage() {
               <h2 className="locations-page__group-title">Web Design Locations</h2>
               <div className="locations-page__grid">
                 {webDesignLocations.map((location) => (
+                  <Link key={location.href} href={location.href} className="locations-page__link-card">
+                    <span className="locations-page__card-image-wrap">
+                      <Image
+                        src={location.image}
+                        alt={location.label}
+                        className="locations-page__card-image"
+                        width={1200}
+                        height={760}
+                      />
+                    </span>
+                    <span className="locations-page__card-label">{location.label}</span>
+                    <span className="locations-page__card-subcopy">{location.copy}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div className="locations-page__group">
+              <h2 className="locations-page__group-title">Local SEO Locations</h2>
+              <div className="locations-page__grid">
+                {localSeoLocations.map((location) => (
                   <Link key={location.href} href={location.href} className="locations-page__link-card">
                     <span className="locations-page__card-image-wrap">
                       <Image

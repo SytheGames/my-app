@@ -236,11 +236,11 @@ export default function WordPressVsWebflowPage() {
               <p>
                 If you are comparing options for a redesign, you can also review our
                 {" "}
-                <Link href="/services/website-redesign">website redesign service</Link>
+                <Link href="/website-redesign">website redesign service</Link>
                 {" "}
                 and
                 {" "}
-                <Link href="/services/web-design">web design service</Link>
+                <Link href="/web-design">web design service</Link>
                 .
               </p>
             </article>

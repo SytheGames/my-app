@@ -69,6 +69,12 @@ export default function GoogleBusinessProfileManagementPage() {
       description="Profile optimization, posts, photos, service updates, review support, and reporting for businesses that want stronger local visibility in Google Maps."
       imageSrc="/service-placeholder-seo.svg"
       imageAlt="Google Business Profile management illustration"
+      breadcrumbs={[{ label: "Services", href: "/services" }, { label: "Google Business Profile Management" }]}
+      relatedLinks={[
+        { label: "Local SEO", href: "/local-seo" },
+        { label: "SEO Services", href: "/seo-services" },
+        { label: "Portfolio", href: "/portfolio" },
+      ]}
       ctaLabel="Improve your Google profile"
       ctaSubject="New Google Business Profile Management Inquiry - Kealey Design"
       ctaHeading="Want a stronger Google Business Profile?"
@@ -77,6 +83,7 @@ export default function GoogleBusinessProfileManagementPage() {
         "Your Google Business Profile is often the first thing a local customer sees. Before they reach your website, they may read your reviews, look at your photos, compare your services, check your hours, tap for directions, or call directly from the map result. For local businesses in Chatham-Kent and Southwestern Ontario, the profile is not a side asset. It is a major part of the customer journey.",
         "Google Business Profile management keeps that asset accurate, active, and aligned with your website. The work can include category optimization, service descriptions, business descriptions, photos, posts, products, review response systems, Q&A monitoring, profile completeness, and monthly reporting. The goal is to make your business easier to understand and easier to trust from the map pack.",
         "Kealey Design manages Google Business Profile work as part of a broader local SEO system. A profile performs best when it is supported by a strong website, clear service pages, consistent citations, active reviews, and local content. When those pieces reinforce one another, Google receives clearer signals and customers get a more confident buying experience.",
+        "This page covers GBP management on its own as a standalone, narrower deliverable. If you also want service-area content, citation cleanup, and conversion tracking built around the profile, our full Local SEO service (linked below) is the broader option.",
       ]}
       sections={[
         {
@@ -146,16 +153,19 @@ export default function GoogleBusinessProfileManagementPage() {
       caseStudies={[
         {
           title: "Enhanced Concrete",
+          image: "/case-studies/Screenshot_20-5-2026_161652_enhancedconcrete.ca.jpeg",
           href: "/portfolio/enhanced-concrete-local-seo",
           summary: "A local contractor project where website structure and local visibility work together.",
         },
         {
           title: "Davey Chiropractic",
+          image: "/case-studies/Screenshot_20-5-2026_16178_www.daveychiropractic.com.jpeg",
           href: "/portfolio/davey-chiro-conversion-refresh",
           summary: "A clinic refresh that benefits from service clarity, reviews, and local trust signals.",
         },
         {
           title: "Pebbles Gravel",
+          image: "/case-studies/Screenshot_20-5-2026_161715_www.pebblesgravel.com.jpeg",
           href: "/portfolio/pebbles-gravel-regional-lead-flow",
           summary: "Regional demand supported by clearer local lead pathways.",
         },

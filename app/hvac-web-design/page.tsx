@@ -1,357 +1,219 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import {
-  SearchCheck,
-  Wrench,
-  Rocket,
-  CheckCircle2,
-  PhoneCall,
-  MapPin,
-  Smartphone,
-  ShieldCheck,
-} from "lucide-react";
-import { SiteHeader } from "@/components/SiteHeader";
-import { SiteFooter } from "@/components/SiteFooter";
+import { PhoneCall, Snowflake, Wrench, MapPin } from "lucide-react";
+import { AuthorityServicePage } from "@/components/AuthorityServicePage";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
+
+const hvacFeatures = [
+  {
+    Icon: PhoneCall,
+    label: "Emergency Call Paths",
+    copy: "Click-to-call buttons and fast mobile pages built for no-heat and no-AC emergencies.",
+  },
+  {
+    Icon: Snowflake,
+    label: "Seasonal Service Pages",
+    copy: "Dedicated furnace, AC, and maintenance pages ready before each season's demand peaks.",
+  },
+  {
+    Icon: Wrench,
+    label: "Repair & Installation",
+    copy: "Clear pages for the jobs you want more of, written around real homeowner search intent.",
+  },
+  {
+    Icon: MapPin,
+    label: "Map Pack Visibility",
+    copy: "Service pages and Google Business Profile alignment built to support local search rankings.",
+  },
+];
+
+const faqs = [
+  {
+    question: "What makes HVAC web design different?",
+    answer:
+      "HVAC websites need to handle urgency, seasonality, mobile calls, service-area searches, trust signals, maintenance plans, repair pages, installation pages, and emergency conversion paths.",
+  },
+  {
+    question: "Should HVAC companies have separate service pages?",
+    answer:
+      "Yes. Furnace repair, AC repair, installation, maintenance, indoor air quality, emergency service, and commercial HVAC often deserve separate pages when they are meaningful services.",
+  },
+  {
+    question: "Can an HVAC website improve map pack visibility?",
+    answer:
+      "A website cannot control rankings by itself, but strong service pages, location relevance, reviews, Google Business Profile alignment, and conversion signals can support local SEO.",
+  },
+  {
+    question: "What should an HVAC quote form ask?",
+    answer:
+      "It should ask for name, phone, email, location, service needed, urgency, system type if known, and a short message. Keep it simple enough for mobile users.",
+  },
+  {
+    question: "How should HVAC websites handle seasonality?",
+    answer:
+      "The site should support seasonal pages and calls-to-action for furnace repair in colder months, AC service in warmer months, maintenance plans, and emergency support year-round.",
+  },
+  {
+    question: "Do you build HVAC pages outside Chatham-Kent?",
+    answer:
+      "Yes. We can build HVAC web design and local SEO pages for companies across Chatham-Kent, Windsor, London, Sarnia, Leamington, and Southwestern Ontario.",
+  },
+];
 
 export const metadata: Metadata = {
-  title: "HVAC Web Design | More Service Calls in Chatham-Kent",
+  title: "HVAC Web Design in Southwestern Ontario",
   description:
-    "High-converting HVAC websites for companies in Chatham-Kent. Turn local searches into booked jobs for furnace repair, AC installation, and emergency service calls.",
+    "HVAC web design and local SEO in Southwestern Ontario. Build pages for repair, installation, maintenance, map pack visibility, seasonality, and quote requests.",
   alternates: { canonical: "/hvac-web-design" },
   openGraph: {
-    title: "HVAC Web Design | More Service Calls in Chatham-Kent",
+    title: "HVAC Web Design in Southwestern Ontario",
     description:
-      "High-converting HVAC websites for companies in Chatham-Kent. Turn local searches into booked jobs for furnace repair, AC installation, and emergency service calls.",
+      "Industry-specific HVAC web design for mobile calls, local map visibility, seasonal demand, and quote request funnels.",
     url: "/hvac-web-design",
     type: "website",
-    images: [{ url: "/mockup.png" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "HVAC Web Design | More Service Calls in Chatham-Kent",
-    description:
-      "High-converting HVAC websites for companies in Chatham-Kent. Turn local searches into booked jobs for furnace repair, AC installation, and emergency service calls.",
-    images: ["/mockup.png"],
+    images: [{ url: "/images/AdobeStock_65737788.jpeg" }],
   },
 };
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
-const web3formsEndpoint = "https://api.web3forms.com/submit";
-const web3formsAccessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "";
-const thankYouUrl = `${siteUrl}/thank-you`;
+export default function HvacIndustryPage() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "HVAC Web Design in Southwestern Ontario",
+    url: `${siteUrl}/hvac-web-design`,
+    provider: { "@type": "LocalBusiness", name: "Kealey Design", url: siteUrl },
+    areaServed: ["Chatham-Kent", "Windsor", "London", "Sarnia", "Leamington", "Southwestern Ontario"],
+    serviceType: "HVAC Web Design and Local SEO",
+  };
 
-export default function HvacWebDesignPage() {
   return (
-    <div className="landing-page">
-      <SiteHeader />
-      <main aria-label="HVAC web design page">
-        <section className="hero hero--single-cta" aria-label="HVAC web design hero">
-          <div className="hero__media" aria-hidden>
-            <Image
-              src="/images/AdobeStock_65737788.jpeg"
-              alt=""
-              fill
-              priority
-              quality={68}
-              sizes="100vw"
-              className="hero__image"
-            />
-          </div>
-          <div className="hero__overlay" aria-hidden />
-          <div className="hero__left-fade" aria-hidden />
-
-          <div className="hero__content">
-            <p className="hero__eyebrow">HVAC WEB DESIGN CHATHAM-KENT</p>
-            <h1 className="hero__title">
-              HVAC Web Design That Helps Chatham-Kent Companies Get More Service Calls
-            </h1>
-            <p className="hero__description">
-              We build high-converting HVAC websites that turn local searches into booked jobs-
-              especially for furnace repair, AC installation, and emergency service calls.
-            </p>
-
-            <div className="hero__actions">
-              <Link href="/contact" className="quote-button quote-button--hero">
-                Get a Free Website Audit
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        <section className="split-page__section split-page__text hvac-problem" aria-label="HVAC lead generation problems">
-          <div className="split-page__inner">
-            <div className="split-page__prose hvac-problem__prose">
-              <h2>Most HVAC websites don&apos;t generate real leads</h2>
-              <p className="hvac-problem__intro">If your website isn&apos;t bringing in calls, it&apos;s usually because:</p>
-              <ul className="hvac-problem__list">
-                <li>It looks outdated or unprofessional on mobile</li>
-                <li>It doesn&apos;t show up on Google for local searches</li>
-                <li>It doesn&apos;t clearly push visitors to call</li>
-                <li>It wasn&apos;t built to convert emergency traffic</li>
-              </ul>
-              <p className="hvac-problem__impact">
-                In HVAC, that means missed furnace calls in winter, missed AC installs in summer,
-                and lost high-value service jobs.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="split-page__section split-page__text hvac-solution" aria-label="HVAC website solution">
-          <div className="split-page__inner">
-            <div className="split-page__prose hvac-solution__prose">
-              <h2>We build HVAC websites designed to generate leads-not just look good</h2>
-              <p className="hvac-solution__intro">
-                Your website should do one thing well: turn local traffic into phone calls.
-              </p>
-              <p className="hvac-solution__focus-label">We focus on:</p>
-              <ul className="hvac-solution__list">
-                <li>Local SEO for HVAC keywords in your service area</li>
-                <li>Mobile-first design (most emergency searches are on phones)</li>
-                <li>Click-to-call optimization for urgent jobs</li>
-                <li>Service pages built around what customers actually search</li>
-                <li>Fast loading speeds (critical for Google rankings)</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section className="split-page__section split-page__text hvac-process" aria-label="How HVAC web design process works">
-          <div className="split-page__inner">
-            <div className="split-page__prose hvac-process__prose">
-              <h2>Simple 3-step process</h2>
-              <div className="hvac-process__grid">
-                <article className="hvac-process__card">
-                  <div className="hvac-process__icon-wrap" aria-hidden>
-                    <SearchCheck className="hvac-process__icon" />
-                  </div>
-                  <p className="hvac-process__step">1. Discovery</p>
-                  <p className="hvac-process__copy">
-                    We review your current website (or lack of one) and identify what&apos;s costing you leads.
-                  </p>
-                </article>
-
-                <article className="hvac-process__card">
-                  <div className="hvac-process__icon-wrap" aria-hidden>
-                    <Wrench className="hvac-process__icon" />
-                  </div>
-                  <p className="hvac-process__step">2. Build</p>
-                  <p className="hvac-process__copy">
-                    We design a conversion-focused HVAC website tailored to your services and location.
-                  </p>
-                </article>
-
-                <article className="hvac-process__card">
-                  <div className="hvac-process__icon-wrap" aria-hidden>
-                    <Rocket className="hvac-process__icon" />
-                  </div>
-                  <p className="hvac-process__step">3. Launch &amp; Optimize</p>
-                  <p className="hvac-process__copy">
-                    We publish your site and make sure it&apos;s ready to start generating calls from Google.
-                  </p>
-                </article>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="split-page__section split-page__text hvac-compare" aria-label="What is included in each HVAC website">
-          <div className="split-page__inner">
-            <div className="hvac-compare__grid">
-              <div className="hvac-compare__content">
-                <p className="hvac-compare__eyebrow">WHAT YOU GET</p>
-                <h2 className="hvac-compare__title">Every HVAC website includes:</h2>
-                <p className="hvac-compare__copy">
-                  A build focused on booked calls, stronger local visibility, and conversion-ready user journeys.
-                </p>
-              </div>
-
-              <div className="hvac-compare__panel">
-                <ul className="hvac-compare__list">
-                  <li>
-                    <CheckCircle2 className="hvac-compare__list-icon" aria-hidden />
-                    <span>Mobile-optimized design</span>
-                  </li>
-                  <li>
-                    <CheckCircle2 className="hvac-compare__list-icon" aria-hidden />
-                    <span>Local SEO structure (Chatham-Kent + surrounding areas)</span>
-                  </li>
-                  <li>
-                    <CheckCircle2 className="hvac-compare__list-icon" aria-hidden />
-                    <span>Dedicated service pages (repairs, installs, maintenance)</span>
-                  </li>
-                  <li>
-                    <CheckCircle2 className="hvac-compare__list-icon" aria-hidden />
-                    <span>Click-to-call buttons on every page</span>
-                  </li>
-                  <li>
-                    <CheckCircle2 className="hvac-compare__list-icon" aria-hidden />
-                    <span>Contact forms that actually convert</span>
-                  </li>
-                  <li>
-                    <CheckCircle2 className="hvac-compare__list-icon" aria-hidden />
-                    <span>Google Business integration setup</span>
-                  </li>
-                  <li>
-                    <CheckCircle2 className="hvac-compare__list-icon" aria-hidden />
-                    <span>Fast load speed optimization</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="split-page__section split-page__text hvac-audience" aria-label="Who this HVAC website offer is for">
-          <div className="split-page__inner">
-            <div className="hvac-audience__grid">
-              <div className="hvac-audience__fit">
-                <h2>Perfect for HVAC companies that want more local calls</h2>
-                <p className="hvac-audience__intro">This is for you if:</p>
-                <ul className="hvac-audience__list">
-                  <li>You rely on local service calls</li>
-                  <li>You want more emergency repair leads</li>
-                  <li>You&apos;re tired of referrals being your only source of business</li>
-                  <li>You know your current website isn&apos;t performing</li>
-                </ul>
-              </div>
-
-              <div className="hvac-audience__not-fit">
-                <p className="hvac-audience__not-fit-label">Not a fit</p>
-                <p className="hvac-audience__not-fit-copy">
-                  If you&apos;re just looking for a basic online brochure site.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="split-page__section split-page__text hvac-results" aria-label="HVAC website lead generation benefits">
-          <div className="split-page__inner">
-            <div className="split-page__prose hvac-results__prose">
-              <h2>What a good HVAC website actually does</h2>
-              <p className="hvac-results__intro">A properly built HVAC site can:</p>
-
-              <div className="hvac-results__grid">
-                <article className="hvac-results__card">
-                  <PhoneCall className="hvac-results__icon" aria-hidden />
-                  <p>Increase phone calls from Google searches</p>
-                </article>
-                <article className="hvac-results__card">
-                  <MapPin className="hvac-results__icon" aria-hidden />
-                  <p>Capture emergency near me traffic</p>
-                </article>
-                <article className="hvac-results__card">
-                  <Smartphone className="hvac-results__icon" aria-hidden />
-                  <p>Convert mobile visitors instantly</p>
-                </article>
-                <article className="hvac-results__card">
-                  <ShieldCheck className="hvac-results__icon" aria-hidden />
-                  <p>Build trust before customers even call</p>
-                </article>
-              </div>
-
-              <p className="hvac-results__close">
-                Most HVAC companies already have demand-they just don&apos;t have a website that captures it.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="split-page__section split-page__text hvac-about" aria-label="About Kealey Design for service businesses">
-          <div className="split-page__inner">
-            <div className="split-page__prose hvac-about__prose">
-              <p className="hvac-about__eyebrow">BUILT FOR LOCAL SERVICE BUSINESSES</p>
-              <h2>Built for local service businesses</h2>
-              <p>
-                Kealey Design works with trades and service companies in Ontario who want websites
-                that actually bring in leads-not just sit online.
-              </p>
-              <p className="hvac-about__focus">We focus on practical results: more calls, more bookings, more jobs.</p>
-            </div>
-          </div>
-        </section>
-
-        <section className="contact-cta" aria-label="CTA and contact form">
-          <div className="contact-cta__inner">
-            <div className="contact-cta__left">
-              <p className="contact-cta__eyebrow">LET&apos;S BUILD</p>
-              <h2 className="contact-cta__title">Ready to get more HVAC calls?</h2>
-              <p className="contact-cta__copy">
-                Tell us about your HVAC business and we&apos;ll put together a clear plan to get your
-                website ranking and converting in Chatham-Kent.
-              </p>
-            </div>
-
-            <form className="contact-cta__form" aria-label="Contact us form" action={web3formsEndpoint} method="POST">
-              <input type="hidden" name="access_key" value={web3formsAccessKey} />
-              <input type="hidden" name="subject" value="New HVAC Web Design Inquiry - Kealey Design" />
-              <input type="hidden" name="from_name" value="Kealey Design Website" />
-              <input type="hidden" name="redirect" value={thankYouUrl} />
-              <input
-                type="checkbox"
-                name="botcheck"
-                aria-hidden="true"
-                tabIndex={-1}
-                autoComplete="off"
-                style={{ display: "none" }}
-              />
-
-              <div className="contact-cta__field">
-                <label htmlFor="hvac-contact-name">Name</label>
-                <input id="hvac-contact-name" name="name" type="text" placeholder="Your name" required />
-              </div>
-
-              <div className="contact-cta__field">
-                <label htmlFor="hvac-contact-company">Company Name</label>
-                <input id="hvac-contact-company" name="companyName" type="text" placeholder="Your company" />
-              </div>
-
-              <div className="contact-cta__field">
-                <label htmlFor="hvac-contact-email">Email</label>
-                <input id="hvac-contact-email" name="email" type="email" placeholder="you@company.com" required />
-              </div>
-
-              <div className="contact-cta__field">
-                <label htmlFor="hvac-contact-phone">Phone</label>
-                <input id="hvac-contact-phone" name="phone" type="tel" placeholder="(123) 456-7890" />
-              </div>
-
-              <div className="contact-cta__field">
-                <label htmlFor="hvac-contact-budget">Budget</label>
-                <select id="hvac-contact-budget" name="budget" defaultValue="" required>
-                  <option value="" disabled>
-                    Select your budget
-                  </option>
-                  <option value="$500 - $1,500">$500 - $1,500</option>
-                  <option value="$1,500 - $3,500">$1,500 - $3,500</option>
-                  <option value="$3,500 - $7,500">$3,500 - $7,500</option>
-                  <option value="$7,500 - $12,500">$7,500 - $12,500</option>
-                  <option value="$12,500+">$12,500+</option>
-                  <option value="Not sure">Not sure</option>
-                </select>
-              </div>
-
-              <div className="contact-cta__field contact-cta__field--full">
-                <label htmlFor="hvac-contact-brief">Project Brief</label>
-                <textarea
-                  id="hvac-contact-brief"
-                  name="projectBrief"
-                  rows={5}
-                  placeholder="Tell us about your HVAC business, service area, and what you want your website to do"
-                  required
-                />
-              </div>
-
-              <button type="submit" className="contact-cta__submit">
-                Get Your Free Website Audit
-              </button>
-            </form>
-          </div>
-        </section>
-      </main>
-      <SiteFooter />
-    </div>
+    <AuthorityServicePage
+      eyebrow="HVAC INDUSTRY"
+      title="HVAC Web Design and Local SEO for Southwestern Ontario Companies"
+      description="A specific web design and SEO strategy for HVAC companies that need more service calls, better mobile conversion, stronger map pack visibility, and seasonal lead flow."
+      imageSrc="/images/AdobeStock_65737788.jpeg"
+      imageAlt="Residential HVAC units beside a home"
+      breadcrumbs={[{ label: "Industries", href: "/industries" }, { label: "HVAC Web Design" }]}
+      iconFeatures={hvacFeatures}
+      proofImage={{
+        src: "/case-studies/Screenshot_20-5-2026_161652_enhancedconcrete.ca.jpeg",
+        alt: "Enhanced Concrete website built by Kealey Design",
+        caption: "Enhanced Concrete — a real Chatham-Kent trades business built for mobile calls and service-area clarity, the same approach we bring to HVAC.",
+        href: "/portfolio/enhanced-concrete-local-seo",
+      }}
+      ctaLabel="Plan your HVAC website"
+      ctaSubject="New HVAC Industry Page Inquiry - Kealey Design"
+      ctaHeading="Want more HVAC calls from Google?"
+      ctaCopy="Tell us your HVAC service area and the jobs you want more of. We will map your website and local SEO opportunities."
+      intro={[
+        "HVAC web design needs to be more specific than a general contractor website. Customers are often searching with urgency, comparing companies from a phone, and trying to solve a seasonal problem quickly. In winter, they may need furnace repair. In summer, they may need AC service. During shoulder seasons, they may be comparing maintenance plans, heat pumps, indoor air quality, or replacement options.",
+        "For an HVAC company in Chatham-Kent, Windsor, London, Sarnia, Leamington, or Southwestern Ontario, the website has to support both emergency demand and planned projects. That means click-to-call buttons, clear service pages, local map pack signals, reviews, financing or maintenance plan messaging, quote request forms, and a mobile-first layout that does not bury the phone number.",
+        "Kealey Design builds HVAC web design and SEO pages around the way homeowners actually search. The goal is to make your company easier to find, easier to trust, and easier to contact when the need is urgent. A beautiful website that hides emergency service, loads slowly on mobile, or fails to explain your service area will lose leads to a simpler competitor site that answers the problem faster.",
+      ]}
+      sections={[
+        {
+          heading: "HVAC-Specific Pain Points",
+          body: [
+            "HVAC companies face a difficult mix of urgency, trust, and seasonality. A customer with no heat does not want to read a long brand story before they find the emergency number. A homeowner comparing AC replacement wants proof, financing context, warranty information, and confidence that the company can handle the install properly. A business owner looking for commercial service may care about response time, maintenance agreements, and experience.",
+            "A generic website cannot handle all of those search intents well. The site needs dedicated pathways for repair, replacement, installation, maintenance, emergency service, and service areas. It also needs to show reviews, licenses, team credibility, project proof, and equipment or brand familiarity without making the page feel cluttered.",
+          ],
+          bullets: [
+            "Emergency calls require fast mobile conversion.",
+            "Replacement jobs need more trust, proof, financing, and warranty detail.",
+            "Maintenance plans need recurring-value messaging and simple signup paths.",
+            "Seasonal demand changes the most important services throughout the year.",
+            "Service-area visibility matters because HVAC searches are highly local.",
+          ],
+        },
+        {
+          heading: "Mobile Conversion Optimization",
+          body: [
+            "Most urgent HVAC searches happen on a phone. That means the mobile version of the site is not secondary; it is the primary sales path. Visitors should see what you do, where you work, and how to call without pinching, hunting, or waiting through a slow page load. Tap targets need to be obvious. Forms need to be short. Service pages need to answer the immediate question quickly.",
+            "Mobile conversion also depends on trust. A sticky call button can help, but a visitor still needs confidence before calling. Reviews near the top of the page, emergency service language, local service areas, technician credibility, and simple explanations of what happens next can reduce hesitation.",
+          ],
+          bullets: [
+            "Click-to-call buttons in the header, hero, and service pages.",
+            "Short forms for quote requests, inspections, and emergency contact.",
+            "Fast image loading and clean layouts for lower-friction mobile browsing.",
+            "Trust signals visible before the visitor reaches the bottom of the page.",
+          ],
+        },
+        {
+          heading: "Local Map Pack Discussion",
+          body: [
+            "The Google map pack is one of the most important search surfaces for HVAC companies. When someone searches for furnace repair near me or AC repair in Chatham, they often see map results before traditional organic listings. The website, Google Business Profile, reviews, proximity, categories, services, and citations all contribute to the local search picture.",
+            "An HVAC website should support the profile with clear service pages, consistent business information, local content, and internal links. The Google Business Profile should reinforce the same services with accurate categories, service descriptions, photos, posts, and review activity. When the profile and website tell the same story, the business becomes easier for both customers and search engines to understand.",
+          ],
+          bullets: [
+            "Align Google Business Profile categories with actual HVAC services.",
+            "Create service pages that match profile services and customer searches.",
+            "Use location-specific content for priority towns without thin duplicates.",
+            "Build a review request and response process that supports trust.",
+          ],
+        },
+        {
+          heading: "Quote Request Funnels",
+          body: [
+            "Not every HVAC lead is the same. A no-heat emergency call should route differently than a planned furnace replacement estimate. A maintenance plan inquiry has different questions than an AC repair request. The website should create simple funnels for these different intents rather than forcing every visitor through one generic contact page.",
+            "A strong funnel starts with the service page. The page explains the problem, signs the homeowner may need service, what happens after they contact you, and why your company is trustworthy. The CTA then matches intent: call now for urgent repair, request an estimate for replacement, schedule maintenance, or ask about commercial service.",
+          ],
+          bullets: [
+            "Emergency repair pages should emphasize speed, phone calls, and availability.",
+            "Installation pages should explain options, process, warranties, and financing context.",
+            "Maintenance pages should focus on prevention, comfort, efficiency, and recurring plans.",
+            "Commercial pages should speak to reliability, response time, and ongoing service agreements.",
+          ],
+        },
+        {
+          heading: "Seasonality and SEO Opportunities",
+          body: [
+            "HVAC demand changes throughout the year, and the website should be ready before the season peaks. Furnace repair pages should be strong before cold weather. AC repair and installation pages should be ready before summer heat. Maintenance content should support spring and fall campaigns. Indoor air quality and heat pump content can support research-based searches year-round.",
+            "SEO opportunities often appear where competitors are thin. Many HVAC sites have a homepage and one services page, but no deep pages for furnace repair, AC installation, heat pumps, maintenance plans, ductless systems, or emergency service by town. Building useful pages around those services creates more ways to rank and more relevant landing pages for visitors.",
+          ],
+          bullets: [
+            "Furnace repair and replacement content for winter demand.",
+            "AC repair, installation, and tune-up content before summer demand.",
+            "Maintenance plan pages for recurring revenue and seasonal campaigns.",
+            "Heat pump, indoor air quality, and ductless pages for research-stage visitors.",
+          ],
+        },
+        {
+          heading: "Competitor Weaknesses and Before/After Examples",
+          body: [
+            "A typical weak HVAC website has a broad homepage, a short services page, a phone number, and little else. The visitor has to guess whether the company handles their specific problem, whether they serve the town, and whether they are credible. The before state is vague: 'heating and cooling services' with no clear path for emergency repair, replacement, or maintenance.",
+            "The after state is specific. The homepage routes visitors to repair, installation, maintenance, and emergency service. Each service page has relevant copy, FAQs, reviews, service-area links, and a matching CTA. The Google Business Profile aligns with those services. The site tracks calls and forms. Internal links connect HVAC web design, local SEO, service pages, location pages, portfolio proof, and the contact page into one authority structure.",
+          ],
+        },
+        {
+          heading: "Pricing Guidance",
+          body: [
+            "HVAC web design pricing depends on page depth, number of service areas, copywriting, SEO planning, forms, tracking, and whether Google Business Profile management is included. A focused HVAC website may start in the same range as other professional service sites, while a full lead-generation build with service pages, location pages, local SEO, and reporting requires a larger investment.",
+            "The better way to think about pricing is by lead value. One qualified furnace replacement, AC installation, or commercial service agreement can be worth a meaningful amount. If the website can help convert more of those searches into calls and estimates, the return can justify deeper strategy than a basic brochure build.",
+          ],
+        },
+      ]}
+      caseStudies={[
+        {
+          title: "Enhanced Concrete",
+          image: "/case-studies/Screenshot_20-5-2026_161652_enhancedconcrete.ca.jpeg",
+          href: "/portfolio/enhanced-concrete-local-seo",
+          summary: "A local service-business project showing how clearer service-area structure supports lead generation.",
+        },
+        {
+          title: "Davey Chiropractic",
+          image: "/case-studies/Screenshot_20-5-2026_16178_www.daveychiropractic.com.jpeg",
+          href: "/portfolio/davey-chiro-conversion-refresh",
+          summary: "A mobile-friendly local website refresh with trust and conversion improvements.",
+        },
+        {
+          title: "ARCstage",
+          image: "/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg",
+          href: "/portfolio/arcstage-growth-rebuild",
+          summary: "A rebuild focused on clearer service presentation and inquiry flow.",
+        },
+      ]}
+      faqs={faqs}
+      schema={schema}
+    />
   );
 }

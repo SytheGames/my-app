@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca/";
-const defaultSocialImage = "/mockup.png";
+const defaultSocialImage = "/og-image.jpg";
 const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 export const metadata: Metadata = {
@@ -131,11 +131,6 @@ gtag('config', '${gaMeasurementId}');`}
           </Script>
         </>
       ) : null}
-      <Script
-        src="https://analytics.ahrefs.com/analytics.js"
-        data-key="zY0lW59pLFIfWHcsJ4Z7Cg"
-        strategy="afterInteractive"
-      />
       </body>
     </html>
   );

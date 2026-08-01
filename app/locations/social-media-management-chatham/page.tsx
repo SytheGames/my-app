@@ -1,10 +1,35 @@
 import type { Metadata } from "next";
+import { CalendarClock, Image as ImageIcon, Megaphone, MessageCircle } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SplitPageHero } from "@/components/SplitPageHero";
 import { PageContactSection } from "@/components/PageContactSection";
+import { IconFeatureGrid } from "@/components/IconFeatureGrid";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
+
+const socialMediaFeatures = [
+  {
+    Icon: ImageIcon,
+    label: "Custom Graphic Design",
+    copy: "Branded monthly posts designed to match your business, not generic templates.",
+  },
+  {
+    Icon: CalendarClock,
+    label: "Consistent Posting",
+    copy: "A reliable content calendar so your profiles stay active instead of going quiet.",
+  },
+  {
+    Icon: Megaphone,
+    label: "Profile Optimization",
+    copy: "Bios, links, and hashtags tuned for discoverability and engagement.",
+  },
+  {
+    Icon: MessageCircle,
+    label: "Community Engagement",
+    copy: "Responses and interaction that keep your audience connected between posts.",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Social Media Management Chatham",
@@ -83,6 +108,7 @@ export default function SocialMediaManagementChathamPage() {
           imageAlt="Social media management in Chatham"
           ctaLabel="Get social support"
           ctaHref="/contact"
+          breadcrumbs={[{ label: "Locations", href: "/locations" }, { label: "Social Media Management Chatham" }]}
         />
 
         <section className="split-page__section split-page__text">
@@ -110,6 +136,8 @@ export default function SocialMediaManagementChathamPage() {
                 We tailor social content toward local service intent and pair it with your website goals,
                 creating better continuity across your digital presence.
               </p>
+
+              <IconFeatureGrid features={socialMediaFeatures} />
             </div>
           </div>
         </section>

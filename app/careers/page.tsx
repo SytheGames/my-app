@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     description: metaDescription,
     url: "/careers",
     type: "website",
-    images: [{ url: "/mockup.png" }],
+    images: [{ url: "/og-image.jpg" }],
   },
   twitter: {
     card: "summary_large_image",
     title: metaTitle,
     description: metaDescription,
-    images: ["/mockup.png"],
+    images: ["/og-image.jpg"],
   },
 };
 

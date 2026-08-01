@@ -69,6 +69,11 @@ export default function SeoServicesPage() {
       description="Technical SEO, content strategy, on-page optimization, internal linking, and reporting for companies that want stronger organic visibility and better qualified traffic."
       imageSrc="/service-placeholder-seo.svg"
       imageAlt="SEO service illustration"
+      breadcrumbs={[{ label: "Services", href: "/services" }, { label: "SEO Services" }]}
+      relatedLinks={[
+        { label: "Local SEO", href: "/local-seo" },
+        { label: "Portfolio", href: "/portfolio" },
+      ]}
       ctaLabel="Get an SEO audit"
       ctaSubject="New SEO Services Authority Page Inquiry - Kealey Design"
       ctaHeading="Need a clearer SEO plan?"
@@ -77,6 +82,7 @@ export default function SeoServicesPage() {
         "SEO services help your website become easier for search engines to understand and easier for customers to find. Local SEO is one important part of that work, but broader SEO includes technical health, content depth, internal links, site architecture, metadata, schema, content pruning, search intent alignment, and ongoing reporting. For a growing business, SEO is how the website becomes more than a brochure.",
         "Kealey Design provides SEO services for Chatham-Kent and Southwestern Ontario businesses that want stronger organic visibility and better qualified traffic. The work is especially valuable when your site already receives some traffic but does not rank for enough high-intent services, when competitors have deeper content, or when your existing pages are too thin to earn trust from Google or visitors.",
         "The best SEO strategy is specific. A generic list of keywords is not enough. We look at what customers search before they contact a business, what pages competitors use to capture that demand, what your current site can realistically rank for, and what content will support the sales process after the visitor lands. That is how SEO becomes a practical growth channel.",
+        "If your main goal is Google Maps and local pack visibility specifically, our dedicated Local SEO service (linked below) is usually the more direct starting point. SEO services here are the broader lane: technical health, content depth, and organic visibility across your whole site, not just the map pack.",
       ]}
       sections={[
         {
@@ -144,17 +150,14 @@ export default function SeoServicesPage() {
       ]}
       caseStudies={[
         {
-          title: "Enhanced Concrete",
-          href: "/portfolio/enhanced-concrete-local-seo",
-          summary: "A contractor site structured around local search demand and service clarity.",
-        },
-        {
           title: "Pebbles Gravel",
+          image: "/case-studies/Screenshot_20-5-2026_161715_www.pebblesgravel.com.jpeg",
           href: "/portfolio/pebbles-gravel-regional-lead-flow",
           summary: "Regional visibility improvements through clearer content and lead pathways.",
         },
         {
           title: "ARCstage",
+          image: "/case-studies/Screenshot_20-5-2026_161642_arcstage.ca.jpeg",
           href: "/portfolio/arcstage-growth-rebuild",
           summary: "A rebuild that clarified positioning, portfolio content, and inquiry flow.",
         },

@@ -147,7 +147,7 @@ const industries: Industry[] = [
 ];
 
 const industryPageLinks = [
-  { label: "HVAC companies", href: "/industries/hvac" },
+  { label: "HVAC companies", href: "/hvac-web-design" },
   { label: "Roofing companies", href: "/roofing-company-web-design-southwestern-ontario" },
   { label: "Contractors", href: "/contractor-web-design" },
   { label: "All industries", href: "/industries" },

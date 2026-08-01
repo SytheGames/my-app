@@ -28,14 +28,14 @@ const clientLogos: Record<string, { src: string; alt: string; isLight?: boolean 
 };
 
 const serviceLinks = [
-  { match: "seo", href: "/services/local-seo" },
-  { match: "redesign", href: "/services/website-redesign" },
-  { match: "ecommerce", href: "/services/ecommerce-websites" },
-  { match: "social", href: "/services/social-media-management" },
-  { match: "website", href: "/services/web-design" },
-  { match: "landing", href: "/services/web-design" },
-  { match: "conversion", href: "/services/web-design" },
-  { match: "brand", href: "/services/web-design" },
+  { match: "seo", href: "/local-seo" },
+  { match: "redesign", href: "/website-redesign" },
+  { match: "ecommerce", href: "/ecommerce-websites" },
+  { match: "social", href: "/social-media-management" },
+  { match: "website", href: "/web-design" },
+  { match: "landing", href: "/web-design" },
+  { match: "conversion", href: "/web-design" },
+  { match: "brand", href: "/web-design" },
 ];
 
 export function generateStaticParams() {

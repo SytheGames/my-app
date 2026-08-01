@@ -11,7 +11,7 @@ const footerLinks = {
   ],
   industries: [
     { label: "Industries", href: "/industries" },
-    { label: "HVAC Web Design", href: "/industries/hvac" },
+    { label: "HVAC Web Design", href: "/hvac-web-design" },
     { label: "Contractor Web Design", href: "/contractor-web-design" },
     { label: "Roofing Web Design", href: "/roofing-company-web-design-southwestern-ontario" },
     { label: "Chiropractor Web Design", href: "/chiropractor-web-design" },

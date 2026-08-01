@@ -1,8 +1,13 @@
+import type { LucideIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { PageContactSection } from "@/components/PageContactSection";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SplitPageHero } from "@/components/SplitPageHero";
+import { IconFeatureGrid } from "@/components/IconFeatureGrid";
+import { ProofImageBand } from "@/components/ProofImageBand";
+import type { BreadcrumbItem } from "@/components/Breadcrumbs";
 
 type FaqItem = {
   question: string;
@@ -19,6 +24,20 @@ type CaseStudyLink = {
   title: string;
   href: string;
   summary: string;
+  image?: string;
+};
+
+type IconFeature = {
+  Icon: LucideIcon;
+  label: string;
+  copy: string;
+};
+
+type ProofImage = {
+  src: string;
+  alt: string;
+  caption: string;
+  href?: string;
 };
 
 type AuthorityServicePageProps = {
@@ -36,6 +55,10 @@ type AuthorityServicePageProps = {
   caseStudies: CaseStudyLink[];
   faqs: FaqItem[];
   schema: object;
+  breadcrumbs?: BreadcrumbItem[];
+  relatedLinks?: Array<{ label: string; href: string }>;
+  iconFeatures?: IconFeature[];
+  proofImage?: ProofImage;
 };
 
 export function AuthorityServicePage({
@@ -53,6 +76,10 @@ export function AuthorityServicePage({
   caseStudies,
   faqs,
   schema,
+  breadcrumbs,
+  relatedLinks,
+  iconFeatures,
+  proofImage,
 }: AuthorityServicePageProps) {
   const faqColumns = [
     faqs.filter((_, index) => index % 2 === 0),
@@ -71,10 +98,13 @@ export function AuthorityServicePage({
           imageAlt={imageAlt}
           ctaLabel={ctaLabel}
           ctaHref="/contact"
-          relatedLinks={[
-            { label: "Portfolio", href: "/portfolio" },
-            { label: "Contact", href: "/contact" },
-          ]}
+          relatedLinks={
+            relatedLinks ?? [
+              { label: "Portfolio", href: "/portfolio" },
+              { label: "Contact", href: "/contact" },
+            ]
+          }
+          breadcrumbs={breadcrumbs}
         />
 
         <section className="split-page__section split-page__text">
@@ -84,6 +114,16 @@ export function AuthorityServicePage({
                 <p key={paragraph}>{paragraph}</p>
               ))}
 
+              {iconFeatures ? <IconFeatureGrid features={iconFeatures} /> : null}
+            </article>
+          </div>
+        </section>
+
+        {proofImage ? <ProofImageBand {...proofImage} /> : null}
+
+        <section className="split-page__section split-page__text">
+          <div className="split-page__inner">
+            <article className="split-page__prose">
               {sections.map((section) => (
                 <section key={section.heading}>
                   <h2>{section.heading}</h2>
@@ -105,16 +145,21 @@ export function AuthorityServicePage({
                 These examples show how better structure, clearer messaging, and stronger local search alignment
                 can turn a website into a more useful business asset.
               </p>
-              <ul>
+              <div className="authority-case-studies">
                 {caseStudies.map((study) => (
-                  <li key={study.href}>
-                    <strong>
-                      <Link href={study.href}>{study.title}</Link>
-                    </strong>{" "}
-                    - {study.summary}
-                  </li>
+                  <Link key={study.href} href={study.href} className="authority-case-studies__card">
+                    {study.image ? (
+                      <span className="authority-case-studies__image-wrap">
+                        <Image src={study.image} alt={study.title} fill sizes="(max-width: 768px) 100vw, 24rem" className="authority-case-studies__image" />
+                      </span>
+                    ) : null}
+                    <span className="authority-case-studies__body">
+                      <span className="authority-case-studies__title">{study.title}</span>
+                      <span className="authority-case-studies__summary">{study.summary}</span>
+                    </span>
+                  </Link>
                 ))}
-              </ul>
+              </div>
 
               <h2>Frequently Asked Questions</h2>
               <div className="faq__columns">

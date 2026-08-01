@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Breadcrumbs, type BreadcrumbItem } from "@/components/Breadcrumbs";
 
 type SplitPageHeroProps = {
   eyebrow: string;
@@ -12,6 +13,7 @@ type SplitPageHeroProps = {
     label: string;
     href: string;
   }>;
+  breadcrumbs?: BreadcrumbItem[];
 };
 
 export function SplitPageHero({
@@ -21,6 +23,7 @@ export function SplitPageHero({
   ctaLabel,
   ctaHref,
   relatedLinks,
+  breadcrumbs,
 }: SplitPageHeroProps) {
   const links =
     relatedLinks ??
@@ -33,6 +36,7 @@ export function SplitPageHero({
     <section className="split-hero" aria-label={title}>
       <div className="split-hero__left">
         <div className="split-hero__content">
+          {breadcrumbs ? <Breadcrumbs items={breadcrumbs} /> : null}
           <p className="split-hero__eyebrow">{eyebrow}</p>
           <h1 className="split-hero__title">{title}</h1>
           <p className="split-hero__description">{description}</p>

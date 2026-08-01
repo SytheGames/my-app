@@ -8,144 +8,52 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca
 
 type StaticRouteConfig = {
   urlPath: string;
-  sourceFile: string;
-  changeFrequency: "weekly" | "monthly" | "yearly";
-  priority: number;
+  /** ISO date the page's content was last meaningfully edited. Update this by hand when you change a page — do not derive it from build/checkout timestamps. */
+  lastModified: string;
 };
 
 const staticRoutes: StaticRouteConfig[] = [
-  { urlPath: "/", sourceFile: "app/page.tsx", changeFrequency: "weekly", priority: 1 },
-  { urlPath: "/blog", sourceFile: "app/blog/page.tsx", changeFrequency: "weekly", priority: 0.8 },
-  { urlPath: "/services", sourceFile: "app/services/page.tsx", changeFrequency: "monthly", priority: 0.8 },
-  { urlPath: "/pricing", sourceFile: "app/pricing/page.tsx", changeFrequency: "monthly", priority: 0.8 },
-  {
-    urlPath: "/web-design",
-    sourceFile: "app/web-design/page.tsx",
-    changeFrequency: "monthly",
-    priority: 0.9,
-  },
-  {
-    urlPath: "/local-seo",
-    sourceFile: "app/local-seo/page.tsx",
-    changeFrequency: "monthly",
-    priority: 0.9,
-  },
-  {
-    urlPath: "/seo-services",
-    sourceFile: "app/seo-services/page.tsx",
-    changeFrequency: "monthly",
-    priority: 0.85,
-  },
-  {
-    urlPath: "/website-maintenance",
-    sourceFile: "app/website-maintenance/page.tsx",
-    changeFrequency: "monthly",
-    priority: 0.8,
-  },
-  {
-    urlPath: "/google-business-profile-management",
-    sourceFile: "app/google-business-profile-management/page.tsx",
-    changeFrequency: "monthly",
-    priority: 0.8,
-  },
-  {
-    urlPath: "/industries",
-    sourceFile: "app/industries/page.tsx",
-    changeFrequency: "monthly",
-    priority: 0.85,
-  },
-  {
-    urlPath: "/industries/hvac",
-    sourceFile: "app/industries/hvac/page.tsx",
-    changeFrequency: "monthly",
-    priority: 0.8,
-  },
-  { urlPath: "/locations", sourceFile: "app/locations/page.tsx", changeFrequency: "monthly", priority: 0.8 },
-  {
-    urlPath: "/locations/web-design-chatham",
-    sourceFile: "app/locations/web-design-chatham/page.tsx",
-    changeFrequency: "monthly",
-    priority: 0.7,
-  },
-  {
-    urlPath: "/locations/social-media-management-chatham",
-    sourceFile: "app/locations/social-media-management-chatham/page.tsx",
-    changeFrequency: "monthly",
-    priority: 0.7,
-  },
-  {
-    urlPath: "/locations/web-design-windsor",
-    sourceFile: "app/locations/web-design-windsor/page.tsx",
-    changeFrequency: "monthly",
-    priority: 0.7,
-  },
-  {
-    urlPath: "/locations/web-design-london",
-    sourceFile: "app/locations/web-design-london/page.tsx",
-    changeFrequency: "monthly",
-    priority: 0.7,
-  },
-  {
-    urlPath: "/locations/web-design-sarnia",
-    sourceFile: "app/locations/web-design-sarnia/page.tsx",
-    changeFrequency: "monthly",
-    priority: 0.7,
-  },
-  {
-    urlPath: "/locations/web-design-leamington",
-    sourceFile: "app/locations/web-design-leamington/page.tsx",
-    changeFrequency: "monthly",
-    priority: 0.7,
-  },
-  { urlPath: "/portfolio", sourceFile: "app/portfolio/page.tsx", changeFrequency: "monthly", priority: 0.8 },
-  { urlPath: "/reviews", sourceFile: "app/reviews/page.tsx", changeFrequency: "monthly", priority: 0.8 },
-  { urlPath: "/about", sourceFile: "app/about/page.tsx", changeFrequency: "monthly", priority: 0.8 },
-  { urlPath: "/careers", sourceFile: "app/careers/page.tsx", changeFrequency: "monthly", priority: 0.6 },
-  {
-    urlPath: "/careers/remote-appointment-setter",
-    sourceFile: "app/careers/remote-appointment-setter/page.tsx",
-    changeFrequency: "monthly",
-    priority: 0.6,
-  },
-  { urlPath: "/contact", sourceFile: "app/contact/page.tsx", changeFrequency: "monthly", priority: 0.8 },
-  {
-    urlPath: "/chiropractor-web-design",
-    sourceFile: "app/chiropractor-web-design/page.tsx",
-    changeFrequency: "monthly",
-    priority: 0.7,
-  },
-  {
-    urlPath: "/contractor-web-design",
-    sourceFile: "app/contractor-web-design/page.tsx",
-    changeFrequency: "monthly",
-    priority: 0.7,
-  },
-  {
-    urlPath: "/roofing-company-web-design-southwestern-ontario",
-    sourceFile: "app/roofing-company-web-design-southwestern-ontario/page.tsx",
-    changeFrequency: "monthly",
-    priority: 0.7,
-  },
-  {
-    urlPath: "/wordpress-vs-webflow",
-    sourceFile: "app/wordpress-vs-webflow/page.tsx",
-    changeFrequency: "monthly",
-    priority: 0.7,
-  },
-  { urlPath: "/privacy", sourceFile: "app/privacy/page.tsx", changeFrequency: "yearly", priority: 0.4 },
-  { urlPath: "/terms", sourceFile: "app/terms/page.tsx", changeFrequency: "yearly", priority: 0.4 },
-  { urlPath: "/accessibility", sourceFile: "app/accessibility/page.tsx", changeFrequency: "yearly", priority: 0.4 },
+  { urlPath: "/", lastModified: "2026-05-30" },
+  { urlPath: "/blog", lastModified: "2026-04-16" },
+  { urlPath: "/services", lastModified: "2026-08-01" },
+  { urlPath: "/pricing", lastModified: "2026-05-21" },
+  { urlPath: "/web-design", lastModified: "2026-05-20" },
+  { urlPath: "/website-redesign", lastModified: "2026-08-01" },
+  { urlPath: "/ecommerce-websites", lastModified: "2026-08-01" },
+  { urlPath: "/social-media-management", lastModified: "2026-08-01" },
+  { urlPath: "/local-seo", lastModified: "2026-08-01" },
+  { urlPath: "/seo-services", lastModified: "2026-08-01" },
+  { urlPath: "/google-business-profile-management", lastModified: "2026-08-01" },
+  { urlPath: "/free-website-audit", lastModified: "2026-08-01" },
+  { urlPath: "/website-maintenance", lastModified: "2026-05-20" },
+  { urlPath: "/industries", lastModified: "2026-08-01" },
+  { urlPath: "/hvac-web-design", lastModified: "2026-08-01" },
+  { urlPath: "/chiropractor-web-design", lastModified: "2026-05-20" },
+  { urlPath: "/contractor-web-design", lastModified: "2026-03-16" },
+  { urlPath: "/roofing-company-web-design-southwestern-ontario", lastModified: "2026-08-01" },
+  { urlPath: "/locations", lastModified: "2026-08-01" },
+  { urlPath: "/locations/web-design-chatham", lastModified: "2026-05-30" },
+  { urlPath: "/locations/web-design-windsor", lastModified: "2026-05-30" },
+  { urlPath: "/locations/web-design-london", lastModified: "2026-05-30" },
+  { urlPath: "/locations/web-design-sarnia", lastModified: "2026-05-30" },
+  { urlPath: "/locations/web-design-leamington", lastModified: "2026-05-30" },
+  { urlPath: "/locations/social-media-management-chatham", lastModified: "2026-05-30" },
+  { urlPath: "/locations/local-seo-chatham", lastModified: "2026-08-01" },
+  { urlPath: "/locations/local-seo-windsor", lastModified: "2026-08-01" },
+  { urlPath: "/locations/local-seo-london", lastModified: "2026-08-01" },
+  { urlPath: "/locations/local-seo-sarnia", lastModified: "2026-08-01" },
+  { urlPath: "/locations/local-seo-leamington", lastModified: "2026-08-01" },
+  { urlPath: "/portfolio", lastModified: "2026-05-20" },
+  { urlPath: "/reviews", lastModified: "2026-05-20" },
+  { urlPath: "/about", lastModified: "2026-05-30" },
+  { urlPath: "/careers", lastModified: "2026-05-30" },
+  { urlPath: "/careers/remote-appointment-setter", lastModified: "2026-05-30" },
+  { urlPath: "/contact", lastModified: "2026-05-30" },
+  { urlPath: "/wordpress-vs-webflow", lastModified: "2026-08-01" },
+  { urlPath: "/privacy", lastModified: "2026-05-19" },
+  { urlPath: "/terms", lastModified: "2026-05-19" },
+  { urlPath: "/accessibility", lastModified: "2026-05-19" },
 ];
-
-function getLastModifiedFromSourceFile(relativeSourceFile: string): Date {
-  const fullPath = path.join(process.cwd(), relativeSourceFile);
-
-  if (!fs.existsSync(fullPath)) {
-    return new Date();
-  }
-
-  return fs.statSync(fullPath).mtime;
-}
 
 function getLastModifiedFromMarkdownFile(relativeDirectory: string, slug: string, fallback: Date): Date {
   const fullPath = path.join(process.cwd(), relativeDirectory, `${slug}.md`);
@@ -161,28 +69,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogPosts = getAllBlogPosts();
   const caseStudies = getAllCaseStudies();
 
+  const blogSlugsSeen = new Set<string>();
+  const caseStudySlugsSeen = new Set<string>();
+
   return [
     ...staticRoutes.map((route) => ({
       url: `${siteUrl}${route.urlPath}`,
-      lastModified: getLastModifiedFromSourceFile(route.sourceFile),
-      changeFrequency: route.changeFrequency,
-      priority: route.priority,
+      lastModified: new Date(route.lastModified),
     })),
-    ...blogPosts.map((post) => ({
-      url: `${siteUrl}/blog/${post.slug}`,
-      lastModified: getLastModifiedFromMarkdownFile(
-        "content/blog",
-        post.slug,
-        new Date(post.dateModified ?? post.date),
-      ),
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    })),
-    ...caseStudies.map((study) => ({
-      url: `${siteUrl}/portfolio/${study.slug}`,
-      lastModified: getLastModifiedFromMarkdownFile("content/case-studies", study.slug, new Date(study.date)),
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    })),
+    ...blogPosts
+      .filter((post) => {
+        if (blogSlugsSeen.has(post.slug)) return false;
+        blogSlugsSeen.add(post.slug);
+        return true;
+      })
+      .map((post) => ({
+        url: `${siteUrl}/blog/${post.slug}`,
+        lastModified: getLastModifiedFromMarkdownFile(
+          "content/blog",
+          post.slug,
+          new Date(post.dateModified ?? post.date),
+        ),
+      })),
+    ...caseStudies
+      .filter((study) => {
+        if (caseStudySlugsSeen.has(study.slug)) return false;
+        caseStudySlugsSeen.add(study.slug);
+        return true;
+      })
+      .map((study) => ({
+        url: `${siteUrl}/portfolio/${study.slug}`,
+        lastModified: getLastModifiedFromMarkdownFile("content/case-studies", study.slug, new Date(study.date)),
+      })),
   ];
 }

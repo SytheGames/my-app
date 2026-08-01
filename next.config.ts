@@ -22,13 +22,33 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/hvac-web-design",
-        destination: "/industries/hvac",
+        source: "/services/website-redesign",
+        destination: "/website-redesign",
+        permanent: true,
+      },
+      {
+        source: "/services/ecommerce-websites",
+        destination: "/ecommerce-websites",
+        permanent: true,
+      },
+      {
+        source: "/services/social-media-management",
+        destination: "/social-media-management",
+        permanent: true,
+      },
+      {
+        source: "/industries/hvac",
+        destination: "/hvac-web-design",
         permanent: true,
       },
       {
         source: "/careers/appointment-setter-sales-representative",
         destination: "/careers/remote-appointment-setter",
+        permanent: true,
+      },
+      {
+        source: "/blog/how-to-rank-a-local-business-website-on-google-in-2025",
+        destination: "/blog/how-to-rank-a-local-business-website-on-google",
         permanent: true,
       },
     ];

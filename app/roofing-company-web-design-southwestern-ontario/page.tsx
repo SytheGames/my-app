@@ -1,8 +1,34 @@
 import type { Metadata } from "next";
+import { CloudRain, MapPinned, ShieldCheck, Wrench } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SplitPageHero } from "@/components/SplitPageHero";
 import { PageContactSection } from "@/components/PageContactSection";
+import { IconFeatureGrid } from "@/components/IconFeatureGrid";
+import { ProofImageBand } from "@/components/ProofImageBand";
+
+const roofingFeatures = [
+  {
+    Icon: CloudRain,
+    label: "Storm Damage Pages",
+    copy: "Dedicated pages for storm damage, leaks, and emergency response so urgent searches find you fast.",
+  },
+  {
+    Icon: Wrench,
+    label: "Repair & Replacement",
+    copy: "Clear pages for the jobs you want more of, written around real homeowner search intent.",
+  },
+  {
+    Icon: ShieldCheck,
+    label: "Warranties & Trust",
+    copy: "Certifications, warranties, and project proof placed where they matter most in the decision.",
+  },
+  {
+    Icon: MapPinned,
+    label: "Service-Area Coverage",
+    copy: "Local landing pages for priority towns across Southwestern Ontario without thin duplicate content.",
+  },
+];
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kealeydesign.ca";
 const pagePath = "/roofing-company-web-design-southwestern-ontario";
@@ -18,14 +44,14 @@ export const metadata: Metadata = {
       "Websites for roofing companies in Southwestern Ontario that help generate calls, estimate requests, and stronger local search visibility.",
     url: pagePath,
     type: "website",
-    images: [{ url: "/mockup.png" }],
+    images: [{ url: "/og-image.jpg" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Roofing Company Web Design in Southwestern Ontario",
     description:
       "Lead-focused websites for Southwestern Ontario roofing companies that want more estimate requests from Google.",
-    images: ["/mockup.png"],
+    images: ["/og-image.jpg"],
   },
 };
 
@@ -90,14 +116,15 @@ export default function RoofingCompanyWebDesignSouthwesternOntarioPage() {
           eyebrow="ROOFING WEB DESIGN"
           title="Roofing Company Web Design in Southwestern Ontario"
           description="We build fast, credible roofing websites that help local roofers turn Google searches into calls, quote requests, and booked inspections."
-          imageSrc="/mockup.png"
+          imageSrc="/og-image.jpg"
           imageAlt="Website design portfolio preview for local service businesses"
           ctaLabel="Request a Free Website Audit"
           ctaHref="/contact"
           relatedLinks={[
             { label: "Contractor web design", href: "/contractor-web-design" },
-            { label: "Local SEO", href: "/services/local-seo" },
+            { label: "Local SEO", href: "/local-seo" },
           ]}
+          breadcrumbs={[{ label: "Industries", href: "/industries" }, { label: "Roofing Company Web Design" }]}
         />
 
         <section className="split-page__section split-page__text">
@@ -140,14 +167,21 @@ export default function RoofingCompanyWebDesignSouthwesternOntarioPage() {
           <div className="split-page__inner">
             <div className="split-page__prose">
               <h2>What your roofing website can include</h2>
-              <ul>
-                <li><strong>Conversion-focused homepage</strong> - a clear offer, service area, trust signals, and estimate path above the fold.</li>
-                <li><strong>Dedicated roofing service pages</strong> - pages for the jobs you want more of, written around real customer search intent.</li>
-                <li><strong>Local landing page structure</strong> - content for priority areas across Southwestern Ontario without creating thin duplicate pages.</li>
-                <li><strong>Project gallery and proof</strong> - before-and-after photos, testimonials, certifications, and warranty messaging placed where they matter.</li>
-                <li><strong>Lead capture forms</strong> - forms that ask for the right information without making homeowners work too hard.</li>
-              </ul>
+              <IconFeatureGrid features={roofingFeatures} />
+            </div>
+          </div>
+        </section>
 
+        <ProofImageBand
+          src="/case-studies/Screenshot_20-5-2026_161715_www.pebblesgravel.com.jpeg"
+          alt="Pebbles Gravel website built by Kealey Design"
+          caption="Pebbles Gravel — a regional Southwestern Ontario trades business built for local service-area visibility and lead flow."
+          href="/portfolio/pebbles-gravel-regional-lead-flow"
+        />
+
+        <section className="split-page__section split-page__text">
+          <div className="split-page__inner">
+            <div className="split-page__prose">
               <h2>Built for Southwestern Ontario search demand</h2>
               <p>
                 Roofing competition is local. A roofer in Chatham-Kent, Windsor, London, Sarnia, or Leamington

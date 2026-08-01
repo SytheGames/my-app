@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowUpRight, ChartNoAxesCombined, Globe, Megaphone, RefreshCw, ShoppingCart } from "lucide-react";
+import { ArrowUpRight, ChartNoAxesCombined, Globe, MapPin, Megaphone, RefreshCw, SearchCheck, ShoppingCart } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SplitPageHero } from "@/components/SplitPageHero";
@@ -38,35 +38,49 @@ const services = [
     description:
       "Custom web design for small businesses in Chatham and Southwestern Ontario, focused on mobile UX and conversion.",
     Icon: Globe,
-    href: "/services/web-design",
+    href: "/web-design",
   },
   {
     title: "Website Redesign",
     description:
       "Modern redesign projects that improve speed, readability, and lead generation without losing brand identity.",
     Icon: RefreshCw,
-    href: "/services/website-redesign",
+    href: "/website-redesign",
   },
   {
     title: "Local SEO",
     description:
       "Google Business Profile optimization, location-targeted content, and local search strategies that drive qualified traffic.",
     Icon: ChartNoAxesCombined,
-    href: "/services/local-seo",
+    href: "/local-seo",
   },
   {
     title: "Social Media Management",
     description:
       "Monthly social media support with 5 custom posts, graphic design, account management, and profile optimization.",
     Icon: Megaphone,
-    href: "/services/social-media-management",
+    href: "/social-media-management",
   },
   {
     title: "Ecommerce Websites",
     description:
       "Conversion-focused ecommerce experiences designed for product discovery, trust, and smooth checkout flows.",
     Icon: ShoppingCart,
-    href: "/services/ecommerce-websites",
+    href: "/ecommerce-websites",
+  },
+  {
+    title: "SEO Services",
+    description:
+      "Technical SEO, content strategy, and site-wide organic growth for businesses that need more than map visibility.",
+    Icon: SearchCheck,
+    href: "/seo-services",
+  },
+  {
+    title: "Google Business Profile Management",
+    description:
+      "Ongoing GBP optimization, posts, photos, and review support to keep your Maps listing active and accurate.",
+    Icon: MapPin,
+    href: "/google-business-profile-management",
   },
 ];
 
@@ -92,6 +106,7 @@ export default function ServicesPage() {
           imageAlt="Kealey Design services showcase"
           ctaLabel="Book a consultation"
           ctaHref="/contact"
+          breadcrumbs={[{ label: "Services" }]}
         />
 
         <section className="split-page__section services-page__list" aria-label="Service categories">

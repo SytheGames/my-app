@@ -47,7 +47,7 @@ export const metadata: Metadata = {
       "Conversion-focused website design for Chatham-Kent and Southwestern Ontario businesses.",
     url: "/web-design",
     type: "website",
-    images: [{ url: "/mockup.png" }],
+    images: [{ url: "/og-image.jpg" }],
   },
 };
 
@@ -76,8 +76,9 @@ export default function WebDesignPage() {
       eyebrow="WEB DESIGN"
       title="Web Design in Chatham-Kent for Local Service Businesses"
       description="Custom websites built to improve trust, explain your services clearly, and turn more visitors from Chatham-Kent and Southwestern Ontario into qualified inquiries."
-      imageSrc="/mockup.png"
+      imageSrc="/og-image.jpg"
       imageAlt="Kealey Design website portfolio preview"
+      breadcrumbs={[{ label: "Web Design" }]}
       ctaLabel="Start your web design project"
       ctaSubject="New Web Design Authority Page Inquiry - Kealey Design"
       ctaHeading="Ready to build a website that works harder?"
