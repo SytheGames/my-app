@@ -43,7 +43,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/careers/appointment-setter-sales-representative",
-        destination: "/careers/remote-appointment-setter",
+        destination: "/careers",
+        permanent: true,
+      },
+      {
+        source: "/careers/remote-appointment-setter",
+        destination: "/careers",
         permanent: true,
       },
       {

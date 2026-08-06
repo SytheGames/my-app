@@ -23,7 +23,6 @@ const footerLinks = {
     { label: "Locations", href: "/locations" },
     { label: "Pricing", href: "/pricing" },
     { label: "Careers", href: "/careers" },
-    { label: "We're Hiring", href: "/careers/remote-appointment-setter" },
     { label: "Contact", href: "/contact" },
   ],
 };

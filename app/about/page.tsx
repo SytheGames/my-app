@@ -95,9 +95,6 @@ export default function AboutPage() {
                   <Link href="/contact" className="about-page__secondary-button">
                     Get a growth plan
                   </Link>
-                  <Link href="/careers/remote-appointment-setter" className="about-page__secondary-button">
-                    We&apos;re hiring
-                  </Link>
                 </div>
               </div>
             </div>

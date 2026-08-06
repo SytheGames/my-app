@@ -500,9 +500,6 @@ export default function Home() {
               <Link href="/contact#book-call" className="home-final-cta__secondary">
                 Get in Touch
               </Link>
-              <Link href="/careers/remote-appointment-setter" className="home-final-cta__secondary">
-                We&apos;re hiring
-              </Link>
             </div>
           </div>
         </section>
