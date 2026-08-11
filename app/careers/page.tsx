@@ -3,16 +3,17 @@ import Image from "next/image";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
-const metaTitle = "Careers | Kealey Design";
+const pageTitle = "Careers";
+const fullTitle = "Careers | Kealey Design";
 const metaDescription =
   "Kealey Design is a web design + SEO agency. We don't have any open roles right now — email us if you'd like to be considered for future openings.";
 
 export const metadata: Metadata = {
-  title: metaTitle,
+  title: pageTitle,
   description: metaDescription,
   alternates: { canonical: "/careers" },
   openGraph: {
-    title: metaTitle,
+    title: fullTitle,
     description: metaDescription,
     url: "/careers",
     type: "website",
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: metaTitle,
+    title: fullTitle,
     description: metaDescription,
     images: ["/og-image.jpg"],
   },
