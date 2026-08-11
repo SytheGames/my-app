@@ -159,23 +159,19 @@ Use this quick self-audit on your laptop and phone:
 
 We offer transparent milestone-based pricing so you always know exactly what you’re paying for.
 
-## Frequently Asked Questions
+## FAQ
 
-### How quickly can a new website start generating leads?
+- **How quickly can a new website start generating leads?**
+  A well-optimized site can start producing calls within weeks, with stronger results in 3-6 months as local SEO builds.
 
-A well-optimized site can start producing calls within weeks, with stronger results in 3-6 months as local SEO builds.
+- **Do I need a new website or just updates?**
+  If your site is over 4 years old, not mobile-friendly, or lacks local SEO, a redesign usually delivers faster ROI.
 
-### Do I need a new website or just updates?
+- **What’s more important — design or SEO?**
+  Both. Beautiful design without SEO gets no traffic. Great SEO without conversion-focused design wastes visitors. We build both together.
 
-If your site is over 4 years old, not mobile-friendly, or lacks local SEO, a redesign usually delivers faster ROI.
-
-### What’s more important — design or SEO?
-
-Both. Beautiful design without SEO gets no traffic. Great SEO without conversion-focused design wastes visitors. We build both together.
-
-### How do I compete with bigger companies?
-
-Local authenticity wins. Real photos, local content, fast response, and genuine reviews beat generic corporate sites every time in Chatham-Kent.
+- **How do I compete with bigger companies?**
+  Local authenticity wins. Real photos, local content, fast response, and genuine reviews beat generic corporate sites every time in Chatham-Kent.
 
 ## Key Takeaways
 

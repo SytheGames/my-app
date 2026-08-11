@@ -101,23 +101,19 @@ Promote the offer on your homepage banner, GBP posts, and any email or text list
 | At least 2 fall-specific FAQ answers published | Captures AI Overview and voice/chat answer visibility | Yes/No |
 | Time-limited fall offer live with a visible deadline | Creates urgency and fills the calendar early | Yes/No |
 
-## Frequently Asked Questions
+## FAQ
 
-### When should HVAC companies start fall marketing?
+- **When should HVAC companies start fall marketing?**
+  Late July through August, before search volume for "furnace tune-up" and "furnace maintenance" starts climbing. Waiting until October means competing for the same homeowners everyone else is already targeting.
 
-Late July through August, before search volume for "furnace tune-up" and "furnace maintenance" starts climbing. Waiting until October means competing for the same homeowners everyone else is already targeting.
+- **Does Google Business Profile activity actually affect rankings?**
+  Yes. Google's 2026 local algorithm update weighs active profiles — regular posts, fresh photos, and review engagement — more heavily than in past years. A profile that hasn't been touched since spring is a real disadvantage.
 
-### Does Google Business Profile activity actually affect rankings?
+- **Is a blog post enough, or do I need a dedicated page?**
+  A dedicated, evergreen service page performs better long-term. Blog posts are useful for answering specific questions and building topical authority, but the offer itself should live on a permanent page you update every year.
 
-Yes. Google's 2026 local algorithm update weighs active profiles — regular posts, fresh photos, and review engagement — more heavily than in past years. A profile that hasn't been touched since spring is a real disadvantage.
-
-### Is a blog post enough, or do I need a dedicated page?
-
-A dedicated, evergreen service page performs better long-term. Blog posts are useful for answering specific questions and building topical authority, but the offer itself should live on a permanent page you update every year.
-
-### How do I compete with bigger HVAC companies on marketing budget?
-
-Speed and specificity win. A fast, mobile-friendly site with a clear fall offer and real reviews consistently outperforms a bigger competitor's generic, slow-loading site in local search and in the searcher's decision.
+- **How do I compete with bigger HVAC companies on marketing budget?**
+  Speed and specificity win. A fast, mobile-friendly site with a clear fall offer and real reviews consistently outperforms a bigger competitor's generic, slow-loading site in local search and in the searcher's decision.
 
 ## Key Takeaways
 

@@ -99,23 +99,19 @@ The vast majority of storm-damage searches happen on a phone, often standing out
 | Recent reviews mentioning response time | Speed is the deciding factor for storm-damage customers | Yes/No |
 | Mobile experience tested on an actual phone | Most storm searches happen standing outside, on mobile | Yes/No |
 
-## Frequently Asked Questions
+## FAQ
 
-### How much does storm damage search volume actually increase?
+- **How much does storm damage search volume actually increase?**
+  Search interest for terms like "roof leak repair" and "storm damage roofer" spikes sharply in the hours and days immediately following a storm system, then tapers off — meaning the businesses ready before the storm capture a disproportionate share of that short window.
 
-Search interest for terms like "roof leak repair" and "storm damage roofer" spikes sharply in the hours and days immediately following a storm system, then tapers off — meaning the businesses ready before the storm capture a disproportionate share of that short window.
+- **Should storm damage have its own page, or is a mention on the homepage enough?**
+  A dedicated page performs better. It gives you room for insurance guidance, damage-specific galleries, and a clear CTA, and it can rank independently for "storm damage roofer [your area]" searches year-round, not just during an active storm.
 
-### Should storm damage have its own page, or is a mention on the homepage enough?
+- **Does Google Business Profile really matter more than the website for this?**
+  Both matter, but a large share of storm-damage searches never leave the Maps/local pack, meaning your GBP is often the first — and sometimes only — thing a homeowner sees. An outdated profile costs you leads your website never gets a chance to convert.
 
-A dedicated page performs better. It gives you room for insurance guidance, damage-specific galleries, and a clear CTA, and it can rank independently for "storm damage roofer [your area]" searches year-round, not just during an active storm.
-
-### Does Google Business Profile really matter more than the website for this?
-
-Both matter, but a large share of storm-damage searches never leave the Maps/local pack, meaning your GBP is often the first — and sometimes only — thing a homeowner sees. An outdated profile costs you leads your website never gets a chance to convert.
-
-### What's the single highest-impact fix before storm season?
-
-The emergency CTA and mobile experience. Even a beautifully designed site loses the job if a stressed homeowner can't find your phone number in five seconds on their phone.
+- **What's the single highest-impact fix before storm season?**
+  The emergency CTA and mobile experience. Even a beautifully designed site loses the job if a stressed homeowner can't find your phone number in five seconds on their phone.
 
 ## Key Takeaways
 

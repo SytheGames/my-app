@@ -248,23 +248,19 @@ We use a milestone payment model, so you are never paying everything upfront. Ea
 
 For a detailed breakdown, see our full guide on [web design costs in Southwestern Ontario](/blog/web-design-cost-southwestern-ontario). No other agency in this space publishes pricing this transparently, and we think you deserve to know what you are budgeting for before the first call.
 
-## Frequently Asked Questions
+## FAQ
 
-### How do I know if my small business website needs a redesign or just minor fixes?
+- **How do I know if my small business website needs a redesign or just minor fixes?**
+  If your site is not responsive, has no SSL, or was built more than 4-5 years ago, a rebuild is usually more cost-effective than patching. For sites with solid foundations but missing CTAs, slow load times, or weak content, targeted fixes can often deliver results quickly. We can help assess which approach makes sense during a free [discovery call](/contact).
 
-If your site is not responsive, has no SSL, or was built more than 4-5 years ago, a rebuild is usually more cost-effective than patching. For sites with solid foundations but missing CTAs, slow load times, or weak content, targeted fixes can often deliver results quickly. We can help assess which approach makes sense during a free [discovery call](/contact).
+- **Is professional web design necessary for a small company?**
+  For businesses that depend on local customers finding them online, yes. Over 80% of Canadian consumers research products and services online before buying ([Phoenix Wise](https://phoenixwise.ca/does-small-business-need-website-2026/), citing Statistics Canada). A professional site built around conversion and local SEO consistently outperforms DIY and template sites in generating qualified inquiries.
 
-### Is professional web design necessary for a small company?
+- **How long does it take to fix common website problems?**
+  Individual fixes like adding SSL, improving load speed, or adding a CTA can take 1-3 days each. A full responsive redesign typically takes 4-8 weeks from discovery call to launch, depending on the scope and complexity of the project.
 
-For businesses that depend on local customers finding them online, yes. Over 80% of Canadian consumers research products and services online before buying ([Phoenix Wise](https://phoenixwise.ca/does-small-business-need-website-2026/), citing Statistics Canada). A professional site built around conversion and local SEO consistently outperforms DIY and template sites in generating qualified inquiries.
-
-### How long does it take to fix common website problems?
-
-Individual fixes like adding SSL, improving load speed, or adding a CTA can take 1-3 days each. A full responsive redesign typically takes 4-8 weeks from discovery call to launch, depending on the scope and complexity of the project.
-
-### What is the single biggest website mistake small businesses make?
-
-Not being mobile-friendly. With roughly 60% of web traffic in Canada coming from mobile devices, a site that does not work on a phone is invisible to the majority of potential customers. Mobile-friendly sites also see 40% higher conversion rates ([Hostinger](https://www.hostinger.com/tutorials/web-design-statistics)).
+- **What is the single biggest website mistake small businesses make?**
+  Not being mobile-friendly. With roughly 60% of web traffic in Canada coming from mobile devices, a site that does not work on a phone is invisible to the majority of potential customers. Mobile-friendly sites also see 40% higher conversion rates ([Hostinger](https://www.hostinger.com/tutorials/web-design-statistics)).
 
 ## Key Takeaways
 

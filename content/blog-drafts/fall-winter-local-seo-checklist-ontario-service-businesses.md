@@ -102,23 +102,19 @@ Directory listings and local backlinks drift out of date — old addresses, old 
 | FAQ content and schema markup current | Determines whether AI Overviews and Gemini recommend you | Yes/No |
 | NAP consistency checked across directories | Old citations quietly undermine local trust signals | Yes/No |
 
-## Frequently Asked Questions
+## FAQ
 
-### How often should I update my local SEO for the season?
+- **How often should I update my local SEO for the season?**
+  At minimum, once per season — but Google Business Profile activity (posts, photos, review responses) should happen every couple of weeks year-round, not just at seasonal transitions.
 
-At minimum, once per season — but Google Business Profile activity (posts, photos, review responses) should happen every couple of weeks year-round, not just at seasonal transitions.
+- **Is Google Business Profile really more important than my website now?**
+  They work together, but GBP is increasingly the first — and sometimes only — thing a searcher or AI answer engine sees. A strong website with a neglected GBP still loses leads it should be winning.
 
-### Is Google Business Profile really more important than my website now?
+- **What's the biggest local SEO mistake service businesses make going into winter?**
+  Leaving summer-focused content and a stale Google Business Profile in place while search demand has already shifted to winter-specific services. By the time it's obviously the wrong season, competitors who updated early have already captured the search demand.
 
-They work together, but GBP is increasingly the first — and sometimes only — thing a searcher or AI answer engine sees. A strong website with a neglected GBP still loses leads it should be winning.
-
-### What's the biggest local SEO mistake service businesses make going into winter?
-
-Leaving summer-focused content and a stale Google Business Profile in place while search demand has already shifted to winter-specific services. By the time it's obviously the wrong season, competitors who updated early have already captured the search demand.
-
-### Do AI Overviews and ChatGPT recommendations actually bring in real customers?
-
-Yes — AI platforms are now a meaningful source of local business recommendations, alongside Google and Facebook. They're more selective than traditional search, so accurate, well-documented business information matters more, not less.
+- **Do AI Overviews and ChatGPT recommendations actually bring in real customers?**
+  Yes — AI platforms are now a meaningful source of local business recommendations, alongside Google and Facebook. They're more selective than traditional search, so accurate, well-documented business information matters more, not less.
 
 ## Key Takeaways
 

@@ -256,31 +256,25 @@ Consistency beats intensity every single time. Businesses that push five GBP upd
 
 The small-town Ontario advantage is real. Rural and semi-rural areas like Leamington, Ridgetown, or Blenheim just have fewer businesses competing for the same keywords. Every optimization step carries more weight in these communities. Earning a backlink from a local BIA or collecting five new Google reviews has a much bigger impact than it would in a crowded urban market. A single citation cleanup can produce noticeable Pack improvements in low-competition areas, often within weeks rather than months. That's the practical upside of operating where fewer businesses are actively investing in local SEO.
 
-## Frequently Asked Questions About Ranking a Local Business on Google
+## FAQ
 
-### What are the top 3 local ranking factors on Google?
+- **What are the top 3 local ranking factors on Google?**
+  Google's documentation points to three core factors: Relevance, Distance, and Prominence. Relevance looks at how well your Google Business Profile matches what someone actually typed into the search bar. Distance is straightforward. It's just how far your business is from the person searching. Prominence reflects your overall reputation, shaped by reviews, backlinks, citations, and consistent NAP details across local directories.
 
-Google's documentation points to three core factors: Relevance, Distance, and Prominence. Relevance looks at how well your Google Business Profile matches what someone actually typed into the search bar. Distance is straightforward. It's just how far your business is from the person searching. Prominence reflects your overall reputation, shaped by reviews, backlinks, citations, and consistent NAP details across local directories.
+- **What is the difference between the Google Local Pack and organic search results?**
+  The Local Pack is that map-based box showing three businesses near the top of a local search. It pulls most of its data straight from your Google Business Profile. Organic results show up below, driven more by your website's content, technical SEO, and backlink profile. You can actually appear in both at the same time. That's precisely why optimizing your GBP and your website as separate efforts matters so much.
 
-### What is the difference between the Google Local Pack and organic search results?
+- **How much does local SEO cost for a small business in Ontario?**
+  Monthly retainers usually range from $650 to $2,400, depending on how many service areas you're focused on and how tough your local market is. A one-time GBP optimization or NAP audit costs less upfront. For businesses working with a tighter budget, it's a practical starting point that still moves the needle.
 
-The Local Pack is that map-based box showing three businesses near the top of a local search. It pulls most of its data straight from your Google Business Profile. Organic results show up below, driven more by your website's content, technical SEO, and backlink profile. You can actually appear in both at the same time. That's precisely why optimizing your GBP and your website as separate efforts matters so much.
+- **Can I rank locally without a physical storefront?**
+  Yes. Google fully supports service-area businesses, think plumbers, cleaners, mobile mechanics. Instead of displaying a street address, you just define your service zones right in your GBP. Lots of service-area businesses across Chatham-Kent rank in the top three local results without ever listing a storefront.
 
-### How much does local SEO cost for a small business in Ontario?
+- **Do online reviews really affect my Google ranking?**
+  They do. Review quantity, average star rating, recency, and whether you actually reply to reviews all feed into Google's Prominence signal. A business sitting on 85 recent reviews with consistent owner replies will typically outrank a competitor who's got 15 reviews from two years ago, even if both maintain comparable websites.
 
-Monthly retainers usually range from $650 to $2,400, depending on how many service areas you're focused on and how tough your local market is. A one-time GBP optimization or NAP audit costs less upfront. For businesses working with a tighter budget, it's a practical starting point that still moves the needle.
-
-### Can I rank locally without a physical storefront?
-
-Yes. Google fully supports service-area businesses, think plumbers, cleaners, mobile mechanics. Instead of displaying a street address, you just define your service zones right in your GBP. Lots of service-area businesses across Chatham-Kent rank in the top three local results without ever listing a storefront.
-
-### Do online reviews really affect my Google ranking?
-
-They do. Review quantity, average star rating, recency, and whether you actually reply to reviews all feed into Google's Prominence signal. A business sitting on 85 recent reviews with consistent owner replies will typically outrank a competitor who's got 15 reviews from two years ago, even if both maintain comparable websites.
-
-### What is local schema markup and do I need it?
-
-LocalBusiness schema is a snippet of structured data code on your website that tells search engines your business name, address, phone number, hours, and services in a format they can parse instantly. Most small business websites don't have it. That's what makes it such a clear competitive edge. Adding schema won't cost much, but it gives Google exactly the structured information it needs to confidently display your business in local search results.
+- **What is local schema markup and do I need it?**
+  LocalBusiness schema is a snippet of structured data code on your website that tells search engines your business name, address, phone number, hours, and services in a format they can parse instantly. Most small business websites don't have it. That's what makes it such a clear competitive edge. Adding schema won't cost much, but it gives Google exactly the structured information it needs to confidently display your business in local search results.
 
 ## Ready to Rank Your Ontario Business Higher on Google?
 
