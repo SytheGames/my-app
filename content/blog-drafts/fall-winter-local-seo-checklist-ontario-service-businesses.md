@@ -33,6 +33,8 @@ This isn't specific to one trade. Whether you're an HVAC company, a roofer, an e
 
 Here's the checklist we run with local SEO clients across Chatham-Kent and Southwestern Ontario heading into fall and winter.
 
+![snow-covered residential street with parked cars and frost-covered trees, capturing the fall-to-winter transition Ontario service businesses need to plan their local SEO around](/images/blog/pexels-snowy-street-winter-11372231.jpg)
+
 ## Why Local SEO Needs a Seasonal Refresh, Not a One-Time Setup
 
 A lot of small businesses treat local SEO as something you "do once" — get a Google Business Profile set up, build a website, and leave it alone. That approach was never great, but it's a bigger problem in 2026 for two reasons.
@@ -48,6 +50,8 @@ Search terms shift with the calendar. A contractor targeting "deck building" in 
 - Pull your current top-ranking pages and identify which ones are actually seasonally relevant right now
 - Add or update service pages for what people are searching for this season specifically — not generic year-round pages
 - Update page titles, headings, and meta descriptions to reflect current-season language, not last season's
+
+![man in a winter jacket and gloves checking his smartphone outdoors in the snow, representing customers searching for a Google Business Profile or local search results in winter](/images/blog/pexels-phone-winter-search-6831047.jpg)
 
 ## Step 2: Update Your Google Business Profile for the New Season
 
@@ -91,6 +95,8 @@ Directory listings and local backlinks drift out of date — old addresses, old 
 - Check your top local directories (Google, Bing Places, Yelp, industry-specific directories) for consistency
 - Fix any old NAP (name, address, phone) mismatches, which quietly undermine trust signals across the board
 - Look for one or two realistic local link opportunities — a chamber of commerce listing, a supplier partnership page, a local sponsorship — rather than chasing volume
+
+![service technician in a winter jacket shoveling snow outdoors, representing the seasonal on-the-ground work Ontario contractors and service businesses handle each winter](/images/blog/pexels-snow-shoveling-winter-6952505.jpg)
 
 ## Fall/Winter Local SEO Checklist
 

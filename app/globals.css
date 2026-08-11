@@ -2746,6 +2746,18 @@ a {
   background: rgba(255, 255, 255, 0.55);
 }
 
+.blog-post__content img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 1.75rem 0;
+  border-radius: var(--radius-card);
+  border: 0.0625rem solid var(--blog-border);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .blog-post__table-wrap {
   width: 100%;
   overflow-x: auto;

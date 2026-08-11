@@ -33,6 +33,8 @@ For small businesses across Ontario, that decision window is short. If your site
 
 This guide covers five features that matter most in 2026 for local service businesses, retail operators, and growing brands.
 
+![laptop displaying a website next to a smartphone on a wooden desk, illustrating mobile and desktop responsive website design for Ontario small businesses](/images/blog/pexels-mobile-laptop-responsive-69432.jpg)
+
 ## 1) Mobile-First Responsive Design
 
 Most local traffic now comes from mobile devices. People search while commuting, waiting in line, or comparing options from a phone. If your layout is built mainly for desktop, you lose attention before your message is even read.
@@ -84,6 +86,8 @@ Conversion structure also means placing calls to action in logical points throug
 
 Many businesses also benefit from role-based calls to action. For example, someone ready to start now may click "Book a consultation," while someone still comparing options may prefer "View pricing" or "See project examples." Giving users multiple next steps can increase action rates without making the page feel cluttered.
 
+![close-up of a hand placing a red pin on a paper map, representing service-area targeting for local SEO in Ontario towns like Chatham-Kent](/images/blog/pexels-map-pin-location-7663519.jpg)
+
 ## 4) Local SEO Foundations That Match Buyer Intent
 
 Search visibility is critical for small businesses. If your website is not optimized for local intent, people searching your service in your city may never find you.
@@ -123,6 +127,8 @@ When these features are implemented together, your site works like a practical s
 Calls to action should be specific and aligned with intent. "Book a consultation" is usually stronger than "Submit," because it frames a clear benefit and next step.
 
 When messaging, proof, and calls to action work together, your site becomes a decision tool rather than just an information page.
+
+![tablet screen displaying five yellow rating stars on a blue background, representing a customer leaving a five-star review or testimonial for a small business website](/images/blog/pexels-five-star-review-11894045.jpg)
 
 ## FAQ
 

@@ -33,6 +33,8 @@ That surge in demand is short, sharp, and almost entirely mobile. If your websit
 
 Here's the checklist we run through with roofing clients before storm season, so the site is ready the moment demand spikes instead of scrambling to fix it mid-storm.
 
+![Close-up of a residential roof with missing and damaged shingles exposing the wood decking underneath, the kind of storm damage that sends Southwestern Ontario homeowners searching for a roofer](/images/blog/pexels-storm-damaged-roof-shingles-6931459.jpg)
+
 ## 1. An Emergency Request Path That Works in Seconds
 
 A homeowner with water coming through their ceiling isn't reading your About page. They need one obvious next step.
@@ -52,6 +54,8 @@ Storm-driven traffic often arrives all at once — an entire neighbourhood searc
 - Confirm your hosting can handle a traffic spike without slowing down
 - Compress and properly size images, especially before/after storm damage photos
 - Run a PageSpeed Insights check now, before storm season, not after you've lost leads to a slow load
+
+![Contractors in hard hats reviewing property repair plans together on-site, similar to a roofing consultation with a homeowner after storm damage](/images/blog/pexels-roof-inspection-consultation-7937734.jpg)
 
 ## 3. Before/After Storm Damage Galleries
 
@@ -86,6 +90,8 @@ The vast majority of storm-damage searches happen on a phone, often standing out
 - Tap targets (phone number, CTA buttons) are large enough to hit accurately
 - Forms are short enough to complete one-handed
 - Text is readable without zooming
+
+![Roofers replacing shingles on a residential roof, tools and materials visible during an active roof repair job in Southwestern Ontario](/images/blog/pexels-roof-replacement-repair-33501308.jpg)
 
 ## Storm Season Readiness Checklist
 

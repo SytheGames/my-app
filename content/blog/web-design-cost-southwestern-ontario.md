@@ -32,6 +32,8 @@ The short answer is that website pricing depends on scope, not just design. Two 
 
 This guide gives a realistic breakdown for 2026, based on common project types across Chatham-Kent, Windsor, London, Sarnia, and nearby markets.
 
+![small business owner reviewing a budget and invoice on paper alongside a laptop while planning a website investment](/images/blog/pexels-budget-invoice-review-6963847.jpg)
+
 ## Typical Website Price Ranges in 2026
 
 For most small businesses in Southwestern Ontario, professional web design projects land in one of these bands:
@@ -69,6 +71,8 @@ Another useful question is what happens after launch. Some quotes include post-l
 
 It is also worth asking how content revisions are handled. Most projects need copy refinements after stakeholders review draft pages. If revision scope is undefined, timeline and budget can both drift. A structured process with clear rounds keeps the project focused and predictable.
 
+![small business team gathered around a table for a planning meeting to map out website budget and growth stages](/images/blog/pexels-team-planning-meeting-8636606.jpg)
+
 ## Budgeting by Business Stage
 
 Different business stages usually need different website investments.
@@ -101,6 +105,8 @@ A good proposal should tell you exactly what is included, what is optional, and 
 One practical way to compare quotes is to score each proposal against the same checklist: strategy depth, content support, SEO setup, conversion structure, QA process, and post-launch support. That gives you an apples-to-apples view and often explains why one option costs more than another.
 
 Cost control does not mean removing all strategic work. It usually means choosing the right sequence. Spending on essentials first and expanding intentionally tends to outperform both extremes: overspending too early or underinvesting in fundamentals.
+
+![web designer working on a website mockup and layout on a computer screen in a modern office](/images/blog/pexels-designer-wireframe-mockup-13451104.jpg)
 
 ## Should You DIY or Hire a Professional?
 

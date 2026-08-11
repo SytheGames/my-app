@@ -127,7 +127,7 @@ Getting your NAP details consistent won't produce overnight results. But pair th
 
 **Title tags that pair your primary keyword with a city name rank as the 11th most important organic factor. Dedicated service-area pages? They hold the top organic ranking spot and come in second for AI ranking factors.**
 
-![digital map with location pins and business contact details illustrating how to rank a local business website on Google](/images/blog/how-to-rank-a-local-business-website-on-google-in-2025-featured.png)
+![close-up of a map with multicoloured location pins representing local business directory listings across Southwestern Ontario](/images/blog/pexels-map-directory-pins-8828425.jpg)
 
 Your Google Business Profile gets you into the Local Pack. On-page SEO on your actual website is what earns organic rankings below it. Too many small businesses in Southwestern Ontario still treat their site like a digital brochure, not a local ranking asset. That's a costly mistake, and it compounds over time.
 
@@ -187,7 +187,7 @@ Technical health is the foundation everything else sits on. No amount of citatio
 
 **Google reviews account for roughly 20% of Local Pack ranking factors. Local backlinks from community organizations build the prominence signal that separates page-one businesses from the ones nobody finds.**
 
-![abstract digital illustration showing website design elements and SEO icons representing how to rank a local business website on Google](/images/blog/how-to-rank-a-local-business-website-on-google-in-2025-featured.png)
+![laptop displaying a website next to a smartphone, representing a mobile-friendly, responsive website design for local Ontario businesses](/images/blog/pexels-responsive-web-design-laptop-69432.jpg)
 
 A landscaping company in Leamington, Ontario spent six months focused on one thing: collecting Google reviews and building local links. They started with 12 reviews and zero backlinks from local sources. By month six, they'd gathered 67 reviews (averaging 4.8 stars) and earned links from the Leamington BIA, a sponsorship mention on the South Essex Community Council website, and a feature in the Chatham-Kent This Week newspaper. That consistency paid off. Their Google Business Profile jumped from position 11 to position 3 for "landscaping near me," and phone calls from local search climbed by roughly 40%.
 
@@ -205,7 +205,7 @@ Replying to every review matters just as much as collecting them. Google treats 
 
 **Small towns in Ontario give you a natural link-building edge. Community organizations are easier to reach, and local media outlets are far hungrier for content than their urban counterparts.**
 
-![AI-generated summary displaying business details and reviews above Google search results illustrating how to rank a local business website on Google](/images/blog/how-to-rank-a-local-business-website-on-google-in-2025-featured.png)
+![small business owner celebrating in front of her laptop after seeing strong website analytics and local search growth](/images/blog/pexels-business-owner-celebrating-18848932.jpg)
 
 Sponsoring a youth hockey team in Chatham-Kent usually gets you a link from the league's website. Partnering with a local food bank on a seasonal drive can land you coverage, and a backlink, from a municipal economic development page.
 

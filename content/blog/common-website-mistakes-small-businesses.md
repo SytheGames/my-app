@@ -40,6 +40,8 @@ The mistakes below are not abstract design theory. They are the specific problem
 
 We selected these 10 based on how frequently they appear and how directly they affect whether a visitor picks up the phone or fills out a form. Some are quick fixes. Others require a deeper look at your site's foundation.
 
+![Frustrated business owner staring at a laptop screen, visibly annoyed while waiting for a slow-loading small business website](/images/blog/pexels-frustrated-laptop-user-7927357.jpg)
+
 ## Mistake 1: Your Website Takes Too Long to Load
 
 A slow website does not just frustrate visitors. It actively drives them away. According to [Loopex Digital](https://www.loopexdigital.com/blog/web-design-statistics), 88% of users will not return after a bad website experience. And research from [Portent](https://portent.com/blog/analytics/research-site-speed-hurting-everyones-revenue.htm) shows that a B2B site loading in one second converts at 3x the rate of one that takes five seconds, with e-commerce sites seeing a 2.5x difference.
@@ -128,6 +130,8 @@ The most common navigation problems we encounter are too many menu items (more t
 
 Good navigation is part of a good conversion structure. Your site architecture should make it easy for a visitor to find your services, understand your value, and take action, all within a few clicks.
 
+![Close-up of hands holding a smartphone in front of a desktop computer, browsing a small business website on mobile to search for a local service](/images/blog/pexels-mobile-website-browsing-5082579.jpg)
+
 ## Mistake 6: Missing Local SEO Basics
 
 If nearby customers cannot find you when they search "plumber near me" or "chiropractor Chatham-Kent," your website is not doing its job. According to [Phoenix Wise](https://phoenixwise.ca/does-small-business-need-website-2026/), citing Statistics Canada, over 80% of Canadian consumers research products and services online before making a purchase.
@@ -208,6 +212,8 @@ In Canada, the 2022 Canadian Survey on Disability found that 27% of Canadians ag
 - Add descriptive alt text to every image
 - Check colour contrast ratios against WCAG 2.1 AA standards
 - Ensure your site is navigable by keyboard for users who cannot use a mouse
+
+![Small business owner reviewing a purple analytics chart on a laptop screen while auditing website performance data](/images/blog/pexels-analytics-dashboard-laptop-7109291.jpg)
 
 ## How to Audit Your Website for These Mistakes
 

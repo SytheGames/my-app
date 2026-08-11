@@ -31,6 +31,8 @@ After building and optimizing dozens of contractor websites across Southwestern 
 
 This guide gives you the 10 highest-impact website strategies we use for plumbers, electricians, and HVAC companies in Chatham-Kent, Wallaceburg, Blenheim, and surrounding areas.
 
+![Contractor wearing a hard hat and reviewing project details on a tablet at an outdoor jobsite, similar to how Chatham-Kent tradespeople check their website and leads on the go](/images/blog/pexels-contractor-tablet-jobsite-8961008.jpg)
+
 ## 10 Best Website Strategies for Chatham-Kent Contractors
 
 These strategies are ranked by how directly they increase phone calls and booked jobs for local service businesses.
@@ -131,6 +133,8 @@ Create FAQ sections, blog posts (“How Much Does Furnace Replacement Cost in Ch
 
 These factors affect rankings and protect your reputation.
 
+![Construction crew in high-visibility gear working together on a steel-frame job site, the kind of real project photo Chatham-Kent contractors should feature on their website](/images/blog/pexels-construction-crew-site-2383650.jpg)
+
 ## Website Audit Checklist for Contractors
 
 Use this quick self-audit on your laptop and phone:
@@ -180,6 +184,8 @@ We offer transparent milestone-based pricing so you always know exactly what you
 - Local SEO + Google Business Profile dominance drives the majority of leads
 - Real photos and local content build trust faster than anything else
 - A professional contractor website is one of the highest-ROI investments you can make
+
+![Construction worker in a safety vest smiling while answering a phone call outdoors, giving a thumbs up after booking a new customer lead](/images/blog/pexels-contractor-phone-call-34670920.jpg)
 
 ## Ready to Get More Calls?
 

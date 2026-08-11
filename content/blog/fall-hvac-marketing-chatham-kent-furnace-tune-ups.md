@@ -33,6 +33,8 @@ We work with HVAC and contractor clients across Southwestern Ontario, and every 
 
 Here's the exact playbook we use to help Chatham-Kent HVAC companies get ahead of the season.
 
+![HVAC technician in a hard hat inspecting an outdoor residential HVAC unit as part of a fall furnace tune-up service call in Chatham-Kent](/images/blog/pexels-hvac-technician-furnace-32497161.jpg)
+
 ## Why August Is the Real Start of Fall HVAC Marketing
 
 Homeowners don't think about their furnace until it fails — but search behaviour shifts weeks before the weather does. "Furnace tune-up," "furnace maintenance Chatham," and "HVAC inspection before winter" all start climbing in search volume through late August and September, well before demand peaks in November.
@@ -63,6 +65,8 @@ Google Business Profile went through a major overhaul this year — Gemini-power
 - Respond to every review from the last month, even the short ones — review velocity and engagement are bigger local ranking signals than raw review count in 2026
 - Confirm your hours reflect any extended fall/emergency availability
 
+![Tablet screen displaying a five-star customer rating, representing the online reviews that build trust for Chatham-Kent HVAC companies](/images/blog/pexels-five-star-review-11894045.jpg)
+
 ## Step 3: Get Ahead of Reviews Before the Rush
 
 Once the emergency calls start in November, review requests fall to the bottom of everyone's priority list. August and September — your slower season — is when you actually have time to ask satisfied AC and maintenance customers for a review.
@@ -90,6 +94,8 @@ Urgency converts browsers into booked jobs. A basic structure that works well fo
 - **Priority scheduling** for customers who book before a set date, so late-season stragglers feel the cost of waiting
 
 Promote the offer on your homepage banner, GBP posts, and any email or text list you have — and make sure the offer's expiry date is visible so it actually creates urgency instead of sitting there indefinitely.
+
+![Cozy fall home porch decorated with pumpkins and autumn leaves, the kind of seasonal curb appeal that lines up with furnace tune-up season in Chatham-Kent](/images/blog/pexels-autumn-porch-pumpkins-29348605.jpg)
 
 ## Fall HVAC Marketing Checklist
 
