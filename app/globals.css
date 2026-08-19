@@ -3496,6 +3496,33 @@ a {
   transform: translateY(-0.08rem);
 }
 
+.split-hero__cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.split-hero__phone-button {
+  margin-top: 1.35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.76rem 1.18rem;
+  background: transparent;
+  border: 0.125rem solid var(--accent);
+  color: var(--accent);
+  font-weight: 700;
+  transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.split-hero__phone-button:hover {
+  background: var(--accent);
+  color: #ffffff;
+  transform: translateY(-0.08rem);
+}
+
 .split-hero__related {
   margin-top: 0.8rem;
   display: flex;
@@ -7293,6 +7320,63 @@ a {
   .icon-feature-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Layout mockups: structural placeholders for a section that doesn't exist yet, not real photography */
+.mockup-heading {
+  margin: 1.75rem 0 0.4rem;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.mockup-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: 0.75rem;
+  margin: 0.75rem 0 1rem;
+}
+
+.mockup-gallery__tile {
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.0625rem dashed #b8c9dc;
+  border-radius: var(--radius-card);
+  background: #f2f6fb;
+  color: #7488a0;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.mockup-compare {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 0.75rem;
+  margin: 0.75rem 0 1rem;
+}
+
+.mockup-compare__column {
+  padding: 1.1rem 1rem;
+  border: 0.0625rem solid #cfdeed;
+  border-radius: var(--radius-card);
+  background: #f8fbff;
+  text-align: center;
+}
+
+.mockup-compare__label {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.mockup-compare__swatch {
+  aspect-ratio: 4 / 3;
+  border: 0.0625rem dashed #b8c9dc;
+  border-radius: calc(var(--radius-card) - 0.25rem);
+  background: #eef3f9;
 }
 
 /* Authority page case-study thumbnails */

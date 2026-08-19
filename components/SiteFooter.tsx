@@ -15,6 +15,11 @@ const footerLinks = {
     { label: "Contractor Web Design", href: "/contractor-web-design" },
     { label: "Roofing Web Design", href: "/roofing-company-web-design-southwestern-ontario" },
     { label: "Chiropractor Web Design", href: "/chiropractor-web-design" },
+    { label: "Plumbing Web Design", href: "/plumbing-web-design" },
+    { label: "Electrical Web Design", href: "/electrical-web-design" },
+    { label: "Concrete Web Design", href: "/concrete-web-design" },
+    { label: "Landscaping Web Design", href: "/landscaping-web-design" },
+    { label: "Fencing Web Design", href: "/fencing-web-design" },
   ],
   company: [
     { label: "About", href: "/about" },

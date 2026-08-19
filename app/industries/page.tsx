@@ -46,6 +46,36 @@ const industries = [
     summary:
       "Patient trust, treatment pages, local search visibility, online booking paths, doctor bios, and review placement.",
   },
+  {
+    name: "Plumbing Companies",
+    href: "/plumbing-web-design",
+    summary:
+      "Emergency and after-hours call visibility, mobile quote forms, and clear service-area boundaries before someone calls.",
+  },
+  {
+    name: "Electrical Contractors",
+    href: "/electrical-web-design",
+    summary:
+      "Safety-forward trust signals, dedicated panel-upgrade and EV-charger pages, and click-to-call conversion.",
+  },
+  {
+    name: "Concrete Contractors",
+    href: "/concrete-web-design",
+    summary:
+      "Portfolio-heavy visual proof, seasonal scheduling messaging, and quote-request funnels for driveway and flatwork projects.",
+  },
+  {
+    name: "Landscaping Companies",
+    href: "/landscaping-web-design",
+    summary:
+      "Gallery-first project proof, design/build framing, seasonal messaging, and a recurring-maintenance upsell path.",
+  },
+  {
+    name: "Fencing Companies",
+    href: "/fencing-web-design",
+    summary:
+      "Material comparison content, permit and property-line FAQs, and fast quote turnaround for storm-driven demand.",
+  },
 ];
 
 export default function IndustriesPage() {

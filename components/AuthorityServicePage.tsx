@@ -1,4 +1,5 @@
 import type { LucideIcon } from "lucide-react";
+import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { PageContactSection } from "@/components/PageContactSection";
@@ -18,6 +19,7 @@ type AuthoritySection = {
   heading: string;
   body: string[];
   bullets?: string[];
+  extra?: ReactNode;
 };
 
 type CaseStudyLink = {
@@ -50,6 +52,7 @@ type AuthorityServicePageProps = {
   ctaSubject: string;
   ctaHeading: string;
   ctaCopy: string;
+  phoneCta?: { label: string; href: string };
   intro: string[];
   sections: AuthoritySection[];
   caseStudies: CaseStudyLink[];
@@ -59,6 +62,7 @@ type AuthorityServicePageProps = {
   relatedLinks?: Array<{ label: string; href: string }>;
   iconFeatures?: IconFeature[];
   proofImage?: ProofImage;
+  extraContent?: ReactNode;
 };
 
 export function AuthorityServicePage({
@@ -71,6 +75,7 @@ export function AuthorityServicePage({
   ctaSubject,
   ctaHeading,
   ctaCopy,
+  phoneCta,
   intro,
   sections,
   caseStudies,
@@ -80,6 +85,7 @@ export function AuthorityServicePage({
   relatedLinks,
   iconFeatures,
   proofImage,
+  extraContent,
 }: AuthorityServicePageProps) {
   const faqColumns = [
     faqs.filter((_, index) => index % 2 === 0),
@@ -98,6 +104,7 @@ export function AuthorityServicePage({
           imageAlt={imageAlt}
           ctaLabel={ctaLabel}
           ctaHref="/contact"
+          phoneCta={phoneCta}
           relatedLinks={
             relatedLinks ?? [
               { label: "Portfolio", href: "/portfolio" },
@@ -115,6 +122,7 @@ export function AuthorityServicePage({
               ))}
 
               {iconFeatures ? <IconFeatureGrid features={iconFeatures} /> : null}
+              {extraContent}
             </article>
           </div>
         </section>
@@ -137,14 +145,12 @@ export function AuthorityServicePage({
                       ))}
                     </ul>
                   ) : null}
+                  {section.extra}
                 </section>
               ))}
 
-              <h2>Relevant Case Studies</h2>
-              <p>
-                These examples show how better structure, clearer messaging, and stronger local search alignment
-                can turn a website into a more useful business asset.
-              </p>
+              <h2>Recent Case Studies</h2>
+              <p>A few recent examples of the websites we&apos;ve designed and built.</p>
               <div className="authority-case-studies">
                 {caseStudies.map((study) => (
                   <Link key={study.href} href={study.href} className="authority-case-studies__card">
