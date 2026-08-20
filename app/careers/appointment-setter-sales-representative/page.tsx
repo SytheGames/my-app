@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
 export default function AppointmentSetterSalesRepRedirectPage() {
-  redirect("/careers");
+  redirect("/careers/remote-appointment-setter");
 }
 

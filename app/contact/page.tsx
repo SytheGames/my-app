@@ -63,6 +63,9 @@ export default function ContactPage() {
                 <Link className="contact-page__cta-secondary" href="/portfolio">
                   View portfolio
                 </Link>
+                <Link className="contact-page__cta-secondary" href="/careers/remote-appointment-setter">
+                  We&apos;re hiring
+                </Link>
               </div>
 
               <blockquote className="contact-page__testimonial" aria-label="Client testimonial">
